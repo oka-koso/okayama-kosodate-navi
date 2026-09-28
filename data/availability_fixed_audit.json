@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-09-29 07:45",
+  "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
+  "fixed_master_count": 206,
+  "matched_facility_count": 198,
+  "with_status_count": 197,
+  "unmatched_contact_count": 0,
+  "ambiguous_contact_count": 8,
+  "duplicate_count": 0,
+  "rescued_match_count": 3,
+  "unmatched_contacts": [],
+  "ambiguous_contacts": [
+    {
+      "page": 1,
+      "phone": "0862521683",
+      "postal": "7000081",
+      "raw": "北 ℡ 252-1683 〒 700-0081津島東2-2-20",
+      "candidates": [
+        "岡北学園",
+        "岡北保育園"
+      ]
+    },
+    {
+      "page": 1,
+      "phone": "0862521683",
+      "postal": "7000081",
+      "raw": "℡ 252-1683 〒 700-0081津島東2-3-17 京山こども園",
+      "candidates": [
+        "岡北学園",
+        "岡北保育園"
+      ]
+    },
+    {
+      "page": 2,
+      "phone": "0862446600",
+      "postal": "7000975",
+      "raw": "℡ 244-6600 〒 700-0975今7-17-7 園",
+      "candidates": [
+        "どんぐり保育園",
+        "ノイエ保育園"
+      ]
+    },
+    {
+      "page": 2,
+      "phone": "0862446600",
+      "postal": "7000975",
+      "raw": "℡ 244-6600 〒 700-0975今7-17-7 園",
+      "candidates": [
+        "どんぐり保育園",
+        "ノイエ保育園"
+      ]
+    },
+    {
+      "page": 4,
+      "phone": "0862715577",
+      "postal": "7038234",
+      "raw": "℡ 271-5577 〒 703-8234沢田473",
+      "candidates": [
+        "柿の木こども園",
+        "柿の木保育園"
+      ]
+    },
+    {
+      "page": 4,
+      "phone": "0862715577",
+      "postal": "7038234",
+      "raw": "℡ 271-5577 〒 703-8234沢田490 京山こども園",
+      "candidates": [
+        "柿の木こども園",
+        "柿の木保育園"
+      ]
+    },
+    {
+      "page": 6,
+      "phone": "0862396080",
+      "postal": "7010221",
+      "raw": "田 ℡ 239-6080 〒 701-0221藤田1729-1",
+      "candidates": [
+        "都保育園",
+        "（仮称）きらめき六区こども園",
+        "錦認定こども園"
+      ]
+    },
+    {
+      "page": 7,
+      "phone": "0862591655",
+      "postal": "7000955",
+      "raw": "℡ 259-1655 〒 700-0955万倍98",
+      "candidates": [
+        "（仮称）芳明こども園",
+        "（仮称）朝日塾こども園"
+      ]
+    }
+  ],
+  "duplicate_matches": [],
+  "rescued_matches": [
+    {
+      "facility_id": "oky-de41a38b5c74",
+      "name": "（仮称）桃丘こども園",
+      "method": "postal-only-unique",
+      "pdf_phone": "0862368780",
+      "pdf_postal": "7011221",
+      "master_phone": "0864640007",
+      "master_postal": "7011221"
+    },
+    {
+      "facility_id": "oky-859e4c83d6dd",
+      "name": "（仮称）旭操認定こども園",
+      "method": "postal-only-unique",
+      "pdf_phone": "0862371161",
+      "pdf_postal": "7038264",
+      "master_phone": "0862777609",
+      "master_postal": "7038264"
+    },
+    {
+      "facility_id": "oky-7391f1164211",
+      "name": "（仮称）ひこさきこども園",
+      "method": "postal-only-unique",
+      "pdf_phone": "0863621078",
+      "pdf_postal": "7091213",
+      "master_phone": "0864800580",
+      "master_postal": "7091213"
+    }
+  ],
+  "master_not_in_pdf": [
+    {
+      "facility_id": "oky-029dfee13209",
+      "name": "岡北学園",
+      "ward": "北区"
+    },
+    {
+      "facility_id": "oky-b4c449df8fbd",
+      "name": "柿の木こども園",
+      "ward": "中区"
+    },
+    {
+      "facility_id": "oky-663bc680c665",
+      "name": "（仮称）きらめき六区こども園",
+      "ward": "南区"
+    },
+    {
+      "facility_id": "oky-c81757e30b10",
+      "name": "（仮称）芳明こども園",
+      "ward": "南区"
+    },
+    {
+      "facility_id": "oky-afa52b982904",
+      "name": "岡北保育園",
+      "ward": "北区"
+    },
+    {
+      "facility_id": "oky-3f47b001d22b",
+      "name": "どんぐり保育園",
+      "ward": "北区"
+    },
+    {
+      "facility_id": "oky-df4975eddd07",
+      "name": "ノイエ保育園",
+      "ward": "北区"
+    },
+    {
+      "facility_id": "oky-b077ad17d0a9",
+      "name": "柿の木保育園",
+      "ward": "中区"
+    }
+  ]
+}
