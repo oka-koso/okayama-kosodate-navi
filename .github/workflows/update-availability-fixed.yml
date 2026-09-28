@@ -24,23 +24,42 @@ jobs:
         run: pip install requests beautifulsoup4 pdfplumber
 
       - name: Match availability by official phone and postal
+        id: match
+        continue-on-error: true
         run: python scripts/update_availability_fixed.py
 
-      - name: Commit audited availability
-        if: success()
+      # 失敗時でも audit をGitHubへ残す。
+      # availability_fixed.json は成功したときだけ追加。
+      - name: Commit audit result
+        if: always()
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
 
-          git add \
-            data/availability_fixed.json \
-            data/availability_fixed_audit.json
-
-          if git diff --cached --quiet; then
-            echo "No availability changes"
-            exit 0
+          if [ -f data/availability_fixed_audit.json ]; then
+            git add data/availability_fixed_audit.json
           fi
 
-          git commit -m "data: update audited childcare availability"
-          git pull --rebase origin main
-          git push origin main
+          if [ "${{ steps.match.outcome }}" = "success" ] && [ -f data/availability_fixed.json ]; then
+            git add data/availability_fixed.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No audit/data changes"
+          else
+            if [ "${{ steps.match.outcome }}" = "success" ]; then
+              git commit -m "data: update audited childcare availability"
+            else
+              git commit -m "audit: save failed childcare availability match"
+            fi
+
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      # audit保存後にAction自体は赤に戻す。
+      - name: Fail job when matching failed
+        if: steps.match.outcome != 'success'
+        run: |
+          echo "Availability matching failed. Audit was saved to data/availability_fixed_audit.json."
+          exit 1
