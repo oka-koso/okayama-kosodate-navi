@@ -342,7 +342,9 @@
       "address": "岡山市北区津島西坂2-9-36",
       "phone": "086-254-2714",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.6835876,
+      "lon": 133.9066213
     },
     {
       "id": "oky-de18ac51f5a2",
@@ -1122,7 +1124,9 @@
       "address": "岡山市北区津島東2-2-20",
       "phone": "086-252-1683",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.6897933,
+      "lon": 133.928675
     },
     {
       "id": "oky-6b45f387a5ff",
@@ -2214,7 +2218,9 @@
       "address": "岡山市北区津島東2-3-17",
       "phone": "086-252-1683",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.6897933,
+      "lon": 133.928675
     },
     {
       "id": "oky-a24d210a0029",
@@ -2357,7 +2363,9 @@
       "address": "岡山市北区津島南1-1-9",
       "phone": "086-239-6564",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.683234,
+      "lon": 133.9126452
     },
     {
       "id": "oky-7959cce8d39c",
