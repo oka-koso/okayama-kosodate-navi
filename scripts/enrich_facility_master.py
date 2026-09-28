@@ -154,7 +154,7 @@ def contacts_for_page(lines):
     # 園ごとに必ず電話行があるので、名前抽出に頼らず電話行を順番に使う。
     contacts = []
     for line in lines:
-        if "℡" not in line and not PHONE_RE.search(line):
+        if not any(label in line for label in ("℡", "☎", "TEL", "Tel", "tel")):
             continue
         parsed = parse_contact_line(line)
         if parsed:
@@ -199,7 +199,7 @@ def scrape_public_html(url, category):
 
             candidates = []
             for idx, cell in enumerate(cells[1:], start=1):
-                if PHONE_RE.search(cell):
+                if extract_phone(cell):
                     candidates.append(("phone", idx, cell))
                 if re.search(r"(?:北区|中区|東区|南区)", cell):
                     candidates.append(("address", idx, cell))
@@ -209,10 +209,7 @@ def scrape_public_html(url, category):
 
             for kind, _, cell in candidates:
                 if kind == "phone" and not phone:
-                    m = PHONE_RE.search(cell)
-                    if m:
-                        area, p2, p3 = m.groups()
-                        phone = f"{area or '086'}-{p2}-{p3}"
+                    phone = extract_phone(cell)
                 elif kind == "address" and not address:
                     address = cell
                     if not address.startswith("岡山市"):
