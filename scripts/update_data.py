@@ -247,7 +247,7 @@ def load_websites():
 
 def parse_table_rows(rows, ward: str, old_by_name: dict, websites: dict, page_no: int):
     facilities = []
-    raw_candidates = 0
+    candidate_names = set()
     problems = []
 
     for i, row in enumerate(rows):
@@ -264,7 +264,7 @@ def parse_table_rows(rows, ward: str, old_by_name: dict, websites: dict, page_no
         if not name or not tpo:
             continue
 
-        raw_candidates += 1
+        candidate_names.add(normalize_name(name))
         typ, pub, operator = tpo
 
         # 同じ園の電話・住所が次行に分離されていることがあるため近傍行をまとめて読む。
@@ -316,7 +316,7 @@ def parse_table_rows(rows, ward: str, old_by_name: dict, websites: dict, page_no
 
         facilities.append(facility)
 
-    return facilities, raw_candidates, problems
+    return facilities, candidate_names, problems
 
 
 def extract_tables(page):
@@ -343,7 +343,7 @@ def extract_tables(page):
 
 def parse_pdf(content: bytes, old_by_name: dict, websites: dict):
     all_facilities = []
-    total_candidates = 0
+    candidate_names_all = set()
     all_problems = []
 
     with pdfplumber.open(io.BytesIO(content)) as pdf:
@@ -352,14 +352,14 @@ def parse_pdf(content: bytes, old_by_name: dict, websites: dict):
             tables = extract_tables(page)
 
             page_facilities = []
-            page_candidates = 0
+            page_candidate_names = set()
 
             for table in tables:
-                fs, candidates, problems = parse_table_rows(
+                fs, candidate_names, problems = parse_table_rows(
                     table, ward, old_by_name, websites, pi + 1
                 )
                 page_facilities.extend(fs)
-                page_candidates += candidates
+                page_candidate_names.update(candidate_names)
                 all_problems.extend(problems)
 
             # 同一園の重複抽出を整理。
@@ -368,12 +368,12 @@ def parse_pdf(content: bytes, old_by_name: dict, websites: dict):
                 uniq[(normalize_name(f["name"]), f["ward"])] = f
             page_facilities = list(uniq.values())
 
-            total_candidates += page_candidates
+            candidate_names_all.update(page_candidate_names)
             all_facilities.extend(page_facilities)
 
             print(
                 f"[update_data] page {pi+1}/{len(pdf.pages)}: "
-                f"tables={len(tables)}, candidates={page_candidates}, "
+                f"tables={len(tables)}, unique_candidates={len(page_candidate_names)}, "
                 f"parsed={len(page_facilities)}, ward={ward}"
             )
 
@@ -383,19 +383,27 @@ def parse_pdf(content: bytes, old_by_name: dict, websites: dict):
         uniq[(normalize_name(f["name"]), f["ward"])] = f
     facilities = list(uniq.values())
 
-    # 施設候補を拾ったのに最終データに大幅な欠落がある場合は安全のため書き換えない。
-    # 重複テーブル抽出があり得るので「candidate == parsed」は要求しないが、
-    # parsed が candidate の85%未満なら要確認とする。
-    if total_candidates and len(facilities) < int(total_candidates * 0.85):
+    # PDF抽出では同じ表が複数回検出されることがあるため、
+    # 「候補行数」ではなく正規化した園名のユニーク数で監査する。
+    unique_candidate_count = len(candidate_names_all)
+
+    # parsedの方が少ない場合のみ警告。大幅欠落時だけ停止する。
+    # ページ境界や同名施設の重複を考慮し、90%未満を安全停止の目安とする。
+    if unique_candidate_count and len(facilities) < int(unique_candidate_count * 0.90):
         raise RuntimeError(
-            f"施設候補行 {total_candidates}件に対して最終施設 {len(facilities)}件です。"
+            f"ユニーク施設候補 {unique_candidate_count}件に対して最終施設 {len(facilities)}件です。"
             " 解析漏れの可能性があるため既存JSONを保持します。"
         )
 
     for msg in all_problems[:30]:
         print(f"[update_data] warning: {msg}")
 
-    return facilities, total_candidates
+    print(
+        f"[update_data] audit: unique_candidates={unique_candidate_count}, "
+        f"final={len(facilities)}"
+    )
+
+    return facilities, unique_candidate_count
 
 
 def extract_pdf_meta(content: bytes, title: str):
@@ -476,7 +484,7 @@ def main():
         "source_pdf_title": title,
         "source_pdf_url": url,
         "source_pdf_sha256": digest,
-        "facility_candidate_rows": candidate_count,
+        "facility_candidate_unique_names": candidate_count,
         "facility_count": len(facilities),
         "sources": [
             SOURCE_PAGE,
