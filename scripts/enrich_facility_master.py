@@ -40,6 +40,20 @@ PHONE_LABEL_2PART_RE = re.compile(
 )
 POSTAL_RE = re.compile(r"〒\s*([0-9]{3})[-－ー]([0-9]{4})")
 
+def extract_phone(text):
+    """Tel/℡/☎ の直後だけを電話番号として採用する。"""
+    text = text or ""
+
+    m3 = PHONE_LABEL_3PART_RE.search(text)
+    if m3:
+        return f"{m3.group(1)}-{m3.group(2)}-{m3.group(3)}"
+
+    m2 = PHONE_LABEL_2PART_RE.search(text)
+    if m2:
+        return f"086-{m2.group(1)}-{m2.group(2)}"
+
+    return ""
+
 WARDS = ("北区", "中区", "東区", "南区")
 
 
@@ -94,28 +108,10 @@ def pdf_lines_by_page(content):
 
 def parse_contact_line(line):
     """
-    例1:
-      Tel 222-7583 〒700-0817 弓之町8-2
-      -> 086-222-7583
-
-    例2:
-      Tel 0866-92-6989※ 〒700-0955 万倍98
-      -> 0866-92-6989
-
-    重要:
-    電話番号は必ず Tel/℡/☎ の直後からのみ取得する。
-    これにより郵便番号 700-0955 を電話番号と誤認しない。
+    電話番号は必ず Tel/℡/☎ の直後から取得し、
+    郵便番号は必ず 〒 の直後から取得する。
     """
-    phone = ""
-
-    m3 = PHONE_LABEL_3PART_RE.search(line)
-    if m3:
-        phone = f"{m3.group(1)}-{m3.group(2)}-{m3.group(3)}"
-    else:
-        m2 = PHONE_LABEL_2PART_RE.search(line)
-        if m2:
-            phone = f"086-{m2.group(1)}-{m2.group(2)}"
-
+    phone = extract_phone(line)
     if not phone:
         return None
 
