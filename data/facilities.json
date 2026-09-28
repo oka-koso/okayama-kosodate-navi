@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 00:45",
+  "updated_at": "2026-09-29 01:32",
   "source_page_updated": "2026-09-24",
   "data_scope": "岡山市公表の最新『認可保育園等の受入見込み』掲載施設",
   "availability_as_of": "令和８年９月１７日時点",
@@ -7,9 +7,11 @@
   "source_pdf_title": "【認可保育園】令和8年11月受入見込み(PDF形式、381.56KB)",
   "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
   "source_pdf_sha256": "0bccf8a224b1fe35f5f2a6a4486542da1f54e41caec5a4e447bae3f4798084dd",
+  "facility_candidate_unique_names": 217,
+  "facility_count": 232,
   "sources": [
     "https://www.city.okayama.jp/kurashi/0000012977.html",
-    "https://www.city.okayama.jp/kurashi/0000013000.html"
+    "https://www.city.okayama.jp/kurashi/0000012549.html"
   ],
   "facilities": [
     {
@@ -19,8 +21,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-295-0268",
-      "postal": "701-1462",
-      "address": "北区大井407-1",
+      "postal": "295-0268",
+      "address": "北区〒701-1462大井407-1 65 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -32,6 +34,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.741745,
       "lon": 133.800522
     },
@@ -42,8 +45,8 @@
       "public": false,
       "operator": "福)あゆみ会",
       "phone": "086-254-2714",
-      "postal": "700-0086",
-      "address": "北区津島西坂2-9-36",
+      "postal": "254-2714",
+      "address": "北区〒700-0086津島西坂2-9-36 90 ４３日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -55,6 +58,7 @@
         "4": "×",
         "5": "△"
       },
+      "website": "",
       "lat": 34.684307,
       "lon": 133.906555
     },
@@ -65,8 +69,8 @@
       "public": false,
       "operator": "福)岡山清風会",
       "phone": "086-224-7369",
-      "postal": "700-0934",
-      "address": "北区奥田南町1-18",
+      "postal": "224-7369",
+      "address": "北区〒700-0934奥田南町1-18 150 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -78,8 +82,69 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.642269,
       "lon": 133.919968
+    },
+    {
+      "name": "こ 公",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "こ 私",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "こじかこども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)宮川福祉会 90 ６か月～ × × × × × ×",
+      "phone": "086-226-2071",
+      "postal": "226-2071",
+      "address": "北区〒700-0911大供本町715-5",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "さくらこども園",
@@ -88,8 +153,8 @@
       "public": false,
       "operator": "福)さくら福祉会",
       "phone": "086-294-3065",
-      "postal": "701-1145",
-      "address": "北区横井上1556-4",
+      "postal": "294-3065",
+      "address": "北区〒701-1145横井上1556-4 100 ２か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -101,6 +166,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.71307,
       "lon": 133.905106
     },
@@ -111,8 +177,8 @@
       "public": false,
       "operator": "福)順正福祉会",
       "phone": "086-228-1507",
-      "postal": "700-0003",
-      "address": "北区半田町8-2",
+      "postal": "228-1507",
+      "address": "北区〒700-0003半田町8-2",
       "services": {
         "extended": false,
         "temporary": false
@@ -125,6 +191,7 @@
         "4": "△",
         "5": "△"
       },
+      "website": "",
       "lat": 34.696163,
       "lon": 133.933517
     },
@@ -135,8 +202,8 @@
       "public": false,
       "operator": "福)義風会",
       "phone": "086-287-2660",
-      "postal": "701-1334",
-      "address": "北区高松原古才594-1",
+      "postal": "287-2660",
+      "address": "北区〒701-1334高松原古才594-1 39 (13) ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -146,6 +213,7 @@
         "2": "△",
         "3": "×"
       },
+      "website": "",
       "lat": 34.684437,
       "lon": 133.822311
     },
@@ -156,8 +224,8 @@
       "public": false,
       "operator": "福)立正会",
       "phone": "086-241-0378",
-      "postal": "700-0972",
-      "address": "北区上中野2-3-10",
+      "postal": "241-0378",
+      "address": "北区〒700-0972上中野2-3-10 100 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -170,8 +238,31 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.643124,
       "lon": 133.901352
+    },
+    {
+      "name": "つしまおひさま保育園",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "学)大森学園 19 満１歳児～ × × × つしま幼稚園",
+      "phone": "086-239-6564",
+      "postal": "239-6564",
+      "address": "北区〒700-0085津島南1-1-9",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "つしま幼稚園",
@@ -180,8 +271,8 @@
       "public": false,
       "operator": "学)大森学園",
       "phone": "086-252-0171",
-      "postal": "700-0085",
-      "address": "北区津島南1-3-9",
+      "postal": "252-0171",
+      "address": "北区〒700-0085津島南1-3-9 60 ３歳児 クラス～",
       "services": {
         "extended": false,
         "temporary": false
@@ -190,8 +281,27 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.681896,
       "lon": 133.913376
+    },
+    {
+      "name": "どんぐり保育園",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "福)東光会 ならの木こども園、",
+      "phone": "086-244-6600",
+      "postal": "244-6600",
+      "address": "北区〒700-0975今7-17-7 19 ５か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "なかよし保育園",
@@ -200,8 +310,8 @@
       "public": false,
       "operator": "福)なかよし会",
       "phone": "086-255-4134",
-      "postal": "700-0033",
-      "address": "北区島田本町1-4-41",
+      "postal": "255-4134",
+      "address": "北区〒700-0033島田本町1-4-41",
       "services": {
         "extended": false,
         "temporary": false
@@ -214,18 +324,19 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.662819,
       "lon": 133.908356
     },
     {
-      "name": "ひらたえがお保育園",
+      "name": "ならの木こども園",
       "ward": "北区",
-      "type": "保育園",
+      "type": "認定こども園",
       "public": false,
-      "operator": "福)旭川荘",
-      "phone": "086-805-3818",
-      "postal": "700-0952",
-      "address": "北区平田407",
+      "operator": "福)東光会 90 ５か月～ × × × × × ×",
+      "phone": "086-242-3400",
+      "postal": "242-3400",
+      "address": "北区〒700-0964中仙道1-7-28",
       "services": {
         "extended": false,
         "temporary": false
@@ -237,6 +348,31 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "ひらたえがお保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)旭川荘",
+      "phone": "086-805-3818",
+      "postal": "805-3818",
+      "address": "北区〒700-0952平田407 90 ６か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
       "lat": 34.634884,
       "lon": 133.882538
     },
@@ -247,8 +383,8 @@
       "public": false,
       "operator": "福)宮川福祉会",
       "phone": "086-805-1313",
-      "postal": "700-0952",
-      "address": "北区平田122-102",
+      "postal": "805-1313",
+      "address": "北区〒700-0952平田122-102 70 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -260,6 +396,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.632282,
       "lon": 133.891449
     },
@@ -270,8 +407,8 @@
       "public": false,
       "operator": "福)福寿会",
       "phone": "086-903-3370",
-      "postal": "701-0151",
-      "address": "北区平野857-4",
+      "postal": "903-3370",
+      "address": "北区〒701-0151平野857-4 40 (10) ５７日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -281,6 +418,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.644608,
       "lon": 133.859085
     },
@@ -291,8 +429,8 @@
       "public": false,
       "operator": "福)岡山愛育会",
       "phone": "086-252-9936",
-      "postal": "700-0044",
-      "address": "北区三門西町7-8",
+      "postal": "252-9936",
+      "address": "北区〒700-0044三門西町7-8",
       "services": {
         "extended": false,
         "temporary": false
@@ -305,6 +443,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.66993,
       "lon": 133.89975
     },
@@ -315,8 +454,8 @@
       "public": false,
       "operator": "福)岡山愛育会",
       "phone": "086-230-6200",
-      "postal": "700-0065",
-      "address": "北区野殿東町17-7",
+      "postal": "230-6200",
+      "address": "北区〒700-0065野殿東町17-7 90 ４３日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -329,6 +468,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.663925,
       "lon": 133.87973
     },
@@ -339,8 +479,8 @@
       "public": false,
       "operator": "福)ことぶき会",
       "phone": "086-206-3323",
-      "postal": "700-0911",
-      "address": "北区大供本町708-6",
+      "postal": "206-3323",
+      "address": "北区〒700-0911大供本町708-6 30 (15) ５７日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -350,8 +490,95 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.653637,
       "lon": 133.91188
+    },
+    {
+      "name": "もみの木こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)子育てサポートもみの木 75 ２か月～ △ × × × × ×",
+      "phone": "086-259-0670",
+      "postal": "259-0670",
+      "address": "北区〒701-1345新庄上1357",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "もりの香保育園 津高園",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "株)木の里工房木薫 19 ６か月～ △ × × 学南保育園",
+      "phone": "086-259-3755",
+      "postal": "259-3755",
+      "address": "北区〒701-1152津高408-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "アートチャイルドケア岡山庭瀬保育園",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "アートチャイルドケア(株 アートチャイルドケア岡山新保保育園",
+      "phone": "086-250-2833",
+      "postal": "250-2833",
+      "address": "北区〒701-0151平野420-3 19 ５７日～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "ソラ小規模保育園いま",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "株)天空 19 ５７日～ × × × アートチャイルドケア岡山豊成保育園",
+      "phone": "086-242-4811",
+      "postal": "242-4811",
+      "address": "北区〒700-0975今7-22-19",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "ソラ小規模保育園おかやま",
@@ -360,8 +587,8 @@
       "public": false,
       "operator": "株)天空",
       "phone": "086-250-5610",
-      "postal": "700-0975",
-      "address": "北区今5-8-37",
+      "postal": "250-5610",
+      "address": "北区〒700-0975今5-8-37 12 ５７日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -371,6 +598,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.644833,
       "lon": 133.896332
     },
@@ -381,8 +609,8 @@
       "public": false,
       "operator": "株)ニチイ学館",
       "phone": "086-242-2015",
-      "postal": "700-0975",
-      "address": "北区今7-23-22",
+      "postal": "242-2015",
+      "address": "北区〒700-0975今7-23-22 19 ５７日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -392,6 +620,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.6422,
       "lon": 133.891464
     },
@@ -402,8 +631,8 @@
       "public": false,
       "operator": "福)東光会",
       "phone": "086-244-6600",
-      "postal": "700-0975",
-      "address": "北区今7-17-7",
+      "postal": "244-6600",
+      "address": "北区〒700-0975今7-17-7 19 ５か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -413,8 +642,33 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.642872,
       "lon": 133.892853
+    },
+    {
+      "name": "ポエムこども園ひらつ",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)愛あい会 175 ６か月～ × × × △ △ △",
+      "phone": "086-236-8220",
+      "postal": "236-8220",
+      "address": "北区〒701-1202楢津385-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "△",
+        "5": "△"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "ポエム保育園おかやま",
@@ -423,8 +677,8 @@
       "public": false,
       "operator": "福)愛あい会",
       "phone": "086-284-1118",
-      "postal": "701-1202",
-      "address": "北区楢津505-1",
+      "postal": "284-1118",
+      "address": "北区〒701-1202楢津505-1 119 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -436,6 +690,7 @@
         "4": "×",
         "5": "○"
       },
+      "website": "",
       "lat": 34.684177,
       "lon": 133.88562
     },
@@ -446,8 +701,8 @@
       "public": false,
       "operator": "株)マイスタイル",
       "phone": "086-250-7245",
-      "postal": "701-0142",
-      "address": "北区白石西新町6-104",
+      "postal": "250-7245",
+      "address": "北区〒701-0142白石西新町6-104 60 ４３日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -459,6 +714,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.655552,
       "lon": 133.868652
     },
@@ -469,8 +725,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-252-1509",
-      "postal": "700-0054",
-      "address": "北区下伊福西町5-60",
+      "postal": "252-1509",
+      "address": "北区〒700-0054下伊福西町5-60",
       "services": {
         "extended": false,
         "temporary": false
@@ -483,8 +739,93 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.665215,
       "lon": 133.901093
+    },
+    {
+      "name": "中山認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 90 ６か月～ × × × × × ×",
+      "phone": "086-284-0158",
+      "postal": "284-0158",
+      "address": "北区〒701-1211一宮638-3",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "事 私",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "事業所内保育事業所",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "事業所内保育事業所 連携施設を記載",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "京山こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)岡北福祉会 100 ３か月～ × × × × × ×",
+      "phone": "086-251-2121",
+      "postal": "251-2121",
+      "address": "北区※〒700-0084津島桑の木町1-33",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "今認定こども園",
@@ -493,8 +834,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-241-6819",
-      "postal": "700-0975",
-      "address": "北区今7-16-43",
+      "postal": "241-6819",
+      "address": "北区〒700-0975今7-16-43 95 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -506,8 +847,105 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.64164,
       "lon": 133.892914
+    },
+    {
+      "name": "伊島認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 90 ６か月～ × × × × × ×",
+      "phone": "086-252-3682",
+      "postal": "252-3682",
+      "address": "北区〒700-0012いずみ町9-18",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "保 公",
+      "ward": "北区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "保 私",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "公立認可保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": true,
+      "operator": "公立認可保育園 障害児保育拠点園に該当の場合記載、民営化の予定を記載",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "公立認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "公立認定こども園 障害児保育拠点園に該当の場合記載",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "共生保育園",
@@ -516,8 +954,8 @@
       "public": false,
       "operator": "一社)共生会",
       "phone": "086-803-3232",
-      "postal": "700-0903",
-      "address": "北区幸町10-40",
+      "postal": "803-3232",
+      "address": "北区〒700-0903幸町10-40 120 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -530,6 +968,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.66032,
       "lon": 133.921738
     },
@@ -540,8 +979,8 @@
       "public": false,
       "operator": "学)内山下保育会",
       "phone": "086-222-5675",
-      "postal": "700-0823",
-      "address": "北区丸の内2-6-5",
+      "postal": "222-5675",
+      "address": "北区〒700-0823丸の内2-6-5 40 ３歳児 クラス～",
       "services": {
         "extended": false,
         "temporary": false
@@ -551,6 +990,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.663403,
       "lon": 133.934479
     },
@@ -559,10 +999,10 @@
       "ward": "北区",
       "type": "認定こども園",
       "public": false,
-      "operator": "福)梁和会",
+      "operator": "福)梁和会 ℡287-5551 〒701-1342 加茂1104-1 75 ３か月～ × × × × × ×",
       "phone": "086-287-5551",
-      "postal": "701-1342",
-      "address": "北区加茂1104-1",
+      "postal": "287-5551",
+      "address": "北区〒701-1342 加茂1104-1 75 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -574,6 +1014,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.675835,
       "lon": 133.82312
     },
@@ -584,8 +1025,8 @@
       "public": false,
       "operator": "福)岡山千鳥福祉会",
       "phone": "086-230-7115",
-      "postal": "700-0971",
-      "address": "北区野田4-1-30",
+      "postal": "230-7115",
+      "address": "北区〒700-0971野田4-1-30 320 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -597,6 +1038,7 @@
         "4": "△",
         "5": "×"
       },
+      "website": "",
       "lat": 34.657024,
       "lon": 133.896866
     },
@@ -607,8 +1049,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-222-2182",
-      "postal": "700-0807",
-      "address": "北区南方1-3-30",
+      "postal": "222-2182",
+      "address": "北区〒700-0807南方1-3-30",
       "services": {
         "extended": true,
         "temporary": true
@@ -621,6 +1063,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.672226,
       "lon": 133.923553
     },
@@ -631,8 +1074,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-287-5241",
-      "postal": "701-1341",
-      "address": "北区吉備津276-2",
+      "postal": "287-5241",
+      "address": "北区〒701-1341吉備津276-2 55 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -644,6 +1087,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.673466,
       "lon": 133.838013
     },
@@ -654,8 +1098,8 @@
       "public": false,
       "operator": "福)土の子会",
       "phone": "086-232-0825",
-      "postal": "700-0941",
-      "address": "北区青江4-4-10",
+      "postal": "232-0825",
+      "address": "北区〒700-0941青江4-4-10 90 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -667,8 +1111,33 @@
         "4": "×",
         "5": "△"
       },
+      "website": "",
       "lat": 34.631901,
       "lon": 133.92627
+    },
+    {
+      "name": "大元こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)東光会 55 ５か月～ × × × × × ×",
+      "phone": "086-259-3700",
+      "postal": "259-3700",
+      "address": "北区〒700-0925大元上町9-18",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "大元ちどり保育園",
@@ -677,8 +1146,8 @@
       "public": false,
       "operator": "福)岡山千鳥福祉会",
       "phone": "086-206-2211",
-      "postal": "700-0923",
-      "address": "北区大元駅前10-26",
+      "postal": "206-2211",
+      "address": "北区〒700-0923大元駅前10-26",
       "services": {
         "extended": false,
         "temporary": false
@@ -691,6 +1160,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.646446,
       "lon": 133.911316
     },
@@ -701,8 +1171,8 @@
       "public": false,
       "operator": "一社)学南福祉会",
       "phone": "086-254-9571",
-      "postal": "700-0011",
-      "address": "北区学南町2-5-40",
+      "postal": "254-9571",
+      "address": "北区〒700-0011学南町2-5-40",
       "services": {
         "extended": false,
         "temporary": false
@@ -715,6 +1185,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.683659,
       "lon": 133.922607
     },
@@ -725,8 +1196,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-724-2252",
-      "postal": "709-2121",
-      "address": "北区御津宇垣1889",
+      "postal": "724-2252",
+      "address": "北区〒709-2121御津宇垣1889 35 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -738,6 +1209,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.782856,
       "lon": 133.924362
     },
@@ -748,8 +1220,8 @@
       "public": false,
       "operator": "福)笹ヶ瀬福祉会",
       "phone": "086-254-6888",
-      "postal": "700-0961",
-      "address": "北区北長瀬本町27-2",
+      "postal": "254-6888",
+      "address": "北区〒700-0961北長瀬本町27-2 110 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -762,6 +1234,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.655338,
       "lon": 133.883057
     },
@@ -772,8 +1245,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-254-1871",
-      "postal": "701-1153",
-      "address": "北区富原1148",
+      "postal": "254-1871",
+      "address": "北区〒701-1153富原1148 40 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -785,8 +1258,69 @@
         "4": "×",
         "5": "○"
       },
+      "website": "",
       "lat": 34.694908,
       "lon": 133.894699
+    },
+    {
+      "name": "富田保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)広和会 120 ５か月～ × × × × × ×",
+      "phone": "086-223-0872",
+      "postal": "223-0872",
+      "address": "北区〒700-0936富田74",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "小 私",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "小規模保育事業所",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "小規模保育事業所 連携施設を記載",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "岡北保育園",
@@ -795,8 +1329,8 @@
       "public": false,
       "operator": "福)岡北福祉会",
       "phone": "086-252-1683",
-      "postal": "700-0081",
-      "address": "北区津島東2-3-17",
+      "postal": "252-1683",
+      "address": "北区〒700-0081津島東2-3-17 15 ４か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -806,6 +1340,7 @@
         "1": "×",
         "2": "×"
       },
+      "website": "",
       "lat": 34.690292,
       "lon": 133.927902
     },
@@ -816,8 +1351,8 @@
       "public": false,
       "operator": "福)岡北福祉会",
       "phone": "086-252-1683",
-      "postal": "700-0081",
-      "address": "北区津島東2-2-20",
+      "postal": "252-1683",
+      "address": "北区〒700-0081津島東2-2-20 100 ４か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -830,8 +1365,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.689831,
       "lon": 133.927963
+    },
+    {
+      "name": "岡南認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 130 ６か月～ × × × × × × 障害児保育拠点園",
+      "phone": "086-223-9879",
+      "postal": "223-9879",
+      "address": "北区〒700-0851七日市西町1-14",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "岡山済生会なでしこ保育園",
@@ -840,8 +1400,8 @@
       "public": false,
       "operator": "福)恩賜財団済生会支部 岡山県済生会",
       "phone": "086-252-3350",
-      "postal": "700-0013",
-      "address": "北区伊福町2-17-5",
+      "postal": "252-3350",
+      "address": "北区〒700-0013伊福町2-17-5 80 (20) ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -851,6 +1411,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.674015,
       "lon": 133.917023
     },
@@ -861,8 +1422,8 @@
       "public": false,
       "operator": "学)みその学園",
       "phone": "086-223-6447",
-      "postal": "700-0814",
-      "address": "北区天神町6-34",
+      "postal": "223-6447",
+      "address": "北区〒700-0814天神町6-34 クラス～",
       "services": {
         "extended": false,
         "temporary": false
@@ -873,6 +1434,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.667896,
       "lon": 133.928726
     },
@@ -883,8 +1445,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-254-1160",
-      "postal": "700-0047",
-      "address": "北区関西町11-8",
+      "postal": "254-1160",
+      "address": "北区〒700-0047関西町11-8 75 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -897,8 +1459,81 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.67263,
       "lon": 133.898392
+    },
+    {
+      "name": "幼保連携型認定こども園あんじゅの里",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)福寿会 120 ５７日～ △ × △ × × △",
+      "phone": "086-236-7870",
+      "postal": "236-7870",
+      "address": "北区〒701-0161川入873-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "△",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "庄内認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 130 ６か月～ × × × × × ×",
+      "phone": "086-287-5305",
+      "postal": "287-5305",
+      "address": "北区〒701-1353三手15-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "建部認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 60 ６か月～ △ × △ × △ ×",
+      "phone": "086-722-0173",
+      "postal": "722-0173",
+      "address": "北区〒709-3131建部町市場330",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "△",
+        "4": "×",
+        "5": "△"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "弓之町保育園",
@@ -907,8 +1542,8 @@
       "public": false,
       "operator": "福)ひまわり会",
       "phone": "086-222-7583",
-      "postal": "700-0817",
-      "address": "北区弓之町8-2",
+      "postal": "222-7583",
+      "address": "北区〒700-0817弓之町8-2 90 ４３日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -921,6 +1556,7 @@
         "4": "△",
         "5": "×"
       },
+      "website": "",
       "lat": 34.670715,
       "lon": 133.927124
     },
@@ -931,8 +1567,8 @@
       "public": false,
       "operator": "福)なかよし会",
       "phone": "086-222-8490",
-      "postal": "700-0817",
-      "address": "北区弓之町9-2",
+      "postal": "222-8490",
+      "address": "北区〒700-0817弓之町9-2 110 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -945,39 +1581,19 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.669922,
       "lon": 133.927841
     },
     {
-      "name": "星の子保育園",
+      "name": "御南まんまるこども園",
       "ward": "北区",
-      "type": "地域型保育",
+      "type": "認定こども園",
       "public": false,
-      "operator": "福)佳日会",
-      "phone": "086-251-6101",
-      "postal": "700-0031",
-      "address": "北区富町2-16-27",
-      "services": {
-        "extended": false,
-        "temporary": false
-      },
-      "availability": {
-        "0": "△",
-        "1": "×",
-        "2": "×"
-      },
-      "lat": 34.663834,
-      "lon": 133.90889
-    },
-    {
-      "name": "橘今保育園",
-      "ward": "北区",
-      "type": "保育園",
-      "public": false,
-      "operator": "福)橘福祉会",
-      "phone": "086-241-2722",
-      "postal": "700-0975",
-      "address": "北区今3-2-9",
+      "operator": "福)橘会 110 ６か月～ × × × × × ×",
+      "phone": "086-244-6111",
+      "postal": "244-6111",
+      "address": "北区〒700-0951田中165-103",
       "services": {
         "extended": false,
         "temporary": false
@@ -989,6 +1605,207 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "御南認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)橘会 160 ６か月～ × × × × × ×",
+      "phone": "086-244-6100",
+      "postal": "244-6100",
+      "address": "北区〒701-0145今保247-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "御津南保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 60 ６か月～ × × × × × ×",
+      "phone": "086-724-2144",
+      "postal": "724-2144",
+      "address": "北区〒709-2112御津国ヶ原1024",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "御津金川認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 80 ６か月～ × × × × × △",
+      "phone": "086-724-2250",
+      "postal": "724-2250",
+      "address": "北区〒709-2133御津金川476",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "心育保育園",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "株)Ｓｔｅｐ ｕｐ 30 ４か月～ × × × もみの木こども園",
+      "phone": "086-241-1189",
+      "postal": "241-1189",
+      "address": "北区〒700-0973下中野1226-20 (24)",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "撫川ちとせこども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)ちとせ交友会",
+      "phone": "086-293-1161",
+      "postal": "293-1161",
+      "address": "北区〒701-0163中撫川351 120 ６か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "星の子保育園",
+      "ward": "北区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "福)佳日会",
+      "phone": "086-251-6101",
+      "postal": "251-6101",
+      "address": "北区〒700-0031富町2-16-27",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "0": "△",
+        "1": "×",
+        "2": "×"
+      },
+      "website": "",
+      "lat": 34.663834,
+      "lon": 133.90889
+    },
+    {
+      "name": "桃丘こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)クムレ",
+      "phone": "086-236-8780",
+      "postal": "236-8780",
+      "address": "北区〒701-1221芳賀5112-2 25 3か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "横井保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 60 ６か月～ × × × × × ×",
+      "phone": "086-294-2112",
+      "postal": "294-2112",
+      "address": "北区〒701-1145横井上190-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "橘今保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)橘福祉会",
+      "phone": "086-241-2722",
+      "postal": "241-2722",
+      "address": "北区〒700-0975今3-2-9 180 ５か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
       "lat": 34.648853,
       "lon": 133.895096
     },
@@ -999,8 +1816,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-252-5782",
-      "postal": "700-0081",
-      "address": "北区津島東1-4-3",
+      "postal": "252-5782",
+      "address": "北区〒700-0081津島東1-4-3 75 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1013,6 +1830,7 @@
         "4": "×",
         "5": "○"
       },
+      "website": "",
       "lat": 34.687592,
       "lon": 133.927505
     },
@@ -1023,8 +1841,8 @@
       "public": false,
       "operator": "福)淳厚会",
       "phone": "086-234-4150",
-      "postal": "700-0821",
-      "address": "北区中山下2-7-45",
+      "postal": "234-4150",
+      "address": "北区〒700-0821中山下2-7-45",
       "services": {
         "extended": false,
         "temporary": false
@@ -1037,8 +1855,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.659748,
       "lon": 133.927002
+    },
+    {
+      "name": "清輝保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 100 ６か月～ × × × × × ×",
+      "phone": "086-223-4017",
+      "postal": "223-4017",
+      "address": "北区〒700-0863新道47-5",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "牟佐保育園",
@@ -1047,8 +1890,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-229-3130",
-      "postal": "701-2141",
-      "address": "北区牟佐822-2",
+      "postal": "229-3130",
+      "address": "北区〒701-2141牟佐822-2 福）岡山こども協会",
       "services": {
         "extended": false,
         "temporary": false
@@ -1061,6 +1904,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.724632,
       "lon": 133.980377
     },
@@ -1071,8 +1915,8 @@
       "public": false,
       "operator": "福)柏葉会",
       "phone": "086-228-0631",
-      "postal": "701-2142",
-      "address": "北区玉柏2203-1",
+      "postal": "228-0631",
+      "address": "北区〒701-2142玉柏2203-1 45 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1085,6 +1929,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.719627,
       "lon": 133.964279
     },
@@ -1095,8 +1940,8 @@
       "public": false,
       "operator": "福)白ゆり会",
       "phone": "086-238-0520",
-      "postal": "700-0013",
-      "address": "北区伊福町2-30-1",
+      "postal": "238-0520",
+      "address": "北区〒700-0013伊福町2-30-1 19 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1106,6 +1951,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.675083,
       "lon": 133.915222
     },
@@ -1116,8 +1962,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-722-0172",
-      "postal": "709-3112",
-      "address": "北区建部町川口1526-1",
+      "postal": "722-0172",
+      "address": "北区〒709-3112建部町川口1526-1 35 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1129,8 +1975,45 @@
         "4": "○",
         "5": "○"
       },
+      "website": "",
       "lat": 34.895073,
       "lon": 133.901688
+    },
+    {
+      "name": "私立認可保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "私立認可保育園 障害児保育拠点園に該当の場合記載",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "私立認定こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "私立認定こども園 幼稚園型（土曜日保育を行わない場合有り）に該当の場合記載",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "第一吉備こども園",
@@ -1139,8 +2022,8 @@
       "public": false,
       "operator": "福)吉備福祉会",
       "phone": "086-293-7575",
-      "postal": "701-0151",
-      "address": "北区平野1071-1",
+      "postal": "293-7575",
+      "address": "北区〒701-0151平野1071-1 150 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1152,6 +2035,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.643494,
       "lon": 133.857758
     },
@@ -1162,8 +2046,8 @@
       "public": false,
       "operator": "福)吉備福祉会",
       "phone": "086-293-5757",
-      "postal": "701-0135",
-      "address": "北区東花尻121-1",
+      "postal": "293-5757",
+      "address": "北区〒701-0135東花尻121-1 120 ５か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1175,8 +2059,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.654747,
       "lon": 133.862961
+    },
+    {
+      "name": "第二さくらこども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)さくら福祉会 80 ２か月～ × × × × × ×",
+      "phone": "086-253-1900",
+      "postal": "253-1900",
+      "address": "北区〒701-1153富原3700-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "第二すこやか保育園",
@@ -1185,8 +2094,8 @@
       "public": false,
       "operator": "株)こころね",
       "phone": "086-239-0208",
-      "postal": "701-1212",
-      "address": "北区尾上1318-3",
+      "postal": "239-0208",
+      "address": "北区〒701-1212尾上1318-3 19 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1196,18 +2105,19 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.662895,
       "lon": 133.864502
     },
     {
-      "name": "第二白ゆり保育園",
+      "name": "第二すみれ保育園",
       "ward": "北区",
       "type": "保育園",
       "public": false,
-      "operator": "福)白ゆり会",
-      "phone": "086-284-5224",
-      "postal": "701-1202",
-      "address": "北区楢津881-2",
+      "operator": "福)総社福祉会 90 ３か月～ × × × × × ×",
+      "phone": "086-295-2000",
+      "postal": "295-2000",
+      "address": "北区〒701-1464下足守1545-1",
       "services": {
         "extended": false,
         "temporary": false
@@ -1219,8 +2129,153 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "第二吉備こども園",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)吉備福祉会 100 ６か月～ × × × × × ×",
+      "phone": "086-293-7777",
+      "postal": "293-7777",
+      "address": "北区〒701-0153庭瀬1032-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "第二宝島保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)笹ヶ瀬福祉会 90 ６か月～ × × × × × ×",
+      "phone": "086-239-9100",
+      "postal": "239-9100",
+      "address": "北区〒700-0973下中野1222-4",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "第二白ゆり保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)白ゆり会",
+      "phone": "086-284-5224",
+      "postal": "284-5224",
+      "address": "北区〒701-1202楢津881-2 120 ３か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
       "lat": 34.682426,
       "lon": 133.876389
+    },
+    {
+      "name": "第四ひかり保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)双葉会 90 ４３日～ × × × × × ×",
+      "phone": "086-259-5565",
+      "postal": "259-5565",
+      "address": "北区〒701-1212尾上755-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "第四吉備保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)吉備福祉会 70 ６か月～ △ × × × × ×",
+      "phone": "086-293-1717",
+      "postal": "293-1717",
+      "address": "北区〒701-0151平野80-4",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "緑保育園",
+      "ward": "北区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 95 ６か月～ × × × × × × 障害児保育拠点園",
+      "phone": "086-284-0267",
+      "postal": "284-0267",
+      "address": "北区〒701-1211一宮125",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "聖さくら学院保育園",
@@ -1229,8 +2284,8 @@
       "public": false,
       "operator": "株)聖・さくら学院",
       "phone": "086-728-0063",
-      "postal": "700-0063",
-      "address": "北区大安寺東町1-30",
+      "postal": "728-0063",
+      "address": "北区〒700-0063大安寺東町1-30 19 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1240,6 +2295,7 @@
         "1": "×",
         "2": "×"
       },
+      "website": "",
       "lat": 34.662815,
       "lon": 133.893982
     },
@@ -1250,8 +2306,8 @@
       "public": false,
       "operator": "個人",
       "phone": "086-251-3000",
-      "postal": "701-0132",
-      "address": "北区花尻ききょう町7-110 岡嶋ビル1階",
+      "postal": "251-3000",
+      "address": "北区〒701-0132花尻ききょう町7-110 岡嶋ビル1階 12 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1261,6 +2317,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.658543,
       "lon": 133.869888
     },
@@ -1271,8 +2328,8 @@
       "public": false,
       "operator": "福)佳日会",
       "phone": "086-254-5111",
-      "postal": "700-0031",
-      "address": "北区富町2-14-9",
+      "postal": "254-5111",
+      "address": "北区〒700-0031富町2-14-9",
       "services": {
         "extended": false,
         "temporary": false
@@ -1285,6 +2342,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.664604,
       "lon": 133.908966
     },
@@ -1295,8 +2353,8 @@
       "public": false,
       "operator": "福)あおい福祉会",
       "phone": "086-222-4580",
-      "postal": "700-0825",
-      "address": "北区田町1-4-12",
+      "postal": "222-4580",
+      "address": "北区〒700-0825田町1-4-12",
       "services": {
         "extended": false,
         "temporary": false
@@ -1309,6 +2367,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.661633,
       "lon": 133.925491
     },
@@ -1319,8 +2378,8 @@
       "public": false,
       "operator": "福)白ゆり会",
       "phone": "086-284-4272",
-      "postal": "701-1214",
-      "address": "北区辛川市場321-1",
+      "postal": "284-4272",
+      "address": "北区〒701-1214辛川市場321-1 130 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1332,8 +2391,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.687,
       "lon": 133.865005
+    },
+    {
+      "name": "認定こども園 白ゆりの丘",
+      "ward": "北区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)白ゆり会 20 ３か月～ × × × × × ×",
+      "phone": "086-294-5511",
+      "postal": "294-5511",
+      "address": "北区〒701-1133富吉2945-7",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "野谷認定こども園",
@@ -1342,8 +2426,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-294-3610",
-      "postal": "701-1144",
-      "address": "北区栢谷1724-3",
+      "postal": "294-3610",
+      "address": "北区〒701-1144栢谷1724-3 60 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -1355,6 +2439,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.730347,
       "lon": 133.90361
     },
@@ -1365,8 +2450,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-293-4455",
-      "postal": "701-0135",
-      "address": "北区東花尻266-1",
+      "postal": "293-4455",
+      "address": "北区〒701-0135東花尻266-1 86 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -1378,6 +2463,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.650715,
       "lon": 133.86322
     },
@@ -1386,10 +2472,10 @@
       "ward": "北区",
       "type": "認定こども園",
       "public": false,
-      "operator": "福)橘会",
+      "operator": "福)橘会 ℡259-3666 〒701-1223大窪50-1 28 ６か月～ × × × × × ×",
       "phone": "086-259-3666",
-      "postal": "701-1223",
-      "address": "北区大窪50-1",
+      "postal": "259-3666",
+      "address": "北区〒701-1223大窪50-1 28 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1401,6 +2487,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.69672,
       "lon": 133.849854
     },
@@ -1411,8 +2498,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-223-4943",
-      "postal": "700-0912",
-      "address": "北区大供表町16-10",
+      "postal": "223-4943",
+      "address": "北区〒700-0912大供表町16-10 202 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -1424,8 +2511,45 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.653465,
       "lon": 133.914322
+    },
+    {
+      "name": "こ 公",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "こ 私",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "こども園 城東チャイルドセ ンター",
@@ -1434,8 +2558,8 @@
       "public": false,
       "operator": "福)ちとせ交友会",
       "phone": "086-278-8500",
-      "postal": "703-8223",
-      "address": "中区長利194-1",
+      "postal": "278-8500",
+      "address": "中区〒703-8223長利194-1 100 ２か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1447,6 +2571,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.677635,
       "lon": 133.999359
     },
@@ -1457,8 +2582,8 @@
       "public": false,
       "operator": "福)宮川福祉会",
       "phone": "086-277-7662",
-      "postal": "703-8262",
-      "address": "中区福泊138-2",
+      "postal": "277-7662",
+      "address": "中区〒703-8262福泊138-2 70 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1470,6 +2595,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.655659,
       "lon": 133.9776
     },
@@ -1480,8 +2606,8 @@
       "public": false,
       "operator": "福)旭水会",
       "phone": "086-206-2087",
-      "postal": "703-8207",
-      "address": "中区祇園364-1",
+      "postal": "206-2087",
+      "address": "中区〒703-8207祇園364-1 90 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1493,8 +2619,139 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.702747,
       "lon": 133.956558
+    },
+    {
+      "name": "にこにこランドポストメイト保育園・国富",
+      "ward": "中区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "株)マイスタイル 19 ４３日～ × × × 学南保育園、ちどり保育園、",
+      "phone": "086-206-7120",
+      "postal": "206-7120",
+      "address": "中区〒703-8236国富1-10-18 ポストメイト保育園・岡山陵南",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "ゆりかごこども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)温交会 120 ５７日～ × × × × × ×",
+      "phone": "086-277-8700",
+      "postal": "277-8700",
+      "address": "中区〒703-8265倉田688-3",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "グリーン長利こども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)ちとせ交友会 100 ２か月～ △ × × × × ×",
+      "phone": "086-208-6177",
+      "postal": "208-6177",
+      "address": "中区〒703-8223長利274-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "三友保育園",
+      "ward": "中区",
+      "type": "保育園",
+      "public": false,
+      "operator": "宗)三友寺 140 ６か月～ △ × × × × ×",
+      "phone": "086-272-1786",
+      "postal": "272-1786",
+      "address": "中区〒703-8275門田屋敷1-9-31",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "保 公",
+      "ward": "中区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "保 私",
+      "ward": "中区",
+      "type": "保育園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "原尾島こども園",
@@ -1503,8 +2760,8 @@
       "public": false,
       "operator": "福)ちとせ交友会",
       "phone": "086-273-2730",
-      "postal": "703-8235",
-      "address": "中区原尾島1-7-5",
+      "postal": "273-2730",
+      "address": "中区〒703-8235原尾島1-7-5 70 ２か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1516,8 +2773,69 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.672672,
       "lon": 133.947205
+    },
+    {
+      "name": "宇野認定こども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 130 ６か月～ × × × × × × 障害児保育拠点園",
+      "phone": "086-272-2472",
+      "postal": "272-2472",
+      "address": "中区〒703-8258西川原351-12",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "小 私",
+      "ward": "中区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "小規模保育園あかとんぼ",
+      "ward": "中区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "株)あかとんぼ かしのみ保育園",
+      "phone": "086-206-2716",
+      "postal": "206-2716",
+      "address": "中区〒703-8221長岡67-79 15 ４３日～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
     },
     {
       "name": "小規模保育園あかとんぼはつみ園",
@@ -1526,8 +2844,8 @@
       "public": false,
       "operator": "株)あかとんぼ",
       "phone": "086-238-5520",
-      "postal": "703-8228",
-      "address": "中区乙多見502-4",
+      "postal": "238-5520",
+      "address": "中区〒703-8228乙多見502-4 18 ４３日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1537,8 +2855,27 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.679722,
       "lon": 133.97821
+    },
+    {
+      "name": "小規模保育園あかとんぼ第二園",
+      "ward": "中区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "株)あかとんぼ 蓮昌寺こども園",
+      "phone": "086-201-3246",
+      "postal": "201-3246",
+      "address": "中区〒703-8254八幡90-6 16 ４３日～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
     },
     {
       "name": "小規模保育園しらかば",
@@ -1547,8 +2884,8 @@
       "public": false,
       "operator": "福)白樺会",
       "phone": "086-201-8797",
-      "postal": "703-8202",
-      "address": "中区湯迫19-1",
+      "postal": "201-8797",
+      "address": "中区〒703-8202湯迫19-1 19 ９０日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1558,6 +2895,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.699619,
       "lon": 133.968765
     },
@@ -1568,8 +2906,8 @@
       "public": false,
       "operator": "福)にじのこ福祉会",
       "phone": "086-272-4111",
-      "postal": "703-8285",
-      "address": "中区桜橋3-1-51",
+      "postal": "272-4111",
+      "address": "中区〒703-8285桜橋3-1-51 120 ５７日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1581,8 +2919,81 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.647511,
       "lon": 133.934372
+    },
+    {
+      "name": "岡山博愛会認定こども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)岡山博愛会 90 ５か月～ △ × × × × ×",
+      "phone": "086-272-0160",
+      "postal": "272-0160",
+      "address": "中区〒703-8295御幸町4-12",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "幡多認定こども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 65 ６か月～ × × × × × ×",
+      "phone": "086-272-3460",
+      "postal": "272-3460",
+      "address": "中区〒703-8233高屋220-3",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "平井保育園",
+      "ward": "中区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 120 ６か月～ × × × × × × 令和10年4月 民営化予定",
+      "phone": "086-271-0066",
+      "postal": "271-0066",
+      "address": "中区〒703-8282平井5-2-25 福）ちとせ交友会",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
     },
     {
       "name": "操南保育園",
@@ -1591,8 +3002,8 @@
       "public": false,
       "operator": "福)愛光会",
       "phone": "086-277-3431",
-      "postal": "702-8005",
-      "address": "中区江崎577-1 操南保育園（分園） 保 私福)愛光会 ℡277-6660 〒702-8005江崎380-1",
+      "postal": "277-3431",
+      "address": "中区〒702-8005江崎577-1 操南保育園（分園） 保 私福)愛光会 ℡277-6660 〒702-8005江崎380-1 180 ５か月～ ５か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1604,8 +3015,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.62225,
       "lon": 133.959686
+    },
+    {
+      "name": "旭川こども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)旭水会 150 ６か月～ × × △ × × ×",
+      "phone": "086-272-6525",
+      "postal": "272-6525",
+      "address": "中区〒703-8231赤田88",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "△",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
     },
     {
       "name": "旭操こども園",
@@ -1614,8 +3050,8 @@
       "public": false,
       "operator": "福)操陽会",
       "phone": "086-237-1161",
-      "postal": "703-8264",
-      "address": "中区倉富171-2",
+      "postal": "237-1161",
+      "address": "中区〒703-8264倉富171-2 35 ５か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1627,6 +3063,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.641701,
       "lon": 133.969284
     },
@@ -1637,8 +3074,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-272-0771",
-      "postal": "703-8284",
-      "address": "中区網浜785",
+      "postal": "272-0771",
+      "address": "中区〒703-8284網浜785 130 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1650,6 +3087,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.646805,
       "lon": 133.936554
     },
@@ -1660,8 +3098,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-275-1266",
-      "postal": "703-8242",
-      "address": "中区高島1-5-7",
+      "postal": "275-1266",
+      "address": "中区〒703-8242高島1-5-7 155 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -1673,8 +3111,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.684528,
       "lon": 133.949738
+    },
+    {
+      "name": "朝日保育園",
+      "ward": "中区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)烏城会 90 ６か月～ × × △ × △ ×",
+      "phone": "086-278-1881",
+      "postal": "278-1881",
+      "address": "中区〒703-8227兼基247",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "△",
+        "4": "×",
+        "5": "△"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
     },
     {
       "name": "東岡山IPUこども園",
@@ -1683,8 +3146,8 @@
       "public": false,
       "operator": "福）元気の泉",
       "phone": "086-206-4150",
-      "postal": "703-8221",
-      "address": "中区長岡4-108",
+      "postal": "206-4150",
+      "address": "中区〒703-8221長岡4-108 283 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1696,6 +3159,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.682499,
       "lon": 133.982559
     },
@@ -1706,8 +3170,8 @@
       "public": false,
       "operator": "福)岡北福祉会",
       "phone": "086-271-5577",
-      "postal": "703-8234",
-      "address": "中区沢田473",
+      "postal": "271-5577",
+      "address": "中区〒703-8234沢田473 110 ４か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1719,6 +3183,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.6656,
       "lon": 133.965225
     },
@@ -1729,8 +3194,8 @@
       "public": false,
       "operator": "福)岡北福祉会",
       "phone": "086-271-5577",
-      "postal": "703-8234",
-      "address": "中区沢田490",
+      "postal": "271-5577",
+      "address": "中区〒703-8234沢田490 12 ４か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1740,6 +3205,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.6656,
       "lon": 133.965225
     },
@@ -1750,8 +3216,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-272-3841",
-      "postal": "703-8256",
-      "address": "中区浜1-14-4",
+      "postal": "272-3841",
+      "address": "中区〒703-8256浜1-14-4 120 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -1763,18 +3229,19 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.672691,
       "lon": 133.93573
     },
     {
-      "name": "竜之口わかばこども園",
+      "name": "白菊保育園",
       "ward": "中区",
-      "type": "認定こども園",
+      "type": "保育園",
       "public": false,
-      "operator": "福)岡山幸風会",
-      "phone": "086-279-1515",
-      "postal": "703-8203",
-      "address": "中区国府市場720-1",
+      "operator": "福)操陽会 200 ５か月～ × × × × × ×",
+      "phone": "086-277-7609",
+      "postal": "277-7609",
+      "address": "中区〒703-8266湊296-1",
       "services": {
         "extended": false,
         "temporary": false
@@ -1786,6 +3253,55 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "竜之口こども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)岡山幸風会 100 ６か月～ × × × × × ×",
+      "phone": "086-279-4318",
+      "postal": "279-4318",
+      "address": "中区〒703-8203国府市場721-2",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "竜之口わかばこども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)岡山幸風会",
+      "phone": "086-279-1515",
+      "postal": "279-1515",
+      "address": "中区〒703-8203国府市場720-1 60 ５か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
       "lat": 34.691616,
       "lon": 133.967117
     },
@@ -1796,8 +3312,8 @@
       "public": false,
       "operator": "学)就実学園",
       "phone": "086-206-2112",
-      "postal": "703-8258",
-      "address": "中区西川原15-1",
+      "postal": "206-2112",
+      "address": "中区〒703-8258西川原15-1 106 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1809,8 +3325,57 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.678024,
       "lon": 133.940964
+    },
+    {
+      "name": "高島おひさまこども園",
+      "ward": "中区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "学)大森学園 90 ６か月～ × × × × × ×",
+      "phone": "086-275-1998",
+      "postal": "275-1998",
+      "address": "中区〒703-8203国府市場164-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
+    },
+    {
+      "name": "高島第一保育園",
+      "ward": "中区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)岡山愛育会 270 ４３日～ △ × × × × ×",
+      "phone": "086-275-1755",
+      "postal": "275-1755",
+      "address": "中区〒703-8205中井4-19-27",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.670502,
+      "lon": 133.943024
     },
     {
       "name": "かしのみ保育園",
@@ -1819,8 +3384,8 @@
       "public": false,
       "operator": "福)のぞみ会",
       "phone": "086-279-5750",
-      "postal": "709-0626",
-      "address": "東区中尾192-1",
+      "postal": "279-5750",
+      "address": "東区〒709-0626中尾192-1 90 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1832,6 +3397,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.698826,
       "lon": 134.023346
     },
@@ -1842,8 +3408,8 @@
       "public": false,
       "operator": "福)あじさい",
       "phone": "086-942-5958",
-      "postal": "704-8183",
-      "address": "東区西大寺松崎302-1",
+      "postal": "942-5958",
+      "address": "東区〒704-8183西大寺松崎302-1 150 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1855,8 +3421,89 @@
         "4": "△",
         "5": "×"
       },
+      "website": "",
       "lat": 34.663914,
       "lon": 134.012512
+    },
+    {
+      "name": "こ 公",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "こ 私",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "しいのみこども園",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "学)のぞみ学園 45 満３歳児～ ○ ○ ○ △ 幼稚園型",
+      "phone": "086-279-9850",
+      "postal": "279-9850",
+      "address": "東区〒709-0625上道北方590",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "3": "○",
+        "4": "○",
+        "5": "○"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "たんぽぽ・つぼみ保育園",
+      "ward": "東区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "福)共育会 18 ５か月～ × × × たんぽぽ保育園",
+      "phone": "086-230-1560",
+      "postal": "230-1560",
+      "address": "東区〒704-8164光津840-6",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
     },
     {
       "name": "たんぽぽ保育園",
@@ -1865,8 +3512,8 @@
       "public": false,
       "operator": "福)共育会",
       "phone": "086-948-9377",
-      "postal": "704-8164",
-      "address": "東区光津840-1",
+      "postal": "948-9377",
+      "address": "東区〒704-8164光津840-1 90 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1878,8 +3525,79 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.640049,
       "lon": 133.991486
+    },
+    {
+      "name": "ちとせ認定こども園",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)ちとせ交友会 190 ２か月～ △ × × × × ×",
+      "phone": "086-942-6145",
+      "postal": "942-6145",
+      "address": "東区〒704-8175益野町40",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "つきのさとこども園",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)ちとせ交友会 90 ２か月～ × × × × × ×",
+      "phone": "086-238-5107",
+      "postal": "238-5107",
+      "address": "東区〒704-8193金岡西町435-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "ぽかぽか保育園",
+      "ward": "東区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "福)第２まこと会 10 ３か月～ △ △ △ くまの子保育園",
+      "phone": "086-297-7676",
+      "postal": "297-7676",
+      "address": "東区〒709-0626中尾1036 (6)",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "△",
+        "3": "△"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
     },
     {
       "name": "めぐみ幼保連携型認定こ ども園",
@@ -1888,8 +3606,8 @@
       "public": false,
       "operator": "福)旭東愛児会",
       "phone": "086-942-5263",
-      "postal": "704-8102",
-      "address": "東区久保408-1",
+      "postal": "942-5263",
+      "address": "東区〒704-8102久保408-1 120 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1901,8 +3619,93 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.665302,
       "lon": 134.04776
+    },
+    {
+      "name": "めぐみ第二幼保連携型認 定こども園",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)旭東愛児会 30 ６か月～ × × × × × ×",
+      "phone": "086-944-4316",
+      "postal": "944-4316",
+      "address": "東区〒704-8102久保411-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "カナダこども園",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)ちとせ交友会 80 ２か月～ × × × × × ×",
+      "phone": "086-948-2777",
+      "postal": "948-2777",
+      "address": "東区〒704-8196金田1127-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "保 公",
+      "ward": "東区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "保 私",
+      "ward": "東区",
+      "type": "保育園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "千種認定こども園",
@@ -1911,8 +3714,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-953-1313",
-      "postal": "709-0845",
-      "address": "東区瀬戸町鍛冶屋178-1",
+      "postal": "953-1313",
+      "address": "東区〒709-0845瀬戸町鍛冶屋178-1 120 ６か月～",
       "services": {
         "extended": true,
         "temporary": true
@@ -1924,6 +3727,7 @@
         "4": "○",
         "5": "△"
       },
+      "website": "",
       "lat": 34.768169,
       "lon": 134.065247
     },
@@ -1934,8 +3738,8 @@
       "public": false,
       "operator": "福)ちとせ交友会",
       "phone": "086-208-6001",
-      "postal": "703-8212",
-      "address": "東区古都宿453-5",
+      "postal": "208-6001",
+      "address": "東区〒703-8212古都宿453-5 82 ２か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1947,6 +3751,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.693539,
       "lon": 134.00116
     },
@@ -1957,8 +3762,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-942-4011",
-      "postal": "704-8173",
-      "address": "東区可知4-23-5",
+      "postal": "942-4011",
+      "address": "東区〒704-8173可知4-23-5 70 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -1970,6 +3775,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.656651,
       "lon": 134.004669
     },
@@ -1980,8 +3786,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-946-8067",
-      "postal": "704-8138",
-      "address": "東区神崎町22-1",
+      "postal": "946-8067",
+      "address": "東区〒704-8138神崎町22-1 90 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -1993,8 +3799,51 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.628696,
       "lon": 134.058838
+    },
+    {
+      "name": "宿毛保育園",
+      "ward": "東区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 50 ６か月～ △ △ △ △ △ ×",
+      "phone": "086-946-1385",
+      "postal": "946-1385",
+      "address": "東区〒704-8133宿毛623-9",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "△",
+        "3": "△",
+        "4": "△",
+        "5": "△"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "小規模保育園いろいろ",
+      "ward": "東区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "福)ちとせ交友会 19 ちとせ認定こども園、こども園 城東",
+      "phone": "086-944-0800",
+      "postal": "944-0800",
+      "address": "東区〒704-8176中川町393-1 (10) ２か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
     },
     {
       "name": "政田開成認定こども園",
@@ -2003,8 +3852,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-948-2049",
-      "postal": "704-8165",
-      "address": "東区政津961-19",
+      "postal": "948-2049",
+      "address": "東区〒704-8165政津961-19 25 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -2016,18 +3865,19 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.633919,
       "lon": 134.003616
     },
     {
-      "name": "浮田とちのみこども園",
+      "name": "桃太郎こども園",
       "ward": "東区",
       "type": "認定こども園",
       "public": false,
-      "operator": "福)のぞみ会",
-      "phone": "086-206-1511",
-      "postal": "709-0621",
-      "address": "東区沼1188-1",
+      "operator": "福)三晃愛児会 148 ５７日～ × × × × × ×",
+      "phone": "086-297-2271",
+      "postal": "297-2271",
+      "address": "東区〒709-0611楢原431-5",
       "services": {
         "extended": false,
         "temporary": false
@@ -2039,6 +3889,55 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "江西桜こども園",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)桜会 170 ４３日～ × × △ × × ×",
+      "phone": "086-952-0044",
+      "postal": "952-0044",
+      "address": "東区〒709-0856瀬戸町下286-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "△",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "浮田とちのみこども園",
+      "ward": "東区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)のぞみ会",
+      "phone": "086-206-1511",
+      "postal": "206-1511",
+      "address": "東区〒709-0621沼1188-1 93 ６か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
       "lat": 34.702164,
       "lon": 134.037689
     },
@@ -2049,8 +3948,8 @@
       "public": false,
       "operator": "福)桜会",
       "phone": "086-952-0448",
-      "postal": "709-0856",
-      "address": "東区瀬戸町下133",
+      "postal": "952-0448",
+      "address": "東区〒709-0856瀬戸町下133 120 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2062,8 +3961,57 @@
         "4": "△",
         "5": "△"
       },
+      "website": "",
       "lat": 34.730907,
       "lon": 134.038162
+    },
+    {
+      "name": "玉井桜保育園",
+      "ward": "東区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)桜会 60 ６か月～ △ × × × ○ ×",
+      "phone": "086-952-0312",
+      "postal": "952-0312",
+      "address": "東区〒709-0863瀬戸町観音寺509",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "○"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
+    },
+    {
+      "name": "益野保育園",
+      "ward": "東区",
+      "type": "保育園",
+      "public": false,
+      "operator": "一財)小鳩会 135 ５か月～ × × × × × ×",
+      "phone": "086-942-4382",
+      "postal": "942-4382",
+      "address": "東区〒704-8173可知3-7-21",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.651375,
+      "lon": 134.029465
     },
     {
       "name": "西大寺認定こども園",
@@ -2072,8 +4020,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-942-4376",
-      "postal": "704-8112",
-      "address": "東区西大寺上1-19-23",
+      "postal": "942-4376",
+      "address": "東区〒704-8112西大寺上1-19-23 210 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -2085,6 +4033,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.657299,
       "lon": 134.032211
     },
@@ -2095,8 +4044,8 @@
       "public": false,
       "operator": "福)旭東愛児会",
       "phone": "086-230-2311",
-      "postal": "704-8125",
-      "address": "東区西大寺川口279",
+      "postal": "230-2311",
+      "address": "東区〒704-8125西大寺川口279 90 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2108,6 +4057,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.648792,
       "lon": 134.048721
     },
@@ -2118,8 +4068,8 @@
       "public": false,
       "operator": "福)白鳩福祉会",
       "phone": "086-261-5566",
-      "postal": "702-8026",
-      "address": "南区浦安本町171-1",
+      "postal": "261-5566",
+      "address": "南区〒702-8026浦安本町171-1 90 ４３日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2131,6 +4081,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.604881,
       "lon": 133.920746
     },
@@ -2141,8 +4092,8 @@
       "public": false,
       "operator": "福)東光会",
       "phone": "086-282-3700",
-      "postal": "701-0204",
-      "address": "南区大福760-2",
+      "postal": "282-3700",
+      "address": "南区〒701-0204大福760-2 120 ４か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2154,6 +4105,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.62138,
       "lon": 133.888153
     },
@@ -2164,8 +4116,8 @@
       "public": false,
       "operator": "福)淳厚会",
       "phone": "086-264-8633",
-      "postal": "702-8027",
-      "address": "南区芳泉3-4-5",
+      "postal": "264-8633",
+      "address": "南区〒702-8027芳泉3-4-5 135 ５か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2177,18 +4129,19 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.623711,
       "lon": 133.919052
     },
     {
-      "name": "きらきら小規模保育園豊成",
+      "name": "きらきら小規模保育園西市",
       "ward": "南区",
       "type": "地域型保育",
       "public": false,
-      "operator": "一社)晴れの国保育協会",
-      "phone": "086-230-7550",
-      "postal": "700-0942",
-      "address": "南区豊成3-14-36",
+      "operator": "一社)晴れの国保育協会 19 ４か月～ × × × イートンちどり保育園",
+      "phone": "086-230-7501",
+      "postal": "230-7501",
+      "address": "南区〒700-0953西市443-9 北長瀬ちどり保育園",
       "services": {
         "extended": false,
         "temporary": false
@@ -2198,6 +4151,29 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "きらきら小規模保育園豊成",
+      "ward": "南区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "一社)晴れの国保育協会",
+      "phone": "086-230-7550",
+      "postal": "230-7550",
+      "address": "南区〒700-0942豊成3-14-36 19 ４か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
       "lat": 34.626633,
       "lon": 133.925186
     },
@@ -2208,8 +4184,8 @@
       "public": false,
       "operator": "福)つくし福祉会",
       "phone": "086-239-6080",
-      "postal": "701-0221",
-      "address": "南区藤田1729-1",
+      "postal": "239-6080",
+      "address": "南区〒701-0221藤田1729-1 90 57日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2221,18 +4197,55 @@
         "4": "×",
         "5": "○"
       },
+      "website": "",
       "lat": 34.586647,
       "lon": 133.894623
     },
     {
-      "name": "しろばら保育園",
+      "name": "こ 公",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "こ 私",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "さつき保育園",
       "ward": "南区",
       "type": "保育園",
       "public": false,
-      "operator": "福)岡山愛児園",
-      "phone": "086-223-7637",
-      "postal": "700-0945",
-      "address": "南区新保417-1",
+      "operator": "福)岡南保育会 150 ６か月～ × × × × × ×",
+      "phone": "086-241-6524",
+      "postal": "241-6524",
+      "address": "南区〒700-0944泉田402-3",
       "services": {
         "extended": false,
         "temporary": false
@@ -2244,6 +4257,53 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "さとちゃん保育園",
+      "ward": "南区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "医)明芳会 16 ３か月～ × × × あけぼの幼稚園",
+      "phone": "086-263-6659",
+      "postal": "263-6659",
+      "address": "南区〒702-8053築港栄町2-28 (5)",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "しろばら保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)岡山愛児園",
+      "phone": "086-223-7637",
+      "postal": "223-7637",
+      "address": "南区〒700-0945新保417-1 90 ５か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
       "lat": 34.638725,
       "lon": 133.912109
     },
@@ -2254,8 +4314,8 @@
       "public": false,
       "operator": "株)マイスタイル",
       "phone": "086-261-4115",
-      "postal": "702-8056",
-      "address": "南区築港新町1-2-32",
+      "postal": "261-4115",
+      "address": "南区〒702-8056築港新町1-2-32 19 ４３日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2265,6 +4325,7 @@
         "2": "△",
         "3": "△"
       },
+      "website": "",
       "lat": 34.609062,
       "lon": 133.938293
     },
@@ -2275,8 +4336,8 @@
       "public": false,
       "operator": "福)岡山千鳥福祉会",
       "phone": "086-264-5915",
-      "postal": "702-8037",
-      "address": "南区千鳥町7-7",
+      "postal": "264-5915",
+      "address": "南区〒702-8037千鳥町7-7 330 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2288,6 +4349,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.614368,
       "lon": 133.9478
     },
@@ -2298,8 +4360,8 @@
       "public": false,
       "operator": "福)中野社会福祉会",
       "phone": "086-362-1078",
-      "postal": "709-1213",
-      "address": "南区彦崎2570-1",
+      "postal": "362-1078",
+      "address": "南区〒709-1213彦崎2570-1 130 57日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2311,8 +4373,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.547504,
       "lon": 133.83577
+    },
+    {
+      "name": "ひばり保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)淳厚会 100 ５か月～ × × × × × ×",
+      "phone": "086-259-1154",
+      "postal": "259-1154",
+      "address": "南区〒702-8021福田715-3",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
     },
     {
       "name": "ほほえみ保育園",
@@ -2321,8 +4408,8 @@
       "public": false,
       "operator": "医)自由会",
       "phone": "086-282-9309",
-      "postal": "701-0211",
-      "address": "南区東畦651-19",
+      "postal": "282-9309",
+      "address": "南区〒701-0211東畦651-19 19 (5) ２か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2332,8 +4419,33 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.605942,
       "lon": 133.879807
+    },
+    {
+      "name": "みどり町保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)みどり会 230 ３か月～ △ × △ × × ×",
+      "phone": "086-262-3300",
+      "postal": "262-3300",
+      "address": "南区〒702-8055築港緑町1-1-7",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "×",
+        "3": "△",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
     },
     {
       "name": "アイグラン保育園平福",
@@ -2342,8 +4454,8 @@
       "public": false,
       "operator": "株)アイグラン",
       "phone": "086-250-7527",
-      "postal": "702-8043",
-      "address": "南区平福1-11-25",
+      "postal": "250-7527",
+      "address": "南区〒702-8043平福1-11-25 60 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2355,8 +4467,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.618748,
       "lon": 133.946747
+    },
+    {
+      "name": "アートチャイルドケア岡山新保保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "アートチャイルドケア(株 80 ３か月～ × × × × × ×",
+      "phone": "086-226-2500",
+      "postal": "226-2500",
+      "address": "南区〒700-0945新保1113-8",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
     },
     {
       "name": "アートチャイルドケア岡山豊成保育園",
@@ -2365,8 +4502,8 @@
       "public": false,
       "operator": "アートチャイルドケア(株",
       "phone": "086-230-1667",
-      "postal": "700-0942",
-      "address": "南区豊成1-1-17",
+      "postal": "230-1667",
+      "address": "南区〒700-0942豊成1-1-17 80 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2378,8 +4515,99 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.634251,
       "lon": 133.927933
+    },
+    {
+      "name": "イートンちどり保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "株)イートン 300 ６か月～ × × × × × △",
+      "phone": "086-265-5561",
+      "postal": "265-5561",
+      "address": "南区〒702-8024浦安南町425-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "キッズガーデン白ゆり",
+      "ward": "南区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "福)白ゆり会 19 ３か月～ × × × 認定こども園白ゆり",
+      "phone": "086-230-7277",
+      "postal": "230-7277",
+      "address": "南区〒702-8032福富中2-5-7",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "クレイン小規模保育園",
+      "ward": "南区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "はぐみ(株 19 ３か月～ △ △ × 当新田ちとせ保育園",
+      "phone": "086-239-2266",
+      "postal": "239-2266",
+      "address": "南区〒700-0953西市503-9 土の子保育園",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "△",
+        "2": "△",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "ソラ小規模保育園ふくだ",
+      "ward": "南区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "株)天空 19 ５７日～ × × × アートチャイルドケア岡山豊成保育園",
+      "phone": "086-230-6261",
+      "postal": "230-6261",
+      "address": "南区〒702-8021福田227-8",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
     },
     {
       "name": "ニチイキッズ西市保育園",
@@ -2388,8 +4616,8 @@
       "public": false,
       "operator": "株)ニチイ学館",
       "phone": "086-241-3132",
-      "postal": "700-0953",
-      "address": "南区西市115-16",
+      "postal": "241-3132",
+      "address": "南区〒700-0953西市115-16 66 ５７日～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2401,8 +4629,87 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.630756,
       "lon": 133.902252
+    },
+    {
+      "name": "七区保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 45 ６か月～ × × × × × △",
+      "phone": "086-362-0107",
+      "postal": "362-0107",
+      "address": "南区〒709-1202西七区231",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "事 私",
+      "ward": "南区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "保 公",
+      "ward": "南区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
+    },
+    {
+      "name": "保 私",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "南輝保育園",
@@ -2411,8 +4718,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-262-0922",
-      "postal": "702-8058",
-      "address": "南区並木町2-22-8",
+      "postal": "262-0922",
+      "address": "南区〒702-8058並木町2-22-8 95 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -2424,8 +4731,51 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.610294,
       "lon": 133.94104
+    },
+    {
+      "name": "妹尾認定こども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 75 ６か月～ × × × × △ △",
+      "phone": "086-281-2010",
+      "postal": "281-2010",
+      "address": "南区〒701-0206箕島1024-2",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "△"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "小 私",
+      "ward": "南区",
+      "type": "地域型保育",
+      "public": false,
+      "operator": "",
+      "phone": "",
+      "postal": "",
+      "address": "",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.655186,
+      "lon": 133.919754
     },
     {
       "name": "小串保育園",
@@ -2434,8 +4784,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-269-2029",
-      "postal": "702-8016",
-      "address": "南区小串3480",
+      "postal": "269-2029",
+      "address": "南区〒702-8016小串3480 30 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2447,6 +4797,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.596001,
       "lon": 134.027664
     },
@@ -2457,8 +4808,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-263-4460",
-      "postal": "702-8042",
-      "address": "南区洲崎3-3-23",
+      "postal": "263-4460",
+      "address": "南区〒702-8042洲崎3-3-23 150 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -2470,6 +4821,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.621258,
       "lon": 133.946609
     },
@@ -2480,8 +4832,8 @@
       "public": false,
       "operator": "福)同心会",
       "phone": "086-282-1106",
-      "postal": "701-0205",
-      "address": "南区妹尾1368-1",
+      "postal": "282-1106",
+      "address": "南区〒701-0205妹尾1368-1 120 ５か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2493,6 +4845,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.611,
       "lon": 133.867569
     },
@@ -2503,8 +4856,8 @@
       "public": false,
       "operator": "福)ちとせ交友会",
       "phone": "086-244-0188",
-      "postal": "700-0956",
-      "address": "南区当新田482-52",
+      "postal": "244-0188",
+      "address": "南区〒700-0956当新田482-52 90 ２か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2516,6 +4869,7 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.622139,
       "lon": 133.897186
     },
@@ -2526,8 +4880,8 @@
       "public": false,
       "operator": "個人",
       "phone": "086-230-7739",
-      "postal": "700-0945",
-      "address": "南区新保654-3",
+      "postal": "230-7739",
+      "address": "南区〒700-0945新保654-3 19 ３か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2537,6 +4891,7 @@
         "2": "×",
         "3": "×"
       },
+      "website": "",
       "lat": 34.631981,
       "lon": 133.910019
     },
@@ -2547,8 +4902,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-298-3349",
-      "postal": "701-0214",
-      "address": "南区曽根170-2",
+      "postal": "298-3349",
+      "address": "南区〒701-0214曽根170-2 65 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2560,8 +4915,51 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.568611,
       "lon": 133.847748
+    },
+    {
+      "name": "朝日塾こども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "学)朝日学園",
+      "phone": "086-243-4111",
+      "postal": "243-4111",
+      "address": "南区〒700-0955万倍30-20 80 5か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {},
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "東畦保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 110 ６か月～ × × × × × ×",
+      "phone": "086-282-0608",
+      "postal": "282-0608",
+      "address": "南区〒701-0211東畦758-2",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
     },
     {
       "name": "浦安芳泉認定こども園",
@@ -2570,8 +4968,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-262-5005",
-      "postal": "702-8026",
-      "address": "南区浦安本町51-3",
+      "postal": "262-5005",
+      "address": "南区〒702-8026浦安本町51-3 65 ６か月～",
       "services": {
         "extended": true,
         "temporary": false
@@ -2583,18 +4981,43 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.611561,
       "lon": 133.921921
     },
     {
-      "name": "箕島保育園",
+      "name": "灘崎認定こども園",
       "ward": "南区",
-      "type": "保育園",
-      "public": false,
-      "operator": "福)箕島会",
-      "phone": "086-282-0823",
-      "postal": "701-0206",
-      "address": "南区箕島2413-1",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 105 ６か月～ × × × × △ △ 障害児保育拠点園",
+      "phone": "086-362-0950",
+      "postal": "362-0950",
+      "address": "南区〒709-1215片岡188",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "△"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "甲浦認定こども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 120 ６か月～ × × × × × ×",
+      "phone": "086-267-2051",
+      "postal": "267-2051",
+      "address": "南区〒702-8013飽浦322-1",
       "services": {
         "extended": false,
         "temporary": false
@@ -2606,6 +5029,151 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "白鳩保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)白鳩福祉会 120 ４３日～ × × × × × ×",
+      "phone": "086-262-3432",
+      "postal": "262-3432",
+      "address": "南区〒702-8032福富中2-4-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "福田こども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "福)同心会 130 ５か月～ × × × × × ×",
+      "phone": "086-282-2625",
+      "postal": "282-2625",
+      "address": "南区〒701-0205妹尾3518",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "第一ひかりこども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "学)ひかり学園 140 ８か月～ × × × × × × 幼稚園型",
+      "phone": "086-262-2602",
+      "postal": "262-2602",
+      "address": "南区〒702-8056築港新町2-17-10",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "第二ひかりこども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": false,
+      "operator": "学)ひかり学園 245 ８か月～ × × × × × × 幼稚園型",
+      "phone": "086-263-7492",
+      "postal": "263-7492",
+      "address": "南区〒702-8026浦安本町33",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "第二福田保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)同心会 60 ５か月～ × × × × × ×",
+      "phone": "086-230-6652",
+      "postal": "230-6652",
+      "address": "南区〒701-0205妹尾3763-1",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "箕島保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": false,
+      "operator": "福)箕島会",
+      "phone": "086-282-0823",
+      "postal": "282-0823",
+      "address": "南区〒701-0206箕島2413-1 120 5か月～",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
       "lat": 34.612354,
       "lon": 133.847305
     },
@@ -2616,8 +5184,8 @@
       "public": false,
       "operator": "福)岡山千鳥福祉会",
       "phone": "086-362-2241",
-      "postal": "709-1203",
-      "address": "南区西紅陽台3-1-116",
+      "postal": "362-2241",
+      "address": "南区〒709-1203西紅陽台3-1-116 270 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2629,6 +5197,7 @@
         "4": "△",
         "5": "△"
       },
+      "website": "",
       "lat": 34.543713,
       "lon": 133.890182
     },
@@ -2639,8 +5208,8 @@
       "public": true,
       "operator": "岡山市",
       "phone": "086-282-0688",
-      "postal": "701-0212",
-      "address": "南区内尾440-2",
+      "postal": "282-0688",
+      "address": "南区〒701-0212内尾440-2 90 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2652,8 +5221,33 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.600269,
       "lon": 133.860153
+    },
+    {
+      "name": "興除認定こども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 140 ６か月～ × × × × × ×",
+      "phone": "086-298-3348",
+      "postal": "298-3348",
+      "address": "南区〒701-0213中畦645-11",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
     },
     {
       "name": "芳明こども園",
@@ -2662,8 +5256,8 @@
       "public": false,
       "operator": "福)経山会",
       "phone": "086-259-1655",
-      "postal": "700-0955",
-      "address": "南区万倍98",
+      "postal": "259-1655",
+      "address": "南区〒700-0955万倍98 50 ６か月～",
       "services": {
         "extended": false,
         "temporary": false
@@ -2675,8 +5269,57 @@
         "4": "×",
         "5": "×"
       },
+      "website": "",
       "lat": 34.627911,
       "lon": 133.900406
+    },
+    {
+      "name": "都保育園",
+      "ward": "南区",
+      "type": "保育園",
+      "public": true,
+      "operator": "岡山市 80 ６か月～ × × × × × ×",
+      "phone": "086-296-2186",
+      "postal": "296-2186",
+      "address": "南区〒701-0221藤田349-7",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
+    },
+    {
+      "name": "錦認定こども園",
+      "ward": "南区",
+      "type": "認定こども園",
+      "public": true,
+      "operator": "岡山市 135 ６か月～ × × × × × △",
+      "phone": "086-296-2433",
+      "postal": "296-2433",
+      "address": "南区〒701-0221藤田610-11",
+      "services": {
+        "extended": false,
+        "temporary": false
+      },
+      "availability": {
+        "1": "×",
+        "2": "×",
+        "3": "×",
+        "4": "×",
+        "5": "×"
+      },
+      "website": "",
+      "lat": 34.599743,
+      "lon": 133.919571
     }
   ]
 }
