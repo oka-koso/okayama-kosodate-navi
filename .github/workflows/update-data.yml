@@ -2,19 +2,17 @@ name: Check Okayama City childcare availability
 
 on:
   workflow_dispatch:
-
-  push:
-    branches: ["main"]
-    paths:
-      - "scripts/**"
-      - "requirements.txt"
-      - ".github/workflows/update-data.yml"
-
   schedule:
+    # 岡山市の公開日は固定ではないため毎日確認し、
+    # PDFが更新された時だけデータ差分がcommitされます。
     - cron: '20 8 * * *'
 
 permissions:
   contents: write
+
+concurrency:
+  group: okayama-childcare-data
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -22,24 +20,49 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-      - name: Check official data and update when published
-        run: python scripts/update_data.py
+      - name: Create v5 facility master on first run
+        run: python scripts/migrate_v5.py
 
-      - name: Geocode newly added facilities
+      - name: Update availability and detect new facilities
+        run: python scripts/update_availability.py
+
+      - name: Build site data
+        run: python scripts/build_facilities.py
+
+      - name: Geocode facilities without coordinates
         run: python scripts/geocode.py
 
-      - name: Commit official data changes
+      - name: Save geocoded positions to master
+        run: python scripts/sync_geocode.py
+
+      - name: Rebuild site data
+        run: python scripts/build_facilities.py
+
+      - name: Commit data changes
         run: |
-          if git diff --quiet; then echo "No official data changes"; exit 0; fi
+          if git diff --quiet; then
+            echo "No official data changes"
+            exit 0
+          fi
+
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
+
+          git add data/facility_master.json
+          git add data/availability.json
           git add data/facilities.json
-          git commit -m "data: update Okayama City childcare availability"
-          git push
+
+          git commit -m "data: update Okayama childcare data"
+
+          git pull --rebase origin main
+          git push origin main
