@@ -1,99 +1,701 @@
 {
-  "generated_at": "2026-09-29 07:45",
+  "generated_at": "2026-09-29 08:08",
   "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
   "fixed_master_count": 206,
-  "matched_facility_count": 198,
-  "with_status_count": 197,
+  "matched_facility_count": 206,
+  "with_status_count": 205,
   "unmatched_contact_count": 0,
-  "ambiguous_contact_count": 8,
+  "ambiguous_contact_count": 0,
   "duplicate_count": 0,
-  "rescued_match_count": 3,
+  "rescued_match_count": 206,
   "unmatched_contacts": [],
-  "ambiguous_contacts": [
-    {
-      "page": 1,
-      "phone": "0862521683",
-      "postal": "7000081",
-      "raw": "北 ℡ 252-1683 〒 700-0081津島東2-2-20",
-      "candidates": [
-        "岡北学園",
-        "岡北保育園"
-      ]
-    },
-    {
-      "page": 1,
-      "phone": "0862521683",
-      "postal": "7000081",
-      "raw": "℡ 252-1683 〒 700-0081津島東2-3-17 京山こども園",
-      "candidates": [
-        "岡北学園",
-        "岡北保育園"
-      ]
-    },
-    {
-      "page": 2,
-      "phone": "0862446600",
-      "postal": "7000975",
-      "raw": "℡ 244-6600 〒 700-0975今7-17-7 園",
-      "candidates": [
-        "どんぐり保育園",
-        "ノイエ保育園"
-      ]
-    },
-    {
-      "page": 2,
-      "phone": "0862446600",
-      "postal": "7000975",
-      "raw": "℡ 244-6600 〒 700-0975今7-17-7 園",
-      "candidates": [
-        "どんぐり保育園",
-        "ノイエ保育園"
-      ]
-    },
-    {
-      "page": 4,
-      "phone": "0862715577",
-      "postal": "7038234",
-      "raw": "℡ 271-5577 〒 703-8234沢田473",
-      "candidates": [
-        "柿の木こども園",
-        "柿の木保育園"
-      ]
-    },
-    {
-      "page": 4,
-      "phone": "0862715577",
-      "postal": "7038234",
-      "raw": "℡ 271-5577 〒 703-8234沢田490 京山こども園",
-      "candidates": [
-        "柿の木こども園",
-        "柿の木保育園"
-      ]
-    },
-    {
-      "page": 6,
-      "phone": "0862396080",
-      "postal": "7010221",
-      "raw": "田 ℡ 239-6080 〒 701-0221藤田1729-1",
-      "candidates": [
-        "都保育園",
-        "（仮称）きらめき六区こども園",
-        "錦認定こども園"
-      ]
-    },
-    {
-      "page": 7,
-      "phone": "0862591655",
-      "postal": "7000955",
-      "raw": "℡ 259-1655 〒 700-0955万倍98",
-      "candidates": [
-        "（仮称）芳明こども園",
-        "（仮称）朝日塾こども園"
-      ]
-    }
-  ],
+  "ambiguous_contacts": [],
   "duplicate_matches": [],
   "rescued_matches": [
+    {
+      "facility_id": "oky-2d7e71f51e1a",
+      "name": "弓之町保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862227583",
+      "pdf_postal": "7000817",
+      "master_phone": "0862227583",
+      "master_postal": "7000817"
+    },
+    {
+      "facility_id": "oky-c0388f0bb7a0",
+      "name": "深柢保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862344150",
+      "pdf_postal": "7000821",
+      "master_phone": "0862344150",
+      "master_postal": "7000821"
+    },
+    {
+      "facility_id": "oky-a180daa6c959",
+      "name": "共生保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0868033232",
+      "pdf_postal": "7000903",
+      "master_phone": "0868033232",
+      "master_postal": "7000903"
+    },
+    {
+      "facility_id": "oky-f5d79c691732",
+      "name": "南方岡山中央認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862222182",
+      "pdf_postal": "7000807",
+      "master_phone": "0862222182",
+      "master_postal": "7000807"
+    },
+    {
+      "facility_id": "oky-2250a4445aaa",
+      "name": "弘西こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862228490",
+      "pdf_postal": "7000817",
+      "master_phone": "0862228490",
+      "master_postal": "7000817"
+    },
+    {
+      "facility_id": "oky-7086b448378f",
+      "name": "蓮昌寺こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862224580",
+      "pdf_postal": "7000825",
+      "master_phone": "0862224580",
+      "master_postal": "7000825"
+    },
+    {
+      "facility_id": "oky-b762d2b14de0",
+      "name": "内山下幼稚園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862225675",
+      "pdf_postal": "7000823",
+      "master_phone": "0862225675",
+      "master_postal": "7000823"
+    },
+    {
+      "facility_id": "oky-5d696eff342a",
+      "name": "（仮称）岡山聖園マリア幼稚園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862236447",
+      "pdf_postal": "7000814",
+      "master_phone": "0862236447",
+      "master_postal": "7000814"
+    },
+    {
+      "facility_id": "oky-c907c71a375b",
+      "name": "津島保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862525782",
+      "pdf_postal": "7000081",
+      "master_phone": "0862525782",
+      "master_postal": "7000081"
+    },
+    {
+      "facility_id": "oky-2abfc828dd8e",
+      "name": "牟佐保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862293130",
+      "pdf_postal": "7012141",
+      "master_phone": "0862293130",
+      "master_postal": "7012141"
+    },
+    {
+      "facility_id": "oky-6af4f50817f8",
+      "name": "牧石保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862280631",
+      "pdf_postal": "7012142",
+      "master_phone": "0862280631",
+      "master_postal": "7012142"
+    },
+    {
+      "facility_id": "oky-21cf63b90750",
+      "name": "学南保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862549571",
+      "pdf_postal": "7000011",
+      "master_phone": "0862549571",
+      "master_postal": "7000011"
+    },
+    {
+      "facility_id": "oky-029dfee13209",
+      "name": "岡北学園",
+      "method": "phone+postal+address",
+      "pdf_phone": "0862521683",
+      "pdf_postal": "7000081",
+      "master_phone": "0862521683",
+      "master_postal": "7000081"
+    },
+    {
+      "facility_id": "oky-6b45f387a5ff",
+      "name": "じゅんせい認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862281507",
+      "pdf_postal": "7000003",
+      "master_phone": "0862281507",
+      "master_postal": "7000003"
+    },
+    {
+      "facility_id": "oky-afa52b982904",
+      "name": "岡北保育園",
+      "method": "phone+postal+address",
+      "pdf_phone": "0862521683",
+      "pdf_postal": "7000081",
+      "master_phone": "0862521683",
+      "master_postal": "7000081"
+    },
+    {
+      "facility_id": "oky-15ad8248cf5f",
+      "name": "三門保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862521509",
+      "pdf_postal": "7000054",
+      "master_phone": "0862521509",
+      "master_postal": "7000054"
+    },
+    {
+      "facility_id": "oky-234af96be60c",
+      "name": "巌井保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862541160",
+      "pdf_postal": "7000047",
+      "master_phone": "0862541160",
+      "master_postal": "7000047"
+    },
+    {
+      "facility_id": "oky-ab9820460900",
+      "name": "なかよし保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862554134",
+      "pdf_postal": "7000033",
+      "master_phone": "0862554134",
+      "master_postal": "7000033"
+    },
+    {
+      "facility_id": "oky-f40be7d0e4b7",
+      "name": "宝島保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862546888",
+      "pdf_postal": "7000961",
+      "master_phone": "0862546888",
+      "master_postal": "7000961"
+    },
+    {
+      "facility_id": "oky-d3086fb521b9",
+      "name": "みかど貴ッズ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862529936",
+      "pdf_postal": "7000044",
+      "master_phone": "0862529936",
+      "master_postal": "7000044"
+    },
+    {
+      "facility_id": "oky-0ee7543fd5c9",
+      "name": "みのりの木保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862306200",
+      "pdf_postal": "7000065",
+      "master_phone": "0862306200",
+      "master_postal": "7000065"
+    },
+    {
+      "facility_id": "oky-1ec5f2fb469d",
+      "name": "若草幼児舎",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862545111",
+      "pdf_postal": "7000031",
+      "master_phone": "0862545111",
+      "master_postal": "7000031"
+    },
+    {
+      "facility_id": "oky-a24d210a0029",
+      "name": "聖さくら学院保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0867280063",
+      "pdf_postal": "7000063",
+      "master_phone": "0867280063",
+      "master_postal": "7000063"
+    },
+    {
+      "facility_id": "oky-91d03a876f19",
+      "name": "星の子保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862516101",
+      "pdf_postal": "7000031",
+      "master_phone": "0862516101",
+      "master_postal": "7000031"
+    },
+    {
+      "facility_id": "oky-71e6d1ac906b",
+      "name": "たちばな上中野保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862410378",
+      "pdf_postal": "7000972",
+      "master_phone": "0862410378",
+      "master_postal": "7000972"
+    },
+    {
+      "facility_id": "oky-09830b3780ab",
+      "name": "大元ちどり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862062211",
+      "pdf_postal": "7000923",
+      "master_phone": "0862062211",
+      "master_postal": "7000923"
+    },
+    {
+      "facility_id": "oky-19354b8398e6",
+      "name": "北長瀬ちどり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862307115",
+      "pdf_postal": "7000971",
+      "master_phone": "0862307115",
+      "master_postal": "7000971"
+    },
+    {
+      "facility_id": "oky-f429c8d7fe8c",
+      "name": "こじかこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862262071",
+      "pdf_postal": "7000911",
+      "master_phone": "0862262071",
+      "master_postal": "7000911"
+    },
+    {
+      "facility_id": "oky-7ea4e2638b75",
+      "name": "鹿田認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862234943",
+      "pdf_postal": "7000912",
+      "master_phone": "0862234943",
+      "master_postal": "7000912"
+    },
+    {
+      "facility_id": "oky-605445b41344",
+      "name": "大元こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862593700",
+      "pdf_postal": "7000925",
+      "master_phone": "0862593700",
+      "master_postal": "7000925"
+    },
+    {
+      "facility_id": "oky-63c6371a9718",
+      "name": "みらい保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862063323",
+      "pdf_postal": "7000911",
+      "master_phone": "0862063323",
+      "master_postal": "7000911"
+    },
+    {
+      "facility_id": "oky-a02005421fd8",
+      "name": "清輝保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862234017",
+      "pdf_postal": "7000863",
+      "master_phone": "0862234017",
+      "master_postal": "7000863"
+    },
+    {
+      "facility_id": "oky-d4011ba264ee",
+      "name": "からたち保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862247369",
+      "pdf_postal": "7000934",
+      "master_phone": "0862247369",
+      "master_postal": "7000934"
+    },
+    {
+      "facility_id": "oky-862ccd1c91a1",
+      "name": "富田保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862230872",
+      "pdf_postal": "7000936",
+      "master_phone": "0862230872",
+      "master_postal": "7000936"
+    },
+    {
+      "facility_id": "oky-2d15aacf4278",
+      "name": "土の子保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862320825",
+      "pdf_postal": "7000941",
+      "master_phone": "0862320825",
+      "master_postal": "7000941"
+    },
+    {
+      "facility_id": "oky-df21b21e0b1a",
+      "name": "岡南認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862239879",
+      "pdf_postal": "7000851",
+      "master_phone": "0862239879",
+      "master_postal": "7000851"
+    },
+    {
+      "facility_id": "oky-4da344b27348",
+      "name": "橘今保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862412722",
+      "pdf_postal": "7000975",
+      "master_phone": "0862412722",
+      "master_postal": "7000975"
+    },
+    {
+      "facility_id": "oky-1319336432fb",
+      "name": "第二宝島保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862399100",
+      "pdf_postal": "7000973",
+      "master_phone": "0862399100",
+      "master_postal": "7000973"
+    },
+    {
+      "facility_id": "oky-cd0ad22f8b29",
+      "name": "ひらたえがお保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0868053818",
+      "pdf_postal": "7000952",
+      "master_phone": "0868053818",
+      "master_postal": "7000952"
+    },
+    {
+      "facility_id": "oky-734e21a7d0bf",
+      "name": "御南認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862446100",
+      "pdf_postal": "7010145",
+      "master_phone": "0862446100",
+      "master_postal": "7010145"
+    },
+    {
+      "facility_id": "oky-1f720255b07c",
+      "name": "ふたばこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0868051313",
+      "pdf_postal": "7000952",
+      "master_phone": "0868051313",
+      "master_postal": "7000952"
+    },
+    {
+      "facility_id": "oky-9adbd2aac562",
+      "name": "御南まんまるこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862446111",
+      "pdf_postal": "7000951",
+      "master_phone": "0862446111",
+      "master_postal": "7000951"
+    },
+    {
+      "facility_id": "oky-1df19fd5256f",
+      "name": "今認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862416819",
+      "pdf_postal": "7000975",
+      "master_phone": "0862416819",
+      "master_postal": "7000975"
+    },
+    {
+      "facility_id": "oky-55ab64e24eb9",
+      "name": "ならの木こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862423400",
+      "pdf_postal": "7000964",
+      "master_phone": "0862423400",
+      "master_postal": "7000964"
+    },
+    {
+      "facility_id": "oky-4e2aa03d849f",
+      "name": "ソラ小規模保育園おかやま",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862505610",
+      "pdf_postal": "7000975",
+      "master_phone": "0862505610",
+      "master_postal": "7000975"
+    },
+    {
+      "facility_id": "oky-3f47b001d22b",
+      "name": "どんぐり保育園",
+      "method": "shared-contact-occurrence-order",
+      "pdf_phone": "0862446600",
+      "pdf_postal": "7000975",
+      "master_phone": "0862446600",
+      "master_postal": "7000975"
+    },
+    {
+      "facility_id": "oky-df4975eddd07",
+      "name": "ノイエ保育園",
+      "method": "shared-contact-occurrence-order",
+      "pdf_phone": "0862446600",
+      "pdf_postal": "7000975",
+      "master_phone": "0862446600",
+      "master_postal": "7000975"
+    },
+    {
+      "facility_id": "oky-4156f1a56818",
+      "name": "ソラ小規模保育園いま",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862424811",
+      "pdf_postal": "7000975",
+      "master_phone": "0862424811",
+      "master_postal": "7000975"
+    },
+    {
+      "facility_id": "oky-29c4c0ee76c2",
+      "name": "ニチイキッズいま保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862422015",
+      "pdf_postal": "7000975",
+      "master_phone": "0862422015",
+      "master_postal": "7000975"
+    },
+    {
+      "facility_id": "oky-72dc65f247df",
+      "name": "心育保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862411189",
+      "pdf_postal": "7000973",
+      "master_phone": "0862411189",
+      "master_postal": "7000973"
+    },
+    {
+      "facility_id": "oky-db1e6214d3f2",
+      "name": "ポストメイト保育園・岡山陵南",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862507245",
+      "pdf_postal": "7010142",
+      "master_phone": "0862507245",
+      "master_postal": "7010142"
+    },
+    {
+      "facility_id": "oky-3b16d87d740d",
+      "name": "第四吉備保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862931717",
+      "pdf_postal": "7010151",
+      "master_phone": "0862931717",
+      "master_postal": "7010151"
+    },
+    {
+      "facility_id": "oky-203c128e05be",
+      "name": "第一吉備こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862937575",
+      "pdf_postal": "7010151",
+      "master_phone": "0862937575",
+      "master_postal": "7010151"
+    },
+    {
+      "facility_id": "oky-3d4c74d3d609",
+      "name": "第二吉備こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862937777",
+      "pdf_postal": "7010153",
+      "master_phone": "0862937777",
+      "master_postal": "7010153"
+    },
+    {
+      "facility_id": "oky-2bc13a27977c",
+      "name": "第三吉備こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862935757",
+      "pdf_postal": "7010135",
+      "master_phone": "0862935757",
+      "master_postal": "7010135"
+    },
+    {
+      "facility_id": "oky-f950767f5dfe",
+      "name": "（仮称）たねのくに ちとせこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862931161",
+      "pdf_postal": "7010163",
+      "master_phone": "0862931161",
+      "master_postal": "7010163"
+    },
+    {
+      "facility_id": "oky-55bbf58dea67",
+      "name": "陵南認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862934455",
+      "pdf_postal": "7010135",
+      "master_phone": "0862934455",
+      "master_postal": "7010135"
+    },
+    {
+      "facility_id": "oky-4b435e772bfd",
+      "name": "幼保連携型認定こども園 あんじゅの里",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862367870",
+      "pdf_postal": "7010161",
+      "master_phone": "0862367870",
+      "master_postal": "7010161"
+    },
+    {
+      "facility_id": "oky-b5df3bc5edd4",
+      "name": "聖さくら第二保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862513000",
+      "pdf_postal": "7010132",
+      "master_phone": "0862513000",
+      "master_postal": "7010132"
+    },
+    {
+      "facility_id": "oky-2fe1d45b5534",
+      "name": "アートチャイルドケア岡山庭瀬保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862502833",
+      "pdf_postal": "7010151",
+      "master_phone": "0862502833",
+      "master_postal": "7010151"
+    },
+    {
+      "facility_id": "oky-3b5848e566d0",
+      "name": "ぶちあんじゅ",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869033370",
+      "pdf_postal": "7010151",
+      "master_phone": "0869033370",
+      "master_postal": "7010151"
+    },
+    {
+      "facility_id": "oky-25c3a54fceb6",
+      "name": "あゆみ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862542714",
+      "pdf_postal": "7000086",
+      "master_phone": "0862542714",
+      "master_postal": "7000086"
+    },
+    {
+      "facility_id": "oky-83bfd994d90e",
+      "name": "伊島認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862523682",
+      "pdf_postal": "7000012",
+      "master_phone": "0862523682",
+      "master_postal": "7000012"
+    },
+    {
+      "facility_id": "oky-87b331929732",
+      "name": "つしま幼稚園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862520171",
+      "pdf_postal": "7000085",
+      "master_phone": "0862520171",
+      "master_postal": "7000085"
+    },
+    {
+      "facility_id": "oky-9b4d603a4f34",
+      "name": "京山こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862512121",
+      "pdf_postal": "7000084",
+      "master_phone": "0862512121",
+      "master_postal": "7000084"
+    },
+    {
+      "facility_id": "oky-f0b14f7ffb9f",
+      "name": "白ゆり小規模保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862380520",
+      "pdf_postal": "7000013",
+      "master_phone": "0862380520",
+      "master_postal": "7000013"
+    },
+    {
+      "facility_id": "oky-f34e491ca797",
+      "name": "つしまおひさま保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862396564",
+      "pdf_postal": "7000085",
+      "master_phone": "0862396564",
+      "master_postal": "7000085"
+    },
+    {
+      "facility_id": "oky-216eaec81e29",
+      "name": "岡山済生会なでしこ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862523350",
+      "pdf_postal": "7000013",
+      "master_phone": "0862523350",
+      "master_postal": "7000013"
+    },
+    {
+      "facility_id": "oky-de18ac51f5a2",
+      "name": "緑保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862840267",
+      "pdf_postal": "7011211",
+      "master_phone": "0862840267",
+      "master_postal": "7011211"
+    },
+    {
+      "facility_id": "oky-916f442f3b6b",
+      "name": "第二白ゆり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862845224",
+      "pdf_postal": "7011202",
+      "master_phone": "0862845224",
+      "master_postal": "7011202"
+    },
+    {
+      "facility_id": "oky-e6ca2a00d959",
+      "name": "第四ひかり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862595565",
+      "pdf_postal": "7011212",
+      "master_phone": "0862595565",
+      "master_postal": "7011212"
+    },
+    {
+      "facility_id": "oky-889b50efdd63",
+      "name": "ポエム保育園おかやま",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862841118",
+      "pdf_postal": "7011202",
+      "master_phone": "0862841118",
+      "master_postal": "7011202"
+    },
+    {
+      "facility_id": "oky-e76722631c72",
+      "name": "中山認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862840158",
+      "pdf_postal": "7011211",
+      "master_phone": "0862840158",
+      "master_postal": "7011211"
+    },
+    {
+      "facility_id": "oky-fc209de84894",
+      "name": "認定こども園 白ゆり",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862844272",
+      "pdf_postal": "7011214",
+      "master_phone": "0862844272",
+      "master_postal": "7011214"
+    },
+    {
+      "facility_id": "oky-143c43f91014",
+      "name": "ポエムこども園ひらつ",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862368220",
+      "pdf_postal": "7011202",
+      "master_phone": "0862368220",
+      "master_postal": "7011202"
+    },
+    {
+      "facility_id": "oky-d9e5f770e7b7",
+      "name": "馬屋下まんまるこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862593666",
+      "pdf_postal": "7011223",
+      "master_phone": "0862593666",
+      "master_postal": "7011223"
+    },
     {
       "facility_id": "oky-de41a38b5c74",
       "name": "（仮称）桃丘こども園",
@@ -102,6 +704,321 @@
       "pdf_postal": "7011221",
       "master_phone": "0864640007",
       "master_postal": "7011221"
+    },
+    {
+      "facility_id": "oky-7959cce8d39c",
+      "name": "第二すこやか保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862390208",
+      "pdf_postal": "7011212",
+      "master_phone": "0862390208",
+      "master_postal": "7011212"
+    },
+    {
+      "facility_id": "oky-39d4a72f5f19",
+      "name": "横井保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862942112",
+      "pdf_postal": "7011145",
+      "master_phone": "0862942112",
+      "master_postal": "7011145"
+    },
+    {
+      "facility_id": "oky-ceb58ffa2209",
+      "name": "富原保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862541871",
+      "pdf_postal": "7011153",
+      "master_phone": "0862541871",
+      "master_postal": "7011153"
+    },
+    {
+      "facility_id": "oky-f7d2740b7f23",
+      "name": "認定こども園 白ゆりの丘",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862945511",
+      "pdf_postal": "7011133",
+      "master_phone": "0862945511",
+      "master_postal": "7011133"
+    },
+    {
+      "facility_id": "oky-9ef6a782a4e8",
+      "name": "さくらこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862943065",
+      "pdf_postal": "7011145",
+      "master_phone": "0862943065",
+      "master_postal": "7011145"
+    },
+    {
+      "facility_id": "oky-899d5c08198c",
+      "name": "第二さくらこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862531900",
+      "pdf_postal": "7011153",
+      "master_phone": "0862531900",
+      "master_postal": "7011153"
+    },
+    {
+      "facility_id": "oky-04d209445b51",
+      "name": "野谷認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862943610",
+      "pdf_postal": "7011144",
+      "master_phone": "0862943610",
+      "master_postal": "7011144"
+    },
+    {
+      "facility_id": "oky-a7dbd466a40d",
+      "name": "もりの香保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862593755",
+      "pdf_postal": "7011152",
+      "master_phone": "0862593755",
+      "master_postal": "7011152"
+    },
+    {
+      "facility_id": "oky-7afad7fa1314",
+      "name": "吉備津保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862875241",
+      "pdf_postal": "7011341",
+      "master_phone": "0862875241",
+      "master_postal": "7011341"
+    },
+    {
+      "facility_id": "oky-7b4d1657e717",
+      "name": "庄内認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862875305",
+      "pdf_postal": "7011353",
+      "master_phone": "0862875305",
+      "master_postal": "7011353"
+    },
+    {
+      "facility_id": "oky-c9203aa946fd",
+      "name": "加茂こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862875551",
+      "pdf_postal": "7011342",
+      "master_phone": "0862875551",
+      "master_postal": "7011342"
+    },
+    {
+      "facility_id": "oky-9f0c3e8fbeb1",
+      "name": "もみの木こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862590670",
+      "pdf_postal": "7011345",
+      "master_phone": "0862590670",
+      "master_postal": "7011345"
+    },
+    {
+      "facility_id": "oky-694167f784c4",
+      "name": "たかまつすくすく保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862872660",
+      "pdf_postal": "7011334",
+      "master_phone": "0862872660",
+      "master_postal": "7011334"
+    },
+    {
+      "facility_id": "oky-b2a31a8e5259",
+      "name": "第二すみれ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862952000",
+      "pdf_postal": "7011464",
+      "master_phone": "0862952000",
+      "master_postal": "7011464"
+    },
+    {
+      "facility_id": "oky-14991979cd9f",
+      "name": "あしもり認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862950268",
+      "pdf_postal": "7011462",
+      "master_phone": "0862950268",
+      "master_postal": "7011462"
+    },
+    {
+      "facility_id": "oky-54bb2b63cdc3",
+      "name": "御津南保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0867242144",
+      "pdf_postal": "7092112",
+      "master_phone": "0867242144",
+      "master_postal": "7092112"
+    },
+    {
+      "facility_id": "oky-dd2244c6f4e1",
+      "name": "宇垣保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0867242252",
+      "pdf_postal": "7092121",
+      "master_phone": "0867242252",
+      "master_postal": "7092121"
+    },
+    {
+      "facility_id": "oky-f23e2af31dee",
+      "name": "御津金川認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0867242250",
+      "pdf_postal": "7092133",
+      "master_phone": "0867242250",
+      "master_postal": "7092133"
+    },
+    {
+      "facility_id": "oky-07d2d8eee041",
+      "name": "福渡保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0867220172",
+      "pdf_postal": "7093112",
+      "master_phone": "0867220172",
+      "master_postal": "7093112"
+    },
+    {
+      "facility_id": "oky-434e9c62d3dd",
+      "name": "建部認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0867220173",
+      "pdf_postal": "7093131",
+      "master_phone": "0867220173",
+      "master_postal": "7093131"
+    },
+    {
+      "facility_id": "oky-c044cb87eac3",
+      "name": "旭東保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862720771",
+      "pdf_postal": "7038284",
+      "master_phone": "0862720771",
+      "master_postal": "7038284"
+    },
+    {
+      "facility_id": "oky-592ec34a1ce6",
+      "name": "平井保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862710066",
+      "pdf_postal": "7038282",
+      "master_phone": "0862710066",
+      "master_postal": "7038282"
+    },
+    {
+      "facility_id": "oky-ab27ce57a420",
+      "name": "岡山協立保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862724111",
+      "pdf_postal": "7038285",
+      "master_phone": "0862724111",
+      "master_postal": "7038285"
+    },
+    {
+      "facility_id": "oky-210bccc4e2e5",
+      "name": "岡山博愛会認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862720160",
+      "pdf_postal": "7038295",
+      "master_phone": "0862720160",
+      "master_postal": "7038295"
+    },
+    {
+      "facility_id": "oky-a2757262202a",
+      "name": "浜保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862723841",
+      "pdf_postal": "7038256",
+      "master_phone": "0862723841",
+      "master_postal": "7038256"
+    },
+    {
+      "facility_id": "oky-01b5e1013481",
+      "name": "三友保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862721786",
+      "pdf_postal": "7038275",
+      "master_phone": "0862721786",
+      "master_postal": "7038275"
+    },
+    {
+      "facility_id": "oky-4f4b9bdc3666",
+      "name": "認定こども園 就実",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862062112",
+      "pdf_postal": "7038258",
+      "master_phone": "0862062112",
+      "master_postal": "7038258"
+    },
+    {
+      "facility_id": "oky-8c2b0217cd90",
+      "name": "宇野認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862722472",
+      "pdf_postal": "7038258",
+      "master_phone": "0862722472",
+      "master_postal": "7038258"
+    },
+    {
+      "facility_id": "oky-af1ea3b22f80",
+      "name": "原尾島こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862732730",
+      "pdf_postal": "7038235",
+      "master_phone": "0862732730",
+      "master_postal": "7038235"
+    },
+    {
+      "facility_id": "oky-326f25d6c66d",
+      "name": "にこにこランドポストメイト保育園・岡南",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862067120",
+      "pdf_postal": "7038236",
+      "master_phone": "0862067120",
+      "master_postal": "7038236"
+    },
+    {
+      "facility_id": "oky-b4ce2044c16e",
+      "name": "とみやまこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862777662",
+      "pdf_postal": "7038262",
+      "master_phone": "0862777662",
+      "master_postal": "7038262"
+    },
+    {
+      "facility_id": "oky-2caf7ebfcbf6",
+      "name": "白菊保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862777609",
+      "pdf_postal": "7038266",
+      "master_phone": "0862777609",
+      "master_postal": "7038266"
+    },
+    {
+      "facility_id": "oky-4c891c94ba26",
+      "name": "操南保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862773431",
+      "pdf_postal": "7028005",
+      "master_phone": "0862773431",
+      "master_postal": "7028005"
+    },
+    {
+      "facility_id": "oky-8bf4f5cc8f77",
+      "name": "操南保育園(分園)",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862776660",
+      "pdf_postal": "7028005",
+      "master_phone": "0862776660",
+      "master_postal": "7028005"
+    },
+    {
+      "facility_id": "oky-59623c1b5771",
+      "name": "ゆりかごこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862778700",
+      "pdf_postal": "7038265",
+      "master_phone": "0862778700",
+      "master_postal": "7038265"
     },
     {
       "facility_id": "oky-859e4c83d6dd",
@@ -113,6 +1030,528 @@
       "master_postal": "7038264"
     },
     {
+      "facility_id": "oky-26ce7b7ab03c",
+      "name": "朝日保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862781881",
+      "pdf_postal": "7038227",
+      "master_phone": "0862781881",
+      "master_postal": "7038227"
+    },
+    {
+      "facility_id": "oky-9914cfb62440",
+      "name": "こども園 城東チャイルドセンター",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862788500",
+      "pdf_postal": "7038223",
+      "master_phone": "0862788500",
+      "master_postal": "7038223"
+    },
+    {
+      "facility_id": "oky-15eb89a61377",
+      "name": "旭川こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862726525",
+      "pdf_postal": "7038231",
+      "master_phone": "0862726525",
+      "master_postal": "7038231"
+    },
+    {
+      "facility_id": "oky-b4c449df8fbd",
+      "name": "柿の木こども園",
+      "method": "phone+postal+address",
+      "pdf_phone": "0862715577",
+      "pdf_postal": "7038234",
+      "master_phone": "0862715577",
+      "master_postal": "7038234"
+    },
+    {
+      "facility_id": "oky-70ec8af0e3f7",
+      "name": "グリーン長利こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862086177",
+      "pdf_postal": "7038223",
+      "master_phone": "0862086177",
+      "master_postal": "7038223"
+    },
+    {
+      "facility_id": "oky-a9b154c54514",
+      "name": "東岡山IPUこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862064150",
+      "pdf_postal": "7038221",
+      "master_phone": "0862064150",
+      "master_postal": "7038221"
+    },
+    {
+      "facility_id": "oky-28f572db3c7a",
+      "name": "（仮称）幡多認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862723460",
+      "pdf_postal": "7038233",
+      "master_phone": "0862723460",
+      "master_postal": "7038233"
+    },
+    {
+      "facility_id": "oky-b077ad17d0a9",
+      "name": "柿の木保育園",
+      "method": "phone+postal+address",
+      "pdf_phone": "0862715577",
+      "pdf_postal": "7038234",
+      "master_phone": "0862715577",
+      "master_postal": "7038234"
+    },
+    {
+      "facility_id": "oky-0234f726488b",
+      "name": "小規模保育園あかとんぼ",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862062716",
+      "pdf_postal": "7038221",
+      "master_phone": "0862062716",
+      "master_postal": "7038221"
+    },
+    {
+      "facility_id": "oky-ec78a2401e17",
+      "name": "小規模保育園あかとんぼつぶ園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862385520",
+      "pdf_postal": "7038228",
+      "master_phone": "0862385520",
+      "master_postal": "7038228"
+    },
+    {
+      "facility_id": "oky-62867ccc454b",
+      "name": "高島第一保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862751755",
+      "pdf_postal": "7038205",
+      "master_phone": "0862751755",
+      "master_postal": "7038205"
+    },
+    {
+      "facility_id": "oky-4f433005ef50",
+      "name": "なのはなこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862062087",
+      "pdf_postal": "7038207",
+      "master_phone": "0862062087",
+      "master_postal": "7038207"
+    },
+    {
+      "facility_id": "oky-60b1d51a9e2e",
+      "name": "高島おひさまこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862751998",
+      "pdf_postal": "7038203",
+      "master_phone": "0862751998",
+      "master_postal": "7038203"
+    },
+    {
+      "facility_id": "oky-03ccb0f4e581",
+      "name": "旭竜認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862751266",
+      "pdf_postal": "7038242",
+      "master_phone": "0862751266",
+      "master_postal": "7038242"
+    },
+    {
+      "facility_id": "oky-c8aebac17abf",
+      "name": "竜之口こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862794318",
+      "pdf_postal": "7038203",
+      "master_phone": "0862794318",
+      "master_postal": "7038203"
+    },
+    {
+      "facility_id": "oky-d5b695888899",
+      "name": "竜之口わかばこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862791515",
+      "pdf_postal": "7038203",
+      "master_phone": "0862791515",
+      "master_postal": "7038203"
+    },
+    {
+      "facility_id": "oky-bcd316608527",
+      "name": "小規模保育園あかとんぼ第二園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862013246",
+      "pdf_postal": "7038254",
+      "master_phone": "0862013246",
+      "master_postal": "7038254"
+    },
+    {
+      "facility_id": "oky-0e9de12c1314",
+      "name": "小規模保育園しらかば",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862018797",
+      "pdf_postal": "7038202",
+      "master_phone": "0862018797",
+      "master_postal": "7038202"
+    },
+    {
+      "facility_id": "oky-d10ce8cb8e2f",
+      "name": "可知保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869424011",
+      "pdf_postal": "7048173",
+      "master_phone": "0869424011",
+      "master_postal": "7048173"
+    },
+    {
+      "facility_id": "oky-97fb1f945ade",
+      "name": "益野保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869424382",
+      "pdf_postal": "7048173",
+      "master_phone": "0869424382",
+      "master_postal": "7048173"
+    },
+    {
+      "facility_id": "oky-b81a964289d1",
+      "name": "くまの子保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869425958",
+      "pdf_postal": "7048183",
+      "master_phone": "0869425958",
+      "master_postal": "7048183"
+    },
+    {
+      "facility_id": "oky-b5ce04971cbb",
+      "name": "ちとせ認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869426145",
+      "pdf_postal": "7048175",
+      "master_phone": "0869426145",
+      "master_postal": "7048175"
+    },
+    {
+      "facility_id": "oky-29ed120fa95c",
+      "name": "古都こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862086001",
+      "pdf_postal": "7038212",
+      "master_phone": "0862086001",
+      "master_postal": "7038212"
+    },
+    {
+      "facility_id": "oky-260135a21617",
+      "name": "小規模保育園いろいろ",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869440800",
+      "pdf_postal": "7048176",
+      "master_phone": "0869440800",
+      "master_postal": "7048176"
+    },
+    {
+      "facility_id": "oky-41d34b28f2d1",
+      "name": "たんぽぽ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869489377",
+      "pdf_postal": "7048164",
+      "master_phone": "0869489377",
+      "master_postal": "7048164"
+    },
+    {
+      "facility_id": "oky-e7e3525e3c94",
+      "name": "カナダこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869482777",
+      "pdf_postal": "7048196",
+      "master_phone": "0869482777",
+      "master_postal": "7048196"
+    },
+    {
+      "facility_id": "oky-70444b258ba5",
+      "name": "政田開成認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869482049",
+      "pdf_postal": "7048165",
+      "master_phone": "0869482049",
+      "master_postal": "7048165"
+    },
+    {
+      "facility_id": "oky-f41ecfd3ccb2",
+      "name": "たんぽぽ・つぼみ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862301560",
+      "pdf_postal": "7048164",
+      "master_phone": "0862301560",
+      "master_postal": "7048164"
+    },
+    {
+      "facility_id": "oky-9816b5654e50",
+      "name": "めぐみ幼保連携型認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869425263",
+      "pdf_postal": "7048102",
+      "master_phone": "0869425263",
+      "master_postal": "7048102"
+    },
+    {
+      "facility_id": "oky-0dbc39f42366",
+      "name": "めぐみ第二幼保連携型認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869444316",
+      "pdf_postal": "7048102",
+      "master_phone": "0869444316",
+      "master_postal": "7048102"
+    },
+    {
+      "facility_id": "oky-64a060cbb158",
+      "name": "豊こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862302311",
+      "pdf_postal": "7048125",
+      "master_phone": "0862302311",
+      "master_postal": "7048125"
+    },
+    {
+      "facility_id": "oky-d67e6b792b79",
+      "name": "うきのこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862385107",
+      "pdf_postal": "7048193",
+      "master_phone": "0862385107",
+      "master_postal": "7048193"
+    },
+    {
+      "facility_id": "oky-526791715065",
+      "name": "西大寺認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869424376",
+      "pdf_postal": "7048112",
+      "master_phone": "0869424376",
+      "master_postal": "7048112"
+    },
+    {
+      "facility_id": "oky-2c8a2edb816e",
+      "name": "宿毛保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869461385",
+      "pdf_postal": "7048133",
+      "master_phone": "0869461385",
+      "master_postal": "7048133"
+    },
+    {
+      "facility_id": "oky-8f9cbd041fb6",
+      "name": "山南認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869468067",
+      "pdf_postal": "7048138",
+      "master_phone": "0869468067",
+      "master_postal": "7048138"
+    },
+    {
+      "facility_id": "oky-18bbb637e693",
+      "name": "（仮称）桃太郎こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862972271",
+      "pdf_postal": "7090611",
+      "master_phone": "0862972271",
+      "master_postal": "7090611"
+    },
+    {
+      "facility_id": "oky-0b152fa9f440",
+      "name": "かしのみ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862795750",
+      "pdf_postal": "7090626",
+      "master_phone": "0862795750",
+      "master_postal": "7090626"
+    },
+    {
+      "facility_id": "oky-92e89fe0f4fb",
+      "name": "しいのみこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862799850",
+      "pdf_postal": "7090625",
+      "master_phone": "0862799850",
+      "master_postal": "7090625"
+    },
+    {
+      "facility_id": "oky-6e897ebf054a",
+      "name": "浮田とちのみこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862061511",
+      "pdf_postal": "7090621",
+      "master_phone": "0862061511",
+      "master_postal": "7090621"
+    },
+    {
+      "facility_id": "oky-deb6fc9b9832",
+      "name": "ほかほか保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862977676",
+      "pdf_postal": "7090626",
+      "master_phone": "0862977676",
+      "master_postal": "7090626"
+    },
+    {
+      "facility_id": "oky-50b6fc6bd95d",
+      "name": "瀬戸桜保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869520448",
+      "pdf_postal": "7090856",
+      "master_phone": "0869520448",
+      "master_postal": "7090856"
+    },
+    {
+      "facility_id": "oky-5a3033510d15",
+      "name": "玉井桜保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869520312",
+      "pdf_postal": "7090863",
+      "master_phone": "0869520312",
+      "master_postal": "7090863"
+    },
+    {
+      "facility_id": "oky-b2a40d6201d8",
+      "name": "千種認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869531313",
+      "pdf_postal": "7090845",
+      "master_phone": "0869531313",
+      "master_postal": "7090845"
+    },
+    {
+      "facility_id": "oky-878efb649d10",
+      "name": "江西桜こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0869520044",
+      "pdf_postal": "7090856",
+      "master_phone": "0869520044",
+      "master_postal": "7090856"
+    },
+    {
+      "facility_id": "oky-c99c121892fc",
+      "name": "箕島保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862820823",
+      "pdf_postal": "7010206",
+      "master_phone": "0862820823",
+      "master_postal": "7010206"
+    },
+    {
+      "facility_id": "oky-0a668b596704",
+      "name": "妹尾認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862812010",
+      "pdf_postal": "7010206",
+      "master_phone": "0862812010",
+      "master_postal": "7010206"
+    },
+    {
+      "facility_id": "oky-e9afbe0080bd",
+      "name": "幼保連携型認定こども園妹尾保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862821106",
+      "pdf_postal": "7010205",
+      "master_phone": "0862821106",
+      "master_postal": "7010205"
+    },
+    {
+      "facility_id": "oky-3a38c9af0215",
+      "name": "第二福田保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862306652",
+      "pdf_postal": "7010205",
+      "master_phone": "0862306652",
+      "master_postal": "7010205"
+    },
+    {
+      "facility_id": "oky-b82c166c871a",
+      "name": "おおふくこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862823700",
+      "pdf_postal": "7010204",
+      "master_phone": "0862823700",
+      "master_postal": "7010204"
+    },
+    {
+      "facility_id": "oky-d23296eabab6",
+      "name": "福田こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862822625",
+      "pdf_postal": "7010205",
+      "master_phone": "0862822625",
+      "master_postal": "7010205"
+    },
+    {
+      "facility_id": "oky-8f2cadf82439",
+      "name": "曽根保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862983349",
+      "pdf_postal": "7010214",
+      "master_phone": "0862983349",
+      "master_postal": "7010214"
+    },
+    {
+      "facility_id": "oky-cd7a582b427f",
+      "name": "東畦保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862820608",
+      "pdf_postal": "7010211",
+      "master_phone": "0862820608",
+      "master_postal": "7010211"
+    },
+    {
+      "facility_id": "oky-fd9bfbb6cc6d",
+      "name": "興除東保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862820688",
+      "pdf_postal": "7010212",
+      "master_phone": "0862820688",
+      "master_postal": "7010212"
+    },
+    {
+      "facility_id": "oky-10271a0c5a3c",
+      "name": "興除認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862983348",
+      "pdf_postal": "7010213",
+      "master_phone": "0862983348",
+      "master_postal": "7010213"
+    },
+    {
+      "facility_id": "oky-de68cfb6b3b6",
+      "name": "ほほえみ保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862829309",
+      "pdf_postal": "7010211",
+      "master_phone": "0862829309",
+      "master_postal": "7010211"
+    },
+    {
+      "facility_id": "oky-5481e9a4636b",
+      "name": "都保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862962186",
+      "pdf_postal": "7010221",
+      "master_phone": "0862962186",
+      "master_postal": "7010221"
+    },
+    {
+      "facility_id": "oky-663bc680c665",
+      "name": "（仮称）きらめき六区こども園",
+      "method": "rescued-address",
+      "pdf_phone": "0862396080",
+      "pdf_postal": "7010221",
+      "master_phone": "0864725251",
+      "master_postal": "7010221"
+    },
+    {
+      "facility_id": "oky-bec991b14dec",
+      "name": "錦認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862962433",
+      "pdf_postal": "7010221",
+      "master_phone": "0862962433",
+      "master_postal": "7010221"
+    },
+    {
       "facility_id": "oky-7391f1164211",
       "name": "（仮称）ひこさきこども園",
       "method": "postal-only-unique",
@@ -120,48 +1559,313 @@
       "pdf_postal": "7091213",
       "master_phone": "0864800580",
       "master_postal": "7091213"
-    }
-  ],
-  "master_not_in_pdf": [
-    {
-      "facility_id": "oky-029dfee13209",
-      "name": "岡北学園",
-      "ward": "北区"
     },
     {
-      "facility_id": "oky-b4c449df8fbd",
-      "name": "柿の木こども園",
-      "ward": "中区"
+      "facility_id": "oky-2b6815780f45",
+      "name": "七区保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0863620107",
+      "pdf_postal": "7091202",
+      "master_phone": "0863620107",
+      "master_postal": "7091202"
     },
     {
-      "facility_id": "oky-663bc680c665",
-      "name": "（仮称）きらめき六区こども園",
-      "ward": "南区"
+      "facility_id": "oky-b876b61da215",
+      "name": "紅陽台ちどり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0863622241",
+      "pdf_postal": "7091203",
+      "master_phone": "0863622241",
+      "master_postal": "7091203"
+    },
+    {
+      "facility_id": "oky-3ccf4db5d2dd",
+      "name": "灘崎認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0863620950",
+      "pdf_postal": "7091215",
+      "master_phone": "0863620950",
+      "master_postal": "7091215"
+    },
+    {
+      "facility_id": "oky-7d04fc32a1ef",
+      "name": "平福保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862634460",
+      "pdf_postal": "7028042",
+      "master_phone": "0862634460",
+      "master_postal": "7028042"
+    },
+    {
+      "facility_id": "oky-c540d4d8d8a7",
+      "name": "白鳩保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862623432",
+      "pdf_postal": "7028032",
+      "master_phone": "0862623432",
+      "master_postal": "7028032"
+    },
+    {
+      "facility_id": "oky-26e5719c6630",
+      "name": "アイグラン保育園福",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862507527",
+      "pdf_postal": "7028043",
+      "master_phone": "0862507527",
+      "master_postal": "7028043"
+    },
+    {
+      "facility_id": "oky-3e2f6fa23fab",
+      "name": "キッズガーデン白ゆり",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862307277",
+      "pdf_postal": "7028032",
+      "master_phone": "0862307277",
+      "master_postal": "7028032"
+    },
+    {
+      "facility_id": "oky-01d75457bed4",
+      "name": "南輝保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862620922",
+      "pdf_postal": "7028058",
+      "master_phone": "0862620922",
+      "master_postal": "7028058"
+    },
+    {
+      "facility_id": "oky-bd718a3906e7",
+      "name": "みどり町保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862623300",
+      "pdf_postal": "7028055",
+      "master_phone": "0862623300",
+      "master_postal": "7028055"
+    },
+    {
+      "facility_id": "oky-cfcfc9c59c3f",
+      "name": "ちどり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862645915",
+      "pdf_postal": "7028037",
+      "master_phone": "0862645915",
+      "master_postal": "7028037"
+    },
+    {
+      "facility_id": "oky-f02577b3bf67",
+      "name": "第一ひかりこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862622602",
+      "pdf_postal": "7028056",
+      "master_phone": "0862622602",
+      "master_postal": "7028056"
+    },
+    {
+      "facility_id": "oky-f7dbfcba53c2",
+      "name": "すくすくランド・ポストメイト保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862614115",
+      "pdf_postal": "7028056",
+      "master_phone": "0862614115",
+      "master_postal": "7028056"
+    },
+    {
+      "facility_id": "oky-00988b6a1b66",
+      "name": "さとちやん保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862636659",
+      "pdf_postal": "7028053",
+      "master_phone": "0862636659",
+      "master_postal": "7028053"
+    },
+    {
+      "facility_id": "oky-8372800aaa77",
+      "name": "かわい保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862648633",
+      "pdf_postal": "7028027",
+      "master_phone": "0862648633",
+      "master_postal": "7028027"
+    },
+    {
+      "facility_id": "oky-283b642b9f61",
+      "name": "ひばり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862591154",
+      "pdf_postal": "7028021",
+      "master_phone": "0862591154",
+      "master_postal": "7028021"
+    },
+    {
+      "facility_id": "oky-987ae07271b9",
+      "name": "うらやす白鳩保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862615566",
+      "pdf_postal": "7028026",
+      "master_phone": "0862615566",
+      "master_postal": "7028026"
+    },
+    {
+      "facility_id": "oky-8d18f0e4b934",
+      "name": "イートンちどり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862655561",
+      "pdf_postal": "7028024",
+      "master_phone": "0862655561",
+      "master_postal": "7028024"
+    },
+    {
+      "facility_id": "oky-c2f6eee6cf0c",
+      "name": "アートチャイルドケア岡山豊成保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862301667",
+      "pdf_postal": "7000942",
+      "master_phone": "0862301667",
+      "master_postal": "7000942"
+    },
+    {
+      "facility_id": "oky-c80fc8f88d1c",
+      "name": "第二ひかりこども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862637492",
+      "pdf_postal": "7028026",
+      "master_phone": "0862637492",
+      "master_postal": "7028026"
+    },
+    {
+      "facility_id": "oky-19b5f48cd63c",
+      "name": "浦安芳泉認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862625005",
+      "pdf_postal": "7028026",
+      "master_phone": "0862625005",
+      "master_postal": "7028026"
+    },
+    {
+      "facility_id": "oky-55a4d937c7b8",
+      "name": "きらきら小規模保育園豊成",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862307550",
+      "pdf_postal": "7000942",
+      "master_phone": "0862307550",
+      "master_postal": "7000942"
+    },
+    {
+      "facility_id": "oky-d49048665cc0",
+      "name": "ソラ小規模保育園ふくだ",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862306261",
+      "pdf_postal": "7028021",
+      "master_phone": "0862306261",
+      "master_postal": "7028021"
+    },
+    {
+      "facility_id": "oky-73a2b33b3b99",
+      "name": "しろばら保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862237637",
+      "pdf_postal": "7000945",
+      "master_phone": "0862237637",
+      "master_postal": "7000945"
+    },
+    {
+      "facility_id": "oky-8faa268cfd4a",
+      "name": "さつき保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862416524",
+      "pdf_postal": "7000944",
+      "master_phone": "0862416524",
+      "master_postal": "7000944"
+    },
+    {
+      "facility_id": "oky-38f90cadc8e2",
+      "name": "当新田ちどり保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862440188",
+      "pdf_postal": "7000956",
+      "master_phone": "0862440188",
+      "master_postal": "7000956"
+    },
+    {
+      "facility_id": "oky-7697d8907f54",
+      "name": "アートチャイルドケア岡山新保保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862262500",
+      "pdf_postal": "7000945",
+      "master_phone": "0862262500",
+      "master_postal": "7000945"
+    },
+    {
+      "facility_id": "oky-3e66a13c2e89",
+      "name": "ニチイキッズ西市保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862413132",
+      "pdf_postal": "7000953",
+      "master_phone": "0862413132",
+      "master_postal": "7000953"
+    },
+    {
+      "facility_id": "oky-b19e9baaae83",
+      "name": "（仮称）朝日塾こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862434111",
+      "pdf_postal": "7000955",
+      "master_phone": "0862434111",
+      "master_postal": "7000955"
     },
     {
       "facility_id": "oky-c81757e30b10",
       "name": "（仮称）芳明こども園",
-      "ward": "南区"
+      "method": "rescued-address",
+      "pdf_phone": "0862591655",
+      "pdf_postal": "7000955",
+      "master_phone": "0866926989",
+      "master_postal": "7000955"
     },
     {
-      "facility_id": "oky-afa52b982904",
-      "name": "岡北保育園",
-      "ward": "北区"
+      "facility_id": "oky-905bccfc2d51",
+      "name": "クレイン小規模保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862392266",
+      "pdf_postal": "7000953",
+      "master_phone": "0862392266",
+      "master_postal": "7000953"
     },
     {
-      "facility_id": "oky-3f47b001d22b",
-      "name": "どんぐり保育園",
-      "ward": "北区"
+      "facility_id": "oky-a6b304e5b717",
+      "name": "新保おひさま保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862307739",
+      "pdf_postal": "7000945",
+      "master_phone": "0862307739",
+      "master_postal": "7000945"
     },
     {
-      "facility_id": "oky-df4975eddd07",
-      "name": "ノイエ保育園",
-      "ward": "北区"
+      "facility_id": "oky-044202fc1f12",
+      "name": "きらきら小規模保育園西市",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862307501",
+      "pdf_postal": "7000953",
+      "master_phone": "0862307501",
+      "master_postal": "7000953"
     },
     {
-      "facility_id": "oky-b077ad17d0a9",
-      "name": "柿の木保育園",
-      "ward": "中区"
+      "facility_id": "oky-5a30f1a0f6df",
+      "name": "小串保育園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862692029",
+      "pdf_postal": "7028016",
+      "master_phone": "0862692029",
+      "master_postal": "7028016"
+    },
+    {
+      "facility_id": "oky-7b9d0f3cb9a3",
+      "name": "甲浦認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862672051",
+      "pdf_postal": "7028013",
+      "master_phone": "0862672051",
+      "master_postal": "7028013"
     }
-  ]
+  ],
+  "master_not_in_pdf": []
 }
