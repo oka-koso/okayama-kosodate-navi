@@ -7,7 +7,6 @@ import json
 import re
 import sys
 from datetime import datetime, timedelta, timezone
-from difflib import SequenceMatcher
 from pathlib import Path
 
 import pdfplumber
@@ -20,65 +19,36 @@ OUT = ROOT / "data" / "availability_fixed.json"
 AUDIT = ROOT / "data" / "availability_fixed_audit.json"
 
 SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000012977.html"
-UA = "OkayamaKosodateNavi/availability-fixed-v1"
+UA = "OkayamaKosodateNavi/availability-fixed-v2-contact-key"
 JST = timezone(timedelta(hours=9))
 
 STATUS_MAP = {"○": "○", "〇": "○", "△": "△", "×": "×"}
-WARD_BY_7P = ["北区", "北区", "北区", "中区", "東区", "南区", "南区"]
+
+PHONE_3_RE = re.compile(r"(?:(086)[-－ー])?([0-9]{3,4})[-－ー]([0-9]{4})")
+POSTAL_RE = re.compile(r"〒\s*([0-9]{3})[-－ー]([0-9]{4})")
 
 
-def clean(value: str | None) -> str:
+def clean(value):
     return re.sub(r"\s+", " ", value or "").strip()
 
 
-def normalize_name(value: str | None) -> str:
-    value = clean(value)
-    value = value.replace("　", "")
-    value = value.replace("（", "(").replace("）", ")")
-    value = value.replace("・", "")
-    value = re.sub(r"\s+", "", value)
-    return value
+def digits(value):
+    return re.sub(r"\D", "", value or "")
 
 
-def normalized_variants(name: str, aliases=None):
-    """
-    PDF側の軽微な表記差だけを吸収する。
-    あいまいな略称を勝手に作らない。
-    """
-    raw = [name] + list(aliases or [])
-    result = set()
+def normalize_phone(value):
+    d = digits(value)
 
-    for item in raw:
-        n = normalize_name(item)
-        if not n:
-            continue
+    # 岡山市内PDFは市外局番086を省略する。
+    if len(d) == 7:
+        return "086" + d
 
-        result.add(n)
-
-        # 「（仮称）」の有無だけは安全に吸収
-        result.add(n.replace("(仮称)", ""))
-
-        # PDFによって全角/半角括弧が違うケース
-        result.add(
-            n.replace("(", "").replace(")", "")
-        )
-
-    return {x for x in result if len(x) >= 2}
+    return d
 
 
-def ward_for_page(page_index: int, page_count: int) -> str:
-    if page_count == 7:
-        return WARD_BY_7P[page_index]
-
-    # ページ数変更時の保険。通常は7ページ。
-    ratio = page_index / max(page_count - 1, 1)
-    if ratio < .43:
-        return "北区"
-    if ratio < .58:
-        return "中区"
-    if ratio < .73:
-        return "東区"
-    return "南区"
+def normalize_postal(value):
+    d = digits(value)
+    return d if len(d) == 7 else ""
 
 
 def latest_pdf():
@@ -111,63 +81,42 @@ def latest_pdf():
 
     for a in soup.find_all("a", href=True):
         text = clean(" ".join(a.stripped_strings))
-        href = requests.compat.urljoin(
-            SOURCE_PAGE,
-            a["href"],
-        )
+        href = requests.compat.urljoin(SOURCE_PAGE, a["href"])
         path = href.split("?", 1)[0].lower()
 
         if not path.endswith(".pdf"):
             continue
-
         if "認可外" in text or "教育利用" in text:
             continue
 
         filename = path.rsplit("/", 1)[-1]
-
         score = 0
 
         if "受入見込み" in text:
             score += 5
-
         if "認可保育園" in text:
             score += 5
         elif "認可" in text:
             score += 2
-
         if "ninka" in filename and "ninkagai" not in filename:
             score += 5
 
         if score >= 5:
-            candidates.append(
-                (score, text or filename, href)
-            )
+            candidates.append((score, text or filename, href))
 
     if not candidates:
-        raise RuntimeError(
-            "岡山市の最新『認可保育園等の受入見込み』PDFを発見できません。"
-        )
+        raise RuntimeError("最新の認可保育施設受入見込みPDFを発見できません。")
 
-    candidates.sort(
-        key=lambda x: x[0],
-        reverse=True,
-    )
-
+    candidates.sort(key=lambda x: x[0], reverse=True)
     _, title, url = candidates[0]
 
     return title, url, page_updated, page_text
 
 
-def group_words_by_row(words, tolerance=3.0):
-    """
-    文字のY座標から紙面上の横一列を復元。
-    """
+def group_words_by_row(words, tolerance=2.8):
     words = sorted(
         words,
-        key=lambda w: (
-            float(w["top"]),
-            float(w["x0"]),
-        ),
+        key=lambda w: (float(w["top"]), float(w["x0"])),
     )
 
     rows = []
@@ -175,339 +124,254 @@ def group_words_by_row(words, tolerance=3.0):
     for word in words:
         top = float(word["top"])
 
-        if (
-            not rows
-            or abs(top - rows[-1]["top"]) > tolerance
-        ):
+        if not rows or abs(top - rows[-1]["top"]) > tolerance:
             rows.append({
                 "top": top,
                 "words": [word],
             })
         else:
             rows[-1]["words"].append(word)
-
-            count = len(rows[-1]["words"])
-
+            n = len(rows[-1]["words"])
             rows[-1]["top"] = (
-                rows[-1]["top"] * (count - 1)
-                + top
-            ) / count
+                rows[-1]["top"] * (n - 1) + top
+            ) / n
 
     for row in rows:
-        row["words"].sort(
-            key=lambda w: float(w["x0"])
-        )
+        row["words"].sort(key=lambda w: float(w["x0"]))
 
     return rows
 
 
-def row_text(row) -> str:
+def row_text(row):
     return clean(
-        " ".join(
-            str(word["text"])
-            for word in row["words"]
-        )
-    )
-
-
-def block_text(rows, index, before=1, after=1):
-    """
-    園名と○△×が上下別行になっていても照合できるよう、
-    近傍行を連結する。
-    """
-    lo = max(0, index - before)
-    hi = min(len(rows), index + after + 1)
-
-    return clean(
-        " ".join(
-            row_text(rows[i])
-            for i in range(lo, hi)
-        )
+        " ".join(str(w["text"]) for w in row["words"])
     )
 
 
 def find_age_centers(rows):
     """
-    0歳～5歳の見出し位置を取得。
+    ヘッダの0～5歳のx座標を取得。
     """
-    age_centers = {}
-
-    fullwidth = str.maketrans(
-        "０１２３４５",
-        "012345",
-    )
+    result = {}
+    trans = str.maketrans("０１２３４５", "012345")
 
     for row in rows:
         for word in row["words"]:
             text = clean(str(word["text"]))
-
-            m = re.fullmatch(
-                r"([0-5０-５])歳",
-                text,
-            )
+            m = re.fullmatch(r"([0-5０-５])歳", text)
 
             if not m:
                 continue
 
-            age = int(
-                m.group(1).translate(fullwidth)
-            )
-
-            age_centers[age] = (
-                float(word["x0"])
-                + float(word["x1"])
+            age = int(m.group(1).translate(trans))
+            result[age] = (
+                float(word["x0"]) + float(word["x1"])
             ) / 2
-
-    return age_centers
-
-
-def status_from_token(text):
-    return STATUS_MAP.get(clean(text))
-
-
-def extract_statuses(rows, index, age_centers):
-    """
-    施設名行の上下を含めて○△×を探し、
-    0～5歳見出しのX座標に最近傍で割り当てる。
-    """
-    if len(age_centers) < 4:
-        return {}
-
-    base_top = rows[index]["top"]
-    candidates = []
-
-    for j in range(
-        max(0, index - 2),
-        min(len(rows), index + 3),
-    ):
-        if abs(rows[j]["top"] - base_top) > 15:
-            continue
-
-        for word in rows[j]["words"]:
-            status = status_from_token(
-                str(word["text"])
-            )
-
-            if not status:
-                continue
-
-            center = (
-                float(word["x0"])
-                + float(word["x1"])
-            ) / 2
-
-            candidates.append(
-                (center, status)
-            )
-
-    result = {}
-
-    for center, status in candidates:
-        age = min(
-            age_centers,
-            key=lambda a: abs(
-                age_centers[a] - center
-            ),
-        )
-
-        distance = abs(
-            age_centers[age] - center
-        )
-
-        # 備考欄等の記号を誤採用しない。
-        if distance <= 30:
-            result[str(age)] = status
 
     return result
 
 
-def master_index(master):
+def parse_contact_row(row):
     """
-    区別の固定施設マスタ。
+    各施設には必ず電話番号・〒所在地の2段目がある。
+    園名ではなく、この行を施設の一意キーとして使う。
     """
-    by_ward = {
-        "北区": [],
-        "中区": [],
-        "東区": [],
-        "南区": [],
+    text = row_text(row)
+
+    postal_m = POSTAL_RE.search(text)
+    if not postal_m:
+        return None
+
+    postal = (
+        postal_m.group(1)
+        + postal_m.group(2)
+    )
+
+    # 郵便番号より前の範囲だけから電話番号を拾う。
+    prefix = text[:postal_m.start()]
+
+    phone_m = PHONE_3_RE.search(prefix)
+    if not phone_m:
+        return None
+
+    area, p2, p3 = phone_m.groups()
+    phone = normalize_phone(
+        f"{area or ''}{p2}{p3}"
+    )
+
+    return {
+        "phone": phone,
+        "postal": postal,
+        "text": text,
+        "top": row["top"],
     }
 
-    for facility in master.get(
-        "facilities",
-        [],
-    ):
-        ward = facility.get("ward", "")
 
-        if ward not in by_ward:
-            continue
+def collect_contact_rows(rows):
+    contacts = []
 
-        variants = normalized_variants(
-            facility.get("name", ""),
-            facility.get("aliases", []),
-        )
+    for row in rows:
+        item = parse_contact_row(row)
+        if item:
+            contacts.append(item)
 
-        by_ward[ward].append({
-            "facility": facility,
-            "variants": variants,
-        })
-
-    return by_ward
+    return contacts
 
 
-def best_facility_match(text, candidates):
+def master_indexes(master):
     """
-    固定マスタ名をPDF近傍テキストから探す。
-
     優先順位:
-      1. 正規化名の完全包含
-      2. 仮称除去等の安全なvariant包含
-      3. 高い文字列類似度（監査対象）
+      1. phone + postal
+      2. phone + address末尾（postal欠損時）
+      3. postal単独（同一郵便番号が1施設のみの場合）
+
+    名前は照合キーに使わない。
     """
-    nt = normalize_name(text)
+    by_phone_postal = {}
+    by_phone = {}
+    by_postal = {}
 
-    exact = []
+    for facility in master.get("facilities", []):
+        phone = normalize_phone(facility.get("phone", ""))
+        postal = normalize_postal(facility.get("postal", ""))
 
-    for candidate in candidates:
-        facility = candidate["facility"]
+        if phone and postal:
+            by_phone_postal.setdefault(
+                (phone, postal),
+                []
+            ).append(facility)
 
-        for variant in candidate["variants"]:
-            if variant and variant in nt:
-                exact.append(
-                    (
-                        len(variant),
-                        facility,
-                        variant,
-                        "substring",
-                        1.0,
-                    )
-                )
+        if phone:
+            by_phone.setdefault(
+                phone,
+                []
+            ).append(facility)
 
-    if exact:
-        exact.sort(
-            key=lambda x: x[0],
-            reverse=True,
-        )
+        if postal:
+            by_postal.setdefault(
+                postal,
+                []
+            ).append(facility)
 
-        best = exact[0]
+    return {
+        "by_phone_postal": by_phone_postal,
+        "by_phone": by_phone,
+        "by_postal": by_postal,
+    }
 
-        # 同じ最長文字数の別施設があれば曖昧。
-        ties = [
-            x for x in exact
-            if x[0] == best[0]
-            and x[1]["id"] != best[1]["id"]
-        ]
 
-        if ties:
-            return {
-                "facility": None,
-                "ambiguous": True,
-                "candidates": [
-                    best[1]["name"]
-                ] + [
-                    x[1]["name"]
-                    for x in ties
-                ],
-                "method": "ambiguous_substring",
-                "score": 1.0,
-            }
+def match_contact(contact, indexes):
+    phone = contact["phone"]
+    postal = contact["postal"]
 
+    exact = indexes["by_phone_postal"].get(
+        (phone, postal),
+        [],
+    )
+
+    if len(exact) == 1:
         return {
-            "facility": best[1],
+            "facility": exact[0],
+            "method": "phone+postal",
             "ambiguous": False,
-            "method": best[3],
-            "score": best[4],
-            "variant": best[2],
         }
 
-    # 完全包含で拾えない特殊ケースのみ。
-    # 閾値を高くして、曖昧一致はauditへ残す。
-    best_facility = None
-    best_score = 0.0
-
-    for candidate in candidates:
-        facility = candidate["facility"]
-
-        for variant in candidate["variants"]:
-            if len(variant) < 4:
-                continue
-
-            # 行全体ではなく、短いwindow単位で比較
-            # textに他列が多く混ざるため。
-            if len(nt) < len(variant):
-                score = SequenceMatcher(
-                    None,
-                    variant,
-                    nt,
-                ).ratio()
-
-                if score > best_score:
-                    best_score = score
-                    best_facility = facility
-
-                continue
-
-            size = len(variant)
-
-            for start in range(
-                0,
-                max(1, len(nt) - size + 1),
-            ):
-                piece = nt[start:start + size]
-
-                score = SequenceMatcher(
-                    None,
-                    variant,
-                    piece,
-                ).ratio()
-
-                if score > best_score:
-                    best_score = score
-                    best_facility = facility
-
-    if best_facility and best_score >= 0.96:
+    if len(exact) > 1:
         return {
-            "facility": best_facility,
+            "facility": None,
+            "method": "phone+postal",
+            "ambiguous": True,
+            "candidates": [x["name"] for x in exact],
+        }
+
+    # マスタのpostalに過去不具合が残っている場合でも、
+    # phoneが一意なら安全に救済。
+    phone_matches = indexes["by_phone"].get(
+        phone,
+        [],
+    )
+
+    if len(phone_matches) == 1:
+        return {
+            "facility": phone_matches[0],
+            "method": "phone-only-unique",
             "ambiguous": False,
-            "method": "high_similarity",
-            "score": round(
-                best_score,
-                4,
-            ),
+        }
+
+    # 電話番号変更時の補助。
+    postal_matches = indexes["by_postal"].get(
+        postal,
+        [],
+    )
+
+    if len(postal_matches) == 1:
+        return {
+            "facility": postal_matches[0],
+            "method": "postal-only-unique",
+            "ambiguous": False,
         }
 
     return {
         "facility": None,
-        "ambiguous": False,
         "method": "none",
-        "score": round(
-            best_score,
-            4,
+        "ambiguous": (
+            len(phone_matches) > 1
+            or len(postal_matches) > 1
         ),
+        "candidates": list({
+            x["name"]
+            for x in phone_matches + postal_matches
+        }),
     }
 
 
-def candidate_status_row(rows, index):
-    """
-    受入施設行かどうかの目安。
-    近傍に○△×が2つ以上あれば施設行候補とみなす。
-    """
-    count = 0
-    base_top = rows[index]["top"]
+def status_token(text):
+    return STATUS_MAP.get(clean(text))
 
-    for j in range(
-        max(0, index - 1),
-        min(len(rows), index + 2),
-    ):
-        if abs(rows[j]["top"] - base_top) > 10:
+
+def extract_statuses_for_band(
+    words,
+    top,
+    bottom,
+    age_centers,
+):
+    """
+    1施設の横一列（前後の電話行の中間）にある○△×を
+    0～5歳ヘッダのx座標へ割り当てる。
+
+    名前の抽出順や改称に一切依存しない。
+    """
+    result = {}
+
+    for word in words:
+        cy = (
+            float(word["top"])
+            + float(word["bottom"])
+        ) / 2
+
+        if not (top <= cy < bottom):
             continue
 
-        for word in rows[j]["words"]:
-            if status_from_token(
-                str(word["text"])
-            ):
-                count += 1
+        st = status_token(str(word["text"]))
+        if not st:
+            continue
 
-    return count >= 2
+        cx = (
+            float(word["x0"])
+            + float(word["x1"])
+        ) / 2
+
+        age = min(
+            age_centers,
+            key=lambda a: abs(age_centers[a] - cx),
+        )
+
+        distance = abs(age_centers[age] - cx)
+
+        if distance <= 28:
+            result[str(age)] = st
+
+    return result
 
 
 def pdf_meta(pdf_bytes, title, page_text):
@@ -517,38 +381,25 @@ def pdf_meta(pdf_bytes, title, page_text):
     }
 
     try:
-        with pdfplumber.open(
-            io.BytesIO(pdf_bytes)
-        ) as pdf:
+        with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
             text = "\n".join(
                 (pdf.pages[i].extract_text() or "")
-                for i in range(
-                    min(
-                        2,
-                        len(pdf.pages),
-                    )
-                )
+                for i in range(min(2, len(pdf.pages)))
             )
 
         m = re.search(
             r"確認時点\s*([^\n]*?時点)",
             text,
         )
-
         if m:
-            result["availability_as_of"] = clean(
-                m.group(1)
-            )
+            result["availability_as_of"] = clean(m.group(1))
 
         m = re.search(
             r"施設利用\s*開始月\s*([^\n]+)",
             text,
         )
-
         if m:
-            result["availability_for"] = clean(
-                m.group(1)
-            )
+            result["availability_for"] = clean(m.group(1))
 
     except Exception:
         pass
@@ -558,11 +409,9 @@ def pdf_meta(pdf_bytes, title, page_text):
             r"令和\s*([0-9０-９]+)年\s*([0-9０-９]+)月",
             title,
         )
-
         if m:
             result["availability_for"] = (
-                f"令和{m.group(1)}年"
-                f"{m.group(2)}月"
+                f"令和{m.group(1)}年{m.group(2)}月"
             )
 
     if not result["availability_as_of"]:
@@ -572,36 +421,24 @@ def pdf_meta(pdf_bytes, title, page_text):
             r"[0-9０-９]+日\s*時点",
             page_text,
         )
-
         if m:
-            result["availability_as_of"] = clean(
-                m.group(0)
-            )
+            result["availability_as_of"] = clean(m.group(0))
 
     return result
 
 
 def parse_pdf(pdf_bytes, master):
-    index = master_index(master)
+    indexes = master_indexes(master)
 
     by_id = {}
     matched = {}
-    ambiguous = []
-    unknown_rows = []
-    fuzzy_matches = []
-    duplicate_rows = []
+    unmatched_contacts = []
+    ambiguous_contacts = []
+    rescued_matches = []
+    duplicate_ids = []
 
-    with pdfplumber.open(
-        io.BytesIO(pdf_bytes)
-    ) as pdf:
-        for page_index, page in enumerate(
-            pdf.pages
-        ):
-            ward = ward_for_page(
-                page_index,
-                len(pdf.pages),
-            )
-
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for page_index, page in enumerate(pdf.pages):
             words = page.extract_words(
                 use_text_flow=False,
                 keep_blank_chars=False,
@@ -614,156 +451,159 @@ def parse_pdf(pdf_bytes, master):
 
             if len(age_centers) < 4:
                 raise RuntimeError(
-                    f"PDF {page_index + 1}ページ目で"
-                    "0～5歳欄の位置を十分に取得できませんでした。"
+                    f"{page_index + 1}ページ目で年齢列の位置を取得できません。"
                 )
 
-            page_seen = set()
+            contacts = collect_contact_rows(rows)
+
+            if not contacts:
+                raise RuntimeError(
+                    f"{page_index + 1}ページ目で施設連絡先行を取得できません。"
+                )
+
+            # row top順
+            contacts.sort(key=lambda x: x["top"])
+
             page_matched = 0
-            page_unknown = 0
+            page_unmatched = 0
+            page_status = 0
 
-            for i, row in enumerate(rows):
-                text = block_text(
-                    rows,
-                    i,
-                    before=1,
-                    after=1,
-                )
-
-                match = best_facility_match(
-                    text,
-                    index[ward],
+            for i, contact in enumerate(contacts):
+                match = match_contact(
+                    contact,
+                    indexes,
                 )
 
                 if match.get("ambiguous"):
-                    if candidate_status_row(
-                        rows,
-                        i,
-                    ):
-                        ambiguous.append({
-                            "page": page_index + 1,
-                            "ward": ward,
-                            "raw": text,
-                            "candidates": match[
-                                "candidates"
-                            ],
-                        })
-
+                    ambiguous_contacts.append({
+                        "page": page_index + 1,
+                        "phone": contact["phone"],
+                        "postal": contact["postal"],
+                        "raw": contact["text"],
+                        "candidates": match.get("candidates", []),
+                    })
                     continue
 
                 facility = match.get("facility")
 
                 if not facility:
-                    if candidate_status_row(
-                        rows,
-                        i,
-                    ):
-                        unknown_rows.append({
-                            "page": page_index + 1,
-                            "ward": ward,
-                            "raw": text,
-                            "best_similarity": match[
-                                "score"
-                            ],
-                        })
-                        page_unknown += 1
-
+                    unmatched_contacts.append({
+                        "page": page_index + 1,
+                        "phone": contact["phone"],
+                        "postal": contact["postal"],
+                        "raw": contact["text"],
+                    })
+                    page_unmatched += 1
                     continue
 
                 fid = facility["id"]
 
-                # 同一施設を近傍行で複数回拾うので、
-                # ページ内では最も情報量の多い受入結果を採用。
-                statuses = extract_statuses(
-                    rows,
-                    i,
+                if fid in matched:
+                    duplicate_ids.append({
+                        "facility_id": fid,
+                        "name": facility["name"],
+                        "first_page": matched[fid]["page"],
+                        "second_page": page_index + 1,
+                    })
+                    continue
+
+                # contact行は施設行の下段。
+                # 前後contact行の中点で施設1行分の縦範囲を作る。
+                current_y = contact["top"]
+
+                if i == 0:
+                    if len(contacts) > 1:
+                        gap = contacts[1]["top"] - current_y
+                    else:
+                        gap = 24
+                    band_top = current_y - max(18, gap * 0.75)
+                else:
+                    band_top = (
+                        contacts[i - 1]["top"]
+                        + current_y
+                    ) / 2
+
+                if i == len(contacts) - 1:
+                    if i > 0:
+                        gap = current_y - contacts[i - 1]["top"]
+                    else:
+                        gap = 24
+                    band_bottom = current_y + max(10, gap * 0.45)
+                else:
+                    band_bottom = (
+                        current_y
+                        + contacts[i + 1]["top"]
+                    ) / 2
+
+                statuses = extract_statuses_for_band(
+                    words,
+                    band_top,
+                    band_bottom,
                     age_centers,
                 )
 
-                existing = by_id.get(fid, {})
+                by_id[fid] = statuses
 
-                if len(statuses) > len(existing):
-                    by_id[fid] = statuses
+                matched[fid] = {
+                    "name": facility["name"],
+                    "page": page_index + 1,
+                    "method": match["method"],
+                    "phone": contact["phone"],
+                    "postal": contact["postal"],
+                }
 
-                if fid not in page_seen:
-                    page_seen.add(fid)
-                    page_matched += 1
-
-                if match["method"] == "high_similarity":
-                    fuzzy_matches.append({
-                        "page": page_index + 1,
-                        "pdf_text": text,
+                if match["method"] != "phone+postal":
+                    rescued_matches.append({
                         "facility_id": fid,
-                        "facility_name": facility[
-                            "name"
-                        ],
-                        "score": match["score"],
-                    })
-
-            for fid in page_seen:
-                if fid in matched:
-                    duplicate_rows.append({
-                        "facility_id": fid,
-                        "facility_name": matched[
-                            fid
-                        ]["name"],
-                        "first_page": matched[
-                            fid
-                        ]["page"],
-                        "second_page": page_index + 1,
-                    })
-                else:
-                    facility = next(
-                        x["facility"]
-                        for x in index[ward]
-                        if x["facility"]["id"] == fid
-                    )
-
-                    matched[fid] = {
                         "name": facility["name"],
-                        "ward": ward,
-                        "page": page_index + 1,
-                    }
+                        "method": match["method"],
+                        "pdf_phone": contact["phone"],
+                        "pdf_postal": contact["postal"],
+                        "master_phone": normalize_phone(
+                            facility.get("phone", "")
+                        ),
+                        "master_postal": normalize_postal(
+                            facility.get("postal", "")
+                        ),
+                    })
+
+                page_matched += 1
+
+                if statuses:
+                    page_status += 1
 
             print(
-                f"[availability] page "
+                f"[availability-v2] page "
                 f"{page_index + 1}/{len(pdf.pages)} "
-                f"ward={ward} "
+                f"contacts={len(contacts)} "
                 f"matched={page_matched} "
-                f"unknown_status_rows={page_unknown}"
+                f"with_status={page_status} "
+                f"unmatched={page_unmatched}"
             )
 
     return {
         "by_id": by_id,
         "matched": matched,
-        "ambiguous": ambiguous,
-        "unknown_rows": unknown_rows,
-        "fuzzy_matches": fuzzy_matches,
-        "duplicate_rows": duplicate_rows,
+        "unmatched_contacts": unmatched_contacts,
+        "ambiguous_contacts": ambiguous_contacts,
+        "rescued_matches": rescued_matches,
+        "duplicate_ids": duplicate_ids,
     }
 
 
 def main():
     if not MASTER.exists():
-        raise RuntimeError(
-            "data/facility_master.json がありません。"
-        )
+        raise RuntimeError("data/facility_master.json がありません。")
 
     master = json.loads(
-        MASTER.read_text(
-            encoding="utf-8"
-        )
+        MASTER.read_text(encoding="utf-8")
     )
 
-    facilities = master.get(
-        "facilities",
-        [],
-    )
+    facilities = master.get("facilities", [])
 
     if len(facilities) != 206:
         raise RuntimeError(
-            f"固定施設マスタが206施設ではありません: "
-            f"{len(facilities)}"
+            f"固定施設マスタが206施設ではありません: {len(facilities)}"
         )
 
     title, pdf_url, page_updated, page_text = latest_pdf()
@@ -780,57 +620,10 @@ def main():
         master,
     )
 
-    matched_count = len(
-        parsed["matched"]
-    )
-
+    matched_count = len(parsed["matched"])
     with_status_count = sum(
-        1
-        for statuses in parsed["by_id"].values()
-        if statuses
-    )
-
-    # 重要:
-    # 「知らない受入行」が残るなら、新施設または表記変更の可能性がある。
-    # その場合は自動公開しない。
-    if parsed["unknown_rows"]:
-        raise RuntimeError(
-            "固定206施設マスタに照合できない受入行が"
-            f"{len(parsed['unknown_rows'])}件あります。"
-            " 新設園・改称・PDF表記変更を確認してください。"
-        )
-
-    if parsed["ambiguous"]:
-        raise RuntimeError(
-            "複数施設に一致する曖昧な受入行が"
-            f"{len(parsed['ambiguous'])}件あります。"
-        )
-
-    if parsed["duplicate_rows"]:
-        raise RuntimeError(
-            "複数ページに重複照合された施設が"
-            f"{len(parsed['duplicate_rows'])}件あります。"
-        )
-
-    # 現在のPDFは全認可施設を掲載する前提だが、
-    # 将来の資料仕様変更も考え、最低190施設を要求。
-    if matched_count < 190:
-        raise RuntimeError(
-            f"PDFから固定マスタへ照合できた施設が"
-            f"{matched_count}件しかありません。"
-        )
-
-    # ○△×が取れた施設も最低180施設を要求。
-    if with_status_count < 180:
-        raise RuntimeError(
-            f"年齢別受入記号を取得できた施設が"
-            f"{with_status_count}件しかありません。"
-        )
-
-    meta = pdf_meta(
-        r.content,
-        title,
-        page_text,
+        1 for v in parsed["by_id"].values()
+        if v
     )
 
     all_ids = {
@@ -842,64 +635,93 @@ def main():
         {
             "facility_id": fid,
             "name": facility["name"],
-            "ward": facility["ward"],
+            "ward": facility.get("ward", ""),
         }
         for fid, facility in all_ids.items()
         if fid not in parsed["matched"]
     ]
 
-    digest = hashlib.sha256(
-        r.content
-    ).hexdigest()
+    meta = pdf_meta(
+        r.content,
+        title,
+        page_text,
+    )
+
+    digest = hashlib.sha256(r.content).hexdigest()
+
+    audit = {
+        "generated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"),
+        "source_pdf_url": pdf_url,
+        "fixed_master_count": len(facilities),
+        "matched_facility_count": matched_count,
+        "with_status_count": with_status_count,
+        "unmatched_contact_count": len(parsed["unmatched_contacts"]),
+        "ambiguous_contact_count": len(parsed["ambiguous_contacts"]),
+        "duplicate_count": len(parsed["duplicate_ids"]),
+        "rescued_match_count": len(parsed["rescued_matches"]),
+        "unmatched_contacts": parsed["unmatched_contacts"],
+        "ambiguous_contacts": parsed["ambiguous_contacts"],
+        "duplicate_matches": parsed["duplicate_ids"],
+        "rescued_matches": parsed["rescued_matches"],
+        "master_not_in_pdf": master_not_in_pdf,
+    }
+
+    # 失敗時にも原因をGitHubログだけでなくファイルで追えるよう先に書く。
+    AUDIT.write_text(
+        json.dumps(
+            audit,
+            ensure_ascii=False,
+            indent=2,
+        ) + "\n",
+        encoding="utf-8",
+    )
+
+    if parsed["unmatched_contacts"]:
+        raise RuntimeError(
+            "固定マスタに照合できない電話・郵便番号の施設が"
+            f"{len(parsed['unmatched_contacts'])}件あります。"
+            "新設・移転・電話変更の可能性があります。"
+        )
+
+    if parsed["ambiguous_contacts"]:
+        raise RuntimeError(
+            "電話・郵便番号から一意に決められない施設が"
+            f"{len(parsed['ambiguous_contacts'])}件あります。"
+        )
+
+    if parsed["duplicate_ids"]:
+        raise RuntimeError(
+            "同じ固定施設へ複数行が照合されました: "
+            f"{len(parsed['duplicate_ids'])}件"
+        )
+
+    # 最新PDFには固定マスタ206件すべてが必ず載るとは限らない。
+    # PDFに実際に載っている連絡先行が全件マッチしていることを重視。
+    if matched_count < 190:
+        raise RuntimeError(
+            f"照合施設数が少なすぎます: {matched_count}"
+        )
+
+    if with_status_count < 180:
+        raise RuntimeError(
+            f"受入記号を取得できた施設が少なすぎます: {with_status_count}"
+        )
 
     payload = {
-        "schema_version": 1,
-        "source": "Okayama City official childcare availability PDF",
-        "generated_at": datetime.now(
-            JST
-        ).strftime("%Y-%m-%d %H:%M"),
-        "availability_for": meta[
-            "availability_for"
-        ],
-        "availability_as_of": meta[
-            "availability_as_of"
-        ],
+        "schema_version": 2,
+        "matching_key": "official phone + postal code",
+        "generated_at": audit["generated_at"],
+        "availability_for": meta["availability_for"],
+        "availability_as_of": meta["availability_as_of"],
         "source_page_updated": page_updated,
         "source_pdf_title": title,
         "source_pdf_url": pdf_url,
         "source_pdf_sha256": digest,
-        "fixed_master_count": len(
-            facilities
-        ),
+        "fixed_master_count": len(facilities),
         "matched_facility_count": matched_count,
         "with_status_count": with_status_count,
         "master_not_in_pdf": master_not_in_pdf,
         "by_facility_id": parsed["by_id"],
-    }
-
-    audit = {
-        "generated_at": payload[
-            "generated_at"
-        ],
-        "source_pdf_url": pdf_url,
-        "fixed_master_count": len(
-            facilities
-        ),
-        "matched_facility_count": matched_count,
-        "with_status_count": with_status_count,
-        "master_not_in_pdf": master_not_in_pdf,
-        "high_similarity_matches": parsed[
-            "fuzzy_matches"
-        ],
-        "unknown_status_rows": parsed[
-            "unknown_rows"
-        ],
-        "ambiguous_rows": parsed[
-            "ambiguous"
-        ],
-        "duplicate_matches": parsed[
-            "duplicate_rows"
-        ],
     }
 
     OUT.write_text(
@@ -911,42 +733,22 @@ def main():
         encoding="utf-8",
     )
 
-    AUDIT.write_text(
-        json.dumps(
-            audit,
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
-        encoding="utf-8",
-    )
-
     print(
-        "[availability] SUCCESS "
-        f"master={len(facilities)} "
+        "[availability-v2] SUCCESS "
+        f"master=206 "
         f"matched={matched_count} "
         f"with_status={with_status_count} "
         f"master_not_in_pdf={len(master_not_in_pdf)} "
-        f"fuzzy={len(parsed['fuzzy_matches'])}"
+        f"rescued={len(parsed['rescued_matches'])}"
     )
-
-    if master_not_in_pdf:
-        print(
-            "[availability] master not in latest PDF:",
-            " / ".join(
-                x["name"]
-                for x in master_not_in_pdf
-            )
-        )
 
 
 if __name__ == "__main__":
     try:
         main()
     except Exception as exc:
-        # auditが生成できる箇所まで進んでいなくても、
-        # ログで原因を明確にする。
         print(
-            f"[availability] ERROR: {exc}",
+            f"[availability-v2] ERROR: {exc}",
             file=sys.stderr,
         )
         sys.exit(1)
