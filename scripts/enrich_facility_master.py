@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 NAME_MASTER = ROOT / "data" / "facility_name_master.json"
 OUT = ROOT / "data" / "facility_master.json"
+EXISTING_MASTER = ROOT / "data" / "facility_master.json"
 AUDIT = ROOT / "data" / "facility_master_audit.json"
 
 # 岡山市 令和8年度保育利用ガイド
@@ -229,6 +230,21 @@ def scrape_public_html(url, category):
 
 
 def main():
+    # 既存の座標・公式サイトURL・サービス情報は固定情報として保持する。
+    existing_by_id = {}
+    if EXISTING_MASTER.exists():
+        try:
+            existing_payload = json.loads(
+                EXISTING_MASTER.read_text(encoding="utf-8")
+            )
+            existing_by_id = {
+                x.get("id"): x
+                for x in existing_payload.get("facilities", [])
+                if x.get("id")
+            }
+        except Exception:
+            existing_by_id = {}
+
     fixed = json.loads(NAME_MASTER.read_text(encoding="utf-8"))
     facilities = fixed["facilities"]
 
@@ -397,6 +413,35 @@ def main():
                 "name": item["name"],
                 "issue": "missing_address",
             })
+
+    # 住所・電話を再構築しても、緯度経度や公式URLは消さない。
+    # 住所が変更された施設だけ座標をクリアし、次回geocode対象にする。
+    for item in assigned:
+        previous = existing_by_id.get(item.get("id"), {})
+
+        old_address = clean(previous.get("address", ""))
+        new_address = clean(item.get("address", ""))
+
+        if old_address and new_address and old_address != new_address:
+            item["lat"] = None
+            item["lon"] = None
+        else:
+            item["lat"] = previous.get("lat")
+            item["lon"] = previous.get("lon")
+
+        item["website"] = previous.get("website", item.get("website", ""))
+        item["official_info_url"] = previous.get(
+            "official_info_url",
+            item.get("official_info_url", "")
+        )
+        item["services"] = previous.get(
+            "services",
+            item.get("services", {
+                "extended": False,
+                "temporary": False,
+                "holiday": False,
+            })
+        )
 
     payload = {
         "schema_version": 2,
