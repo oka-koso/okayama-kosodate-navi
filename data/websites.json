@@ -1,0 +1,4 @@
+{
+  "_comment": "園名をキー、各施設の公式ホームページURLを値として追加してください。update_data.py実行時にfacilities.jsonへ反映されます。",
+  "facilities": {}
+}
