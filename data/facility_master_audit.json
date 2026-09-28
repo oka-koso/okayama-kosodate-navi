@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29 06:41",
+  "generated_at": "2026-09-29 07:02",
   "source_pdf": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
   "fixed_master_count": 206,
   "assigned_count_before_public_correction": 206,
@@ -62,47 +62,6 @@
   "mismatch_pages": [],
   "assigned_count": 206,
   "public_html_corrected": 48,
-  "issue_count": 8,
-  "issues": [
-    {
-      "name": "（仮称）たねのくに ちとせこども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市北区※ 〒 701-0163 中撫川351"
-    },
-    {
-      "name": "（仮称）桃丘こども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市北区※ 〒 701-1221 芳賀5112-2"
-    },
-    {
-      "name": "（仮称）旭操認定こども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市中区※ 〒 703-8264 倉富171-2"
-    },
-    {
-      "name": "（仮称）幡多認定こども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市中区※ 〒 703-8233 高屋220-3"
-    },
-    {
-      "name": "（仮称）桃太郎こども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市東区※ 〒 709-0611 楢原431-5"
-    },
-    {
-      "name": "（仮称）きらめき六区こども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市南区※ 〒 701-0221 藤田1729-1"
-    },
-    {
-      "name": "（仮称）ひこさきこども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市南区※ 〒 709-1213 彦崎2570-1"
-    },
-    {
-      "name": "（仮称）朝日塾こども園",
-      "issue": "postal_leaked_into_address",
-      "value": "岡山市南区※ 〒 700-0955 万倍30-20"
-    }
-  ]
+  "issue_count": 0,
+  "issues": []
 }
