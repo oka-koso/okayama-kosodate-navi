@@ -17,7 +17,12 @@
       "address": "岡山市北区弓之町8-2",
       "phone": "086-222-7583",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.670715,
+      "lon": 133.927124,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区弓之町8-2",
+      "geocode_title": "岡山県岡山市北区弓之町８番２号"
     },
     {
       "id": "oky-c0388f0bb7a0",
@@ -30,7 +35,12 @@
       "address": "岡山市北区中山下2-7-45",
       "phone": "086-234-4150",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.659748,
+      "lon": 133.927002,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区中山下2-7-45",
+      "geocode_title": "岡山県岡山市北区中山下二丁目７番４５号"
     },
     {
       "id": "oky-a180daa6c959",
@@ -43,7 +53,12 @@
       "address": "岡山市北区幸町10-40",
       "phone": "086-803-3232",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.66032,
+      "lon": 133.921738,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区幸町10-40",
+      "geocode_title": "岡山県岡山市北区幸町１０番４０号"
     },
     {
       "id": "oky-c907c71a375b",
@@ -56,7 +71,12 @@
       "address": "岡山市北区津島東一丁目4-3",
       "phone": "086-252-5782",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.687592,
+      "lon": 133.927505,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区津島東一丁目4-3",
+      "geocode_title": "岡山県岡山市北区津島東一丁目４番"
     },
     {
       "id": "oky-2abfc828dd8e",
@@ -69,7 +89,12 @@
       "address": "岡山市北区牟佐822-2",
       "phone": "086-229-3130",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.724632,
+      "lon": 133.980377,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区牟佐822-2",
+      "geocode_title": "岡山県岡山市北区牟佐８２２番地"
     },
     {
       "id": "oky-6af4f50817f8",
@@ -82,7 +107,12 @@
       "address": "岡山市北区玉柏2203-1",
       "phone": "086-228-0631",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.719627,
+      "lon": 133.964279,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区玉柏2203-1",
+      "geocode_title": "岡山県岡山市北区玉柏"
     },
     {
       "id": "oky-21cf63b90750",
@@ -95,7 +125,12 @@
       "address": "岡山市北区学南町2-5-40",
       "phone": "086-254-9571",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.683659,
+      "lon": 133.922607,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区学南町2-5-40",
+      "geocode_title": "岡山県岡山市北区学南町二丁目５番４０号"
     },
     {
       "id": "oky-15ad8248cf5f",
@@ -108,7 +143,12 @@
       "address": "岡山市北区下伊福西町5-60",
       "phone": "086-252-1509",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.665215,
+      "lon": 133.901093,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区下伊福西町5-60",
+      "geocode_title": "岡山県岡山市北区下伊福西町５番６０号"
     },
     {
       "id": "oky-234af96be60c",
@@ -121,7 +161,12 @@
       "address": "岡山市北区関西町11-8",
       "phone": "086-254-1160",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.67263,
+      "lon": 133.898392,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区関西町11-8",
+      "geocode_title": "岡山県岡山市北区関西町１１番８号"
     },
     {
       "id": "oky-ab9820460900",
@@ -134,7 +179,12 @@
       "address": "岡山市北区島田本町1-4-41",
       "phone": "086-255-4134",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.662819,
+      "lon": 133.908356,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区島田本町1-4-41",
+      "geocode_title": "岡山県岡山市北区島田本町一丁目４番４１号"
     },
     {
       "id": "oky-f40be7d0e4b7",
@@ -147,7 +197,12 @@
       "address": "岡山市北区北長瀬本町27-2",
       "phone": "086-254-6888",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.655338,
+      "lon": 133.883057,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区北長瀬本町27-2",
+      "geocode_title": "岡山県岡山市北区北長瀬本町２７番２号"
     },
     {
       "id": "oky-d3086fb521b9",
@@ -160,7 +215,12 @@
       "address": "岡山市北区三門西町7-8",
       "phone": "086-252-9936",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.66993,
+      "lon": 133.89975,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区三門西町7-8",
+      "geocode_title": "岡山県岡山市北区三門西町７番８号"
     },
     {
       "id": "oky-0ee7543fd5c9",
@@ -173,7 +233,12 @@
       "address": "岡山市北区野殿東町17-7",
       "phone": "086-230-6200",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.663925,
+      "lon": 133.87973,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区野殿東町17-7",
+      "geocode_title": "岡山県岡山市北区野殿東町１７番７号"
     },
     {
       "id": "oky-71e6d1ac906b",
@@ -186,7 +251,12 @@
       "address": "岡山市北区上中野2-3-10",
       "phone": "086-241-0378",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.643124,
+      "lon": 133.901352,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区上中野2-3-10",
+      "geocode_title": "岡山県岡山市北区上中野二丁目３番１０号"
     },
     {
       "id": "oky-09830b3780ab",
@@ -199,7 +269,12 @@
       "address": "岡山市北区大元駅前10-26",
       "phone": "086-206-2211",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.646446,
+      "lon": 133.911316,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大元駅前10-26",
+      "geocode_title": "岡山県岡山市北区大元駅前１０番２６号"
     },
     {
       "id": "oky-19354b8398e6",
@@ -212,7 +287,12 @@
       "address": "岡山市北区野田4-1-30",
       "phone": "086-230-7115",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.657024,
+      "lon": 133.896866,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区野田4-1-30",
+      "geocode_title": "岡山県岡山市北区野田四丁目１番"
     },
     {
       "id": "oky-a02005421fd8",
@@ -225,7 +305,12 @@
       "address": "岡山市北区新道47-5",
       "phone": "086-223-4017",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.649483,
+      "lon": 133.926208,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区新道47-5",
+      "geocode_title": "岡山県岡山市北区新道４７番地"
     },
     {
       "id": "oky-d4011ba264ee",
@@ -238,7 +323,12 @@
       "address": "岡山市北区奥田南町1-18",
       "phone": "086-224-7369",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.642269,
+      "lon": 133.919968,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区奥田南町1-18",
+      "geocode_title": "岡山県岡山市北区奥田南町１番１８号"
     },
     {
       "id": "oky-862ccd1c91a1",
@@ -251,7 +341,12 @@
       "address": "岡山市北区富田74",
       "phone": "086-223-0872",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.639454,
+      "lon": 133.915222,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区富田74",
+      "geocode_title": "岡山県岡山市北区富田"
     },
     {
       "id": "oky-2d15aacf4278",
@@ -264,7 +359,12 @@
       "address": "岡山市北区青江4-4-10",
       "phone": "086-232-0825",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.631901,
+      "lon": 133.92627,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区青江4-4-10",
+      "geocode_title": "岡山県岡山市北区青江四丁目４番１０号"
     },
     {
       "id": "oky-4da344b27348",
@@ -277,7 +377,12 @@
       "address": "岡山市北区今3-2-9",
       "phone": "086-241-2722",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.648853,
+      "lon": 133.895096,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今3-2-9",
+      "geocode_title": "岡山県岡山市北区今三丁目２番９号"
     },
     {
       "id": "oky-1319336432fb",
@@ -290,7 +395,12 @@
       "address": "岡山市北区下中野1222-4",
       "phone": "086-239-9100",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.636692,
+      "lon": 133.896805,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区下中野1222-4",
+      "geocode_title": "岡山県岡山市北区下中野１２２２番地"
     },
     {
       "id": "oky-cd0ad22f8b29",
@@ -303,7 +413,12 @@
       "address": "岡山市北区平田407",
       "phone": "086-805-3818",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.634884,
+      "lon": 133.882538,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区平田407",
+      "geocode_title": "岡山県岡山市北区平田４０７番地"
     },
     {
       "id": "oky-db1e6214d3f2",
@@ -316,7 +431,12 @@
       "address": "岡山市北区白石西新町6-104",
       "phone": "086-250-7245",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.655552,
+      "lon": 133.868652,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区白石西新町6-104",
+      "geocode_title": "岡山県岡山市北区白石西新町６番"
     },
     {
       "id": "oky-3b16d87d740d",
@@ -329,7 +449,12 @@
       "address": "岡山市北区平野80-4",
       "phone": "086-293-1717",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.643494,
+      "lon": 133.857758,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区平野80-4",
+      "geocode_title": "岡山県岡山市北区平野"
     },
     {
       "id": "oky-25c3a54fceb6",
@@ -357,7 +482,12 @@
       "address": "岡山市北区一宮125",
       "phone": "086-284-0267",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.678036,
+      "lon": 133.874695,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区一宮125",
+      "geocode_title": "岡山県岡山市北区一宮１２５番地"
     },
     {
       "id": "oky-916f442f3b6b",
@@ -370,7 +500,12 @@
       "address": "岡山市北区楢津881-2",
       "phone": "086-284-5224",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.682426,
+      "lon": 133.876389,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区楢津881-2",
+      "geocode_title": "岡山県岡山市北区楢津８８１番地"
     },
     {
       "id": "oky-e6ca2a00d959",
@@ -383,7 +518,12 @@
       "address": "岡山市北区尾上755-1",
       "phone": "086-259-5565",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.665607,
+      "lon": 133.865524,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区尾上755-1",
+      "geocode_title": "岡山県岡山市北区尾上"
     },
     {
       "id": "oky-889b50efdd63",
@@ -396,7 +536,12 @@
       "address": "岡山市北区楢津505-1",
       "phone": "086-284-1118",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.684177,
+      "lon": 133.88562,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区楢津505-1",
+      "geocode_title": "岡山県岡山市北区楢津"
     },
     {
       "id": "oky-39d4a72f5f19",
@@ -409,7 +554,12 @@
       "address": "岡山市北区横井上190-1",
       "phone": "086-294-2112",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.711456,
+      "lon": 133.912018,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区横井上190-1",
+      "geocode_title": "岡山県岡山市北区横井上"
     },
     {
       "id": "oky-ceb58ffa2209",
@@ -422,7 +572,12 @@
       "address": "岡山市北区富原1148",
       "phone": "086-254-1871",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.694908,
+      "lon": 133.894699,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区富原1148",
+      "geocode_title": "岡山県岡山市北区富原１１４８番地"
     },
     {
       "id": "oky-7afad7fa1314",
@@ -435,7 +590,12 @@
       "address": "岡山市北区吉備津276-2",
       "phone": "086-287-5241",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.673466,
+      "lon": 133.838013,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区吉備津276-2",
+      "geocode_title": "岡山県岡山市北区吉備津２７６番地"
     },
     {
       "id": "oky-b2a31a8e5259",
@@ -448,7 +608,12 @@
       "address": "岡山市北区下足守1545-1",
       "phone": "086-295-2000",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.720539,
+      "lon": 133.813873,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区下足守1545-1",
+      "geocode_title": "岡山県岡山市北区下足守"
     },
     {
       "id": "oky-54bb2b63cdc3",
@@ -461,7 +626,12 @@
       "address": "岡山市北区御津国ケ原1024",
       "phone": "086-724-2144",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.775623,
+      "lon": 133.944427,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区御津国ケ原1024",
+      "geocode_title": "岡山県岡山市北区御津国ケ原"
     },
     {
       "id": "oky-dd2244c6f4e1",
@@ -474,7 +644,12 @@
       "address": "岡山市北区御津宇垣1889",
       "phone": "086-724-2252",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.782856,
+      "lon": 133.924362,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区御津宇垣1889",
+      "geocode_title": "岡山県岡山市北区御津宇垣"
     },
     {
       "id": "oky-07d2d8eee041",
@@ -487,7 +662,12 @@
       "address": "岡山市北区建部町川口1526-1",
       "phone": "086-722-0172",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.895073,
+      "lon": 133.901688,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区建部町川口1526-1",
+      "geocode_title": "岡山県岡山市北区建部町川口"
     },
     {
       "id": "oky-c044cb87eac3",
@@ -500,7 +680,12 @@
       "address": "岡山市中区網浜785",
       "phone": "086-272-0771",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.646805,
+      "lon": 133.936554,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区網浜785",
+      "geocode_title": "岡山県岡山市中区網浜７８５番地"
     },
     {
       "id": "oky-592ec34a1ce6",
@@ -513,7 +698,12 @@
       "address": "岡山市中区平井五丁目2-25",
       "phone": "086-271-0066",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.640911,
+      "lon": 133.941513,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区平井五丁目2-25",
+      "geocode_title": "岡山県岡山市中区平井五丁目２番２５号"
     },
     {
       "id": "oky-ab27ce57a420",
@@ -526,7 +716,12 @@
       "address": "岡山市中区桜橋3-1-51",
       "phone": "086-272-4111",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.647511,
+      "lon": 133.934372,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区桜橋3-1-51",
+      "geocode_title": "岡山県岡山市中区桜橋三丁目１番５１号"
     },
     {
       "id": "oky-a2757262202a",
@@ -539,7 +734,12 @@
       "address": "岡山市中区浜一丁目14-4",
       "phone": "086-272-3841",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.672691,
+      "lon": 133.93573,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区浜一丁目14-4",
+      "geocode_title": "岡山県岡山市中区浜一丁目１４番４号"
     },
     {
       "id": "oky-01b5e1013481",
@@ -552,7 +752,12 @@
       "address": "岡山市中区門田屋敷1-9-31",
       "phone": "086-272-1786",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.656319,
+      "lon": 133.940186,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区門田屋敷1-9-31",
+      "geocode_title": "岡山県岡山市中区門田屋敷一丁目９番３１号"
     },
     {
       "id": "oky-2caf7ebfcbf6",
@@ -565,7 +770,12 @@
       "address": "岡山市中区湊296-1",
       "phone": "086-277-7609",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.646538,
+      "lon": 133.962967,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区湊296-1",
+      "geocode_title": "岡山県岡山市中区湊２９６番地"
     },
     {
       "id": "oky-4c891c94ba26",
@@ -578,7 +788,12 @@
       "address": "岡山市中区江崎577-1",
       "phone": "086-277-3431",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.62225,
+      "lon": 133.959686,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区江崎577-1",
+      "geocode_title": "岡山県岡山市中区江崎"
     },
     {
       "id": "oky-8bf4f5cc8f77",
@@ -591,7 +806,12 @@
       "address": "岡山市中区江崎380-1",
       "phone": "086-277-6660",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.62225,
+      "lon": 133.959686,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区江崎380-1",
+      "geocode_title": "岡山県岡山市中区江崎"
     },
     {
       "id": "oky-26ce7b7ab03c",
@@ -604,7 +824,12 @@
       "address": "岡山市中区兼基247",
       "phone": "086-278-1881",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.673222,
+      "lon": 133.976578,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区兼基247",
+      "geocode_title": "岡山県岡山市中区兼基２４７番地"
     },
     {
       "id": "oky-62867ccc454b",
@@ -617,7 +842,12 @@
       "address": "岡山市中区中井4-19-27",
       "phone": "086-275-1755",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.68502,
+      "lon": 133.966156,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区中井4-19-27",
+      "geocode_title": "岡山県岡山市中区中井四丁目１９番２７号"
     },
     {
       "id": "oky-d10ce8cb8e2f",
@@ -630,7 +860,12 @@
       "address": "岡山市東区可知四丁目23-5",
       "phone": "086-942-4011",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.656651,
+      "lon": 134.004669,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区可知四丁目23-5",
+      "geocode_title": "岡山県岡山市東区可知四丁目２３番"
     },
     {
       "id": "oky-97fb1f945ade",
@@ -643,7 +878,12 @@
       "address": "岡山市東区可知3-7-21",
       "phone": "086-942-4382",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.660412,
+      "lon": 134.0047,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区可知3-7-21",
+      "geocode_title": "岡山県岡山市東区可知三丁目７番２１号"
     },
     {
       "id": "oky-b81a964289d1",
@@ -656,7 +896,12 @@
       "address": "岡山市東区西大寺松崎302-1",
       "phone": "086-942-5958",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.663914,
+      "lon": 134.012512,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区西大寺松崎302-1",
+      "geocode_title": "岡山県岡山市東区西大寺松崎"
     },
     {
       "id": "oky-41d34b28f2d1",
@@ -669,7 +914,12 @@
       "address": "岡山市東区光津840-1",
       "phone": "086-948-9377",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.640049,
+      "lon": 133.991486,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区光津840-1",
+      "geocode_title": "岡山県岡山市東区光津"
     },
     {
       "id": "oky-2c8a2edb816e",
@@ -682,7 +932,12 @@
       "address": "岡山市東区宿毛623-9",
       "phone": "086-946-1385",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.62162,
+      "lon": 134.089355,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区宿毛623-9",
+      "geocode_title": "岡山県岡山市東区宿毛６２３番地"
     },
     {
       "id": "oky-0b152fa9f440",
@@ -695,7 +950,12 @@
       "address": "岡山市東区中尾192-1",
       "phone": "086-279-5750",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.698826,
+      "lon": 134.023346,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区中尾192-1",
+      "geocode_title": "岡山県岡山市東区中尾１９２番地"
     },
     {
       "id": "oky-50b6fc6bd95d",
@@ -708,7 +968,12 @@
       "address": "岡山市東区瀬戸町下133",
       "phone": "086-952-0448",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.730907,
+      "lon": 134.038162,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区瀬戸町下133",
+      "geocode_title": "岡山県岡山市東区瀬戸町下１３３番地"
     },
     {
       "id": "oky-5a3033510d15",
@@ -721,7 +986,12 @@
       "address": "岡山市東区瀬戸町観音寺509",
       "phone": "086-952-0312",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.724037,
+      "lon": 134.010162,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区瀬戸町観音寺509",
+      "geocode_title": "岡山県岡山市東区瀬戸町観音寺５０９番地"
     },
     {
       "id": "oky-c99c121892fc",
@@ -734,7 +1004,12 @@
       "address": "岡山市南区箕島2413-1",
       "phone": "086-282-0823",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.612354,
+      "lon": 133.847305,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区箕島2413-1",
+      "geocode_title": "岡山県岡山市南区箕島２４１３番地"
     },
     {
       "id": "oky-3a38c9af0215",
@@ -747,7 +1022,12 @@
       "address": "岡山市南区妹尾3763-1",
       "phone": "086-230-6652",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.619011,
+      "lon": 133.862518,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区妹尾3763-1",
+      "geocode_title": "岡山県岡山市南区妹尾"
     },
     {
       "id": "oky-8f2cadf82439",
@@ -760,7 +1040,12 @@
       "address": "岡山市南区曽根170-2",
       "phone": "086-298-3349",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.568611,
+      "lon": 133.847748,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区曽根170-2",
+      "geocode_title": "岡山県岡山市南区曽根"
     },
     {
       "id": "oky-cd7a582b427f",
@@ -773,7 +1058,12 @@
       "address": "岡山市南区東畦758-2",
       "phone": "086-282-0608",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.604694,
+      "lon": 133.878128,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区東畦758-2",
+      "geocode_title": "岡山県岡山市南区東畦７５８番地"
     },
     {
       "id": "oky-fd9bfbb6cc6d",
@@ -786,7 +1076,12 @@
       "address": "岡山市南区内尾440-2",
       "phone": "086-282-0688",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.600269,
+      "lon": 133.860153,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区内尾440-2",
+      "geocode_title": "岡山県岡山市南区内尾４４０番地"
     },
     {
       "id": "oky-5481e9a4636b",
@@ -799,7 +1094,12 @@
       "address": "岡山市南区藤田349-7",
       "phone": "086-296-2186",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.577587,
+      "lon": 133.87587,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区藤田349-7",
+      "geocode_title": "岡山県岡山市南区藤田３４９番地"
     },
     {
       "id": "oky-2b6815780f45",
@@ -812,7 +1112,12 @@
       "address": "岡山市南区西七区231",
       "phone": "086-362-0107",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.552128,
+      "lon": 133.892868,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区西七区231",
+      "geocode_title": "岡山県岡山市南区西七区２３１番地"
     },
     {
       "id": "oky-b876b61da215",
@@ -825,7 +1130,12 @@
       "address": "岡山市南区西紅陽台3-1-116",
       "phone": "086-362-2241",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.543713,
+      "lon": 133.890182,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区西紅陽台3-1-116",
+      "geocode_title": "岡山県岡山市南区西紅陽台三丁目１番地"
     },
     {
       "id": "oky-7d04fc32a1ef",
@@ -838,7 +1148,12 @@
       "address": "岡山市南区洲崎三丁目3-23",
       "phone": "086-263-4460",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.621258,
+      "lon": 133.946609,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区洲崎三丁目3-23",
+      "geocode_title": "岡山県岡山市南区洲崎三丁目３番２３号"
     },
     {
       "id": "oky-c540d4d8d8a7",
@@ -851,7 +1166,12 @@
       "address": "岡山市南区福富中2-4-1",
       "phone": "086-262-3432",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.622787,
+      "lon": 133.936447,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区福富中2-4-1",
+      "geocode_title": "岡山県岡山市南区福富中二丁目４番１号"
     },
     {
       "id": "oky-26e5719c6630",
@@ -864,7 +1184,12 @@
       "address": "岡山市南区平福1-11-25",
       "phone": "086-250-7527",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.618748,
+      "lon": 133.946747,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区平福1-11-25",
+      "geocode_title": "岡山県岡山市南区平福一丁目１１番２５号"
     },
     {
       "id": "oky-01d75457bed4",
@@ -877,7 +1202,12 @@
       "address": "岡山市南区並木町二丁目22-8",
       "phone": "086-262-0922",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.610294,
+      "lon": 133.94104,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区並木町二丁目22-8",
+      "geocode_title": "岡山県岡山市南区並木町二丁目２２番８号"
     },
     {
       "id": "oky-bd718a3906e7",
@@ -890,7 +1220,12 @@
       "address": "岡山市南区築港緑町1-1-7 230",
       "phone": "086-262-3300",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.605831,
+      "lon": 133.931168,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区築港緑町1-1-7 230",
+      "geocode_title": "岡山県岡山市南区築港緑町一丁目１番７号"
     },
     {
       "id": "oky-cfcfc9c59c3f",
@@ -903,7 +1238,12 @@
       "address": "岡山市南区千鳥町7-7",
       "phone": "086-264-5915",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.614368,
+      "lon": 133.9478,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区千鳥町7-7",
+      "geocode_title": "岡山県岡山市南区千鳥町７番７号"
     },
     {
       "id": "oky-8372800aaa77",
@@ -916,7 +1256,12 @@
       "address": "岡山市南区芳泉3-4-5",
       "phone": "086-264-8633",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.623711,
+      "lon": 133.919052,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区芳泉3-4-5",
+      "geocode_title": "岡山県岡山市南区芳泉三丁目４番５号"
     },
     {
       "id": "oky-283b642b9f61",
@@ -929,7 +1274,12 @@
       "address": "岡山市南区福田715-3",
       "phone": "086-259-1154",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.619179,
+      "lon": 133.923477,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区福田715-3",
+      "geocode_title": "岡山県岡山市南区福田"
     },
     {
       "id": "oky-987ae07271b9",
@@ -942,7 +1292,12 @@
       "address": "岡山市南区浦安本町171-1",
       "phone": "086-261-5566",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.604881,
+      "lon": 133.920746,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区浦安本町171-1",
+      "geocode_title": "岡山県岡山市南区浦安本町１７１番地"
     },
     {
       "id": "oky-8d18f0e4b934",
@@ -955,7 +1310,12 @@
       "address": "岡山市南区浦安南町425-1",
       "phone": "086-265-5561",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.59354,
+      "lon": 133.921677,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区浦安南町425-1",
+      "geocode_title": "岡山県岡山市南区浦安南町"
     },
     {
       "id": "oky-c2f6eee6cf0c",
@@ -968,7 +1328,12 @@
       "address": "岡山市南区豊成1-1-17",
       "phone": "086-230-1667",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.634251,
+      "lon": 133.927933,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区豊成1-1-17",
+      "geocode_title": "岡山県岡山市南区豊成一丁目１番１７号"
     },
     {
       "id": "oky-73a2b33b3b99",
@@ -981,7 +1346,12 @@
       "address": "岡山市南区新保417-1",
       "phone": "086-223-7637",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.638725,
+      "lon": 133.912109,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区新保417-1",
+      "geocode_title": "岡山県岡山市南区新保４１７番地"
     },
     {
       "id": "oky-8faa268cfd4a",
@@ -994,7 +1364,12 @@
       "address": "岡山市南区泉田402-3",
       "phone": "086-241-6524",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.627453,
+      "lon": 133.909378,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区泉田402-3",
+      "geocode_title": "岡山県岡山市南区泉田４０２番地"
     },
     {
       "id": "oky-38f90cadc8e2",
@@ -1007,7 +1382,12 @@
       "address": "岡山市南区当新田482-52",
       "phone": "086-244-0188",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.622139,
+      "lon": 133.897186,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区当新田482-52",
+      "geocode_title": "岡山県岡山市南区当新田４８２番地"
     },
     {
       "id": "oky-7697d8907f54",
@@ -1020,7 +1400,12 @@
       "address": "岡山市南区新保1113-8",
       "phone": "086-226-2500",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.635231,
+      "lon": 133.91716,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区新保1113-8",
+      "geocode_title": "岡山県岡山市南区新保１１１３番地"
     },
     {
       "id": "oky-3e66a13c2e89",
@@ -1033,7 +1418,12 @@
       "address": "岡山市南区西市115-16",
       "phone": "086-241-3132",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.630756,
+      "lon": 133.902252,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区西市115-16",
+      "geocode_title": "岡山県岡山市南区西市１１５番地"
     },
     {
       "id": "oky-5a30f1a0f6df",
@@ -1046,7 +1436,12 @@
       "address": "岡山市南区小串3480",
       "phone": "086-269-2029",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.596001,
+      "lon": 134.027664,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区小串3480",
+      "geocode_title": "岡山県岡山市南区小串３４８０番地"
     },
     {
       "id": "oky-f5d79c691732",
@@ -1059,7 +1454,12 @@
       "address": "岡山市北区南方一丁目3-30",
       "phone": "086-222-2182",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.672226,
+      "lon": 133.923553,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区南方一丁目3-30",
+      "geocode_title": "岡山県岡山市北区南方一丁目３番"
     },
     {
       "id": "oky-2250a4445aaa",
@@ -1072,7 +1472,12 @@
       "address": "岡山市北区弓之町9-2",
       "phone": "086-222-8490",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.669922,
+      "lon": 133.927841,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区弓之町9-2",
+      "geocode_title": "岡山県岡山市北区弓之町９番２号"
     },
     {
       "id": "oky-7086b448378f",
@@ -1085,7 +1490,12 @@
       "address": "岡山市北区田町1-4-12",
       "phone": "086-222-4580",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.661633,
+      "lon": 133.925491,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区田町1-4-12",
+      "geocode_title": "岡山県岡山市北区田町一丁目４番１２号"
     },
     {
       "id": "oky-b762d2b14de0",
@@ -1098,7 +1508,12 @@
       "address": "岡山市北区丸の内2-6-5 クラス～",
       "phone": "086-222-5675",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.663403,
+      "lon": 133.934479,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区丸の内2-6-5 クラス～",
+      "geocode_title": "岡山県岡山市北区丸の内二丁目６番５号"
     },
     {
       "id": "oky-5d696eff342a",
@@ -1111,7 +1526,12 @@
       "address": "岡山市北区天神町6-34 クラス～",
       "phone": "086-223-6447",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.667896,
+      "lon": 133.928726,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区天神町6-34 クラス～",
+      "geocode_title": "岡山県岡山市北区天神町６番３４号"
     },
     {
       "id": "oky-029dfee13209",
@@ -1139,7 +1559,12 @@
       "address": "岡山市北区半田町8-2",
       "phone": "086-228-1507",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.696163,
+      "lon": 133.933517,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区半田町8-2",
+      "geocode_title": "岡山県岡山市北区半田町８番２号"
     },
     {
       "id": "oky-1ec5f2fb469d",
@@ -1152,7 +1577,12 @@
       "address": "岡山市北区富町2-14-9",
       "phone": "086-254-5111",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.664604,
+      "lon": 133.908966,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区富町2-14-9",
+      "geocode_title": "岡山県岡山市北区富町二丁目１４番９号"
     },
     {
       "id": "oky-f429c8d7fe8c",
@@ -1165,7 +1595,12 @@
       "address": "岡山市北区大供本町715-5",
       "phone": "086-226-2071",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.652622,
+      "lon": 133.911194,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大供本町715-5",
+      "geocode_title": "岡山県岡山市北区大供本町７１５番地"
     },
     {
       "id": "oky-7ea4e2638b75",
@@ -1178,7 +1613,12 @@
       "address": "岡山市北区大供表町16-10",
       "phone": "086-223-4943",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.653465,
+      "lon": 133.914322,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大供表町16-10",
+      "geocode_title": "岡山県岡山市北区大供表町１６番"
     },
     {
       "id": "oky-605445b41344",
@@ -1191,7 +1631,12 @@
       "address": "岡山市北区大元上町9-22",
       "phone": "086-259-3700",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.648563,
+      "lon": 133.900238,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大元上町9-22",
+      "geocode_title": "岡山県岡山市北区大元上町９番２２号"
     },
     {
       "id": "oky-df21b21e0b1a",
@@ -1204,7 +1649,12 @@
       "address": "岡山市北区七日市西町1-14",
       "phone": "086-223-9879",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.641479,
+      "lon": 133.928345,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区七日市西町1-14",
+      "geocode_title": "岡山県岡山市北区七日市西町１番１４号"
     },
     {
       "id": "oky-734e21a7d0bf",
@@ -1217,7 +1667,12 @@
       "address": "岡山市北区今保247-1",
       "phone": "086-244-6100",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.64082,
+      "lon": 133.872452,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今保247-1",
+      "geocode_title": "岡山県岡山市北区今保２４７番地"
     },
     {
       "id": "oky-1f720255b07c",
@@ -1230,7 +1685,12 @@
       "address": "岡山市北区平田122-102",
       "phone": "086-805-1313",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.632282,
+      "lon": 133.891449,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区平田122-102",
+      "geocode_title": "岡山県岡山市北区平田１２２番地"
     },
     {
       "id": "oky-9adbd2aac562",
@@ -1243,7 +1703,12 @@
       "address": "岡山市北区田中165-103",
       "phone": "086-244-6111",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.641994,
+      "lon": 133.877701,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区田中165-103",
+      "geocode_title": "岡山県岡山市北区田中１６５番地"
     },
     {
       "id": "oky-1df19fd5256f",
@@ -1256,7 +1721,12 @@
       "address": "岡山市北区今7丁目16-43",
       "phone": "086-241-6819",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.64164,
+      "lon": 133.892914,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今7丁目16-43",
+      "geocode_title": "岡山県岡山市北区今七丁目１６番４３号"
     },
     {
       "id": "oky-55ab64e24eb9",
@@ -1269,7 +1739,12 @@
       "address": "岡山市北区中仙道1-7-28",
       "phone": "086-242-3400",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.647682,
+      "lon": 133.888763,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区中仙道1-7-28",
+      "geocode_title": "岡山県岡山市北区中仙道一丁目７番２８号"
     },
     {
       "id": "oky-203c128e05be",
@@ -1282,7 +1757,12 @@
       "address": "岡山市北区平野1071-1",
       "phone": "086-293-7575",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.643494,
+      "lon": 133.857758,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区平野1071-1",
+      "geocode_title": "岡山県岡山市北区平野"
     },
     {
       "id": "oky-3d4c74d3d609",
@@ -1295,7 +1775,12 @@
       "address": "岡山市北区庭瀬1032-1",
       "phone": "086-293-7777",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.639534,
+      "lon": 133.85463,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区庭瀬1032-1",
+      "geocode_title": "岡山県岡山市北区庭瀬１０３２番地"
     },
     {
       "id": "oky-2bc13a27977c",
@@ -1308,7 +1793,12 @@
       "address": "岡山市北区東花尻121-1",
       "phone": "086-293-5757",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.654747,
+      "lon": 133.862961,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区東花尻121-1",
+      "geocode_title": "岡山県岡山市北区東花尻"
     },
     {
       "id": "oky-f950767f5dfe",
@@ -1321,7 +1811,12 @@
       "address": "岡山市北区中撫川351",
       "phone": "086-293-1161",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.650021,
+      "lon": 133.840591,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区中撫川351",
+      "geocode_title": "岡山県岡山市北区中撫川"
     },
     {
       "id": "oky-55bbf58dea67",
@@ -1334,7 +1829,12 @@
       "address": "岡山市北区東花尻266-1",
       "phone": "086-293-4455",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.650715,
+      "lon": 133.86322,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区東花尻266-1",
+      "geocode_title": "岡山県岡山市北区東花尻２６６番地"
     },
     {
       "id": "oky-4b435e772bfd",
@@ -1347,7 +1847,12 @@
       "address": "岡山市北区川入873-1",
       "phone": "086-236-7870",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.658714,
+      "lon": 133.845337,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区川入873-1",
+      "geocode_title": "岡山県岡山市北区川入"
     },
     {
       "id": "oky-83bfd994d90e",
@@ -1360,7 +1865,12 @@
       "address": "岡山市北区いずみ町9-18",
       "phone": "086-252-3682",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.677082,
+      "lon": 133.913925,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区いずみ町9-18",
+      "geocode_title": "岡山県岡山市北区いずみ町９番１８号"
     },
     {
       "id": "oky-87b331929732",
@@ -1373,7 +1883,12 @@
       "address": "岡山市北区津島南1-3-9 クラス～",
       "phone": "086-252-0171",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.681896,
+      "lon": 133.913376,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区津島南1-3-9 クラス～",
+      "geocode_title": "岡山県岡山市北区津島南一丁目３番９号"
     },
     {
       "id": "oky-9b4d603a4f34",
@@ -1386,7 +1901,12 @@
       "address": "岡山市北区津島桑の木町1-33",
       "phone": "086-251-2121",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.685215,
+      "lon": 133.911163,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区津島桑の木町1-33",
+      "geocode_title": "岡山県岡山市北区津島桑の木町１番３３号"
     },
     {
       "id": "oky-e76722631c72",
@@ -1399,7 +1919,12 @@
       "address": "岡山市北区一宮638-3",
       "phone": "086-284-0158",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.676388,
+      "lon": 133.867538,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区一宮638-3",
+      "geocode_title": "岡山県岡山市北区一宮６３８番地"
     },
     {
       "id": "oky-fc209de84894",
@@ -1412,7 +1937,12 @@
       "address": "岡山市北区辛川市場321-1",
       "phone": "086-284-4272",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.687,
+      "lon": 133.865005,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区辛川市場321-1",
+      "geocode_title": "岡山県岡山市北区辛川市場"
     },
     {
       "id": "oky-143c43f91014",
@@ -1425,7 +1955,12 @@
       "address": "岡山市北区楢津385-1",
       "phone": "086-236-8220",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.684177,
+      "lon": 133.88562,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区楢津385-1",
+      "geocode_title": "岡山県岡山市北区楢津"
     },
     {
       "id": "oky-d9e5f770e7b7",
@@ -1438,7 +1973,12 @@
       "address": "岡山市北区大窪50-1",
       "phone": "086-259-3666",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.69672,
+      "lon": 133.849854,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大窪50-1",
+      "geocode_title": "岡山県岡山市北区大窪"
     },
     {
       "id": "oky-de41a38b5c74",
@@ -1451,7 +1991,12 @@
       "address": "岡山市北区芳賀5112-2",
       "phone": "086-464-0007",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.707741,
+      "lon": 133.877182,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区芳賀5112-2",
+      "geocode_title": "岡山県岡山市北区芳賀５１１２番地"
     },
     {
       "id": "oky-f7d2740b7f23",
@@ -1464,7 +2009,12 @@
       "address": "岡山市北区富吉2945-7",
       "phone": "086-294-5511",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.734905,
+      "lon": 133.862778,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区富吉2945-7",
+      "geocode_title": "岡山県岡山市北区富吉"
     },
     {
       "id": "oky-9ef6a782a4e8",
@@ -1477,7 +2027,12 @@
       "address": "岡山市北区横井上1556-4",
       "phone": "086-294-3065",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.71307,
+      "lon": 133.905106,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区横井上1556-4",
+      "geocode_title": "岡山県岡山市北区横井上１５５６番地"
     },
     {
       "id": "oky-899d5c08198c",
@@ -1490,7 +2045,12 @@
       "address": "岡山市北区富原3700-1",
       "phone": "086-253-1900",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.697151,
+      "lon": 133.890076,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区富原3700-1",
+      "geocode_title": "岡山県岡山市北区富原"
     },
     {
       "id": "oky-04d209445b51",
@@ -1503,7 +2063,12 @@
       "address": "岡山市北区栢谷1724-3",
       "phone": "086-294-3610",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.730347,
+      "lon": 133.90361,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区栢谷1724-3",
+      "geocode_title": "岡山県岡山市北区栢谷１７２４番地"
     },
     {
       "id": "oky-7b4d1657e717",
@@ -1516,7 +2081,12 @@
       "address": "岡山市北区三手15-1",
       "phone": "086-287-5305",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.686806,
+      "lon": 133.815323,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区三手15-1",
+      "geocode_title": "岡山県岡山市北区三手１５番地"
     },
     {
       "id": "oky-c9203aa946fd",
@@ -1529,7 +2099,12 @@
       "address": "岡山市北区加茂1104-1",
       "phone": "086-287-5551",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.675835,
+      "lon": 133.82312,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区加茂1104-1",
+      "geocode_title": "岡山県岡山市北区加茂１１０４番地"
     },
     {
       "id": "oky-9f0c3e8fbeb1",
@@ -1542,7 +2117,12 @@
       "address": "岡山市北区新庄上1357",
       "phone": "086-259-0670",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.67614,
+      "lon": 133.80159,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区新庄上1357",
+      "geocode_title": "岡山県岡山市北区新庄上"
     },
     {
       "id": "oky-14991979cd9f",
@@ -1555,7 +2135,12 @@
       "address": "岡山市北区大井407-1",
       "phone": "086-295-0268",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.741745,
+      "lon": 133.800522,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大井407-1",
+      "geocode_title": "岡山県岡山市北区大井４０７番地"
     },
     {
       "id": "oky-f23e2af31dee",
@@ -1568,7 +2153,12 @@
       "address": "岡山市北区御津金川476",
       "phone": "086-724-2250",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.796734,
+      "lon": 133.927658,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区御津金川476",
+      "geocode_title": "岡山県岡山市北区御津金川"
     },
     {
       "id": "oky-434e9c62d3dd",
@@ -1581,7 +2171,12 @@
       "address": "岡山市北区建部町市場330",
       "phone": "086-722-0173",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.847984,
+      "lon": 133.901199,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区建部町市場330",
+      "geocode_title": "岡山県岡山市北区建部町市場"
     },
     {
       "id": "oky-210bccc4e2e5",
@@ -1594,7 +2189,12 @@
       "address": "岡山市中区御幸町4-12",
       "phone": "086-272-0160",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.653175,
+      "lon": 133.934982,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区御幸町4-12",
+      "geocode_title": "岡山県岡山市中区御幸町４番１２号"
     },
     {
       "id": "oky-4f4b9bdc3666",
@@ -1607,7 +2207,12 @@
       "address": "岡山市中区西川原15-1",
       "phone": "086-206-2112",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.678024,
+      "lon": 133.940964,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区西川原15-1",
+      "geocode_title": "岡山県岡山市中区西川原"
     },
     {
       "id": "oky-8c2b0217cd90",
@@ -1620,7 +2225,12 @@
       "address": "岡山市中区西川原351-12",
       "phone": "086-272-2472",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.675785,
+      "lon": 133.941528,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区西川原351-12",
+      "geocode_title": "岡山県岡山市中区西川原３５１番地"
     },
     {
       "id": "oky-af1ea3b22f80",
@@ -1633,7 +2243,12 @@
       "address": "岡山市中区原尾島1-7-5",
       "phone": "086-273-2730",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.672672,
+      "lon": 133.947205,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区原尾島1-7-5",
+      "geocode_title": "岡山県岡山市中区原尾島一丁目７番５号"
     },
     {
       "id": "oky-b4ce2044c16e",
@@ -1646,7 +2261,12 @@
       "address": "岡山市中区福泊138-2",
       "phone": "086-277-7662",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.655659,
+      "lon": 133.9776,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区福泊138-2",
+      "geocode_title": "岡山県岡山市中区福泊１３８番地"
     },
     {
       "id": "oky-59623c1b5771",
@@ -1659,7 +2279,12 @@
       "address": "岡山市中区倉田688-3",
       "phone": "086-277-8700",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.636578,
+      "lon": 133.960541,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区倉田688-3",
+      "geocode_title": "岡山県岡山市中区倉田"
     },
     {
       "id": "oky-859e4c83d6dd",
@@ -1672,7 +2297,12 @@
       "address": "岡山市中区倉富171-2",
       "phone": "086-277-7609",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.641701,
+      "lon": 133.969284,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区倉富171-2",
+      "geocode_title": "岡山県岡山市中区倉富"
     },
     {
       "id": "oky-9914cfb62440",
@@ -1685,7 +2315,12 @@
       "address": "岡山市中区長利194-1",
       "phone": "086-278-8500",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.677635,
+      "lon": 133.999359,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区長利194-1",
+      "geocode_title": "岡山県岡山市中区長利１９４番地"
     },
     {
       "id": "oky-15eb89a61377",
@@ -1698,7 +2333,12 @@
       "address": "岡山市中区赤田88",
       "phone": "086-272-6525",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.680882,
+      "lon": 133.959671,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区赤田88",
+      "geocode_title": "岡山県岡山市中区赤田８８番地"
     },
     {
       "id": "oky-b4c449df8fbd",
@@ -1711,7 +2351,12 @@
       "address": "岡山市中区沢田473",
       "phone": "086-271-5577",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.6656,
+      "lon": 133.965225,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区沢田473",
+      "geocode_title": "岡山県岡山市中区沢田"
     },
     {
       "id": "oky-70ec8af0e3f7",
@@ -1724,7 +2369,12 @@
       "address": "岡山市中区長利274-1",
       "phone": "086-208-6177",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.672749,
+      "lon": 133.99646,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区長利274-1",
+      "geocode_title": "岡山県岡山市中区長利２７４番地"
     },
     {
       "id": "oky-a9b154c54514",
@@ -1737,7 +2387,12 @@
       "address": "岡山市中区長岡4-108",
       "phone": "086-206-4150",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.682499,
+      "lon": 133.982559,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区長岡4-108",
+      "geocode_title": "岡山県岡山市中区長岡４番地"
     },
     {
       "id": "oky-28f572db3c7a",
@@ -1750,7 +2405,12 @@
       "address": "岡山市中区高屋220-3",
       "phone": "086-272-3460",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.67564,
+      "lon": 133.968033,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区高屋220-3",
+      "geocode_title": "岡山県岡山市中区高屋２２０番地"
     },
     {
       "id": "oky-4f433005ef50",
@@ -1763,7 +2423,12 @@
       "address": "岡山市中区祇園364-1",
       "phone": "086-206-2087",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.702747,
+      "lon": 133.956558,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区祇園364-1",
+      "geocode_title": "岡山県岡山市中区祇園"
     },
     {
       "id": "oky-60b1d51a9e2e",
@@ -1776,7 +2441,12 @@
       "address": "岡山市中区国府市場164-1",
       "phone": "086-275-1998",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.691616,
+      "lon": 133.967117,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区国府市場164-1",
+      "geocode_title": "岡山県岡山市中区国府市場"
     },
     {
       "id": "oky-03ccb0f4e581",
@@ -1789,7 +2459,12 @@
       "address": "岡山市中区高島一丁目5-7",
       "phone": "086-275-1266",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.684528,
+      "lon": 133.949738,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区高島一丁目5-7",
+      "geocode_title": "岡山県岡山市中区高島一丁目５番"
     },
     {
       "id": "oky-c8aebac17abf",
@@ -1802,7 +2477,12 @@
       "address": "岡山市中区国府市場721-2",
       "phone": "086-279-4318",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.69331,
+      "lon": 133.976349,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区国府市場721-2",
+      "geocode_title": "岡山県岡山市中区国府市場７２１番地"
     },
     {
       "id": "oky-d5b695888899",
@@ -1815,7 +2495,12 @@
       "address": "岡山市中区国府市場720-1",
       "phone": "086-279-1515",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.691616,
+      "lon": 133.967117,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区国府市場720-1",
+      "geocode_title": "岡山県岡山市中区国府市場"
     },
     {
       "id": "oky-b5ce04971cbb",
@@ -1828,7 +2513,12 @@
       "address": "岡山市東区益野町40",
       "phone": "086-942-6145",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.659126,
+      "lon": 133.998978,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区益野町40",
+      "geocode_title": "岡山県岡山市東区益野町４０番地"
     },
     {
       "id": "oky-29ed120fa95c",
@@ -1841,7 +2531,12 @@
       "address": "岡山市東区古都宿453-5",
       "phone": "086-208-6001",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.693539,
+      "lon": 134.00116,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区古都宿453-5",
+      "geocode_title": "岡山県岡山市東区古都宿４５３番地"
     },
     {
       "id": "oky-e7e3525e3c94",
@@ -1854,7 +2549,12 @@
       "address": "岡山市東区金田1127-1",
       "phone": "086-948-2777",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.636574,
+      "lon": 134.016403,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区金田1127-1",
+      "geocode_title": "岡山県岡山市東区金田"
     },
     {
       "id": "oky-70444b258ba5",
@@ -1867,7 +2567,12 @@
       "address": "岡山市東区政津961-19",
       "phone": "086-948-2049",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.633919,
+      "lon": 134.003616,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区政津961-19",
+      "geocode_title": "岡山県岡山市東区政津９６１番地"
     },
     {
       "id": "oky-9816b5654e50",
@@ -1880,7 +2585,12 @@
       "address": "岡山市東区久保408-1",
       "phone": "086-942-5263",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.665302,
+      "lon": 134.04776,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区久保408-1",
+      "geocode_title": "岡山県岡山市東区久保"
     },
     {
       "id": "oky-0dbc39f42366",
@@ -1893,7 +2603,12 @@
       "address": "岡山市東区久保411-1",
       "phone": "086-944-4316",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.665852,
+      "lon": 134.043457,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区久保411-1",
+      "geocode_title": "岡山県岡山市東区久保４１１番地"
     },
     {
       "id": "oky-64a060cbb158",
@@ -1906,7 +2621,12 @@
       "address": "岡山市東区西大寺川口279",
       "phone": "086-230-2311",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.648792,
+      "lon": 134.048721,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区西大寺川口279",
+      "geocode_title": "岡山県岡山市東区西大寺川口"
     },
     {
       "id": "oky-d67e6b792b79",
@@ -1919,7 +2639,12 @@
       "address": "岡山市東区金岡西町578-5",
       "phone": "086-238-5107",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.640953,
+      "lon": 134.021896,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区金岡西町578-5",
+      "geocode_title": "岡山県岡山市東区金岡西町"
     },
     {
       "id": "oky-526791715065",
@@ -1932,7 +2657,12 @@
       "address": "岡山市東区西大寺上一丁目19-23",
       "phone": "086-942-4376",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.657299,
+      "lon": 134.032211,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区西大寺上一丁目19-23",
+      "geocode_title": "岡山県岡山市東区西大寺上一丁目１９番２３号"
     },
     {
       "id": "oky-8f9cbd041fb6",
@@ -1945,7 +2675,12 @@
       "address": "岡山市東区神崎町22-1",
       "phone": "086-946-8067",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.628696,
+      "lon": 134.058838,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区神崎町22-1",
+      "geocode_title": "岡山県岡山市東区神崎町２２番地"
     },
     {
       "id": "oky-92e89fe0f4fb",
@@ -1958,7 +2693,12 @@
       "address": "岡山市東区上道北方590",
       "phone": "086-279-9850",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.699444,
+      "lon": 134.016479,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区上道北方590",
+      "geocode_title": "岡山県岡山市東区上道北方"
     },
     {
       "id": "oky-6e897ebf054a",
@@ -1971,7 +2711,12 @@
       "address": "岡山市東区沼1188-1",
       "phone": "086-206-1511",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.702164,
+      "lon": 134.037689,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区沼1188-1",
+      "geocode_title": "岡山県岡山市東区沼"
     },
     {
       "id": "oky-18bbb637e693",
@@ -1984,7 +2729,12 @@
       "address": "岡山市東区楢原431-5",
       "phone": "086-297-2271",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.700634,
+      "lon": 134.055191,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区楢原431-5",
+      "geocode_title": "岡山県岡山市東区楢原４３１番地"
     },
     {
       "id": "oky-b2a40d6201d8",
@@ -1997,7 +2747,12 @@
       "address": "岡山市東区瀬戸町鍛冶屋178-1",
       "phone": "086-953-1313",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.768169,
+      "lon": 134.065247,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区瀬戸町鍛冶屋178-1",
+      "geocode_title": "岡山県岡山市東区瀬戸町鍛冶屋"
     },
     {
       "id": "oky-878efb649d10",
@@ -2010,7 +2765,12 @@
       "address": "岡山市東区瀬戸町下286-1",
       "phone": "086-952-0044",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.72678,
+      "lon": 134.04393,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区瀬戸町下286-1",
+      "geocode_title": "岡山県岡山市東区瀬戸町下２８６番地"
     },
     {
       "id": "oky-0a668b596704",
@@ -2023,7 +2783,12 @@
       "address": "岡山市南区箕島1024-2",
       "phone": "086-281-2010",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.610134,
+      "lon": 133.860199,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区箕島1024-2",
+      "geocode_title": "岡山県岡山市南区箕島１０２４番地"
     },
     {
       "id": "oky-e9afbe0080bd",
@@ -2036,7 +2801,12 @@
       "address": "岡山市南区妹尾1368-1",
       "phone": "086-282-1106",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.611,
+      "lon": 133.867569,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区妹尾1368-1",
+      "geocode_title": "岡山県岡山市南区妹尾１３６８番地"
     },
     {
       "id": "oky-b82c166c871a",
@@ -2049,7 +2819,12 @@
       "address": "岡山市南区大福760-2",
       "phone": "086-282-3700",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.62138,
+      "lon": 133.888153,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区大福760-2",
+      "geocode_title": "岡山県岡山市南区大福７６０番地"
     },
     {
       "id": "oky-d23296eabab6",
@@ -2062,7 +2837,12 @@
       "address": "岡山市南区妹尾3518",
       "phone": "086-282-2625",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.624729,
+      "lon": 133.86937,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区妹尾3518",
+      "geocode_title": "岡山県岡山市南区妹尾３５１８番地"
     },
     {
       "id": "oky-10271a0c5a3c",
@@ -2075,7 +2855,12 @@
       "address": "岡山市南区中畦645-11",
       "phone": "086-298-3348",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.590141,
+      "lon": 133.85437,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区中畦645-11",
+      "geocode_title": "岡山県岡山市南区中畦６４５番地"
     },
     {
       "id": "oky-bec991b14dec",
@@ -2088,7 +2873,12 @@
       "address": "岡山市南区藤田610-11",
       "phone": "086-296-2433",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.604557,
+      "lon": 133.893402,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区藤田610-11",
+      "geocode_title": "岡山県岡山市南区藤田６１０番地"
     },
     {
       "id": "oky-663bc680c665",
@@ -2101,7 +2891,12 @@
       "address": "岡山市南区藤田1729-1",
       "phone": "086-472-5251",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.586647,
+      "lon": 133.894623,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区藤田1729-1",
+      "geocode_title": "岡山県岡山市南区藤田１７２９番地"
     },
     {
       "id": "oky-3ccf4db5d2dd",
@@ -2114,7 +2909,12 @@
       "address": "岡山市南区片岡188",
       "phone": "086-362-0950",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.54295,
+      "lon": 133.866516,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区片岡188",
+      "geocode_title": "岡山県岡山市南区片岡１８８番地"
     },
     {
       "id": "oky-7391f1164211",
@@ -2127,7 +2927,12 @@
       "address": "岡山市南区彦崎2570-1",
       "phone": "086-480-0580",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.547504,
+      "lon": 133.83577,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区彦崎2570-1",
+      "geocode_title": "岡山県岡山市南区彦崎２５７０番地"
     },
     {
       "id": "oky-f02577b3bf67",
@@ -2140,7 +2945,12 @@
       "address": "岡山市南区築港新町2-17-10",
       "phone": "086-262-2602",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.603134,
+      "lon": 133.935638,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区築港新町2-17-10",
+      "geocode_title": "岡山県岡山市南区築港新町二丁目１７番１０号"
     },
     {
       "id": "oky-c80fc8f88d1c",
@@ -2153,7 +2963,12 @@
       "address": "岡山市南区浦安本町33",
       "phone": "086-263-7492",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.610146,
+      "lon": 133.928757,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区浦安本町33",
+      "geocode_title": "岡山県岡山市南区浦安本町３３番地"
     },
     {
       "id": "oky-19b5f48cd63c",
@@ -2166,7 +2981,12 @@
       "address": "岡山市南区浦安本町51-3",
       "phone": "086-262-5005",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.611561,
+      "lon": 133.921921,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区浦安本町51-3",
+      "geocode_title": "岡山県岡山市南区浦安本町５１番地"
     },
     {
       "id": "oky-b19e9baaae83",
@@ -2179,7 +2999,12 @@
       "address": "岡山市南区万倍30-20",
       "phone": "086-243-4111",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.625618,
+      "lon": 133.899277,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区万倍30-20",
+      "geocode_title": "岡山県岡山市南区万倍３０番地"
     },
     {
       "id": "oky-c81757e30b10",
@@ -2192,7 +3017,12 @@
       "address": "岡山市南区万倍98",
       "phone": "0866-92-6989",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.627911,
+      "lon": 133.900406,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区万倍98",
+      "geocode_title": "岡山県岡山市南区万倍９８番地"
     },
     {
       "id": "oky-7b9d0f3cb9a3",
@@ -2205,7 +3035,12 @@
       "address": "岡山市南区飽浦322-1",
       "phone": "086-267-2051",
       "website": "",
-      "contact_source": "Okayama City public-facility HTML"
+      "contact_source": "Okayama City public-facility HTML",
+      "lat": 34.592495,
+      "lon": 133.971832,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区飽浦322-1",
+      "geocode_title": "岡山県岡山市南区飽浦３２２番地"
     },
     {
       "id": "oky-afa52b982904",
@@ -2233,7 +3068,12 @@
       "address": "岡山市北区大安寺東町1-30",
       "phone": "086-728-0063",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.662815,
+      "lon": 133.893982,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大安寺東町1-30",
+      "geocode_title": "岡山県岡山市北区大安寺東町１番３０号"
     },
     {
       "id": "oky-91d03a876f19",
@@ -2246,7 +3086,12 @@
       "address": "岡山市北区富町2-16-27",
       "phone": "086-251-6101",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.663834,
+      "lon": 133.90889,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区富町2-16-27",
+      "geocode_title": "岡山県岡山市北区富町二丁目１６番２７号"
     },
     {
       "id": "oky-4e2aa03d849f",
@@ -2259,7 +3104,12 @@
       "address": "岡山市北区今5-8-37",
       "phone": "086-250-5610",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.644833,
+      "lon": 133.896332,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今5-8-37",
+      "geocode_title": "岡山県岡山市北区今五丁目８番３７号"
     },
     {
       "id": "oky-3f47b001d22b",
@@ -2272,7 +3122,12 @@
       "address": "岡山市北区今7-17-7",
       "phone": "086-244-6600",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.642872,
+      "lon": 133.892853,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今7-17-7",
+      "geocode_title": "岡山県岡山市北区今七丁目１７番７号"
     },
     {
       "id": "oky-df4975eddd07",
@@ -2285,7 +3140,12 @@
       "address": "岡山市北区今7-17-7",
       "phone": "086-244-6600",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.642872,
+      "lon": 133.892853,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今7-17-7",
+      "geocode_title": "岡山県岡山市北区今七丁目１７番７号"
     },
     {
       "id": "oky-4156f1a56818",
@@ -2298,7 +3158,12 @@
       "address": "岡山市北区今7-22-19",
       "phone": "086-242-4811",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.640068,
+      "lon": 133.891876,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今7-22-19",
+      "geocode_title": "岡山県岡山市北区今七丁目２２番１９号"
     },
     {
       "id": "oky-29c4c0ee76c2",
@@ -2311,7 +3176,12 @@
       "address": "岡山市北区今7-23-22",
       "phone": "086-242-2015",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.6422,
+      "lon": 133.891464,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区今7-23-22",
+      "geocode_title": "岡山県岡山市北区今七丁目２３番２２号"
     },
     {
       "id": "oky-b5df3bc5edd4",
@@ -2324,7 +3194,12 @@
       "address": "岡山市北区花尻ききょう町7-110 岡嶋ビル1階",
       "phone": "086-251-3000",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.658543,
+      "lon": 133.869888,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区花尻ききょう町7-110 岡嶋ビル1階",
+      "geocode_title": "岡山県岡山市北区花尻ききょう町７番"
     },
     {
       "id": "oky-2fe1d45b5534",
@@ -2337,7 +3212,12 @@
       "address": "岡山市北区平野420-3",
       "phone": "086-250-2833",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.643494,
+      "lon": 133.857758,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区平野420-3",
+      "geocode_title": "岡山県岡山市北区平野"
     },
     {
       "id": "oky-f0b14f7ffb9f",
@@ -2350,7 +3230,12 @@
       "address": "岡山市北区伊福町2-30-1",
       "phone": "086-238-0520",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.675083,
+      "lon": 133.915222,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区伊福町2-30-1",
+      "geocode_title": "岡山県岡山市北区伊福町二丁目３０番１号"
     },
     {
       "id": "oky-f34e491ca797",
@@ -2378,7 +3263,12 @@
       "address": "岡山市中区尾上1318-3",
       "phone": "086-239-0208",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.670502,
+      "lon": 133.943024,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区尾上1318-3",
+      "geocode_title": "岡山県岡山市中区"
     },
     {
       "id": "oky-a7dbd466a40d",
@@ -2391,7 +3281,12 @@
       "address": "岡山市中区津高408-1",
       "phone": "086-259-3755",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.670502,
+      "lon": 133.943024,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区津高408-1",
+      "geocode_title": "岡山県岡山市中区"
     },
     {
       "id": "oky-326f25d6c66d",
@@ -2404,7 +3299,12 @@
       "address": "岡山市中区国富1-10-18",
       "phone": "086-206-7120",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.662544,
+      "lon": 133.945557,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区国富1-10-18",
+      "geocode_title": "岡山県岡山市中区国富一丁目１０番１８号"
     },
     {
       "id": "oky-b077ad17d0a9",
@@ -2417,7 +3317,12 @@
       "address": "岡山市中区沢田490",
       "phone": "086-271-5577",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.6656,
+      "lon": 133.965225,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区沢田490",
+      "geocode_title": "岡山県岡山市中区沢田"
     },
     {
       "id": "oky-0234f726488b",
@@ -2430,7 +3335,12 @@
       "address": "岡山市中区長岡67-79",
       "phone": "086-206-2716",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.684017,
+      "lon": 133.987152,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区長岡67-79",
+      "geocode_title": "岡山県岡山市中区長岡６７番地"
     },
     {
       "id": "oky-ec78a2401e17",
@@ -2443,7 +3353,12 @@
       "address": "岡山市中区乙多見502-4",
       "phone": "086-238-5520",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.679722,
+      "lon": 133.97821,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区乙多見502-4",
+      "geocode_title": "岡山県岡山市中区乙多見"
     },
     {
       "id": "oky-bcd316608527",
@@ -2456,7 +3371,12 @@
       "address": "岡山市中区八幡90-6",
       "phone": "086-201-3246",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.685017,
+      "lon": 133.945816,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区八幡90-6",
+      "geocode_title": "岡山県岡山市中区八幡９０番地"
     },
     {
       "id": "oky-0e9de12c1314",
@@ -2469,7 +3389,12 @@
       "address": "岡山市中区湯迫19-1",
       "phone": "086-201-8797",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.699619,
+      "lon": 133.968765,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市中区湯迫19-1",
+      "geocode_title": "岡山県岡山市中区湯迫"
     },
     {
       "id": "oky-f41ecfd3ccb2",
@@ -2482,7 +3407,12 @@
       "address": "岡山市東区光津840-6",
       "phone": "086-230-1560",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.640049,
+      "lon": 133.991486,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区光津840-6",
+      "geocode_title": "岡山県岡山市東区光津"
     },
     {
       "id": "oky-3e2f6fa23fab",
@@ -2495,7 +3425,12 @@
       "address": "岡山市南区福富中2-5-7",
       "phone": "086-230-7277",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.6227,
+      "lon": 133.937439,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区福富中2-5-7",
+      "geocode_title": "岡山県岡山市南区福富中二丁目５番７号"
     },
     {
       "id": "oky-f7dbfcba53c2",
@@ -2508,7 +3443,12 @@
       "address": "岡山市南区築港新町1-2-32",
       "phone": "086-261-4115",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.609062,
+      "lon": 133.938293,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区築港新町1-2-32",
+      "geocode_title": "岡山県岡山市南区築港新町一丁目２番３２号"
     },
     {
       "id": "oky-55a4d937c7b8",
@@ -2521,7 +3461,12 @@
       "address": "岡山市南区豊成3-14-36",
       "phone": "086-230-7550",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.626633,
+      "lon": 133.925186,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区豊成3-14-36",
+      "geocode_title": "岡山県岡山市南区豊成三丁目１４番３６号"
     },
     {
       "id": "oky-d49048665cc0",
@@ -2534,7 +3479,12 @@
       "address": "岡山市南区福田227-8",
       "phone": "086-230-6261",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.619991,
+      "lon": 133.928207,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区福田227-8",
+      "geocode_title": "岡山県岡山市南区福田２２７番地"
     },
     {
       "id": "oky-905bccfc2d51",
@@ -2547,7 +3497,12 @@
       "address": "岡山市南区西市503-9",
       "phone": "086-239-2266",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.632553,
+      "lon": 133.898972,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区西市503-9",
+      "geocode_title": "岡山県岡山市南区西市"
     },
     {
       "id": "oky-a6b304e5b717",
@@ -2560,7 +3515,12 @@
       "address": "岡山市南区新保654-3",
       "phone": "086-230-7739",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.631981,
+      "lon": 133.910019,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区新保654-3",
+      "geocode_title": "岡山県岡山市南区新保６５４番地"
     },
     {
       "id": "oky-044202fc1f12",
@@ -2573,7 +3533,12 @@
       "address": "岡山市南区西市443-9",
       "phone": "086-230-7501",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.632553,
+      "lon": 133.898972,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区西市443-9",
+      "geocode_title": "岡山県岡山市南区西市"
     },
     {
       "id": "oky-63c6371a9718",
@@ -2586,7 +3551,12 @@
       "address": "岡山市北区大供本町708-6 (15)",
       "phone": "086-206-3323",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.653637,
+      "lon": 133.91188,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区大供本町708-6 (15)",
+      "geocode_title": "岡山県岡山市北区大供本町７０８番地"
     },
     {
       "id": "oky-72dc65f247df",
@@ -2599,7 +3569,12 @@
       "address": "岡山市北区下中野1226-20 (24)",
       "phone": "086-241-1189",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.635597,
+      "lon": 133.896622,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区下中野1226-20 (24)",
+      "geocode_title": "岡山県岡山市北区下中野１２２６番地"
     },
     {
       "id": "oky-3b5848e566d0",
@@ -2612,7 +3587,12 @@
       "address": "岡山市北区平野857-4 (10)",
       "phone": "086-903-3370",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.644608,
+      "lon": 133.859085,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区平野857-4 (10)",
+      "geocode_title": "岡山県岡山市北区平野８５７番地"
     },
     {
       "id": "oky-216eaec81e29",
@@ -2625,7 +3605,12 @@
       "address": "岡山市北区伊福町2-17-5 (20)",
       "phone": "086-252-3350",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.674015,
+      "lon": 133.917023,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区伊福町2-17-5 (20)",
+      "geocode_title": "岡山県岡山市北区伊福町二丁目１７番５号"
     },
     {
       "id": "oky-694167f784c4",
@@ -2638,7 +3623,12 @@
       "address": "岡山市北区高松原古才594-1 (13)",
       "phone": "086-287-2660",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.684437,
+      "lon": 133.822311,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市北区高松原古才594-1 (13)",
+      "geocode_title": "岡山県岡山市北区高松原古才"
     },
     {
       "id": "oky-260135a21617",
@@ -2651,7 +3641,12 @@
       "address": "岡山市東区中川町393-1 (10)",
       "phone": "086-944-0800",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.660522,
+      "lon": 133.998596,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区中川町393-1 (10)",
+      "geocode_title": "岡山県岡山市東区中川町３９３番地"
     },
     {
       "id": "oky-deb6fc9b9832",
@@ -2664,7 +3659,12 @@
       "address": "岡山市東区中尾1036 (6)",
       "phone": "086-297-7676",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.706539,
+      "lon": 134.025497,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市東区中尾1036 (6)",
+      "geocode_title": "岡山県岡山市東区中尾１０３６番地"
     },
     {
       "id": "oky-de68cfb6b3b6",
@@ -2677,7 +3677,12 @@
       "address": "岡山市南区東畦651-19 (5)",
       "phone": "086-282-9309",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.605942,
+      "lon": 133.879807,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区東畦651-19 (5)",
+      "geocode_title": "岡山県岡山市南区東畦６５１番地"
     },
     {
       "id": "oky-00988b6a1b66",
@@ -2690,7 +3695,14 @@
       "address": "岡山市南区築港栄町2-28 (5)",
       "phone": "086-263-6659",
       "website": "",
-      "contact_source": "R8 official facility-list PDF"
+      "contact_source": "R8 official facility-list PDF",
+      "lat": 34.607677,
+      "lon": 133.943924,
+      "geocode_source": "GSI",
+      "geocode_query": "岡山市南区築港栄町2-28 (5)",
+      "geocode_title": "岡山県岡山市南区築港栄町２番２８号"
     }
-  ]
+  ],
+  "geocoded_at": "2026-09-29 08:28",
+  "geocoded_count": 206
 }
