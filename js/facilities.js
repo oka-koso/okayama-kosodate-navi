@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s);
 function init(){
   map=L.map('map').setView([34.655,133.92],11);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
-  fetch('data/facilities.json').then(r=>r.json()).then(data=>{allFacilities=data.facilities||[];$('#updated').textContent='データ確認日：'+(data.updated_at||'未確認');applyQueryParams();render();});
+  fetch('data/facilities.json').then(r=>r.json()).then(data=>{allFacilities=data.facilities||[];const meta=[];if(data.availability_for)meta.push(data.availability_for+'入園');if(data.availability_as_of)meta.push(data.availability_as_of);if(data.source_page_updated)meta.push('岡山市ページ更新 '+data.source_page_updated);else if(data.updated_at)meta.push('データ確認 '+data.updated_at);$('#updated').textContent=meta.join('｜');applyQueryParams();render();});
   ['q','ward','type','service'].forEach(id=>$('#'+id).addEventListener(id==='q'?'input':'change',render));
 }
 function applyQueryParams(){const p=new URLSearchParams(location.search);if(p.get('ward'))$('#ward').value=p.get('ward');}
