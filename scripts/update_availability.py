@@ -17,8 +17,9 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data" / "facility_master.json"
 AVAIL = ROOT / "data" / "availability.json"
+
 SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000012977.html"
-UA = "OkayamaKosodateNavi/5.1"
+UA = "OkayamaKosodateNavi/5.2"
 JST = timezone(timedelta(hours=9))
 
 TYPE_MAP = {
@@ -32,6 +33,7 @@ WARD_BY_7P = ["北区", "北区", "北区", "中区", "東区", "南区", "南�
 
 PHONE_RE = re.compile(r"(?:(086)[-－ー])?([0-9]{3,4})[-－ー]([0-9]{4})")
 POSTAL_RE = re.compile(r"〒?\s*([0-9]{3})[-－ー]([0-9]{4})")
+CAPACITY_RE = re.compile(r"^\d{1,3}$")
 
 
 def clean(s):
@@ -45,11 +47,6 @@ def norm_name(s):
     return s.replace("・", "")
 
 
-def stable_id(name, postal=""):
-    raw = f"{norm_name(name)}|{postal}".encode("utf-8")
-    return "oky-" + hashlib.sha1(raw).hexdigest()[:12]
-
-
 def full_address(address, ward=""):
     a = clean(address)
     if not a:
@@ -59,6 +56,11 @@ def full_address(address, ward=""):
     if re.match(r"^(北区|中区|東区|南区)", a):
         return "岡山市" + a
     return f"岡山市{ward}{a}" if ward else "岡山市" + a
+
+
+def stable_id(name, postal=""):
+    raw = f"{norm_name(name)}|{postal}".encode("utf-8")
+    return "oky-" + hashlib.sha1(raw).hexdigest()[:12]
 
 
 def latest_pdf():
@@ -109,7 +111,6 @@ def latest_pdf():
 def ward_for_page(index, page_count):
     if page_count == 7:
         return WARD_BY_7P[index]
-
     ratio = index / max(page_count - 1, 1)
     if ratio < .43:
         return "北区"
@@ -120,36 +121,64 @@ def ward_for_page(index, page_count):
     return "南区"
 
 
-def status(cell):
-    t = clean(cell)
-    if t in STATUS_MAP:
-        return STATUS_MAP[t]
+def group_words_by_row(words, tolerance=2.6):
+    """
+    pdfplumber.extract_words() の top 座標で実際の紙面の「横一列」を再構成する。
+    extract_tables() のように結合セルで園名を落とさないためのv5.2の核。
+    """
+    words = sorted(words, key=lambda w: (float(w["top"]), float(w["x0"])))
+    rows = []
 
-    m = re.fullmatch(r".*?([○〇△×]).*?", t)
-    return STATUS_MAP[m.group(1)] if m else None
+    for w in words:
+        top = float(w["top"])
+        if not rows or abs(top - rows[-1]["top"]) > tolerance:
+            rows.append({"top": top, "words": [w]})
+        else:
+            rows[-1]["words"].append(w)
+            # 少し平均して、微小なズレに強くする
+            n = len(rows[-1]["words"])
+            rows[-1]["top"] = ((rows[-1]["top"] * (n - 1)) + top) / n
+
+    for r in rows:
+        r["words"] = sorted(r["words"], key=lambda w: float(w["x0"]))
+
+    return rows
 
 
 def row_text(row):
-    return clean(" ".join(clean(c) for c in (row or []) if clean(c)))
+    return clean(" ".join(str(w["text"]) for w in row["words"]))
 
 
-def type_public(row):
-    cells = [clean(c) for c in (row or [])]
+def find_header_geometry(rows):
+    """
+    ページの見出しから「施設名列」と「0～5歳列」の概略x位置を取得。
+    ページごとの微妙なレイアウト差に追随する。
+    """
+    facility_left = None
+    age_centers = {}
 
-    # 独立セル
-    for i, c in enumerate(cells):
-        if c in TYPE_MAP:
-            for j in range(i + 1, min(i + 4, len(cells))):
-                if cells[j] in ("公", "私"):
-                    return i, c, cells[j]
+    for row in rows:
+        for w in row["words"]:
+            t = clean(str(w["text"]))
+            if "施設名" in t and facility_left is None:
+                facility_left = float(w["x0"])
 
-    # セル結合
-    text = row_text(row)
-    m = re.search(r"(?:^|\s)(保|こ|小|事)\s*(公|私)(?:\s|$)", text)
-    if m:
-        return None, m.group(1), m.group(2)
+            m = re.fullmatch(r"([０１２３４５0-5])歳", t)
+            if m:
+                z = m.group(1)
+                trans = str.maketrans("０１２３４５", "012345")
+                age = int(z.translate(trans))
+                age_centers[age] = (float(w["x0"]) + float(w["x1"])) / 2
 
-    return None
+    return facility_left, age_centers
+
+
+def is_type_token(t):
+    return clean(t) in TYPE_MAP
+
+
+def is_public_token(t):
+    return clean(t) in ("公", "私")
 
 
 def plausible_name(s):
@@ -160,147 +189,138 @@ def plausible_name(s):
     reject = (
         "施設名", "電話番号", "利用定員", "対象年齢", "受入見込み",
         "注意事項", "備考", "中学校区", "年齢別", "凡例",
-        "認可保育園等の受入見込み", "確認時点", "施設利用",
-        "保育利用", "教育利用", "設置者", "確認日時",
+        "確認時点", "施設利用", "保育利用", "教育利用", "設置者",
+        "令和", "ページ", "クラス", "生年月日",
     )
     if any(x in s for x in reject):
         return False
 
     if s in TYPE_MAP or s in ("公", "私"):
         return False
-
     if PHONE_RE.search(s) or POSTAL_RE.search(s):
         return False
+    if re.fullmatch(r"\d+", s):
+        return False
 
-    # 園名には通常かな・漢字が含まれる。
     return bool(re.search(r"[ぁ-んァ-ヶ一-龯]", s))
 
 
-def name_score(s):
-    """園名らしさ。前行探索で法人名より園名を優先する。"""
-    s = clean(s)
-    if not plausible_name(s):
-        return -999
-
-    score = 1
-
-    strong = (
-        "保育園", "こども園", "保育所", "幼稚園",
-        "保育室", "キッズ", "ナーサリー", "スクール",
-        "ルーム", "園", "保育",
-    )
-    if any(x in s for x in strong):
-        score += 8
-
-    # 法人名・設置者名らしさは減点
-    operator_words = (
-        "社会福祉法人", "学校法人", "株式会社", "有限会社",
-        "合同会社", "一般社団法人", "医療法人", "岡山市",
-    )
-    if any(x in s for x in operator_words):
-        score -= 6
-
-    if len(s) > 40:
-        score -= 3
-
-    return score
+def join_name_words(words):
+    # 日本語名は基本スペースなし。英数字部分の自然さより園名一致を優先。
+    text = "".join(clean(str(w["text"])) for w in words)
+    return clean(text)
 
 
-def clean_name_candidate(name):
-    name = clean(name)
-    name = re.split(r"(?:℡|☎|TEL|Tel|tel)\s*", name, maxsplit=1)[0]
-    name = re.split(r"〒?\s*[0-9]{3}[-－ー][0-9]{4}", name, maxsplit=1)[0]
-    name = re.sub(r"\s+(?:保|こ|小|事)\s*(?:公|私).*$", "", name).strip()
-    return clean(name)
+def detect_facility_row(row, facility_left):
+    """
+    同じy座標上の「施設名 / 種別 / 公私」を座標で結び直す。
+    これにより、従来ログで "保 私" だけになっていた施設も取得可能。
+    """
+    ws = row["words"]
 
+    type_positions = [i for i, w in enumerate(ws) if is_type_token(str(w["text"]))]
+    if not type_positions:
+        return None
 
-def extract_name(row, type_index=None):
-    cells = [clean(c) for c in (row or [])]
-    candidates = []
+    # 施設表中では原則、最初に出る保/こ/小/事を採用
+    ti = type_positions[0]
 
-    if type_index is not None:
-        for c in reversed(cells[:type_index]):
-            if plausible_name(c):
-                candidates.append(c)
+    pi = None
+    for j in range(ti + 1, min(ti + 4, len(ws))):
+        if is_public_token(str(ws[j]["text"])):
+            pi = j
+            break
+
+    if pi is None:
+        return None
+
+    type_token = clean(str(ws[ti]["text"]))
+    pub_token = clean(str(ws[pi]["text"]))
+    type_x = float(ws[ti]["x0"])
+
+    name_words = []
+    for w in ws[:ti]:
+        x0 = float(w["x0"])
+        x1 = float(w["x1"])
+        t = clean(str(w["text"]))
+
+        # 施設名ヘッダ位置が取れた場合、それより左（学校区など）を除く
+        if facility_left is not None and x1 < facility_left - 2:
+            continue
+
+        # 種別列より左だけ
+        if x0 >= type_x:
+            continue
+
+        # 区・学校区や数値だけのセルを除く
+        if not t or re.fullmatch(r"\d+", t):
+            continue
+
+        name_words.append(w)
+
+    name = join_name_words(name_words)
+
+    # 名前が取れない場合、種別の直前1～2語を救済
+    if not plausible_name(name):
+        rescue = []
+        for w in reversed(ws[:ti]):
+            t = clean(str(w["text"]))
+            if plausible_name(t):
+                rescue.insert(0, w)
+                # かなり長い園名は複数wordに割れるため2～3語まで連結
+                if len(rescue) >= 3:
+                    break
+            elif rescue:
                 break
+        name = join_name_words(rescue)
 
-    if len(cells) > 2 and plausible_name(cells[2]):
-        candidates.append(cells[2])
-
-    for c in cells:
-        m = re.match(r"(.+?)\s+(保|こ|小|事)\s*(公|私)(?:\s|$)", c)
-        if m and plausible_name(m.group(1)):
-            candidates.append(m.group(1))
-
-    if not candidates:
+    if not plausible_name(name):
         return None
 
-    candidates = [clean_name_candidate(c) for c in candidates]
-    candidates = [c for c in candidates if plausible_name(c)]
-    if not candidates:
-        return None
-
-    return max(candidates, key=name_score)
-
-
-def previous_name(rows, idx):
-    """
-    園名と種別が別行になったPDFを救済。
-    type/public行の直前1～4行から最も園名らしいセルを選ぶ。
-    """
-    candidates = []
-
-    for back in range(1, 5):
-        j = idx - back
-        if j < 0:
+    # 設置者は公私セルの右から、定員（数値セル）の手前まで
+    operator_words = []
+    for w in ws[pi + 1:]:
+        t = clean(str(w["text"]))
+        if CAPACITY_RE.fullmatch(t):
             break
-
-        r = rows[j]
-
-        # 前の施設のtype/public行まで遡らない
-        if type_public(r):
+        if t in STATUS_MAP:
             break
+        operator_words.append(w)
 
-        for c in (r or []):
-            c = clean_name_candidate(c)
-            sc = name_score(c)
-            if sc > 0:
-                # 近い行を少し優先
-                candidates.append((sc + (5 - back) * 0.35, c))
+    operator = clean(" ".join(str(w["text"]) for w in operator_words))
 
-        txt = clean_name_candidate(row_text(r))
-        sc = name_score(txt)
-        if sc > 0:
-            candidates.append((sc + (5 - back) * 0.35, txt))
-
-    if not candidates:
-        return None
-
-    candidates.sort(reverse=True)
-    return candidates[0][1]
+    return {
+        "name": name,
+        "type_code": type_token,
+        "public_code": pub_token,
+        "operator": operator,
+        "row_top": row["top"],
+        "words": ws,
+    }
 
 
-def contact_from_text(text, ward):
-    phone = postal = address = ""
+def parse_contact_row(row, ward):
+    txt = row_text(row)
+    if not PHONE_RE.search(txt) and not POSTAL_RE.search(txt):
+        return "", "", ""
 
-    pm = PHONE_RE.search(text)
+    phone = ""
+    postal = ""
+    address = ""
+
+    pm = PHONE_RE.search(txt)
     if pm:
         area, p2, p3 = pm.groups()
         phone = f"{area or '086'}-{p2}-{p3}"
 
-    zm = POSTAL_RE.search(text)
+    zm = POSTAL_RE.search(txt)
     if zm:
         postal = f"{zm.group(1)}-{zm.group(2)}"
-        tail = text[zm.end():].strip()
+        tail = txt[zm.end():].strip()
 
-        # 後方の定員・年齢・受入記号等を切る
+        # 後方に別セルの情報が混ざったときの切断
         tail = re.split(
-            r"\s+(?:"
-            r"\d{1,3}\s*(?:人|か月|ヶ月|歳)|"
-            r"[○〇△×](?:\s+[○〇△×])|"
-            r"障害児|幼稚園型|"
-            r"(?:保|こ|小|事)\s*(?:公|私)"
-            r")",
+            r"\s+(?:\d{1,3}\s*(?:人|か月|ヶ月|歳)|[○〇△×](?:\s+[○〇△×])|障害児)",
             tail,
             maxsplit=1,
         )[0].strip()
@@ -310,166 +330,138 @@ def contact_from_text(text, ward):
     return phone, postal, address
 
 
-def statuses_from_row(row):
-    cells = [clean(c) for c in (row or [])]
-
-    if len(cells) >= 14:
-        vals = [status(c) for c in cells[8:14]]
-        if sum(v is not None for v in vals) >= 1:
-            return {str(i): v for i, v in enumerate(vals) if v is not None}
-
-    vals = []
-    for c in cells:
-        v = status(c)
-        if v is not None and clean(c) in STATUS_MAP:
-            vals.append(v)
-
-    vals = vals[-6:]
-    return {str(i): v for i, v in enumerate(vals)}
-
-
-def best_statuses_near(rows, idx):
+def nearest_contact(rows, index, ward):
     """
-    年齢別記号がtype/public行とは別行へ分かれた場合にも対応。
-    現行行と前後2行のうち、最も多く○△×を取れる行を採用する。
+    施設名行の直後数行から電話・〒住所を探す。
     """
-    best = {}
+    base_top = rows[index]["top"]
 
-    for j in range(max(0, idx - 2), min(len(rows), idx + 3)):
-        vals = statuses_from_row(rows[j])
-        if len(vals) > len(best):
-            best = vals
-
-    return best
-
-
-def contact_block(rows, idx):
-    """
-    同一施設の名前行・type/public行・電話/住所行をまとめる。
-    次の施設のtype/public行へ到達したら停止。
-    """
-    parts = []
-
-    for j in range(max(0, idx - 2), min(len(rows), idx + 6)):
-        if j > idx and type_public(rows[j]):
+    for j in range(index + 1, min(len(rows), index + 5)):
+        # 離れすぎたら別行ブロック
+        if rows[j]["top"] - base_top > 26:
             break
-        parts.append(row_text(rows[j]))
 
-    return clean(" ".join(x for x in parts if x))
+        phone, postal, address = parse_contact_row(rows[j], ward)
+        if phone or postal or address:
+            return phone, postal, address
+
+    return "", "", ""
 
 
-def dedupe_rows(rows):
+def status_from_token(t):
+    t = clean(t)
+    if t in STATUS_MAP:
+        return STATUS_MAP[t]
+    return None
+
+
+def availability_from_same_row(row, age_centers):
     """
-    pdfplumberが同じ表を重複抽出することがあるため、
-    連続・非連続を問わず同じ行テキストをページ内で1回にする。
-    空行は除外。
+    0～5歳のヘッダx位置へ○△×を最近傍割当。
+    merged cell / text extraction orderに依存しない。
     """
-    result = []
-    seen = set()
+    if len(age_centers) < 4:
+        return {}
 
-    for row in rows:
-        key = row_text(row)
-        if not key:
+    result = {}
+
+    for w in row["words"]:
+        st = status_from_token(str(w["text"]))
+        if not st:
             continue
 
-        # 完全一致の重複だけ除く。異なる園の同型行は保持。
-        # 園名がないtype/publicだけの行は重複しやすいので、
-        # 位置情報を失うと困るため除外対象にしない。
-        if plausible_name(key):
-            if key in seen:
-                continue
-            seen.add(key)
+        cx = (float(w["x0"]) + float(w["x1"])) / 2
+        age = min(age_centers, key=lambda a: abs(age_centers[a] - cx))
 
-        result.append(row)
+        # 近すぎない記号は備考欄などの可能性があるため弾く
+        if abs(age_centers[age] - cx) <= 28:
+            result[str(age)] = st
 
     return result
 
 
-def parse_pdf(pdf_bytes):
-    parsed = []
-    seen = set()
+def availability_near_row(rows, index, age_centers):
+    """
+    園名行と○△×のbaselineが数pxズレるPDFに対応。
+    同一行＋上下近傍から最も多く取れたものを採用。
+    """
+    best = {}
+    base_top = rows[index]["top"]
 
-    settings = {
-        "vertical_strategy": "lines",
-        "horizontal_strategy": "lines",
-        "snap_tolerance": 4,
-        "join_tolerance": 4,
-        "intersection_tolerance": 5,
-        "text_tolerance": 3,
-    }
+    for j in range(max(0, index - 2), min(len(rows), index + 3)):
+        if abs(rows[j]["top"] - base_top) > 12:
+            continue
+
+        av = availability_from_same_row(rows[j], age_centers)
+        if len(av) > len(best):
+            best = av
+
+    return best
+
+
+def parse_pdf(pdf_bytes):
+    facilities = []
+    seen = set()
 
     with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
         for pi, page in enumerate(pdf.pages):
             ward = ward_for_page(pi, len(pdf.pages))
 
-            tables = page.extract_tables(settings) or []
-            if not tables:
-                tables = page.extract_tables({
-                    "vertical_strategy": "text",
-                    "horizontal_strategy": "text",
-                    "min_words_vertical": 1,
-                    "min_words_horizontal": 1,
-                    "text_tolerance": 3,
-                }) or []
+            words = page.extract_words(
+                use_text_flow=False,
+                keep_blank_chars=False,
+                x_tolerance=1.5,
+                y_tolerance=2.0,
+            ) or []
 
-            rows = [row for table in tables for row in (table or [])]
-            rows = dedupe_rows(rows)
+            rows = group_words_by_row(words)
+            facility_left, age_centers = find_header_geometry(rows)
 
             page_count = 0
-            recovered_name_count = 0
+            missing_contact = 0
+            missing_status = 0
 
-            for idx, row in enumerate(rows):
-                tp = type_public(row)
-                if not tp:
+            for i, row in enumerate(rows):
+                rec = detect_facility_row(row, facility_left)
+                if not rec:
                     continue
 
-                type_index, typ, pub = tp
-
-                # まず同じ行。無ければ直前行から園名を回収。
-                name = extract_name(row, type_index)
-                if not name:
-                    name = previous_name(rows, idx)
-                    if name:
-                        recovered_name_count += 1
-
-                if not name:
-                    print(
-                        f"[update] WARNING page {pi+1}: "
-                        f"type/public detected but name missing: {row_text(row)[:120]}"
-                    )
-                    continue
-
-                name = clean_name_candidate(name)
-                key = norm_name(name)
-
+                key = norm_name(rec["name"])
                 if not key or key in seen:
                     continue
 
-                block = contact_block(rows, idx)
-                phone, postal, address = contact_from_text(block, ward)
-                availability = best_statuses_near(rows, idx)
+                phone, postal, address = nearest_contact(rows, i, ward)
+                availability = availability_near_row(rows, i, age_centers)
 
-                parsed.append({
-                    "name": name,
+                if not phone or not address:
+                    missing_contact += 1
+                if not availability:
+                    missing_status += 1
+
+                facilities.append({
+                    "name": rec["name"],
                     "normalized_name": key,
                     "ward": ward,
-                    "type": TYPE_MAP.get(typ, "保育施設"),
-                    "public": pub == "公",
+                    "type": TYPE_MAP.get(rec["type_code"], "保育施設"),
+                    "public": rec["public_code"] == "公",
+                    "operator": rec["operator"],
                     "phone": phone,
                     "postal": postal,
                     "address": address,
                     "availability": availability,
                 })
-
                 seen.add(key)
                 page_count += 1
 
             print(
                 f"[update] page {pi+1}/{len(pdf.pages)} "
-                f"parsed={page_count} recovered_names={recovered_name_count} ward={ward}"
+                f"parsed={page_count} "
+                f"missing_contact={missing_contact} "
+                f"missing_status={missing_status} "
+                f"ward={ward}"
             )
 
-    return parsed
+    return facilities
 
 
 def load_master():
@@ -478,13 +470,10 @@ def load_master():
 
 def master_indexes(master):
     exact = {}
-
     for f in master["facilities"]:
         exact[norm_name(f.get("name", ""))] = f
-
         for alias in f.get("aliases", []):
             exact[norm_name(alias)] = f
-
     return exact
 
 
@@ -495,10 +484,8 @@ def fuzzy_match(name, facilities):
 
     for f in facilities:
         names = [f.get("name", "")] + list(f.get("aliases", []))
-
         for candidate in names:
             score = SequenceMatcher(None, target, norm_name(candidate)).ratio()
-
             if score > best_score:
                 best = f
                 best_score = score
@@ -507,10 +494,7 @@ def fuzzy_match(name, facilities):
 
 
 def meta_from_pdf(pdf_bytes, title, page_text):
-    result = {
-        "availability_for": None,
-        "availability_as_of": None,
-    }
+    result = {"availability_for": None, "availability_as_of": None}
 
     try:
         with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
@@ -548,7 +532,7 @@ def meta_from_pdf(pdf_bytes, title, page_text):
 def main():
     if not MASTER.exists():
         raise RuntimeError(
-            "facility_master.json がありません。migrate_v5.py を先に実行してください。"
+            "facility_master.json がありません。v5の初期マスタ作成を先に実行してください。"
         )
 
     title, pdf_url, page_updated, page_text = latest_pdf()
@@ -559,12 +543,11 @@ def main():
     pdf_hash = hashlib.sha256(r.content).hexdigest()
     pdf_facilities = parse_pdf(r.content)
 
-    # v5.1: 閾値を下げてごまかさない。
-    # 180件未満なら従来どおり失敗扱いにしてデータを保護する。
+    # 閾値を下げて「成功」にしない。現行PDF全件取得前提。
     if len(pdf_facilities) < 180:
         raise RuntimeError(
             f"PDFから取得できた施設が{len(pdf_facilities)}件しかありません。"
-            "既存データを壊さないため更新を停止します。"
+            "座標ベース解析でも不足しているため、既存データを保護して停止します。"
         )
 
     master = load_master()
@@ -572,7 +555,6 @@ def main():
 
     matched_ids = set()
     by_id = {}
-    unmatched = []
     fuzzy_log = []
     auto_added = []
 
@@ -581,7 +563,6 @@ def main():
 
         if not f:
             f, score = fuzzy_match(pf["name"], master["facilities"])
-
             if f:
                 fuzzy_log.append({
                     "pdf_name": pf["name"],
@@ -591,7 +572,6 @@ def main():
 
         if not f:
             fid = stable_id(pf["name"], pf.get("postal", ""))
-
             f = {
                 "id": fid,
                 "name": pf["name"],
@@ -599,7 +579,7 @@ def main():
                 "ward": pf["ward"],
                 "type": pf["type"],
                 "public": pf["public"],
-                "operator": "",
+                "operator": pf.get("operator", ""),
                 "postal": pf.get("postal", ""),
                 "address": pf.get("address", ""),
                 "phone": pf.get("phone", ""),
@@ -612,52 +592,43 @@ def main():
                     "temporary": False
                 },
                 "active": True,
-                "review_status": "auto_added_from_availability_pdf",
+                "review_status": "auto_added_from_availability_pdf_v5_2",
             }
-
             master["facilities"].append(f)
             exact[norm_name(f["name"])] = f
             auto_added.append(f["name"])
 
-        # 基本情報は空欄のみ補完。
+        # PDFの連絡先は「現在PDFに載っている住所・電話」として、
+        # 値が正常に取れている場合だけマスタへ反映。
+        if pf.get("phone"):
+            f["phone"] = pf["phone"]
+        if pf.get("postal"):
+            f["postal"] = pf["postal"]
+        if pf.get("address"):
+            f["address"] = full_address(pf["address"], pf["ward"])
+
         if not f.get("ward"):
             f["ward"] = pf["ward"]
-
         if not f.get("type"):
             f["type"] = pf["type"]
 
-        if not f.get("phone") and pf.get("phone"):
-            f["phone"] = pf["phone"]
-
-        if not f.get("postal") and pf.get("postal"):
-            f["postal"] = pf["postal"]
-
-        if not f.get("address") and pf.get("address"):
-            f["address"] = pf["address"]
-
-        # 住所表記を必ず「岡山市○区...」に統一。
-        f["address"] = full_address(
-            f.get("address", ""),
-            f.get("ward", "")
-        )
-
         matched_ids.add(f["id"])
         by_id[f["id"]] = pf.get("availability", {})
+
+    with_status = sum(1 for v in by_id.values() if v)
+
+    # 受入記号の取得率も監査。
+    if with_status < 150:
+        raise RuntimeError(
+            f"受入見込みを読み取れた施設が{with_status}件しかありません。"
+            "既存データを保護して停止します。"
+        )
 
     missing_from_pdf = [
         {"id": f["id"], "name": f["name"]}
         for f in master["facilities"]
         if f.get("active", True) and f["id"] not in matched_ids
     ]
-
-    with_status = sum(1 for v in by_id.values() if v)
-
-    # こちらも従来の安全装置を維持。
-    if with_status < 150:
-        raise RuntimeError(
-            f"受入見込みを読み取れた施設が{with_status}件しかありません。"
-            "更新を停止します。"
-        )
 
     meta = meta_from_pdf(r.content, title, page_text)
 
@@ -674,7 +645,7 @@ def main():
         json.dumps(
             {
                 "schema_version": 5,
-                "parser_version": "5.1",
+                "parser_version": "5.2-coordinate",
                 "updated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"),
                 "availability_for": meta["availability_for"],
                 "availability_as_of": meta["availability_as_of"],
@@ -687,7 +658,6 @@ def main():
                 "with_status_count": with_status,
                 "auto_added_facilities": auto_added,
                 "fuzzy_matches": fuzzy_log,
-                "unmatched_pdf_facilities": unmatched,
                 "master_not_in_pdf": missing_from_pdf,
                 "by_facility_id": by_id,
             },
@@ -698,21 +668,12 @@ def main():
     )
 
     print(
-        f"[update] pdf={len(pdf_facilities)} "
+        f"[update] SUCCESS pdf={len(pdf_facilities)} "
         f"matched={len(matched_ids)} "
         f"with_status={with_status} "
         f"auto_added={len(auto_added)} "
         f"master_not_in_pdf={len(missing_from_pdf)}"
     )
-
-    if auto_added:
-        print("[update] NEW:", " / ".join(auto_added))
-
-    if missing_from_pdf:
-        print(
-            "[update] not in latest PDF:",
-            " / ".join(x["name"] for x in missing_from_pdf[:30])
-        )
 
 
 if __name__ == "__main__":
