@@ -19,7 +19,7 @@ OUT = ROOT / "data" / "availability_fixed.json"
 AUDIT = ROOT / "data" / "availability_fixed_audit.json"
 
 SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000012977.html"
-UA = "OkayamaKosodateNavi/availability-fixed-v3-address-name-disambiguation"
+UA = "OkayamaKosodateNavi/availability-fixed-v3.1-shared-contact-order"
 JST = timezone(timedelta(hours=9))
 
 STATUS_MAP = {"○": "○", "〇": "○", "△": "△", "×": "×"}
@@ -254,12 +254,15 @@ def collect_contact_rows(rows):
 def master_indexes(master):
     """
     固定マスタを電話・郵便番号・住所で索引化する。
+    同一連絡先を完全共有する施設については、固定マスタ上の順序も保持する。
     """
     by_phone_postal = {}
     by_phone = {}
     by_postal = {}
+    master_order = {}
 
-    for facility in master.get("facilities", []):
+    for order, facility in enumerate(master.get("facilities", [])):
+        master_order[facility["id"]] = order
         phone = normalize_phone(facility.get("phone", ""))
         postal = normalize_postal(facility.get("postal", ""))
 
@@ -276,6 +279,7 @@ def master_indexes(master):
         "by_phone_postal": by_phone_postal,
         "by_phone": by_phone,
         "by_postal": by_postal,
+        "master_order": master_order,
     }
 
 
@@ -412,6 +416,82 @@ def match_contact(contact, indexes):
         "candidates": [x["name"] for x in union.values()],
     }
 
+
+
+def duplicate_contact_key(contact):
+    """
+    電話・郵便番号・所在地まで完全一致する行だけを同一キーにする。
+    """
+    return (
+        contact.get("phone", ""),
+        contact.get("postal", ""),
+        normalize_locality(contact.get("locality", "")),
+    )
+
+
+def build_occurrence_resolution(contacts, indexes):
+    """
+    どんぐり保育園 / ノイエ保育園のように、
+    電話・郵便番号・住所まで完全に共有する施設を
+    PDF出現順と固定マスタ順で対応付ける。
+
+    適用条件を厳しく限定:
+    - 同一 contact key のPDF行が2件以上
+    - 同じ phone+postal 候補が2件以上
+    - 候補施設の住所もそのcontact localityと一致
+    - PDF行数と候補施設数が完全一致
+
+    これ以外には使わない。
+    """
+    groups = {}
+
+    for idx, contact in enumerate(contacts):
+        key = duplicate_contact_key(contact)
+        groups.setdefault(key, []).append(idx)
+
+    resolution = {}
+
+    for key, contact_indexes in groups.items():
+        if len(contact_indexes) < 2:
+            continue
+
+        phone, postal, locality = key
+
+        candidates = indexes["by_phone_postal"].get(
+            (phone, postal),
+            [],
+        )
+
+        if len(candidates) < 2:
+            continue
+
+        address_candidates = []
+
+        for facility in candidates:
+            master_locality = normalize_locality(
+                facility.get("address", "")
+            )
+
+            if master_locality == locality:
+                address_candidates.append(facility)
+
+        if len(address_candidates) != len(contact_indexes):
+            continue
+
+        address_candidates.sort(
+            key=lambda f: indexes["master_order"].get(
+                f["id"],
+                10**9,
+            )
+        )
+
+        for pdf_index, facility in zip(
+            contact_indexes,
+            address_candidates,
+        ):
+            resolution[pdf_index] = facility
+
+    return resolution
 
 def status_token(text):
     return STATUS_MAP.get(clean(text))
@@ -552,15 +632,28 @@ def parse_pdf(pdf_bytes, master):
             # row top順
             contacts.sort(key=lambda x: x["top"])
 
+            occurrence_resolution = build_occurrence_resolution(
+                contacts,
+                indexes,
+            )
+
             page_matched = 0
             page_unmatched = 0
             page_status = 0
 
             for i, contact in enumerate(contacts):
-                match = match_contact(
-                    contact,
-                    indexes,
-                )
+                if i in occurrence_resolution:
+                    forced = occurrence_resolution[i]
+                    match = {
+                        "facility": forced,
+                        "method": "shared-contact-occurrence-order",
+                        "ambiguous": False,
+                    }
+                else:
+                    match = match_contact(
+                        contact,
+                        indexes,
+                    )
 
                 if match.get("ambiguous"):
                     ambiguous_contacts.append({
@@ -665,7 +758,7 @@ def parse_pdf(pdf_bytes, master):
                     page_status += 1
 
             print(
-                f"[availability-v3] page "
+                f"[availability-v3.1] page "
                 f"{page_index + 1}/{len(pdf.pages)} "
                 f"contacts={len(contacts)} "
                 f"matched={page_matched} "
@@ -800,8 +893,8 @@ def main():
         )
 
     payload = {
-        "schema_version": 3,
-        "matching_key": "official phone + postal + address; context name only for shared-contact facilities",
+        "schema_version": 31,
+        "matching_key": "official phone + postal + address; exact shared-contact duplicates resolved by PDF/master occurrence order",
         "generated_at": audit["generated_at"],
         "availability_for": meta["availability_for"],
         "availability_as_of": meta["availability_as_of"],
@@ -826,7 +919,7 @@ def main():
     )
 
     print(
-        "[availability-v3] SUCCESS "
+        "[availability-v3.1] SUCCESS "
         f"master=206 "
         f"matched={matched_count} "
         f"with_status={with_status_count} "
@@ -840,7 +933,7 @@ if __name__ == "__main__":
         main()
     except Exception as exc:
         print(
-            f"[availability-v3] ERROR: {exc}",
+            f"[availability-v3.1] ERROR: {exc}",
             file=sys.stderr,
         )
         sys.exit(1)
