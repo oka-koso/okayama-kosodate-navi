@@ -1,4 +1,4 @@
-name: Geocode fixed facility master
+name: Geocode fixed facility master v2
 
 on:
   workflow_dispatch:
@@ -17,23 +17,26 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - name: Install dependencies
+        run: pip install requests
 
       - name: Geocode fixed master
         run: python scripts/geocode_fixed_master.py
 
-      - name: Commit coordinates
+      - name: Commit coordinates and audit
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
 
-          git add data/facility_master.json
+          git add \
+            data/facility_master.json \
+            data/geocode_audit.json
 
           if git diff --cached --quiet; then
             echo "No coordinate changes"
             exit 0
           fi
 
-          git commit -m "data: geocode fixed facility master"
+          git commit -m "data: geocode fixed facility master v2"
           git pull --rebase origin main
           git push origin main
