@@ -1,4 +1,4 @@
-name: Update fixed childcare availability v3
+name: Update fixed childcare availability v3.1
 
 on:
   workflow_dispatch:
@@ -40,6 +40,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "data: update audited childcare availability v3"
+          git commit -m "data: update audited childcare availability v3.1"
           git pull --rebase origin main
           git push origin main
