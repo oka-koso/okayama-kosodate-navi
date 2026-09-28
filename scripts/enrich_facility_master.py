@@ -34,7 +34,7 @@ PHONE_RE = re.compile(
     r"(?:℡|☎|TEL|Tel|tel)?\s*"
     r"(?:(086)[-－ー])?([0-9]{3,4})[-－ー]([0-9]{4})"
 )
-POSTAL_RE = re.compile(r"〒?\s*([0-9]{3})[-－ー]([0-9]{4})")
+POSTAL_RE = re.compile(r"〒\s*([0-9]{3})[-－ー]([0-9]{4})")
 
 WARDS = ("北区", "中区", "東区", "南区")
 
@@ -92,6 +92,10 @@ def parse_contact_line(line):
     """
     例:
     ℡ 222-7583 〒 700-0817 弓之町8-2 短 8:30 ～ 16:30
+
+    重要:
+    電話番号 222-7583 を郵便番号と誤認しないよう、
+    郵便番号は必ず「〒」の後ろだけを読む。
     """
     phone_match = PHONE_RE.search(line)
     if not phone_match:
@@ -107,6 +111,12 @@ def parse_contact_line(line):
     if postal_match:
         postal = f"{postal_match.group(1)}-{postal_match.group(2)}"
         locality = line[postal_match.end():].strip()
+
+        # PDF上の注記記号が住所先頭に残る場合を除去
+        locality = re.sub(r"^[※＊*]\s*", "", locality)
+
+        # 万一、別の〒表記が混ざったらその部分も除去
+        locality = re.sub(r"^〒\s*\d{3}[-－ー]\d{4}\s*", "", locality)
 
         # 「短 8:30～」以降は住所ではない
         locality = re.split(
@@ -350,6 +360,24 @@ def main():
                 "value": postal,
             })
 
+        # 電話番号の下7桁を郵便番号として誤抽出する旧バグを検出
+        phone_digits = re.sub(r"\D", "", item.get("phone", ""))
+        postal_digits = re.sub(r"\D", "", postal)
+        if postal_digits and phone_digits.endswith(postal_digits):
+            issues.append({
+                "name": item["name"],
+                "issue": "postal_matches_phone_tail",
+                "postal": postal,
+                "phone": item.get("phone", ""),
+            })
+
+        if "※" in item.get("address", "") or "〒" in item.get("address", ""):
+            issues.append({
+                "name": item["name"],
+                "issue": "annotation_or_postal_leaked_into_address",
+                "value": item.get("address", ""),
+            })
+
         address = item.get("address", "")
         if address and not address.startswith("岡山市"):
             issues.append({
@@ -401,11 +429,15 @@ def main():
         )
         for issue in issues[:20]:
             print("[master] warning:", issue)
-    else:
-        print(
-            f"[master] SUCCESS facilities={len(assigned)} "
-            f"public_html_corrected={corrected}"
+        raise RuntimeError(
+            f"施設マスタ監査で{len(issues)}件の問題を検出しました。"
+            " facility_master.json は生成しましたが、監査合格前のため本番利用しないでください。"
         )
+
+    print(
+        f"[master] SUCCESS facilities={len(assigned)} "
+        f"public_html_corrected={corrected} issues=0"
+    )
 
 
 if __name__ == "__main__":
