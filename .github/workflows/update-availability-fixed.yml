@@ -1,12 +1,9 @@
-name: Update fixed childcare availability
+name: Update fixed childcare availability v2
 
 on:
   workflow_dispatch:
 
   schedule:
-    # 岡山市は受入見込みを申込締切前のおよそ1週間公開。
-    # 公開日は固定されないため毎日確認し、
-    # PDFの内容が変わった時だけcommitする。
     - cron: "20 8 * * *"
 
 permissions:
@@ -26,10 +23,11 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 pdfplumber
 
-      - name: Match latest availability PDF to fixed 206-facility master
+      - name: Match availability by official phone and postal
         run: python scripts/update_availability_fixed.py
 
       - name: Commit audited availability
+        if: success()
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
