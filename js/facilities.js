@@ -1,0 +1,13 @@
+let allFacilities=[], map, markers=[];
+const $=s=>document.querySelector(s);
+function init(){
+  map=L.map('map').setView([34.655,133.92],11);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+  fetch('data/facilities.json').then(r=>r.json()).then(data=>{allFacilities=data.facilities||[];$('#updated').textContent='データ確認日：'+(data.updated_at||'未確認');applyQueryParams();render();});
+  ['q','ward','type','service'].forEach(id=>$('#'+id).addEventListener(id==='q'?'input':'change',render));
+}
+function applyQueryParams(){const p=new URLSearchParams(location.search);if(p.get('ward'))$('#ward').value=p.get('ward');}
+function filterData(){const q=$('#q').value.trim().toLowerCase(),w=$('#ward').value,t=$('#type').value,s=$('#service').value;return allFacilities.filter(f=>(!q||(`${f.name} ${f.address}`).toLowerCase().includes(q)))&&(!w||f.ward===w)&&(!t||f.type===t)&&(!s||f.services?.[s]));}
+function render(){const arr=filterData();$('#count').textContent=arr.length;$('#facility-list').innerHTML=arr.map(card).join('');markers.forEach(m=>m.remove());markers=[];arr.filter(f=>f.lat&&f.lon).forEach(f=>{const m=L.marker([f.lat,f.lon]).addTo(map);m.bindPopup(`<strong>${OKN.esc(f.name)}</strong><br>${OKN.esc(f.address)}<br><a href="tel:${(f.phone||'').replace(/-/g,'')}">${OKN.esc(f.phone||'')}</a>`);markers.push(m);});if(markers.length){const g=L.featureGroup(markers);map.fitBounds(g.getBounds().pad(.08),{maxZoom:14});}}
+function card(f){const a=f.availability||{};return `<article class="facility-card"><h3>${OKN.esc(f.name)}</h3><div class="badges"><span class="badge">${OKN.esc(f.type)}</span><span class="badge ${f.public?'public':''}">${f.public?'公立':'私立等'}</span>${f.services?.extended?'<span class="badge">延長保育</span>':''}${f.services?.temporary?'<span class="badge temp">一時預かり</span>':''}</div><dl class="facility-info"><dt>所在地</dt><dd>岡山市${OKN.esc(f.address)}</dd><dt>電話</dt><dd>${OKN.esc(f.phone||'—')}</dd></dl>${Object.keys(a).length?`<div class="availability">${[0,1,2,3,4,5].map(age=>`<span class="age-pill ${a[age]==='○'?'o':a[age]==='△'?'d':a[age]==='×'?'x':''}" title="${age}歳：${a[age]||'—'}">${age}歳<br>${a[age]||'—'}</span>`).join('')}</div>`:''}</article>`}
+window.addEventListener('DOMContentLoaded',()=>{const wait=()=>window.L?init():setTimeout(wait,80);wait();});
