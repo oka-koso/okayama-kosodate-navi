@@ -19,7 +19,7 @@ OUT = ROOT / "data" / "availability_fixed.json"
 AUDIT = ROOT / "data" / "availability_fixed_audit.json"
 
 SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000012977.html"
-UA = "OkayamaKosodateNavi/availability-fixed-v3.1-shared-contact-order"
+UA = "OkayamaKosodateNavi/availability-fixed-v3.2-shared-contact-address-clean"
 JST = timezone(timedelta(hours=9))
 
 STATUS_MAP = {"○": "○", "〇": "○", "△": "△", "×": "×"}
@@ -177,6 +177,14 @@ def normalize_locality(value):
     value = re.sub(r"^岡山市(?:北区|中区|東区|南区)", "", value)
     value = re.sub(r"^(?:北区|中区|東区|南区)", "", value)
     value = re.sub(r"\s+", "", value)
+
+    # 受入PDFでは住所セルの後ろに次列の「園」等が混ざることがある。
+    # 例: 「今7-17-7 園」→「今7-17-7」
+    # 住所末尾が数字で終わっている場合に限り、後続の非住所文字を除去する。
+    m = re.match(r"^(.+?\d(?:[-－ー]\d+)*)[^0-9０-９-－ー]*$", value)
+    if m:
+        value = m.group(1)
+
     return value
 
 
@@ -758,7 +766,7 @@ def parse_pdf(pdf_bytes, master):
                     page_status += 1
 
             print(
-                f"[availability-v3.1] page "
+                f"[availability-v3.2] page "
                 f"{page_index + 1}/{len(pdf.pages)} "
                 f"contacts={len(contacts)} "
                 f"matched={page_matched} "
@@ -893,7 +901,7 @@ def main():
         )
 
     payload = {
-        "schema_version": 31,
+        "schema_version": 32,
         "matching_key": "official phone + postal + address; exact shared-contact duplicates resolved by PDF/master occurrence order",
         "generated_at": audit["generated_at"],
         "availability_for": meta["availability_for"],
@@ -919,7 +927,7 @@ def main():
     )
 
     print(
-        "[availability-v3.1] SUCCESS "
+        "[availability-v3.2] SUCCESS "
         f"master=206 "
         f"matched={matched_count} "
         f"with_status={with_status_count} "
@@ -933,7 +941,7 @@ if __name__ == "__main__":
         main()
     except Exception as exc:
         print(
-            f"[availability-v3.1] ERROR: {exc}",
+            f"[availability-v3.2] ERROR: {exc}",
             file=sys.stderr,
         )
         sys.exit(1)
