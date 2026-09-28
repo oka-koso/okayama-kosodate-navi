@@ -13,125 +13,107 @@ function esc(value) {
     .replace(/'/g, '&#039;');
 }
 
-function safeId(value) {
-  return String(value || '')
-    .replace(/[^a-zA-Z0-9_-]/g, '-');
-}
-
-function cardId(facility) {
-  return `facility-${safeId(facility.id || facility.name)}`;
-}
-
-function focusFacility(id) {
-  const card = document.getElementById(id);
-  if (!card) return;
-
-  card.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
-
-  card.classList.remove('facility-highlight');
-  void card.offsetWidth;
-  card.classList.add('facility-highlight');
-
-  window.setTimeout(() => {
-    card.classList.remove('facility-highlight');
-  }, 2200);
-}
-
-window.focusFacility = focusFacility;
-
 function availabilityHtml(facility, compact = false) {
   const a = facility.availability || {};
+  const values = Object.keys(a);
 
-  if (!Object.keys(a).length) {
-    return '<p class="availability-none">受入見込み：公表なし</p>';
+  if (!values.length) {
+    return '<div class="availability-note">受入見込み：現在のデータとの照合作業中</div>';
   }
 
   return `
     <div class="availability ${compact ? 'availability-popup' : ''}">
       ${[0,1,2,3,4,5].map((age) => {
-        const status = a[String(age)] ?? a[age] ?? '—';
-        let cls = '';
-        if (status === '○') cls = 'o';
-        if (status === '△') cls = 'd';
-        if (status === '×') cls = 'x';
-
-        return `
-          <span class="age-pill ${cls}" title="${age}歳：${esc(status)}">
-            ${age}歳<br>${esc(status)}
-          </span>
-        `;
+        const status = a[String(age)] ?? '—';
+        const cls = status === '○' ? 'o' : status === '△' ? 'd' : status === '×' ? 'x' : '';
+        return `<span class="age-pill ${cls}">${age}歳<br>${esc(status)}</span>`;
       }).join('')}
     </div>
   `;
 }
 
-function siteButton(facility, compact = false) {
-  if (!facility.website) return '';
-
-  return `
-    <a class="${compact ? 'popup-site-link' : 'facility-site-link'}"
-       href="${esc(facility.website)}"
-       target="_blank"
-       rel="noopener noreferrer">
-      施設のホームページを見る ↗
-    </a>
-  `;
+function officialLink(f) {
+  if (!f.website) return '';
+  return `<a class="facility-site-link"
+            href="${esc(f.website)}"
+            target="_blank"
+            rel="noopener noreferrer">施設のホームページを見る ↗</a>`;
 }
 
-function init() {
+async function loadData() {
+  const ts = Date.now();
+
+  const masterResp = await fetch(`data/facility_master.json?v=${ts}`, {
+    cache: 'no-store'
+  });
+
+  if (!masterResp.ok) {
+    throw new Error(`facility_master.json: HTTP ${masterResp.status}`);
+  }
+
+  const master = await masterResp.json();
+
+  let availability = {
+    by_facility_id: {},
+    availability_for: '',
+    availability_as_of: '',
+    source_page_updated: ''
+  };
+
+  try {
+    const aResp = await fetch(`data/availability_fixed.json?v=${ts}`, {
+      cache: 'no-store'
+    });
+
+    if (aResp.ok) {
+      availability = await aResp.json();
+    }
+  } catch (_) {
+    // 受入情報はなくても施設マスタだけでサイトを表示する。
+  }
+
+  const byId = availability.by_facility_id || {};
+
+  allFacilities = (master.facilities || []).map((f) => ({
+    ...f,
+    type: f.category || '',
+    public: f.public_private === '公立',
+    availability: byId[f.id] || {}
+  }));
+
+  const meta = [];
+
+  if (availability.availability_for) {
+    meta.push(`${availability.availability_for}入園`);
+  }
+  if (availability.availability_as_of) {
+    meta.push(availability.availability_as_of);
+  }
+  if (availability.source_page_updated) {
+    meta.push(`岡山市ページ更新 ${availability.source_page_updated}`);
+  }
+
+  meta.push(`認可保育施設 ${allFacilities.length}施設`);
+
+  if ($('#updated')) {
+    $('#updated').textContent = meta.join('｜');
+  }
+}
+
+function initMap() {
   map = L.map('map').setView([34.655, 133.92], 11);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
-
-  fetch(`data/facilities.json?v=${Date.now()}`, { cache: 'no-store' })
-    .then((response) => {
-      if (!response.ok) throw new Error(`facilities.json: HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((data) => {
-      allFacilities = Array.isArray(data.facilities) ? data.facilities : [];
-
-      const meta = [];
-      if (data.availability_for) meta.push(`${data.availability_for}入園`);
-      if (data.availability_as_of) meta.push(data.availability_as_of);
-      if (data.source_page_updated) meta.push(`岡山市ページ更新 ${data.source_page_updated}`);
-      if (data.facility_count) meta.push(`掲載 ${data.facility_count}施設`);
-
-      if ($('#updated')) $('#updated').textContent = meta.join('｜');
-
-      applyQueryParams();
-      render();
-      setTimeout(() => map.invalidateSize(), 100);
-    })
-    .catch((error) => {
-      console.error(error);
-      if ($('#count')) $('#count').textContent = '0';
-      if ($('#facility-list')) {
-        $('#facility-list').innerHTML = `
-          <div class="notice">
-            <strong>施設情報を読み込めませんでした。</strong><br>
-            時間をおいて再読み込みしてください。
-          </div>
-        `;
-      }
-    });
-
-  ['q', 'ward', 'type', 'service'].forEach((id) => {
-    const el = $('#' + id);
-    if (!el) return;
-    el.addEventListener(id === 'q' ? 'input' : 'change', render);
-  });
 }
 
 function applyQueryParams() {
-  const p = new URLSearchParams(location.search);
-  if (p.get('ward') && $('#ward')) $('#ward').value = p.get('ward');
+  const params = new URLSearchParams(location.search);
+  if (params.get('ward') && $('#ward')) {
+    $('#ward').value = params.get('ward');
+  }
 }
 
 function filterData() {
@@ -141,119 +123,156 @@ function filterData() {
   const service = $('#service')?.value || '';
 
   return allFacilities.filter((f) => {
-    const searchable =
-      `${f.name || ''} ${(f.aliases || []).join(' ')} ${f.address || ''} ${f.operator || ''}`
-        .toLowerCase();
+    const text =
+      `${f.name || ''} ${f.address || ''} ${f.operator || ''}`.toLowerCase();
+
+    const typeMatches =
+      !type ||
+      f.category === type ||
+      (type === '保育園' && f.category === '認可保育園') ||
+      (type === '認定こども園' && f.category === '認定こども園') ||
+      (type === '地域型保育' && String(f.category).startsWith('地域型保育事業'));
 
     return (
-      (!q || searchable.includes(q)) &&
+      (!q || text.includes(q)) &&
       (!ward || f.ward === ward) &&
-      (!type || f.type === type) &&
+      typeMatches &&
       (!service || Boolean(f.services?.[service]))
     );
   });
 }
 
 function popupHtml(f) {
-  const id = cardId(f);
-
   return `
     <div class="facility-popup">
-      <button class="map-facility-link"
-              type="button"
-              onclick="focusFacility('${id}')">
-        ${esc(f.name || '')}
-      </button>
-
-      <div class="popup-meta">
-        ${esc(f.type || '')}${f.type ? '・' : ''}${f.public ? '公立' : '私立等'}
-      </div>
-
-      <div class="popup-address">${esc(f.address || '所在地情報なし')}</div>
-
-      ${f.phone ? `
-        <div><a href="tel:${String(f.phone).replace(/-/g, '')}">
-          ${esc(f.phone)}
-        </a></div>` : ''}
-
+      <strong>${esc(f.name)}</strong>
+      <div>${esc(f.category || '')}・${esc(f.public_private || '')}</div>
+      ${f.postal ? `<div>〒${esc(f.postal)}</div>` : ''}
+      <div>${esc(f.address || '所在地情報なし')}</div>
+      ${f.phone
+        ? `<div><a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">
+             ${esc(f.phone)}
+           </a></div>`
+        : ''}
       ${availabilityHtml(f, true)}
-
-      <button class="popup-card-link"
-              type="button"
-              onclick="focusFacility('${id}')">
-        下の詳細を見る ↓
-      </button>
-
-      ${siteButton(f, true)}
+      ${officialLink(f)}
     </div>
   `;
 }
 
-function render() {
-  const facilities = filterData();
+function card(f) {
+  return `
+    <article class="facility-card">
+      <h3>${esc(f.name)}</h3>
 
-  if ($('#count')) $('#count').textContent = facilities.length;
-  if ($('#facility-list')) {
-    $('#facility-list').innerHTML = facilities.map(card).join('');
+      <div class="badges">
+        <span class="badge">${esc(f.category || '')}</span>
+        <span class="badge ${f.public_private === '公立' ? 'public' : ''}">
+          ${esc(f.public_private || '')}
+        </span>
+      </div>
+
+      <dl class="facility-info">
+        <dt>所在地</dt>
+        <dd>
+          ${f.postal ? `〒${esc(f.postal)}<br>` : ''}
+          ${esc(f.address || '—')}
+        </dd>
+
+        <dt>電話</dt>
+        <dd>
+          ${f.phone
+            ? `<a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">
+                 ${esc(f.phone)}
+               </a>`
+            : '—'}
+        </dd>
+      </dl>
+
+      ${availabilityHtml(f)}
+      ${officialLink(f)}
+    </article>
+  `;
+}
+
+function render() {
+  const fs = filterData();
+
+  if ($('#count')) {
+    $('#count').textContent = fs.length;
   }
 
-  markers.forEach((marker) => marker.remove());
+  if ($('#facility-list')) {
+    $('#facility-list').innerHTML = fs.map(card).join('');
+  }
+
+  markers.forEach((m) => m.remove());
   markers = [];
 
-  facilities
-    .filter((f) => Number.isFinite(Number(f.lat)) && Number.isFinite(Number(f.lon)))
-    .forEach((f) => {
-      const marker = L.marker([Number(f.lat), Number(f.lon)]).addTo(map);
-      marker.bindPopup(popupHtml(f), { maxWidth: 340 });
-      markers.push(marker);
+  fs.filter((f) =>
+    Number.isFinite(Number(f.lat)) &&
+    Number.isFinite(Number(f.lon))
+  ).forEach((f) => {
+    const marker = L.marker([
+      Number(f.lat),
+      Number(f.lon)
+    ]).addTo(map);
+
+    marker.bindPopup(popupHtml(f), {
+      maxWidth: 340
     });
+
+    markers.push(marker);
+  });
 
   if (markers.length) {
     const group = L.featureGroup(markers);
     map.fitBounds(group.getBounds().pad(0.08), { maxZoom: 14 });
   }
 
-  setTimeout(() => map.invalidateSize(), 50);
+  setTimeout(() => map.invalidateSize(), 80);
 }
 
-function card(f) {
-  const id = cardId(f);
+async function init() {
+  initMap();
 
-  return `
-    <article class="facility-card" id="${id}">
-      <h3>${esc(f.name || '')}</h3>
+  try {
+    await loadData();
+    applyQueryParams();
+    render();
+  } catch (error) {
+    console.error(error);
 
-      <div class="badges">
-        ${f.type ? `<span class="badge">${esc(f.type)}</span>` : ''}
-        <span class="badge ${f.public ? 'public' : ''}">
-          ${f.public ? '公立' : '私立等'}
-        </span>
-        ${f.services?.extended ? '<span class="badge">延長保育</span>' : ''}
-        ${f.services?.temporary ? '<span class="badge temp">一時預かり</span>' : ''}
-      </div>
+    if ($('#count')) {
+      $('#count').textContent = '0';
+    }
 
-      <dl class="facility-info">
-        ${f.postal ? `<dt>郵便番号</dt><dd>〒${esc(f.postal)}</dd>` : ''}
-        <dt>所在地</dt>
-        <dd>${esc(f.address || '—')}</dd>
-        <dt>電話</dt>
-        <dd>
-          ${f.phone
-            ? `<a href="tel:${String(f.phone).replace(/-/g, '')}">${esc(f.phone)}</a>`
-            : '—'}
-        </dd>
-      </dl>
+    if ($('#facility-list')) {
+      $('#facility-list').innerHTML = `
+        <div class="notice">
+          <strong>施設情報を読み込めませんでした。</strong><br>
+          ページを再読み込みしても改善しない場合は、
+          時間をおいてお試しください。
+        </div>
+      `;
+    }
+  }
 
-      ${availabilityHtml(f)}
-      ${siteButton(f)}
-    </article>
-  `;
+  ['q', 'ward', 'type', 'service'].forEach((id) => {
+    const el = $('#' + id);
+    if (!el) return;
+
+    el.addEventListener(
+      id === 'q' ? 'input' : 'change',
+      render
+    );
+  });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  const waitForLeaflet = () => {
+  const wait = () => {
     if (window.L) init();
-    else setTimeout(waitForLeaflet, 80);
+    else setTimeout(wait, 80);
   };
-  waitForLeaflet();
+  wait();
 });
