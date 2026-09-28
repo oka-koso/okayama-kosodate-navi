@@ -30,9 +30,13 @@ PUBLIC_KODOMO_URL = "https://www.city.okayama.jp/kurashi/0000030473.html"
 UA = "OkayamaKosodateNavi/fixed-master-enricher-2.0"
 JST = timezone(timedelta(hours=9))
 
-PHONE_RE = re.compile(
-    r"(?:℡|☎|TEL|Tel|tel)?\s*"
-    r"(?:(086)[-－ー])?([0-9]{3,4})[-－ー]([0-9]{4})"
+PHONE_LABEL_3PART_RE = re.compile(
+    r"(?:℡|☎|TEL|Tel|tel)\s*"
+    r"([0-9]{2,4})[-－ー]([0-9]{2,4})[-－ー]([0-9]{4})"
+)
+PHONE_LABEL_2PART_RE = re.compile(
+    r"(?:℡|☎|TEL|Tel|tel)\s*"
+    r"([0-9]{3,4})[-－ー]([0-9]{4})"
 )
 POSTAL_RE = re.compile(r"〒\s*([0-9]{3})[-－ー]([0-9]{4})")
 
@@ -90,19 +94,30 @@ def pdf_lines_by_page(content):
 
 def parse_contact_line(line):
     """
-    例:
-    ℡ 222-7583 〒 700-0817 弓之町8-2 短 8:30 ～ 16:30
+    例1:
+      Tel 222-7583 〒700-0817 弓之町8-2
+      -> 086-222-7583
+
+    例2:
+      Tel 0866-92-6989※ 〒700-0955 万倍98
+      -> 0866-92-6989
 
     重要:
-    電話番号 222-7583 を郵便番号と誤認しないよう、
-    郵便番号は必ず「〒」の後ろだけを読む。
+    電話番号は必ず Tel/℡/☎ の直後からのみ取得する。
+    これにより郵便番号 700-0955 を電話番号と誤認しない。
     """
-    phone_match = PHONE_RE.search(line)
-    if not phone_match:
-        return None
+    phone = ""
 
-    area, p2, p3 = phone_match.groups()
-    phone = f"{area or '086'}-{p2}-{p3}"
+    m3 = PHONE_LABEL_3PART_RE.search(line)
+    if m3:
+        phone = f"{m3.group(1)}-{m3.group(2)}-{m3.group(3)}"
+    else:
+        m2 = PHONE_LABEL_2PART_RE.search(line)
+        if m2:
+            phone = f"086-{m2.group(1)}-{m2.group(2)}"
+
+    if not phone:
+        return None
 
     postal = ""
     locality = ""
@@ -112,20 +127,15 @@ def parse_contact_line(line):
         postal = f"{postal_match.group(1)}-{postal_match.group(2)}"
         locality = line[postal_match.end():].strip()
 
-        # PDF上の注記記号が住所先頭に残る場合を除去
         locality = re.sub(r"^[※＊*]\s*", "", locality)
-
-        # 万一、別の〒表記が混ざったらその部分も除去
         locality = re.sub(r"^〒\s*\d{3}[-－ー]\d{4}\s*", "", locality)
 
-        # 「短 8:30～」以降は住所ではない
         locality = re.split(
             r"\s+(?:短|標準)\s+\d{1,2}:\d{2}",
             locality,
             maxsplit=1,
         )[0].strip()
 
-        # まれに定員等の別列が混ざった場合
         locality = re.split(
             r"\s+(?:\d{1,3}\s*(?:人|か月|ヶ月|歳)|[○〇△×])",
             locality,
@@ -360,15 +370,12 @@ def main():
                 "value": postal,
             })
 
-        # 電話番号の下7桁を郵便番号として誤抽出する旧バグを検出
-        phone_digits = re.sub(r"\D", "", item.get("phone", ""))
-        postal_digits = re.sub(r"\D", "", postal)
-        if postal_digits and phone_digits.endswith(postal_digits):
+        phone = item.get("phone", "")
+        if phone and not re.fullmatch(r"\\d{2,4}-\\d{2,4}-\\d{4}", phone):
             issues.append({
                 "name": item["name"],
-                "issue": "postal_matches_phone_tail",
-                "postal": postal,
-                "phone": item.get("phone", ""),
+                "issue": "invalid_phone_format",
+                "value": phone,
             })
 
         if "※" in item.get("address", "") or "〒" in item.get("address", ""):
