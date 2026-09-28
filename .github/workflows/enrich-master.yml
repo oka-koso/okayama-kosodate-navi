@@ -21,7 +21,7 @@ jobs:
       - name: Enrich fixed master from official PDF
         run: python scripts/enrich_facility_master.py
 
-      - name: Commit enriched master and audit
+      - name: Commit audited master
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -33,6 +33,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "data: enrich fixed childcare facility master"
+          git commit -m "data: rebuild audited childcare facility master"
           git pull --rebase origin main
           git push origin main
