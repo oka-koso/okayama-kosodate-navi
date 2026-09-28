@@ -19,7 +19,7 @@ OUT = ROOT / "data" / "availability_fixed.json"
 AUDIT = ROOT / "data" / "availability_fixed_audit.json"
 
 SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000012977.html"
-UA = "OkayamaKosodateNavi/availability-fixed-v2-contact-key"
+UA = "OkayamaKosodateNavi/availability-fixed-v3-address-name-disambiguation"
 JST = timezone(timedelta(hours=9))
 
 STATUS_MAP = {"○": "○", "〇": "○", "△": "△", "×": "×"}
@@ -171,10 +171,28 @@ def find_age_centers(rows):
     return result
 
 
+def normalize_locality(value):
+    value = clean(value)
+    value = value.replace("　", "")
+    value = re.sub(r"^岡山市(?:北区|中区|東区|南区)", "", value)
+    value = re.sub(r"^(?:北区|中区|東区|南区)", "", value)
+    value = re.sub(r"\s+", "", value)
+    return value
+
+
+def normalize_name(value):
+    value = clean(value)
+    value = value.replace("　", "")
+    value = value.replace("（", "(").replace("）", ")")
+    value = value.replace("・", "")
+    value = re.sub(r"\s+", "", value)
+    return value
+
+
 def parse_contact_row(row):
     """
-    各施設には必ず電話番号・〒所在地の2段目がある。
-    園名ではなく、この行を施設の一意キーとして使う。
+    各施設の電話番号・〒所在地行を施設キーとして使う。
+    locality（町名以下）も保持し、同じ電話+郵便番号を共有する施設を住所で分離する。
     """
     text = row_text(row)
 
@@ -182,26 +200,29 @@ def parse_contact_row(row):
     if not postal_m:
         return None
 
-    postal = (
-        postal_m.group(1)
-        + postal_m.group(2)
-    )
+    postal = postal_m.group(1) + postal_m.group(2)
 
-    # 郵便番号より前の範囲だけから電話番号を拾う。
     prefix = text[:postal_m.start()]
-
     phone_m = PHONE_3_RE.search(prefix)
     if not phone_m:
         return None
 
     area, p2, p3 = phone_m.groups()
-    phone = normalize_phone(
-        f"{area or ''}{p2}{p3}"
-    )
+    phone = normalize_phone(f"{area or ''}{p2}{p3}")
+
+    locality = text[postal_m.end():].strip()
+
+    # 年齢欄・備考などが後ろに混ざった場合を除去
+    locality = re.split(
+        r"\s+(?:[○〇△×](?:\s+[○〇△×])|0歳|1歳|2歳|3歳|4歳|5歳)",
+        locality,
+        maxsplit=1,
+    )[0].strip()
 
     return {
         "phone": phone,
         "postal": postal,
+        "locality": locality,
         "text": text,
         "top": row["top"],
     }
@@ -210,22 +231,29 @@ def parse_contact_row(row):
 def collect_contact_rows(rows):
     contacts = []
 
-    for row in rows:
+    for index, row in enumerate(rows):
         item = parse_contact_row(row)
-        if item:
-            contacts.append(item)
+        if not item:
+            continue
+
+        item["row_index"] = index
+
+        # 園名が別行に分かれるPDF対策。
+        # 電話行の直前2行～直後1行を照合用contextとして保存。
+        lo = max(0, index - 2)
+        hi = min(len(rows), index + 2)
+        item["context"] = clean(
+            " ".join(row_text(rows[i]) for i in range(lo, hi))
+        )
+
+        contacts.append(item)
 
     return contacts
 
 
 def master_indexes(master):
     """
-    優先順位:
-      1. phone + postal
-      2. phone + address末尾（postal欠損時）
-      3. postal単独（同一郵便番号が1施設のみの場合）
-
-    名前は照合キーに使わない。
+    固定マスタを電話・郵便番号・住所で索引化する。
     """
     by_phone_postal = {}
     by_phone = {}
@@ -236,22 +264,13 @@ def master_indexes(master):
         postal = normalize_postal(facility.get("postal", ""))
 
         if phone and postal:
-            by_phone_postal.setdefault(
-                (phone, postal),
-                []
-            ).append(facility)
+            by_phone_postal.setdefault((phone, postal), []).append(facility)
 
         if phone:
-            by_phone.setdefault(
-                phone,
-                []
-            ).append(facility)
+            by_phone.setdefault(phone, []).append(facility)
 
         if postal:
-            by_postal.setdefault(
-                postal,
-                []
-            ).append(facility)
+            by_postal.setdefault(postal, []).append(facility)
 
     return {
         "by_phone_postal": by_phone_postal,
@@ -260,36 +279,99 @@ def master_indexes(master):
     }
 
 
+def disambiguate_candidates(contact, candidates):
+    """
+    同じ電話+郵便番号を共有する施設を
+    1) 所在地
+    2) PDF近傍の園名
+    の順で一意化する。
+    """
+    if len(candidates) <= 1:
+        return candidates[0] if candidates else None, "single"
+
+    pdf_locality = normalize_locality(contact.get("locality", ""))
+
+    # 1. 住所完全/包含一致
+    address_matches = []
+    if pdf_locality:
+        for facility in candidates:
+            master_locality = normalize_locality(facility.get("address", ""))
+
+            if not master_locality:
+                continue
+
+            if (
+                pdf_locality == master_locality
+                or pdf_locality in master_locality
+                or master_locality in pdf_locality
+            ):
+                address_matches.append(facility)
+
+    if len(address_matches) == 1:
+        return address_matches[0], "address"
+
+    if len(address_matches) > 1:
+        candidates = address_matches
+
+    # 2. 同一住所・同一電話を共有する施設のみ、PDF近傍に園名があるか確認
+    context = normalize_name(contact.get("context", ""))
+
+    name_matches = []
+    for facility in candidates:
+        names = [facility.get("name", "")] + list(facility.get("aliases", []))
+
+        for name in names:
+            n = normalize_name(name)
+            if not n:
+                continue
+
+            variants = {
+                n,
+                n.replace("(仮称)", ""),
+                n.replace("認定", ""),
+            }
+
+            if any(v and v in context for v in variants):
+                name_matches.append(facility)
+                break
+
+    # 重複除去
+    unique = {}
+    for facility in name_matches:
+        unique[facility["id"]] = facility
+    name_matches = list(unique.values())
+
+    if len(name_matches) == 1:
+        return name_matches[0], "context-name"
+
+    return None, "ambiguous"
+
+
 def match_contact(contact, indexes):
     phone = contact["phone"]
     postal = contact["postal"]
 
-    exact = indexes["by_phone_postal"].get(
-        (phone, postal),
-        [],
-    )
+    exact = indexes["by_phone_postal"].get((phone, postal), [])
 
-    if len(exact) == 1:
-        return {
-            "facility": exact[0],
-            "method": "phone+postal",
-            "ambiguous": False,
-        }
+    if exact:
+        facility, method = disambiguate_candidates(contact, exact)
 
-    if len(exact) > 1:
+        if facility:
+            return {
+                "facility": facility,
+                "method": f"phone+postal+{method}",
+                "ambiguous": False,
+            }
+
         return {
             "facility": None,
-            "method": "phone+postal",
+            "method": "phone+postal-ambiguous",
             "ambiguous": True,
             "candidates": [x["name"] for x in exact],
         }
 
-    # マスタのpostalに過去不具合が残っている場合でも、
-    # phoneが一意なら安全に救済。
-    phone_matches = indexes["by_phone"].get(
-        phone,
-        [],
-    )
+    # 電話番号が一意なら安全に救済。
+    phone_matches = indexes["by_phone"].get(phone, [])
 
     if len(phone_matches) == 1:
         return {
@@ -298,11 +380,8 @@ def match_contact(contact, indexes):
             "ambiguous": False,
         }
 
-    # 電話番号変更時の補助。
-    postal_matches = indexes["by_postal"].get(
-        postal,
-        [],
-    )
+    # 郵便番号が一意なら補助キーとして使用。
+    postal_matches = indexes["by_postal"].get(postal, [])
 
     if len(postal_matches) == 1:
         return {
@@ -311,17 +390,26 @@ def match_contact(contact, indexes):
             "ambiguous": False,
         }
 
+    # phone/postal単独候補が複数ある場合も、住所→園名で一意化を試す。
+    union = {}
+    for facility in phone_matches + postal_matches:
+        union[facility["id"]] = facility
+
+    if union:
+        facility, method = disambiguate_candidates(contact, list(union.values()))
+
+        if facility:
+            return {
+                "facility": facility,
+                "method": f"rescued-{method}",
+                "ambiguous": False,
+            }
+
     return {
         "facility": None,
         "method": "none",
-        "ambiguous": (
-            len(phone_matches) > 1
-            or len(postal_matches) > 1
-        ),
-        "candidates": list({
-            x["name"]
-            for x in phone_matches + postal_matches
-        }),
+        "ambiguous": len(union) > 1,
+        "candidates": [x["name"] for x in union.values()],
     }
 
 
@@ -480,6 +568,8 @@ def parse_pdf(pdf_bytes, master):
                         "phone": contact["phone"],
                         "postal": contact["postal"],
                         "raw": contact["text"],
+                        "locality": contact.get("locality", ""),
+                        "context": contact.get("context", ""),
                         "candidates": match.get("candidates", []),
                     })
                     continue
@@ -492,6 +582,8 @@ def parse_pdf(pdf_bytes, master):
                         "phone": contact["phone"],
                         "postal": contact["postal"],
                         "raw": contact["text"],
+                        "locality": contact.get("locality", ""),
+                        "context": contact.get("context", ""),
                     })
                     page_unmatched += 1
                     continue
@@ -573,7 +665,7 @@ def parse_pdf(pdf_bytes, master):
                     page_status += 1
 
             print(
-                f"[availability-v2] page "
+                f"[availability-v3] page "
                 f"{page_index + 1}/{len(pdf.pages)} "
                 f"contacts={len(contacts)} "
                 f"matched={page_matched} "
@@ -708,8 +800,8 @@ def main():
         )
 
     payload = {
-        "schema_version": 2,
-        "matching_key": "official phone + postal code",
+        "schema_version": 3,
+        "matching_key": "official phone + postal + address; context name only for shared-contact facilities",
         "generated_at": audit["generated_at"],
         "availability_for": meta["availability_for"],
         "availability_as_of": meta["availability_as_of"],
@@ -734,7 +826,7 @@ def main():
     )
 
     print(
-        "[availability-v2] SUCCESS "
+        "[availability-v3] SUCCESS "
         f"master=206 "
         f"matched={matched_count} "
         f"with_status={with_status_count} "
@@ -748,7 +840,7 @@ if __name__ == "__main__":
         main()
     except Exception as exc:
         print(
-            f"[availability-v2] ERROR: {exc}",
+            f"[availability-v3] ERROR: {exc}",
             file=sys.stderr,
         )
         sys.exit(1)
