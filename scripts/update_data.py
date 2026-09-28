@@ -41,24 +41,67 @@ def normalize(s: str) -> str:
 def get_latest_pdf():
     r = requests.get(SOURCE_PAGE, headers={'User-Agent': UA}, timeout=30)
     r.raise_for_status()
+
+    # 岡山市サイトはレスポンスの文字コード判定が環境によってずれることがある。
+    # r.text をそのまま使うと日本語リンク名が文字化けし、PDFを発見できないため、
+    # apparent_encoding を優先して明示的にデコードする。
+    if r.apparent_encoding:
+        r.encoding = r.apparent_encoding
     html = r.text
     soup = BeautifulSoup(html, 'html.parser')
     page_text = normalize(soup.get_text(' ', strip=True))
 
     # 岡山市ページ自体の更新日
     page_updated = None
-    m = re.search(r'\[(\d{4})年(\d{1,2})月(\d{1,2})日\]', soup.get_text('\n', strip=True))
+    raw_text = soup.get_text('\n', strip=True)
+    m = re.search(r'\[(\d{4})年(\d{1,2})月(\d{1,2})日\]', raw_text)
     if m:
         page_updated = f'{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}'
 
+    # 「保育利用希望の方」にある認可保育施設向けPDFを探す。
+    # リンク文言だけに依存するとサイト側の表記変更で止まるため、
+    # 1) 日本語リンク名 2) PDFファイル名 の両方で判定する。
     candidates = []
     for a in soup.find_all('a', href=True):
         text = normalize(' '.join(a.stripped_strings))
         href = requests.compat.urljoin(SOURCE_PAGE, a['href'])
-        if href.lower().endswith('.pdf') and '受入見込み' in text and ('認可保育園' in text or '認可' in text):
-            candidates.append((text, href))
+        path = href.split('?', 1)[0].lower()
+        if not path.endswith('.pdf'):
+            continue
+
+        # 明確に対象外のPDFを除外
+        if '認可外' in text or '教育利用' in text:
+            continue
+
+        filename = path.rsplit('/', 1)[-1]
+        score = 0
+        if '受入見込み' in text:
+            score += 3
+        if '認可保育園' in text:
+            score += 4
+        elif '認可' in text:
+            score += 2
+
+        # 岡山市の現行ファイル名例: R8.11ninka.pdf
+        if 'ninka' in filename and 'ninkagai' not in filename:
+            score += 4
+
+        if score >= 4:
+            candidates.append((score, text or filename, href))
+
     if not candidates:
-        raise RuntimeError('認可保育園等の受入見込みPDFを発見できませんでした')
+        # デバッグしやすいよう、見つかったPDFリンク名をログに残す。
+        pdf_links = []
+        for a in soup.find_all('a', href=True):
+            href = requests.compat.urljoin(SOURCE_PAGE, a['href'])
+            if href.split('?', 1)[0].lower().endswith('.pdf'):
+                pdf_links.append(normalize(' '.join(a.stripped_strings)) or href)
+        sample = ' / '.join(pdf_links[:10]) if pdf_links else 'PDFリンク自体が見つかりません'
+        raise RuntimeError(f'認可保育園等の受入見込みPDFを発見できませんでした。検出PDF: {sample}')
+
+    # 最も確度が高い候補を採用
+    candidates.sort(key=lambda x: x[0], reverse=True)
+    _, title, url = candidates[0]
 
     # ページ上の「令和8年9月17日現在」のような基準日
     as_of_text = None
@@ -66,7 +109,7 @@ def get_latest_pdf():
     if m:
         as_of_text = m.group(1)
 
-    return candidates[0][0], candidates[0][1], page_updated, as_of_text
+    return title, url, page_updated, as_of_text
 
 
 def ward_for_page(i: int, n: int) -> str:
