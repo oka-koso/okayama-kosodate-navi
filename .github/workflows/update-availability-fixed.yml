@@ -1,4 +1,4 @@
-name: Update fixed childcare availability v2
+name: Update fixed childcare availability v3
 
 on:
   workflow_dispatch:
@@ -23,43 +23,23 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 pdfplumber
 
-      - name: Match availability by official phone and postal
-        id: match
-        continue-on-error: true
+      - name: Match availability to fixed master
         run: python scripts/update_availability_fixed.py
 
-      # 失敗時でも audit をGitHubへ残す。
-      # availability_fixed.json は成功したときだけ追加。
-      - name: Commit audit result
-        if: always()
+      - name: Commit audited availability
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
 
-          if [ -f data/availability_fixed_audit.json ]; then
-            git add data/availability_fixed_audit.json
-          fi
-
-          if [ "${{ steps.match.outcome }}" = "success" ] && [ -f data/availability_fixed.json ]; then
-            git add data/availability_fixed.json
-          fi
+          git add \
+            data/availability_fixed.json \
+            data/availability_fixed_audit.json
 
           if git diff --cached --quiet; then
-            echo "No audit/data changes"
-          else
-            if [ "${{ steps.match.outcome }}" = "success" ]; then
-              git commit -m "data: update audited childcare availability"
-            else
-              git commit -m "audit: save failed childcare availability match"
-            fi
-
-            git pull --rebase origin main
-            git push origin main
+            echo "No availability changes"
+            exit 0
           fi
 
-      # audit保存後にAction自体は赤に戻す。
-      - name: Fail job when matching failed
-        if: steps.match.outcome != 'success'
-        run: |
-          echo "Availability matching failed. Audit was saved to data/availability_fixed_audit.json."
-          exit 1
+          git commit -m "data: update audited childcare availability v3"
+          git pull --rebase origin main
+          git push origin main
