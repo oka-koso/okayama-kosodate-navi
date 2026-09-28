@@ -52,3 +52,85 @@ footer{border-top:1px solid var(--line);padding:34px 0 50px;background:#fbfaf5}.
 .facility-popup strong{font-size:15px}
 .availability-popup{margin-top:9px}
 .availability-popup .age-pill{width:34px;height:34px;font-size:11px;border-radius:8px}
+
+
+
+/* 岡山子育てナビ v5 */
+.map-help{
+  margin:10px 2px 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+.facility-card{
+  scroll-margin-top:90px;
+}
+.facility-highlight{
+  outline:3px solid #e9a13a;
+  box-shadow:0 0 0 7px rgba(233,161,58,.18), 0 16px 36px rgba(0,0,0,.08);
+  transition:outline .2s ease,box-shadow .2s ease;
+}
+.facility-site-link,
+.popup-site-link,
+.popup-card-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:0;
+  border-radius:10px;
+  padding:9px 12px;
+  margin-top:10px;
+  font:inherit;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+  text-decoration:none;
+}
+.facility-site-link,
+.popup-site-link{
+  background:var(--brand);
+  color:#fff;
+}
+.popup-card-link{
+  background:#f1f6f3;
+  color:var(--brand);
+}
+.map-facility-link{
+  display:block;
+  width:100%;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:var(--brand);
+  font:inherit;
+  font-size:15px;
+  font-weight:900;
+  text-align:left;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.facility-popup{
+  min-width:230px;
+  line-height:1.5;
+}
+.popup-meta,
+.popup-address{
+  margin-top:4px;
+}
+.popup-meta{
+  color:#66736c;
+  font-size:12px;
+}
+.availability-popup{
+  margin-top:9px;
+}
+.availability-popup .age-pill{
+  width:34px;
+  min-width:34px;
+  padding:5px 3px;
+  font-size:10px;
+}
+.availability-none{
+  color:#777;
+  font-size:13px;
+}
+
