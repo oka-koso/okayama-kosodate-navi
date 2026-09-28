@@ -364,7 +364,7 @@ def main():
             })
 
         phone = item.get("phone", "")
-        if phone and not re.fullmatch(r"\\d{2,4}-\\d{2,4}-\\d{4}", phone):
+        if phone and not re.fullmatch(r"\d{2,4}-\d{2,4}-\d{4}", phone):
             issues.append({
                 "name": item["name"],
                 "issue": "invalid_phone_format",
