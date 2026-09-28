@@ -24,3 +24,31 @@ footer{border-top:1px solid var(--line);padding:34px 0 50px;background:#fbfaf5}.
 .mobile-menu{display:none}
 @media(max-width:860px){.nav{display:none}.hero-grid,.feature-grid,.footer-grid{grid-template-columns:1fr}.grid-4{grid-template-columns:1fr 1fr}.article-grid{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.facility-grid{grid-template-columns:1fr}.hero{padding-top:46px}.map-wrap{height:480px}}
 @media(max-width:560px){.container{width:min(100% - 22px,1120px)}.grid-4,.toolbar{grid-template-columns:1fr}.hero h1{font-size:38px}.hero-card{padding:20px}.map-wrap{height:420px}.section-head{align-items:flex-start;flex-direction:column}.facility-info{grid-template-columns:72px 1fr}}
+
+
+
+/* v4: 施設公式サイトリンク・MAPポップアップ */
+.facility-site-link,
+.popup-site-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:12px;
+  min-height:40px;
+  padding:8px 13px;
+  border-radius:11px;
+  background:var(--brand);
+  color:#fff;
+  font-weight:800;
+  font-size:13px;
+}
+.facility-site-link:hover,
+.popup-site-link:hover{
+  color:#fff;
+  text-decoration:none;
+  filter:brightness(.96);
+}
+.facility-popup{line-height:1.55;min-width:220px}
+.facility-popup strong{font-size:15px}
+.availability-popup{margin-top:9px}
+.availability-popup .age-pill{width:34px;height:34px;font-size:11px;border-radius:8px}
