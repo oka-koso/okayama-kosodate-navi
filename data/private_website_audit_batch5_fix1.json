@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-09-29T06:28:51",
+  "target": "旭操こども園",
+  "official": {
+    "phone": "086-237-1161",
+    "postal": "703-8264",
+    "address": "岡山市中区倉富171-2",
+    "website": "https://shiragiku.ed.jp/kyokusou/",
+    "evidence": "https://shiragiku.ed.jp/kyokusou/"
+  },
+  "name_candidates": [
+    {
+      "id": "oky-859e4c83d6dd",
+      "name": "（仮称）旭操認定こども園",
+      "phone": "086-277-7609",
+      "postal": "703-8264",
+      "address": "岡山市中区倉富171-2",
+      "public_private": "私立"
+    }
+  ],
+  "location_match_count": 1,
+  "result": "updated",
+  "facility_id": "oky-859e4c83d6dd",
+  "before": {
+    "name": "（仮称）旭操認定こども園",
+    "phone": "086-277-7609",
+    "postal": "703-8264",
+    "address": "岡山市中区倉富171-2",
+    "website": ""
+  },
+  "after": {
+    "name": "旭操こども園",
+    "phone": "086-237-1161",
+    "postal": "703-8264",
+    "address": "岡山市中区倉富171-2",
+    "website": "https://shiragiku.ed.jp/kyokusou/"
+  }
+}
