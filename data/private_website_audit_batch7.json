@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-09-29T06:41:37",
+  "batch": 7,
+  "target_count": 21,
+  "verified_count": 21,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-62867ccc454b",
+      "name": "高島第一保育園",
+      "phone": "086-275-1755",
+      "website_before": "",
+      "website": "https://dorodan5.jimdofree.com/",
+      "evidence": "https://dorodan5.jimdofree.com/本園の保育について/"
+    },
+    {
+      "id": "oky-50b6fc6bd95d",
+      "name": "瀬戸桜保育園",
+      "phone": "086-952-0448",
+      "website_before": "",
+      "website": "https://seto.sakurakai.okayama.jp/",
+      "evidence": "https://seto.sakurakai.okayama.jp/"
+    },
+    {
+      "id": "oky-9914cfb62440",
+      "name": "こども園 城東チャイルドセンター",
+      "phone": "086-278-8500",
+      "website_before": "",
+      "website": "https://www.chitosek.or.jp/preschools/joto",
+      "evidence": "https://www.chitosek.or.jp/preschools/joto"
+    },
+    {
+      "id": "oky-cfcfc9c59c3f",
+      "name": "ちどり保育園",
+      "phone": "086-264-5915",
+      "website_before": "",
+      "website": "https://www.okayama-chidori.or.jp/hoiku/chidori",
+      "evidence": "https://www.okayama-chidori.or.jp/hoiku/chidori"
+    },
+    {
+      "id": "oky-b876b61da215",
+      "name": "紅陽台ちどり保育園",
+      "phone": "086-362-2241",
+      "website_before": "",
+      "website": "https://www.okayama-chidori.or.jp/hoiku/kouyoudai",
+      "evidence": "https://www.okayama-chidori.or.jp/hoiku/kouyoudai"
+    },
+    {
+      "id": "oky-e9afbe0080bd",
+      "name": "幼保連携型認定こども園妹尾保育園",
+      "phone": "086-282-1106",
+      "website_before": "",
+      "website": "https://www.dousinkai.com/seno/index.html",
+      "evidence": "https://www.dousinkai.com/seno/index.html"
+    },
+    {
+      "id": "oky-3a38c9af0215",
+      "name": "第二福田保育園",
+      "phone": "086-230-6652",
+      "website_before": "",
+      "website": "https://www.dousinkai.com/daini/index.html",
+      "evidence": "https://www.dousinkai.com/daini/index.html"
+    },
+    {
+      "id": "oky-c99c121892fc",
+      "name": "箕島保育園",
+      "phone": "086-282-0823",
+      "website_before": "",
+      "website": "https://mishimahoikuen.com/",
+      "evidence": "https://mishimahoikuen.com/"
+    },
+    {
+      "id": "oky-c540d4d8d8a7",
+      "name": "白鳩保育園",
+      "phone": "086-262-3432",
+      "website_before": "",
+      "website": "https://shirobato.ed.jp/",
+      "evidence": "https://shirobato.ed.jp/about_us.html"
+    },
+    {
+      "id": "oky-987ae07271b9",
+      "name": "うらやす白鳩保育園",
+      "phone": "086-261-5566",
+      "website_before": "",
+      "website": "https://shirobato.ed.jp/",
+      "evidence": "https://shirobato.ed.jp/contact.html"
+    },
+    {
+      "id": "oky-26e5719c6630",
+      "name": "アイグラン保育園福",
+      "phone": "086-250-7527",
+      "website_before": "",
+      "website": "https://aigran.co.jp/nursery/ninka/nursery-620/",
+      "evidence": "https://aigran.co.jp/nursery/ninka/nursery-620/"
+    },
+    {
+      "id": "oky-8d18f0e4b934",
+      "name": "イートンちどり保育園",
+      "phone": "086-265-5561",
+      "website_before": "",
+      "website": "https://www.eatone.co.jp/chidori/",
+      "evidence": "https://www.eatone.co.jp/chidori/outline/"
+    },
+    {
+      "id": "oky-c2f6eee6cf0c",
+      "name": "アートチャイルドケア岡山豊成保育園",
+      "phone": "086-230-1667",
+      "website_before": "",
+      "website": "https://www.the0123child.com/personal/24373/",
+      "evidence": "https://www.the0123child.com/personal/24373/"
+    },
+    {
+      "id": "oky-7697d8907f54",
+      "name": "アートチャイルドケア岡山新保保育園",
+      "phone": "086-226-2500",
+      "website_before": "",
+      "website": "https://www.the0123child.com/personal/16459/",
+      "evidence": "https://www.the0123child.com/personal/16459/"
+    },
+    {
+      "id": "oky-8faa268cfd4a",
+      "name": "さつき保育園",
+      "phone": "086-241-6524",
+      "website_before": "",
+      "website": "https://satsukihoikuen.jp/",
+      "evidence": "https://satsukihoikuen.jp/invitation/"
+    },
+    {
+      "id": "oky-38f90cadc8e2",
+      "name": "当新田ちどり保育園",
+      "phone": "086-244-0188",
+      "website_before": "",
+      "website": "https://www.chitosek.or.jp/preschools/toushinden",
+      "evidence": "https://www.chitosek.or.jp/preschools/toushinden"
+    },
+    {
+      "id": "oky-3e66a13c2e89",
+      "name": "ニチイキッズ西市保育園",
+      "phone": "086-241-3132",
+      "website_before": "",
+      "website": "https://www.nichiikids.net/nursery/nishiichi/",
+      "evidence": "https://www.nichiikids.net/nursery/nishiichi/introduction/overview/"
+    },
+    {
+      "id": "oky-734e21a7d0bf",
+      "name": "御南認定こども園",
+      "phone": "086-244-6100",
+      "website_before": "",
+      "website": "https://minan-nintei.com/",
+      "evidence": "https://minan-nintei.com/about/outline/"
+    },
+    {
+      "id": "oky-9adbd2aac562",
+      "name": "御南まんまるこども園",
+      "phone": "086-244-6111",
+      "website_before": "",
+      "website": "https://minan-manmaru.com/",
+      "evidence": "https://minan-manmaru.com/about/outline/"
+    },
+    {
+      "id": "oky-203c128e05be",
+      "name": "第一吉備こども園",
+      "phone": "086-293-7575",
+      "website_before": "",
+      "website": "https://daiichi.kibifukushikai.jp/",
+      "evidence": "https://daiichi.kibifukushikai.jp/contact/"
+    },
+    {
+      "id": "oky-3d4c74d3d609",
+      "name": "第二吉備こども園",
+      "phone": "086-293-7777",
+      "website_before": "",
+      "website": "https://daini.kibifukushikai.jp/",
+      "evidence": "https://daini.kibifukushikai.jp/contact/"
+    }
+  ],
+  "errors": []
+}
