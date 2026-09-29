@@ -17,7 +17,7 @@ MASTER = ROOT / "data" / "facility_master.json"
 AUDIT = ROOT / "data" / "services_audit.json"
 
 DEFAULT_PDF = "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf"
-UA = "OkayamaKosodateNavi/services-v1"
+UA = "OkayamaKosodateNavi/services-v1.1"
 JST = timezone(timedelta(hours=9))
 
 PHONE_RE = re.compile(r"(?:(086)[-－ー])?([0-9]{3,4})[-－ー]([0-9]{4})")
@@ -176,21 +176,51 @@ def column_words(words, center, radius):
     return out
 
 def service_values(page_words, centers, y0, y1):
+    """
+    サービス4列を、狭い中心点ではなく列境界で読む。
+    延長保育の時間表記は横幅が広いため、中心±数pxでは取りこぼす。
+    """
     band = words_in_band(page_words, y0, y1)
-    ordered = sorted(centers.values())
-    gaps = [b-a for a,b in zip(ordered, ordered[1:]) if b-a > 0]
-    radius = max(5.0, min(gaps) * 0.42) if gaps else 10.0
+
+    ordered = [
+        ("extended", centers["extended"]),
+        ("temporary", centers["temporary"]),
+        ("holiday", centers["holiday"]),
+        ("support_center", centers["support_center"]),
+    ]
 
     result = {}
 
-    ext_words = column_words(band, centers["extended"], radius)
-    ext_text = clean(" ".join(str(w["text"]) for w in ext_words))
-    result["extended"] = bool(TIME_RE.search(ext_text) or "まで" in ext_text)
+    for idx, (key, center) in enumerate(ordered):
+        left = (
+            (ordered[idx - 1][1] + center) / 2
+            if idx > 0
+            else center - 24
+        )
+        right = (
+            (center + ordered[idx + 1][1]) / 2
+            if idx + 1 < len(ordered)
+            else center + 18
+        )
 
-    for key in ["temporary", "holiday", "support_center"]:
-        ws = column_words(band, centers[key], radius)
-        text = "".join(clean(w["text"]) for w in ws)
-        result[key] = ("○" in text or "〇" in text)
+        cell_words = []
+        for w in band:
+            x0 = float(w["x0"])
+            x1 = float(w["x1"])
+            if x1 >= left and x0 <= right:
+                cell_words.append(w)
+
+        cell_text = clean(" ".join(str(w["text"]) for w in cell_words))
+
+        if key == "extended":
+            result[key] = bool(
+                re.search(r"\d{1,2}\s*:\s*\d{2}", cell_text)
+                or "まで" in cell_text
+                or "延長" in cell_text
+                or "土曜日含む" in cell_text
+            )
+        else:
+            result[key] = ("○" in cell_text or "〇" in cell_text)
 
     return result
 
@@ -209,8 +239,26 @@ def main():
     unresolved = []
     page_stats = []
 
+    licensed_pages = 0
+
     with pdfplumber.open(io.BytesIO(r.content)) as pdf:
         for page_no, page in enumerate(pdf.pages, start=1):
+            page_text = page.extract_text() or ""
+
+            # 認可保育施設一覧が終わり、
+            # 「企業主導型保育事業（認可外）」へ入ったら停止。
+            if (
+                "企業が雇用する労働者の児童" in page_text
+                or "認可外保育施設" in page_text
+            ):
+                page_stats.append({
+                    "page": page_no,
+                    "stopped_before_unlicensed_section": True,
+                })
+                break
+
+            licensed_pages += 1
+
             words = page.extract_words(
                 x_tolerance=1.5,
                 y_tolerance=2.5,
@@ -311,12 +359,27 @@ def main():
                 "support_center": current.get("support_center"),
             }
 
+    unmatched_master = [
+        {
+            "id": f["id"],
+            "name": f["name"],
+            "phone": f.get("phone", ""),
+            "postal": f.get("postal", ""),
+            "address": f.get("address", ""),
+        }
+        for f in facilities
+        if f["id"] not in found
+    ]
+
     audit = {
         "generated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"),
         "source_pdf": pdf_url,
         "facility_count": len(facilities),
+        "licensed_pages_scanned": licensed_pages,
         "matched_count": len(found),
         "unresolved_count": len(unresolved),
+        "unmatched_master_count": len(unmatched_master),
+        "unmatched_master": unmatched_master,
         "page_stats": page_stats,
         "unresolved": unresolved,
         "service_true_counts": {
@@ -331,16 +394,19 @@ def main():
     )
 
     print(
-        "[services-v1] "
+        "[services-v1.1.1] "
         f"matched={len(found)}/206 "
         f"unresolved={len(unresolved)} "
         f"true={audit['service_true_counts']}"
     )
 
     # 誤った「なし」を大量反映しないため、照合率を厳格チェック。
-    if len(found) < 200 or unresolved:
+    # 現行の令和8年度公式PDFでは、
+    # 固定206施設のうち205件が電話+郵便番号付き行として抽出される。
+    # 残る1件は誤って「なし」にせず「未確認」のままauditへ残す。
+    if len(found) < 205 or unresolved:
         raise RuntimeError(
-            "サービス情報の照合監査に失敗しました。"
+            "認可保育施設部分のサービス情報照合に失敗しました。"
             "facility_master.json は更新せず audit の確認が必要です。"
         )
 
@@ -354,5 +420,5 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as e:
-        print(f"[services-v1] ERROR: {e}", file=sys.stderr)
+        print(f"[services-v1.1.1] ERROR: {e}", file=sys.stderr)
         sys.exit(1)
