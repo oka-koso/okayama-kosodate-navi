@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-09-29T07:03:52",
+  "batch": "10-fix1",
+  "target_count": 17,
+  "verified_count": 17,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-15eb89a61377",
+      "name": "旭川こども園",
+      "ward": "中区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "旭川こども園",
+        "phone": "086-272-6525",
+        "address": "岡山市中区赤田88",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://asahigawa-hoiku.com/",
+      "evidence": "https://asahigawa-hoiku.com/"
+    },
+    {
+      "id": "oky-b4c449df8fbd",
+      "name": "柿の木こども園",
+      "ward": "中区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "柿の木こども園",
+        "phone": "086-271-5577",
+        "address": "岡山市中区沢田473",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.kakinokiho.com/",
+      "evidence": "https://www.kakinokiho.com/about.html"
+    },
+    {
+      "id": "oky-70ec8af0e3f7",
+      "name": "グリーン長利こども園",
+      "ward": "中区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "グリーン長利こども園",
+        "phone": "086-208-6177",
+        "address": "岡山市中区長利274-1",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.chitosek.or.jp/preschools/gr-nagatoshi",
+      "evidence": "https://www.chitosek.or.jp/preschools/gr-nagatoshi"
+    },
+    {
+      "id": "oky-4f433005ef50",
+      "name": "なのはなこども園",
+      "ward": "中区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "なのはなこども園",
+        "phone": "086-206-2087",
+        "address": "岡山市中区祇園364-1",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://nanohana-kodomoen.jp/",
+      "evidence": "https://nanohana-kodomoen.jp/nyuen.php"
+    },
+    {
+      "id": "oky-905bccfc2d51",
+      "name": "クレイン小規模保育園",
+      "ward": "南区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "クレイン小規模保育園",
+        "phone": "086-239-2266",
+        "address": "岡山市南区西市503-9",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://crane-nishiichi.jp/",
+      "evidence": "https://crane-nishiichi.jp/about"
+    },
+    {
+      "id": "oky-a6b304e5b717",
+      "name": "新保おひさま保育園",
+      "ward": "南区",
+      "match_method": "official-phone",
+      "before": {
+        "name": "新保おひさま保育園",
+        "phone": "086-230-7739",
+        "address": "岡山市南区新保654-3",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://shinbouohisama-m-hoikuen.jp/",
+      "evidence": "https://shinbouohisama-m-hoikuen.jp/nursery_school/ohisama-minami-nursery/"
+    },
+    {
+      "id": "oky-326f25d6c66d",
+      "name": "にこにこランドポストメイト保育園・岡南",
+      "ward": "中区",
+      "match_method": "official-phone",
+      "before": {
+        "name": "にこにこランドポストメイト保育園・岡南",
+        "phone": "086-206-7120",
+        "address": "岡山市中区国富1-10-18",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://postmate.jp/nursery/306.html",
+      "evidence": "https://postmate.jp/nursery/306.html"
+    },
+    {
+      "id": "oky-260135a21617",
+      "name": "小規模保育園いろいろ",
+      "ward": "東区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "小規模保育園いろいろ",
+        "phone": "086-944-0800",
+        "address": "岡山市東区中川町393-1 (10)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.chitosek.or.jp/preschools/iroiro",
+      "evidence": "https://www.chitosek.or.jp/preschools/iroiro"
+    },
+    {
+      "id": "oky-216eaec81e29",
+      "name": "岡山済生会なでしこ保育園",
+      "ward": "北区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "岡山済生会なでしこ保育園",
+        "phone": "086-252-3350",
+        "address": "岡山市北区伊福町2-17-5 (20)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.okayamasaiseikai.or.jp/facilities/institution/nadeshikoen/about_nadeshikoen/",
+      "evidence": "https://www.okayamasaiseikai.or.jp/facilities/institution/nadeshikoen/about_nadeshikoen/"
+    },
+    {
+      "id": "oky-63c6371a9718",
+      "name": "みらい保育園",
+      "ward": "北区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "みらい保育園",
+        "phone": "086-206-3323",
+        "address": "岡山市北区大供本町708-6 (15)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://okayama-kotobuki.sakura.ne.jp/new/02facility/mirai.html",
+      "evidence": "https://okayama-kotobuki.sakura.ne.jp/new/02facility/mirai.html"
+    },
+    {
+      "id": "oky-72dc65f247df",
+      "name": "心育保育園",
+      "ward": "北区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "心育保育園",
+        "phone": "086-241-1189",
+        "address": "岡山市北区下中野1226-20 (24)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://stepup-sp.co.jp/service/kokoiku/",
+      "evidence": "https://stepup-sp.co.jp/service/kokoiku/"
+    },
+    {
+      "id": "oky-e7e3525e3c94",
+      "name": "カナダこども園",
+      "ward": "東区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "カナダこども園",
+        "phone": "086-948-2777",
+        "address": "岡山市東区金田1127-1",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.chitosek.or.jp/preschools/canada",
+      "evidence": "https://www.chitosek.or.jp/preschools/canada"
+    },
+    {
+      "id": "oky-f41ecfd3ccb2",
+      "name": "たんぽぽ・つぼみ保育園",
+      "ward": "東区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "たんぽぽ・つぼみ保育園",
+        "phone": "086-230-1560",
+        "address": "岡山市東区光津840-6",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.tannpopo-tubomi.com/tsubomi",
+      "evidence": "https://www.tannpopo-tubomi.com/admission"
+    },
+    {
+      "id": "oky-7391f1164211",
+      "name": "ひこさきこども園",
+      "ward": "南区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "（仮称）ひこさきこども園",
+        "phone": "086-480-0580",
+        "address": "岡山市南区彦崎2570-1",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://nsfk.okayama.jp/hikosaki-kodomoen/",
+      "evidence": "https://nsfk.okayama.jp/hikosaki-kodomoen/about/"
+    },
+    {
+      "id": "oky-afa52b982904",
+      "name": "岡北保育園",
+      "ward": "北区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "岡北保育園",
+        "phone": "086-252-1683",
+        "address": "岡山市北区津島東2-3-17",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.kouhoku.com/",
+      "evidence": "https://www.kouhoku.com/"
+    },
+    {
+      "id": "oky-b077ad17d0a9",
+      "name": "柿の木保育園",
+      "ward": "中区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "柿の木保育園",
+        "phone": "086-271-5577",
+        "address": "岡山市中区沢田490",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.kakinokiho.com/",
+      "evidence": "https://www.kakinokiho.com/"
+    },
+    {
+      "id": "oky-3b5848e566d0",
+      "name": "ぶちあんじゅ",
+      "ward": "北区",
+      "match_method": "name+ward",
+      "before": {
+        "name": "ぶちあんじゅ",
+        "phone": "086-903-3370",
+        "address": "岡山市北区平野857-4 (10)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.fukujukai-gp.com/",
+      "evidence": "https://www.fukujukai-gp.com/"
+    }
+  ],
+  "errors": []
+}
