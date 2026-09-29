@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-09-29T07:12:00",
+  "batch": 12,
+  "target_count": 6,
+  "verified_count": 6,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-c9203aa946fd",
+      "name": "加茂こども園",
+      "before": {
+        "name": "加茂こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://ryouwakai.jp/",
+      "evidence": "https://ryouwakai.jp/"
+    },
+    {
+      "id": "oky-b4ce2044c16e",
+      "name": "とみやまこども園",
+      "before": {
+        "name": "とみやまこども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://tomiyama.ed.jp/",
+      "evidence": "https://tomiyama.ed.jp/"
+    },
+    {
+      "id": "oky-c8aebac17abf",
+      "name": "竜之口こども園",
+      "before": {
+        "name": "竜之口こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://tatsunokuchi.ed.jp/",
+      "evidence": "https://tatsunokuchi.ed.jp/"
+    },
+    {
+      "id": "oky-97fb1f945ade",
+      "name": "益野保育園",
+      "before": {
+        "name": "益野保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://masunohoikuen.jp/",
+      "evidence": "https://masunohoikuen.jp/"
+    },
+    {
+      "id": "oky-8372800aaa77",
+      "name": "かわい保育園",
+      "before": {
+        "name": "かわい保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.sumatoku.jp/kawai/",
+      "evidence": "https://www.sumatoku.jp/kawai/"
+    },
+    {
+      "id": "oky-deb6fc9b9832",
+      "name": "ぽかぽか保育園",
+      "before": {
+        "name": "ほかほか保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://dainimakotokai.com/publics/index/38/",
+      "evidence": "https://dainimakotokai.com/publics/index/38/"
+    }
+  ],
+  "errors": []
+}

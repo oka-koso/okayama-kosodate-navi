@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-09-29T07:12:00",
+  "private_total": 156,
+  "private_verified": 148,
+  "remaining_count": 8,
+  "remaining": [
+    {
+      "id": "oky-a180daa6c959",
+      "name": "共生保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "700-0903",
+      "address": "岡山市北区幸町10-40",
+      "phone": "086-803-3232",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-862ccd1c91a1",
+      "name": "富田保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "700-0936",
+      "address": "岡山市北区富田74",
+      "phone": "086-223-0872",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-c0388f0bb7a0",
+      "name": "深柢保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "700-0821",
+      "address": "岡山市北区中山下2-7-45",
+      "phone": "086-234-4150",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-6af4f50817f8",
+      "name": "牧石保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "701-2142",
+      "address": "岡山市北区玉柏2203-1",
+      "phone": "086-228-0631",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-26ce7b7ab03c",
+      "name": "朝日保育園",
+      "category": "認可保育園",
+      "ward": "中区",
+      "postal": "703-8227",
+      "address": "岡山市中区兼基247",
+      "phone": "086-278-1881",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-73a2b33b3b99",
+      "name": "しろばら保育園",
+      "category": "認可保育園",
+      "ward": "南区",
+      "postal": "700-0945",
+      "address": "岡山市南区新保417-1",
+      "phone": "086-223-7637",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-283b642b9f61",
+      "name": "ひばり保育園",
+      "category": "認可保育園",
+      "ward": "南区",
+      "postal": "702-8021",
+      "address": "岡山市南区福田715-3",
+      "phone": "086-259-1154",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-bd718a3906e7",
+      "name": "みどり町保育園",
+      "category": "認可保育園",
+      "ward": "南区",
+      "postal": "702-8055",
+      "address": "岡山市南区築港緑町1-1-7 230",
+      "phone": "086-262-3300",
+      "website": "",
+      "website_status": "unchecked"
+    }
+  ]
+}
