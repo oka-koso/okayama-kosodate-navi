@@ -1,16 +1,22 @@
-岡山子育てナビ UI改善 v1.3
+Google AdSense 接続パッチ v1
 
-前提: 共通ヘッダー・フッター v1.2 導入済み。
+Publisher ID:
+ca-pub-2321879700607801
 
-変更:
-- スマホのハンバーガーボタンを42pxのコンパクトな角丸デザインへ
-- 細い3本線
-- 開いた時に滑らかに×へ変形
-- メニュー外タップ / Escで閉じる
-- 520px以上スクロールすると右下に「上へ戻る」丸ボタン表示
-- タップでスムーズにページ最上部へ
-- PCでは上へ戻るボタンを控えめ表示
-- reduced-motion対応
-- 本文・MAP・検索・点数計算には変更なし
+処理:
+- サイト内HTMLの </head> 直前へAdSenseコードを追加
+- 同じPublisher IDが既にあるページには重複追加しない
+- 404.htmlは対象外
+- 本文・CSS・既存機能は変更しない
+- 主要ページでPublisher IDをSafety check
 
-Actions → Install mobile menu and back to top → Run workflow
+導入:
+1. ZIPの中身をリポジトリのルートへ上書きアップロード
+2. GitHub → Actions
+3. Install Google AdSense code
+4. Run workflow
+5. GitHub Pages反映後、AdSense側でサイト確認/審査へ進む
+
+注意:
+これはAdSense接続コードの導入です。
+ads.txtはGitHub Pagesのサブパス構成を確認して別途対応します。
