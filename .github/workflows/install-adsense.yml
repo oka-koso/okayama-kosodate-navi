@@ -1,0 +1,35 @@
+name: Install Google AdSense code
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install AdSense code
+        run: python scripts/install_adsense.py
+      - name: Verify publisher ID
+        run: |
+          grep -q "ca-pub-2321879700607801" index.html
+          grep -q "ca-pub-2321879700607801" hoikuen.html
+          grep -q "ca-pub-2321879700607801" moushikomi.html
+          grep -q "ca-pub-2321879700607801" tochuu.html
+          grep -q "ca-pub-2321879700607801" score.html
+          grep -q "ca-pub-2321879700607801" privacy.html
+      - name: Commit
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "feat: connect site to Google AdSense"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
