@@ -27,9 +27,6 @@ function esc(value) {
 }
 
 function normalizeFacilityLinks(f) {
-  // 本来はpublic_private / official_info_urlを固定マスタから読む。
-  // ただし旧キャッシュや旧マスタでも公立リンクが消えないよう、
-  // 岡山市公立施設HTML由来の印を安全なフォールバックにする。
   const publicByMaster = f.public_private === '公立';
   const publicBySource =
     f.contact_source === 'Okayama City public-facility HTML' ||
@@ -56,8 +53,7 @@ function normalizeFacilityLinks(f) {
 
   return {
     ...f,
-    public_private:
-      isPublic ? '公立' : (f.public_private || '私立'),
+    public_private: isPublic ? '公立' : (f.public_private || '私立'),
     website_status: websiteStatus,
     official_info_url: officialInfoUrl
   };
@@ -105,8 +101,9 @@ function servicesHtml(f, compact = false) {
     <div class="service-list ${compact ? 'service-list-popup' : ''}">
       ${defs.map(([key, label]) => {
         const state = serviceState(s[key]);
+
         return `
-          <span class="service-chip ${state.cls}" title="${esc(label)}">
+          <span class="service-chip ${state.cls}">
             ${esc(label)}：${state.label}
           </span>
         `;
@@ -124,8 +121,8 @@ function externalLinksHtml(f, compact = false) {
           href="${esc(f.website)}"
           target="_blank"
           rel="noopener noreferrer">
-         公式ホームページを見る ↗
-       </a>`
+        公式ホームページを見る ↗
+      </a>`
     );
   } else if (f.website_status === 'none') {
     rows.push(
@@ -148,8 +145,8 @@ function externalLinksHtml(f, compact = false) {
           href="${esc(f.official_info_url)}"
           target="_blank"
           rel="noopener noreferrer">
-         ${label}
-       </a>`
+        ${label}
+      </a>`
     );
   }
 
@@ -165,7 +162,10 @@ function wardPinIcon(ward) {
 
   return L.divIcon({
     className: 'ward-div-icon',
-    html: `<span class="ward-pin" style="--pin-color:${color}" aria-hidden="true"></span>`,
+    html:
+      `<span class="ward-pin"
+             style="--pin-color:${color}"
+             aria-hidden="true"></span>`,
     iconSize: [24, 32],
     iconAnchor: [12, 30],
     popupAnchor: [0, -28]
@@ -175,12 +175,15 @@ function wardPinIcon(ward) {
 async function loadData() {
   const ts = Date.now();
 
-  const masterResp = await fetch(`data/facility_master.json?v=${ts}`, {
-    cache: 'no-store'
-  });
+  const masterResp = await fetch(
+    `data/facility_master.json?v=${ts}`,
+    { cache: 'no-store' }
+  );
 
   if (!masterResp.ok) {
-    throw new Error(`facility_master.json: HTTP ${masterResp.status}`);
+    throw new Error(
+      `facility_master.json: HTTP ${masterResp.status}`
+    );
   }
 
   const master = await masterResp.json();
@@ -193,9 +196,10 @@ async function loadData() {
   };
 
   try {
-    const aResp = await fetch(`data/availability_fixed.json?v=${ts}`, {
-      cache: 'no-store'
-    });
+    const aResp = await fetch(
+      `data/availability_fixed.json?v=${ts}`,
+      { cache: 'no-store' }
+    );
 
     if (aResp.ok) {
       availability = await aResp.json();
@@ -232,7 +236,9 @@ async function loadData() {
   }
 
   if (availability.source_page_updated) {
-    meta.push(`岡山市ページ更新 ${availability.source_page_updated}`);
+    meta.push(
+      `岡山市ページ更新 ${availability.source_page_updated}`
+    );
   }
 
   meta.push(`認可保育施設 ${allFacilities.length}施設`);
@@ -256,16 +262,26 @@ function initMap() {
     }
   ).addTo(map);
 
-  const legend = L.control({ position: 'bottomright' });
+  const legend = L.control({
+    position: 'bottomright'
+  });
 
   legend.onAdd = function() {
-    const div = L.DomUtil.create('div', 'map-legend');
+    const div = L.DomUtil.create(
+      'div',
+      'map-legend'
+    );
 
     div.innerHTML = `
       <strong>区別</strong>
-      ${Object.entries(WARD_COLORS).map(([ward, color]) => `
-        <span><i style="background:${color}"></i>${ward}</span>
-      `).join('')}
+      ${Object.entries(WARD_COLORS).map(
+        ([ward, color]) => `
+          <span>
+            <i style="background:${color}"></i>
+            ${ward}
+          </span>
+        `
+      ).join('')}
     `;
 
     return div;
@@ -275,38 +291,60 @@ function initMap() {
 }
 
 function applyQueryParams() {
-  const params = new URLSearchParams(location.search);
+  const params =
+    new URLSearchParams(location.search);
 
   if (params.get('ward') && $('#ward')) {
-    $('#ward').value = params.get('ward');
+    $('#ward').value =
+      params.get('ward');
   }
 }
 
 function filterData() {
-  const q = ($('#q')?.value || '').trim().toLowerCase();
-  const ward = $('#ward')?.value || '';
-  const type = $('#type')?.value || '';
-  const service = $('#service')?.value || '';
+  const q =
+    ($('#q')?.value || '')
+      .trim()
+      .toLowerCase();
+
+  const ward =
+    $('#ward')?.value || '';
+
+  const type =
+    $('#type')?.value || '';
+
+  const service =
+    $('#service')?.value || '';
 
   return allFacilities.filter((f) => {
     const text =
-      `${f.name || ''} ${f.address || ''} ${f.operator || ''}`.toLowerCase();
+      `${f.name || ''} ${f.address || ''} ${f.operator || ''}`
+        .toLowerCase();
 
     const typeMatches =
       !type ||
       f.category === type ||
-      (type === '保育園' && f.category === '認可保育園') ||
-      (type === '認定こども園' && f.category === '認定こども園') ||
+      (
+        type === '保育園' &&
+        f.category === '認可保育園'
+      ) ||
+      (
+        type === '認定こども園' &&
+        f.category === '認定こども園'
+      ) ||
       (
         type === '地域型保育' &&
-        String(f.category).startsWith('地域型保育事業')
+        String(f.category)
+          .startsWith('地域型保育事業')
       );
 
     return (
       (!q || text.includes(q)) &&
       (!ward || f.ward === ward) &&
       typeMatches &&
-      (!service || f.services?.[service] === true)
+      (
+        !service ||
+        f.services?.[service] === true
+      )
     );
   });
 }
@@ -314,9 +352,10 @@ function filterData() {
 function popupHtml(f) {
   return `
     <div class="facility-popup">
+
       <a class="popup-facility-name"
          href="#facility-${esc(f.id)}"
-         data-facility-id="${esc(f.id)}">
+         data-scroll-card-id="${esc(f.id)}">
         ${esc(f.name)}
       </a>
 
@@ -326,23 +365,40 @@ function popupHtml(f) {
         ${esc(f.ward || '')}
       </div>
 
-      ${f.postal ? `<div>〒${esc(f.postal)}</div>` : ''}
+      ${
+        f.postal
+          ? `<div>〒${esc(f.postal)}</div>`
+          : ''
+      }
 
-      <div>${esc(f.address || '所在地情報なし')}</div>
+      <div>
+        ${esc(f.address || '所在地情報なし')}
+      </div>
 
-      ${f.phone
-        ? `<div><a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">${esc(f.phone)}</a></div>`
-        : ''}
+      ${
+        f.phone
+          ? `<div>
+               <a href="tel:${esc(
+                 String(f.phone).replace(/-/g, '')
+               )}">
+                 ${esc(f.phone)}
+               </a>
+             </div>`
+          : ''
+      }
 
       ${servicesHtml(f, true)}
       ${availabilityHtml(f, true)}
 
-      <div class="facility-section-title">関連リンク</div>
+      <div class="facility-section-title">
+        関連リンク
+      </div>
+
       ${externalLinksHtml(f, true)}
 
       <a class="popup-detail-link"
          href="#facility-${esc(f.id)}"
-         data-facility-id="${esc(f.id)}">
+         data-scroll-card-id="${esc(f.id)}">
         下の施設カードを見る ↓
       </a>
     </div>
@@ -352,10 +408,10 @@ function popupHtml(f) {
 function card(f) {
   return `
     <article class="facility-card"
-             id="facility-${esc(f.id)}"
-             data-facility-id="${esc(f.id)}">
+             id="facility-${esc(f.id)}">
 
       <div class="facility-card-head">
+
         <h3>${esc(f.name)}</h3>
 
         <button type="button"
@@ -363,47 +419,87 @@ function card(f) {
                 data-map-id="${esc(f.id)}">
           地図で見る
         </button>
+
       </div>
 
       <div class="badges">
-        <span class="badge">${esc(f.category || '')}</span>
 
-        <span class="badge ${f.public_private === '公立' ? 'public' : ''}">
+        <span class="badge">
+          ${esc(f.category || '')}
+        </span>
+
+        <span class="badge ${
+          f.public_private === '公立'
+            ? 'public'
+            : ''
+        }">
           ${esc(f.public_private || '')}
         </span>
 
-        <span class="badge ward-badge">${esc(f.ward || '')}</span>
+        <span class="badge ward-badge">
+          ${esc(f.ward || '')}
+        </span>
+
       </div>
 
       <dl class="facility-info">
+
         <dt>所在地</dt>
+
         <dd>
-          ${f.postal ? `〒${esc(f.postal)}<br>` : ''}
+          ${
+            f.postal
+              ? `〒${esc(f.postal)}<br>`
+              : ''
+          }
+
           ${esc(f.address || '—')}
         </dd>
 
         <dt>電話</dt>
+
         <dd>
-          ${f.phone
-            ? `<a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">${esc(f.phone)}</a>`
-            : '—'}
+          ${
+            f.phone
+              ? `<a href="tel:${esc(
+                  String(f.phone).replace(/-/g, '')
+                )}">
+                  ${esc(f.phone)}
+                </a>`
+              : '—'
+          }
         </dd>
+
       </dl>
 
-      <div class="facility-section-title">保育サービス</div>
+      <div class="facility-section-title">
+        保育サービス
+      </div>
+
       ${servicesHtml(f)}
 
-      <div class="facility-section-title">年齢別の受入見込み</div>
+      <div class="facility-section-title">
+        年齢別の受入見込み
+      </div>
+
       ${availabilityHtml(f)}
 
-      <div class="facility-section-title">関連リンク</div>
+      <div class="facility-section-title">
+        関連リンク
+      </div>
+
       ${externalLinksHtml(f)}
+
     </article>
   `;
 }
 
 function scrollToCard(id) {
-  const cardEl = document.getElementById(`facility-${id}`);
+  const cardEl =
+    document.getElementById(
+      `facility-${id}`
+    );
+
   if (!cardEl) return;
 
   cardEl.scrollIntoView({
@@ -411,22 +507,31 @@ function scrollToCard(id) {
     block: 'center'
   });
 
-  cardEl.classList.add('facility-card-highlight');
+  cardEl.classList.add(
+    'facility-card-highlight'
+  );
 
   window.setTimeout(() => {
-    cardEl.classList.remove('facility-card-highlight');
+    cardEl.classList.remove(
+      'facility-card-highlight'
+    );
   }, 1800);
 }
 
 function focusMarker(id) {
-  const marker = markerById.get(id);
+  const marker =
+    markerById.get(id);
 
   if (!marker) {
-    console.warn('Marker not found for facility:', id);
+    console.warn(
+      'Marker not found for facility:',
+      id
+    );
     return;
   }
 
-  const mapEl = document.getElementById('map');
+  const mapEl =
+    document.getElementById('map');
 
   if (mapEl) {
     mapEl.scrollIntoView({
@@ -438,54 +543,69 @@ function focusMarker(id) {
   window.setTimeout(() => {
     map.invalidateSize();
 
-    const ll = marker.getLatLng();
+    const ll =
+      marker.getLatLng();
 
-    map.setView(ll, 16, {
-      animate: true
-    });
+    map.setView(
+      ll,
+      16,
+      { animate: true }
+    );
 
     marker.openPopup();
   }, 350);
 }
 
 function clearMarkers() {
-  markers.forEach((m) => m.remove());
+  markers.forEach(
+    (m) => m.remove()
+  );
+
   markers = [];
   markerById.clear();
 }
 
 function fitMarkersToView(fs) {
-  const withCoords = fs.filter((f) =>
-    Number.isFinite(Number(f.lat)) &&
-    Number.isFinite(Number(f.lon))
-  );
+  const withCoords =
+    fs.filter((f) =>
+      Number.isFinite(Number(f.lat)) &&
+      Number.isFinite(Number(f.lon))
+    );
 
   if (!withCoords.length) return;
 
-  const bounds = L.latLngBounds(
-    withCoords.map((f) => [
-      Number(f.lat),
-      Number(f.lon)
-    ])
-  );
+  const bounds =
+    L.latLngBounds(
+      withCoords.map((f) => [
+        Number(f.lat),
+        Number(f.lon)
+      ])
+    );
 
-  map.fitBounds(bounds.pad(0.04), {
-    maxZoom:
-      fs.length === allFacilities.length ? 12 : 15,
-    animate: false
-  });
+  map.fitBounds(
+    bounds.pad(0.04),
+    {
+      maxZoom:
+        fs.length === allFacilities.length
+          ? 12
+          : 15,
+      animate: false
+    }
+  );
 }
 
 function render() {
   const fs = filterData();
 
   if ($('#count')) {
-    $('#count').textContent = fs.length;
+    $('#count').textContent =
+      fs.length;
   }
 
   if ($('#facility-list')) {
-    $('#facility-list').innerHTML =
-      fs.map(card).join('');
+    $('#facility-list')
+      .innerHTML =
+        fs.map(card).join('');
   }
 
   clearMarkers();
@@ -494,14 +614,22 @@ function render() {
     Number.isFinite(Number(f.lat)) &&
     Number.isFinite(Number(f.lon))
   ).forEach((f) => {
-    const marker = L.marker(
-      [Number(f.lat), Number(f.lon)],
-      { icon: wardPinIcon(f.ward) }
-    ).addTo(map);
+    const marker =
+      L.marker(
+        [
+          Number(f.lat),
+          Number(f.lon)
+        ],
+        {
+          icon: wardPinIcon(f.ward)
+        }
+      ).addTo(map);
 
     marker.bindPopup(
       popupHtml(f),
-      { maxWidth: 360 }
+      {
+        maxWidth: 360
+      }
     );
 
     markers.push(marker);
@@ -510,54 +638,78 @@ function render() {
 
   fitMarkersToView(fs);
 
-  setTimeout(() => map.invalidateSize(), 80);
+  setTimeout(
+    () => map.invalidateSize(),
+    80
+  );
 }
 
 function bindInteractions() {
-  ['q', 'ward', 'type', 'service'].forEach((id) => {
-    const el = $('#' + id);
+  [
+    'q',
+    'ward',
+    'type',
+    'service'
+  ].forEach((id) => {
+    const el =
+      $('#' + id);
+
     if (!el) return;
 
     el.addEventListener(
-      id === 'q' ? 'input' : 'change',
+      id === 'q'
+        ? 'input'
+        : 'change',
       render
     );
   });
 
-  document.addEventListener('click', (event) => {
-    // Card -> map
-    const mapBtn = event.target.closest('[data-map-id]');
+  document.addEventListener(
+    'click',
+    (event) => {
 
-    if (mapBtn) {
-      const id = mapBtn.dataset.mapId;
+      const mapBtn =
+        event.target.closest(
+          '[data-map-id]'
+        );
 
-      if (id) {
-        event.preventDefault();
-        event.stopPropagation();
-        focusMarker(id);
+      if (mapBtn) {
+        const id =
+          mapBtn.dataset.mapId;
+
+        if (id) {
+          event.preventDefault();
+          event.stopPropagation();
+          focusMarker(id);
+        }
+
+        return;
       }
 
-      return;
-    }
+      const scrollLink =
+        event.target.closest(
+          '[data-scroll-card-id]'
+        );
 
-    // Popup -> card
-    const scrollLink =
-      event.target.closest('[data-scroll-card-id]');
+      if (scrollLink) {
+        const id =
+          scrollLink.dataset.scrollCardId;
 
-    if (scrollLink) {
-      const id = scrollLink.dataset.scrollCardId;
+        if (id) {
+          event.preventDefault();
+          event.stopPropagation();
+          scrollToCard(id);
+        }
 
-      if (id) {
-        event.preventDefault();
-        event.stopPropagation();
-        scrollToCard(id);
+        return;
       }
 
-      return;
+      // 重要:
+      // 公式HP・岡山市掲載ページ・電話リンクには
+      // JSで一切介入しない。
+      // ブラウザ標準の<a href>動作に任せる。
     }
-
-    // External links and tel links are left to normal browser behavior.
-  });
+  );
 }
 
 async function init() {
@@ -571,61 +723,40 @@ async function init() {
     console.error(error);
 
     if ($('#count')) {
-      $('#count').textContent = '0';
+      $('#count').textContent =
+        '0';
     }
 
     if ($('#facility-list')) {
-      $('#facility-list').innerHTML = `
-        <div class="notice">
-          <strong>施設情報を読み込めませんでした。</strong><br>
-          ページを再読み込みしても改善しない場合は、
-          時間をおいてお試しください。
-        </div>
-      `;
+      $('#facility-list')
+        .innerHTML = `
+          <div class="notice">
+            <strong>
+              施設情報を読み込めませんでした。
+            </strong><br>
+
+            ページを再読み込みしても
+            改善しない場合は、
+            時間をおいてお試しください。
+          </div>
+        `;
     }
   }
 
   bindInteractions();
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  const wait = () => {
-    if (window.L) {
-      init();
-    } else {
-      setTimeout(wait, 80);
-    }
-  };
+window.addEventListener(
+  'DOMContentLoaded',
+  () => {
+    const wait = () => {
+      if (window.L) {
+        init();
+      } else {
+        setTimeout(wait, 80);
+      }
+    };
 
-  wait();
-});
-
-// External-link hotfix:
-// facility card/popup ancestors may still have delegated click handlers.
-// Capture these links before other delegated handlers and open the real URL.
-document.addEventListener('click', (event) => {
-  const link = event.target.closest(
-    'a.facility-site-link, a.facility-city-link'
-  );
-
-  if (!link) return;
-
-  const href = link.getAttribute('href');
-
-  if (!href) return;
-
-  event.preventDefault();
-  event.stopPropagation();
-  event.stopImmediatePropagation();
-
-  const newWindow = window.open(
-    href,
-    '_blank',
-    'noopener,noreferrer'
-  );
-
-  // If popup opening is blocked, fall back to same-tab navigation.
-  if (!newWindow) {
-    window.location.href = href;
+    wait();
   }
-}, true);
+);
