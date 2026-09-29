@@ -1,16 +1,12 @@
-共通ヘッダー・フッター v1.1 修正版
+共通ヘッダー・フッター v1.2
 
-v1の失敗原因:
-インストーラーの正規表現で <header>/<footer> 検出用の word boundary が誤って二重エスケープされ、
-全ページ header=0 footer=0 になっていました。
+v1.2修正:
+- footerが存在するページ → 既存footerを共通footerホストへ置換
+- footerが存在しない about/operator/privacy → </body>直前へ共通footerホストを追加
+- headerは従来どおり安全に置換
+- 全主要ページをSafety check
+- エラー時はcommit前に停止
+- 再実行可能
 
-v1.1:
-- 正規表現を修正
-- 全HTMLで構造検証
-- 一部ページだけ失敗した場合はcommitせず停止
-- 再実行しても二重導入しない
-- v1が失敗した状態からそのまま導入可能
-
-導入:
-ZIPを展開し、同じパスへ上書きアップロード。
+v1.1が失敗した状態から、そのまま上書き導入できます。
 Actions → Install unified header and footer → Run workflow
