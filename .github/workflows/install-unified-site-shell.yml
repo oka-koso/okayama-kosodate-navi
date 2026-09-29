@@ -1,0 +1,32 @@
+name: Install unified header and footer
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/install_unified_site_shell.py
+      - name: Safety check
+        run: |
+          test -f js/site-shell.js
+          test -f css/site-shell.css
+          grep -q 'data-site-header' index.html
+          grep -q 'data-site-footer' index.html
+      - name: Commit
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -- '*.html' 'articles/*.html'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "refactor: unify site header and footer"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
