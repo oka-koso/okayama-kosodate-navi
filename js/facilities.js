@@ -12,6 +12,11 @@ const WARD_COLORS = {
   '南区': '#9b51e0'
 };
 
+const PUBLIC_NURSERY_PAGE =
+  'https://www.city.okayama.jp/kurashi/0000030497.html';
+const PUBLIC_KODOMO_PAGE =
+  'https://www.city.okayama.jp/kurashi/0000030473.html';
+
 function esc(value) {
   return String(value ?? '')
     .replace(/&/g, '&amp;')
@@ -19,6 +24,43 @@ function esc(value) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+function normalizeFacilityLinks(f) {
+  // 本来はpublic_private / official_info_urlを固定マスタから読む。
+  // ただし旧キャッシュや旧マスタでも公立リンクが消えないよう、
+  // 岡山市公立施設HTML由来の印を安全なフォールバックにする。
+  const publicByMaster = f.public_private === '公立';
+  const publicBySource =
+    f.contact_source === 'Okayama City public-facility HTML' ||
+    Boolean(f.public_source);
+
+  const isPublic = publicByMaster || publicBySource;
+
+  let officialInfoUrl = f.official_info_url || '';
+
+  if (isPublic && !officialInfoUrl) {
+    officialInfoUrl =
+      f.category === '認定こども園'
+        ? PUBLIC_KODOMO_PAGE
+        : PUBLIC_NURSERY_PAGE;
+  }
+
+  let websiteStatus = f.website_status || 'unchecked';
+
+  if (isPublic) {
+    websiteStatus = 'none';
+  } else if (f.website) {
+    websiteStatus = 'verified';
+  }
+
+  return {
+    ...f,
+    public_private:
+      isPublic ? '公立' : (f.public_private || '私立'),
+    website_status: websiteStatus,
+    official_info_url: officialInfoUrl
+  };
 }
 
 function availabilityHtml(facility, compact = false) {
@@ -33,7 +75,11 @@ function availabilityHtml(facility, compact = false) {
     <div class="availability ${compact ? 'availability-popup' : ''}">
       ${[0,1,2,3,4,5].map((age) => {
         const status = a[String(age)] ?? '—';
-        const cls = status === '○' ? 'o' : status === '△' ? 'd' : status === '×' ? 'x' : '';
+        const cls =
+          status === '○' ? 'o' :
+          status === '△' ? 'd' :
+          status === '×' ? 'x' : '';
+
         return `<span class="age-pill ${cls}">${age}歳<br>${esc(status)}</span>`;
       }).join('')}
     </div>
@@ -59,7 +105,11 @@ function servicesHtml(f, compact = false) {
     <div class="service-list ${compact ? 'service-list-popup' : ''}">
       ${defs.map(([key, label]) => {
         const state = serviceState(s[key]);
-        return `<span class="service-chip ${state.cls}" title="${esc(label)}">${esc(label)}：${state.label}</span>`;
+        return `
+          <span class="service-chip ${state.cls}" title="${esc(label)}">
+            ${esc(label)}：${state.label}
+          </span>
+        `;
       }).join('')}
     </div>
   `;
@@ -70,27 +120,44 @@ function externalLinksHtml(f, compact = false) {
 
   if (f.website) {
     rows.push(
-      `<a class="facility-site-link" href="${esc(f.website)}" target="_blank" rel="noopener noreferrer">公式ホームページを見る ↗</a>`
+      `<a class="facility-site-link"
+          href="${esc(f.website)}"
+          target="_blank"
+          rel="noopener noreferrer">
+         公式ホームページを見る ↗
+       </a>`
     );
   } else if (f.website_status === 'none') {
-    rows.push('<span class="facility-site-none">公式ホームページ：なし</span>');
-  } else if (f.public_private !== '公立') {
-    rows.push('<span class="facility-site-pending">公式ホームページ：確認中</span>');
+    rows.push(
+      '<span class="facility-site-none">公式ホームページ：なし</span>'
+    );
+  } else {
+    rows.push(
+      '<span class="facility-site-pending">公式ホームページ：確認中</span>'
+    );
   }
 
   if (f.official_info_url) {
-    const label = f.public_private === '公立'
-      ? '岡山市の掲載ページを見る ↗'
-      : '岡山市の施設情報を見る ↗';
+    const label =
+      f.public_private === '公立'
+        ? '岡山市の掲載ページを見る ↗'
+        : '岡山市の施設情報を見る ↗';
 
     rows.push(
-      `<a class="facility-city-link" href="${esc(f.official_info_url)}" target="_blank" rel="noopener noreferrer">${label}</a>`
+      `<a class="facility-city-link"
+          href="${esc(f.official_info_url)}"
+          target="_blank"
+          rel="noopener noreferrer">
+         ${label}
+       </a>`
     );
   }
 
-  if (!rows.length) return '';
-
-  return `<div class="facility-links ${compact ? 'facility-links-popup' : ''}">${rows.join('')}</div>`;
+  return `
+    <div class="facility-links ${compact ? 'facility-links-popup' : ''}">
+      ${rows.join('')}
+    </div>
+  `;
 }
 
 function wardPinIcon(ward) {
@@ -133,24 +200,26 @@ async function loadData() {
     if (aResp.ok) {
       availability = await aResp.json();
     }
-  } catch (_) {
-    // 受入情報がなくても施設マスタだけで表示する。
-  }
+  } catch (_) {}
 
   const byId = availability.by_facility_id || {};
 
-  allFacilities = (master.facilities || []).map((f) => ({
-    ...f,
-    type: f.category || '',
-    public: f.public_private === '公立',
-    availability: byId[f.id] || {},
-    services: {
-      extended: f.services?.extended ?? null,
-      temporary: f.services?.temporary ?? null,
-      holiday: f.services?.holiday ?? null,
-      support_center: f.services?.support_center ?? null
-    }
-  }));
+  allFacilities = (master.facilities || []).map((raw) => {
+    const f = normalizeFacilityLinks(raw);
+
+    return {
+      ...f,
+      type: f.category || '',
+      public: f.public_private === '公立',
+      availability: byId[f.id] || {},
+      services: {
+        extended: f.services?.extended ?? null,
+        temporary: f.services?.temporary ?? null,
+        holiday: f.services?.holiday ?? null,
+        support_center: f.services?.support_center ?? null
+      }
+    };
+  });
 
   const meta = [];
 
@@ -179,21 +248,26 @@ function initMap() {
     scrollWheelZoom: true
   }).setView([34.655, 133.92], 11);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
+  L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }
+  ).addTo(map);
 
   const legend = L.control({ position: 'bottomright' });
 
   legend.onAdd = function() {
     const div = L.DomUtil.create('div', 'map-legend');
+
     div.innerHTML = `
       <strong>区別</strong>
       ${Object.entries(WARD_COLORS).map(([ward, color]) => `
         <span><i style="background:${color}"></i>${ward}</span>
       `).join('')}
     `;
+
     return div;
   };
 
@@ -202,6 +276,7 @@ function initMap() {
 
 function applyQueryParams() {
   const params = new URLSearchParams(location.search);
+
   if (params.get('ward') && $('#ward')) {
     $('#ward').value = params.get('ward');
   }
@@ -222,7 +297,10 @@ function filterData() {
       f.category === type ||
       (type === '保育園' && f.category === '認可保育園') ||
       (type === '認定こども園' && f.category === '認定こども園') ||
-      (type === '地域型保育' && String(f.category).startsWith('地域型保育事業'));
+      (
+        type === '地域型保育' &&
+        String(f.category).startsWith('地域型保育事業')
+      );
 
     return (
       (!q || text.includes(q)) &&
@@ -236,34 +314,64 @@ function filterData() {
 function popupHtml(f) {
   return `
     <div class="facility-popup">
-      <a class="popup-facility-name" href="#facility-${esc(f.id)}" data-facility-id="${esc(f.id)}">${esc(f.name)}</a>
-      <div>${esc(f.category || '')}・${esc(f.public_private || '')}・${esc(f.ward || '')}</div>
+      <a class="popup-facility-name"
+         href="#facility-${esc(f.id)}"
+         data-facility-id="${esc(f.id)}">
+        ${esc(f.name)}
+      </a>
+
+      <div>
+        ${esc(f.category || '')}・
+        ${esc(f.public_private || '')}・
+        ${esc(f.ward || '')}
+      </div>
+
       ${f.postal ? `<div>〒${esc(f.postal)}</div>` : ''}
+
       <div>${esc(f.address || '所在地情報なし')}</div>
+
       ${f.phone
         ? `<div><a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">${esc(f.phone)}</a></div>`
         : ''}
+
       ${servicesHtml(f, true)}
       ${availabilityHtml(f, true)}
+
+      <div class="facility-section-title">関連リンク</div>
       ${externalLinksHtml(f, true)}
-      <a class="popup-detail-link" href="#facility-${esc(f.id)}" data-facility-id="${esc(f.id)}">下の施設カードを見る ↓</a>
+
+      <a class="popup-detail-link"
+         href="#facility-${esc(f.id)}"
+         data-facility-id="${esc(f.id)}">
+        下の施設カードを見る ↓
+      </a>
     </div>
   `;
 }
 
 function card(f) {
   return `
-    <article class="facility-card" id="facility-${esc(f.id)}" data-facility-id="${esc(f.id)}">
+    <article class="facility-card"
+             id="facility-${esc(f.id)}"
+             data-facility-id="${esc(f.id)}">
+
       <div class="facility-card-head">
         <h3>${esc(f.name)}</h3>
-        <button type="button" class="map-focus-btn" data-map-id="${esc(f.id)}">地図で見る</button>
+
+        <button type="button"
+                class="map-focus-btn"
+                data-map-id="${esc(f.id)}">
+          地図で見る
+        </button>
       </div>
 
       <div class="badges">
         <span class="badge">${esc(f.category || '')}</span>
+
         <span class="badge ${f.public_private === '公立' ? 'public' : ''}">
           ${esc(f.public_private || '')}
         </span>
+
         <span class="badge ward-badge">${esc(f.ward || '')}</span>
       </div>
 
@@ -288,6 +396,7 @@ function card(f) {
       <div class="facility-section-title">年齢別の受入見込み</div>
       ${availabilityHtml(f)}
 
+      <div class="facility-section-title">関連リンク</div>
       ${externalLinksHtml(f)}
     </article>
   `;
@@ -303,6 +412,7 @@ function scrollToCard(id) {
   });
 
   cardEl.classList.add('facility-card-highlight');
+
   window.setTimeout(() => {
     cardEl.classList.remove('facility-card-highlight');
   }, 1800);
@@ -313,9 +423,12 @@ function focusMarker(id) {
   if (!marker) return;
 
   const ll = marker.getLatLng();
-  map.setView(ll, Math.max(map.getZoom(), 16), {
-    animate: true
-  });
+
+  map.setView(
+    ll,
+    Math.max(map.getZoom(), 16),
+    { animate: true }
+  );
 
   marker.openPopup();
 
@@ -340,13 +453,15 @@ function fitMarkersToView(fs) {
   if (!withCoords.length) return;
 
   const bounds = L.latLngBounds(
-    withCoords.map((f) => [Number(f.lat), Number(f.lon)])
+    withCoords.map((f) => [
+      Number(f.lat),
+      Number(f.lon)
+    ])
   );
 
-  // 初期状態では206施設すべてが一画面に入るようにする。
-  // 絞り込み後は、その結果だけが収まるようにする。
   map.fitBounds(bounds.pad(0.04), {
-    maxZoom: fs.length === allFacilities.length ? 12 : 15,
+    maxZoom:
+      fs.length === allFacilities.length ? 12 : 15,
     animate: false
   });
 }
@@ -359,7 +474,8 @@ function render() {
   }
 
   if ($('#facility-list')) {
-    $('#facility-list').innerHTML = fs.map(card).join('');
+    $('#facility-list').innerHTML =
+      fs.map(card).join('');
   }
 
   clearMarkers();
@@ -373,9 +489,10 @@ function render() {
       { icon: wardPinIcon(f.ward) }
     ).addTo(map);
 
-    marker.bindPopup(popupHtml(f), {
-      maxWidth: 360
-    });
+    marker.bindPopup(
+      popupHtml(f),
+      { maxWidth: 360 }
+    );
 
     markers.push(marker);
     markerById.set(f.id, marker);
@@ -398,19 +515,26 @@ function bindInteractions() {
   });
 
   document.addEventListener('click', (event) => {
-    const detail = event.target.closest('[data-facility-id]');
+    const detail =
+      event.target.closest('[data-facility-id]');
+
     if (detail) {
       const id = detail.dataset.facilityId;
+
       if (id) {
         event.preventDefault();
         scrollToCard(id);
       }
+
       return;
     }
 
-    const mapBtn = event.target.closest('[data-map-id]');
+    const mapBtn =
+      event.target.closest('[data-map-id]');
+
     if (mapBtn) {
       const id = mapBtn.dataset.mapId;
+
       if (id) {
         focusMarker(id);
       }
@@ -448,8 +572,12 @@ async function init() {
 
 window.addEventListener('DOMContentLoaded', () => {
   const wait = () => {
-    if (window.L) init();
-    else setTimeout(wait, 80);
+    if (window.L) {
+      init();
+    } else {
+      setTimeout(wait, 80);
+    }
   };
+
   wait();
 });
