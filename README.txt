@@ -1,32 +1,19 @@
-岡山子育てナビ - facility master repair safe patch v1
+岡山子育てナビ：トップ「保育園探し・申込みの流れ」パッチ v1
 
-目的
-----
-repair Action が .github/workflows や scripts を自動変更・commitしないようにします。
-GitHub App に workflows 権限を追加する必要はありません。
+変更内容:
+「岡山子育てナビでできること」のセクションだけを5ステップの導線へ置換します。
 
-アップロードするファイル
-------------------------
-.github/workflows/repair-facility-master.yml
+1. 保育園を探す → hoikuen.html
+2. 空き状況を確認 → hoikuen.html
+3. 入園時期・締切を確認 → tochuu.html
+4. 利用調整点数を確認 → score.html
+5. 申込み方法を確認 → moushikomi.html
 
-使い方
-------
-1. ZIPを展開。
-2. 上記ファイルをリポジトリの同じ場所へ上書き。
-3. GitHub Actions から「Repair facility master safely」を手動実行。
-4. Commit repaired data only が成功することを確認。
+既存MAP・いま確認したい情報・区別検索・申込ガイドは変更しません。
 
-安全設計
---------
-- commit対象は次の2ファイルだけです。
-  data/facility_master.json
-  data/facility_master_repair_audit.json
-- scripts/ は自動commitしません。
-- .github/workflows/ は自動commitしません。
-- 想定外ファイルがstageされた場合はpush前に停止します。
-- 206施設の検証は scripts/repair_facility_master.py 側に残したままです。
+導入:
+ZIPを展開してリポジトリの同じ階層へアップロード後、
+Actions → Install home application flow → Run workflow
 
-注意
-----
-既存の scripts/repair_facility_master.py はリポジトリに存在する前提です。
-今回のパッチでは、そのスクリプト自体は変更しません。
+安全設計:
+対象見出しを含むsectionがちょうど1件の場合のみ置換します。
