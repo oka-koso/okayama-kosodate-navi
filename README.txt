@@ -1,15 +1,16 @@
-子育て備忘録 イラスト組み込み v1
+備忘録イラスト サイズ修正
 
-・背景透過PNG 4点
-・bibouroku.html：本を読む親子
-・保育園探し、まず何から始める？：地図を見る親子
-・Part1：虫眼鏡の親子
-・Part2：チェックリストの親子
-・記事一覧カード／トップの備忘録カードにも対応イラストを自動表示
-・スマホでは自動縮小
-・本文、出典、共通ヘッダー／フッターは変更しません
+大きすぎたイラストを「ワンポイント」サイズへ縮小します。
 
-適用方法
-1. ZIPの中身を okayama-kosodate-navi のルートへアップロードしてCommit
-2. Actions → Install Bibouroku Illustrations
-3. Run workflow
+PC
+- 備忘録見出し：約110px
+- 記事カード：約82×72px
+- 記事本文：約135px
+
+スマホ
+- 備忘録見出し：約72px
+- 記事カード：約68×60px
+- 記事本文：約105px
+
+適用:
+Actions → Fix Bibouroku Illustration Sizes → Run workflow
