@@ -24,13 +24,15 @@
       "geocode_query": "岡山市北区弓之町8-2",
       "geocode_title": "岡山県岡山市北区弓之町８番２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c0388f0bb7a0",
@@ -50,13 +52,15 @@
       "geocode_query": "岡山市北区中山下2-7-45",
       "geocode_title": "岡山県岡山市北区中山下二丁目７番４５号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": true,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-a180daa6c959",
@@ -76,13 +80,15 @@
       "geocode_query": "岡山市北区幸町10-40",
       "geocode_title": "岡山県岡山市北区幸町１０番４０号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c907c71a375b",
@@ -102,13 +108,15 @@
       "geocode_query": "岡山市北区津島東一丁目4-3",
       "geocode_title": "岡山県岡山市北区津島東一丁目４番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": false,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2abfc828dd8e",
@@ -128,13 +136,15 @@
       "geocode_query": "岡山市北区牟佐822-2",
       "geocode_title": "岡山県岡山市北区牟佐８２２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": false,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-6af4f50817f8",
@@ -154,13 +164,15 @@
       "geocode_query": "岡山市北区玉柏2203-1",
       "geocode_title": "岡山県岡山市北区玉柏",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": false,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-21cf63b90750",
@@ -180,13 +192,15 @@
       "geocode_query": "岡山市北区学南町2-5-40",
       "geocode_title": "岡山県岡山市北区学南町二丁目５番４０号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-15ad8248cf5f",
@@ -206,13 +220,15 @@
       "geocode_query": "岡山市北区下伊福西町5-60",
       "geocode_title": "岡山県岡山市北区下伊福西町５番６０号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-234af96be60c",
@@ -232,13 +248,15 @@
       "geocode_query": "岡山市北区関西町11-8",
       "geocode_title": "岡山県岡山市北区関西町１１番８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-ab9820460900",
@@ -258,13 +276,15 @@
       "geocode_query": "岡山市北区島田本町1-4-41",
       "geocode_title": "岡山県岡山市北区島田本町一丁目４番４１号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f40be7d0e4b7",
@@ -284,13 +304,15 @@
       "geocode_query": "岡山市北区北長瀬本町27-2",
       "geocode_title": "岡山県岡山市北区北長瀬本町２７番２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d3086fb521b9",
@@ -310,13 +332,15 @@
       "geocode_query": "岡山市北区三門西町7-8",
       "geocode_title": "岡山県岡山市北区三門西町７番８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-0ee7543fd5c9",
@@ -336,13 +360,15 @@
       "geocode_query": "岡山市北区野殿東町17-7",
       "geocode_title": "岡山県岡山市北区野殿東町１７番７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-71e6d1ac906b",
@@ -362,13 +388,15 @@
       "geocode_query": "岡山市北区上中野2-3-10",
       "geocode_title": "岡山県岡山市北区上中野二丁目３番１０号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-09830b3780ab",
@@ -388,13 +416,15 @@
       "geocode_query": "岡山市北区大元駅前10-26",
       "geocode_title": "岡山県岡山市北区大元駅前１０番２６号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-19354b8398e6",
@@ -414,13 +444,15 @@
       "geocode_query": "岡山市北区野田4-1-30",
       "geocode_title": "岡山県岡山市北区野田四丁目１番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-a02005421fd8",
@@ -440,13 +472,15 @@
       "geocode_query": "岡山市北区新道47-5",
       "geocode_title": "岡山県岡山市北区新道４７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d4011ba264ee",
@@ -466,13 +500,15 @@
       "geocode_query": "岡山市北区奥田南町1-18",
       "geocode_title": "岡山県岡山市北区奥田南町１番１８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-862ccd1c91a1",
@@ -492,13 +528,15 @@
       "geocode_query": "岡山市北区富田74",
       "geocode_title": "岡山県岡山市北区富田",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2d15aacf4278",
@@ -518,13 +556,15 @@
       "geocode_query": "岡山市北区青江4-4-10",
       "geocode_title": "岡山県岡山市北区青江四丁目４番１０号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-4da344b27348",
@@ -544,13 +584,15 @@
       "geocode_query": "岡山市北区今3-2-9",
       "geocode_title": "岡山県岡山市北区今三丁目２番９号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-1319336432fb",
@@ -570,13 +612,15 @@
       "geocode_query": "岡山市北区下中野1222-4",
       "geocode_title": "岡山県岡山市北区下中野１２２２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-cd0ad22f8b29",
@@ -596,13 +640,15 @@
       "geocode_query": "岡山市北区平田407",
       "geocode_title": "岡山県岡山市北区平田４０７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-db1e6214d3f2",
@@ -622,13 +668,15 @@
       "geocode_query": "岡山市北区白石西新町6-104",
       "geocode_title": "岡山県岡山市北区白石西新町６番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": true,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3b16d87d740d",
@@ -648,13 +696,15 @@
       "geocode_query": "岡山市北区平野80-4",
       "geocode_title": "岡山県岡山市北区平野",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-25c3a54fceb6",
@@ -671,13 +721,15 @@
       "lat": 34.6835876,
       "lon": 133.9066213,
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-de18ac51f5a2",
@@ -697,13 +749,15 @@
       "geocode_query": "岡山市北区一宮125",
       "geocode_title": "岡山県岡山市北区一宮１２５番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-916f442f3b6b",
@@ -723,13 +777,15 @@
       "geocode_query": "岡山市北区楢津881-2",
       "geocode_title": "岡山県岡山市北区楢津８８１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-e6ca2a00d959",
@@ -749,13 +805,15 @@
       "geocode_query": "岡山市北区尾上755-1",
       "geocode_title": "岡山県岡山市北区尾上",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-889b50efdd63",
@@ -775,13 +833,15 @@
       "geocode_query": "岡山市北区楢津505-1",
       "geocode_title": "岡山県岡山市北区楢津",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-39d4a72f5f19",
@@ -801,13 +861,15 @@
       "geocode_query": "岡山市北区横井上190-1",
       "geocode_title": "岡山県岡山市北区横井上",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-ceb58ffa2209",
@@ -827,13 +889,15 @@
       "geocode_query": "岡山市北区富原1148",
       "geocode_title": "岡山県岡山市北区富原１１４８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7afad7fa1314",
@@ -853,13 +917,15 @@
       "geocode_query": "岡山市北区吉備津276-2",
       "geocode_title": "岡山県岡山市北区吉備津２７６番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b2a31a8e5259",
@@ -879,13 +945,15 @@
       "geocode_query": "岡山市北区下足守1545-1",
       "geocode_title": "岡山県岡山市北区下足守",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-54bb2b63cdc3",
@@ -905,13 +973,15 @@
       "geocode_query": "岡山市北区御津国ケ原1024",
       "geocode_title": "岡山県岡山市北区御津国ケ原",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-dd2244c6f4e1",
@@ -931,13 +1001,15 @@
       "geocode_query": "岡山市北区御津宇垣1889",
       "geocode_title": "岡山県岡山市北区御津宇垣",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-07d2d8eee041",
@@ -957,13 +1029,15 @@
       "geocode_query": "岡山市北区建部町川口1526-1",
       "geocode_title": "岡山県岡山市北区建部町川口",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c044cb87eac3",
@@ -983,13 +1057,15 @@
       "geocode_query": "岡山市中区網浜785",
       "geocode_title": "岡山県岡山市中区網浜７８５番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-592ec34a1ce6",
@@ -1009,13 +1085,15 @@
       "geocode_query": "岡山市中区平井五丁目2-25",
       "geocode_title": "岡山県岡山市中区平井五丁目２番２５号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-ab27ce57a420",
@@ -1035,13 +1113,15 @@
       "geocode_query": "岡山市中区桜橋3-1-51",
       "geocode_title": "岡山県岡山市中区桜橋三丁目１番５１号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-a2757262202a",
@@ -1061,13 +1141,15 @@
       "geocode_query": "岡山市中区浜一丁目14-4",
       "geocode_title": "岡山県岡山市中区浜一丁目１４番４号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-01b5e1013481",
@@ -1087,13 +1169,15 @@
       "geocode_query": "岡山市中区門田屋敷1-9-31",
       "geocode_title": "岡山県岡山市中区門田屋敷一丁目９番３１号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2caf7ebfcbf6",
@@ -1113,13 +1197,15 @@
       "geocode_query": "岡山市中区湊296-1",
       "geocode_title": "岡山県岡山市中区湊２９６番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-4c891c94ba26",
@@ -1139,13 +1225,15 @@
       "geocode_query": "岡山市中区江崎577-1",
       "geocode_title": "岡山県岡山市中区江崎",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-8bf4f5cc8f77",
@@ -1165,13 +1253,15 @@
       "geocode_query": "岡山市中区江崎380-1",
       "geocode_title": "岡山県岡山市中区江崎",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-26ce7b7ab03c",
@@ -1191,13 +1281,15 @@
       "geocode_query": "岡山市中区兼基247",
       "geocode_title": "岡山県岡山市中区兼基２４７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-62867ccc454b",
@@ -1217,13 +1309,15 @@
       "geocode_query": "岡山市中区中井4-19-27",
       "geocode_title": "岡山県岡山市中区中井四丁目１９番２７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d10ce8cb8e2f",
@@ -1243,13 +1337,15 @@
       "geocode_query": "岡山市東区可知四丁目23-5",
       "geocode_title": "岡山県岡山市東区可知四丁目２３番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-97fb1f945ade",
@@ -1269,13 +1365,15 @@
       "geocode_query": "岡山市東区可知3-7-21",
       "geocode_title": "岡山県岡山市東区可知三丁目７番２１号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b81a964289d1",
@@ -1295,13 +1393,15 @@
       "geocode_query": "岡山市東区西大寺松崎302-1",
       "geocode_title": "岡山県岡山市東区西大寺松崎",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-41d34b28f2d1",
@@ -1321,13 +1421,15 @@
       "geocode_query": "岡山市東区光津840-1",
       "geocode_title": "岡山県岡山市東区光津",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2c8a2edb816e",
@@ -1347,13 +1449,15 @@
       "geocode_query": "岡山市東区宿毛623-9",
       "geocode_title": "岡山県岡山市東区宿毛６２３番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-0b152fa9f440",
@@ -1373,13 +1477,15 @@
       "geocode_query": "岡山市東区中尾192-1",
       "geocode_title": "岡山県岡山市東区中尾１９２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-50b6fc6bd95d",
@@ -1399,13 +1505,15 @@
       "geocode_query": "岡山市東区瀬戸町下133",
       "geocode_title": "岡山県岡山市東区瀬戸町下１３３番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-5a3033510d15",
@@ -1425,13 +1533,15 @@
       "geocode_query": "岡山市東区瀬戸町観音寺509",
       "geocode_title": "岡山県岡山市東区瀬戸町観音寺５０９番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c99c121892fc",
@@ -1451,13 +1561,15 @@
       "geocode_query": "岡山市南区箕島2413-1",
       "geocode_title": "岡山県岡山市南区箕島２４１３番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3a38c9af0215",
@@ -1477,13 +1589,15 @@
       "geocode_query": "岡山市南区妹尾3763-1",
       "geocode_title": "岡山県岡山市南区妹尾",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-8f2cadf82439",
@@ -1503,13 +1617,15 @@
       "geocode_query": "岡山市南区曽根170-2",
       "geocode_title": "岡山県岡山市南区曽根",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-cd7a582b427f",
@@ -1529,13 +1645,15 @@
       "geocode_query": "岡山市南区東畦758-2",
       "geocode_title": "岡山県岡山市南区東畦７５８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-fd9bfbb6cc6d",
@@ -1555,13 +1673,15 @@
       "geocode_query": "岡山市南区内尾440-2",
       "geocode_title": "岡山県岡山市南区内尾４４０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-5481e9a4636b",
@@ -1581,13 +1701,15 @@
       "geocode_query": "岡山市南区藤田349-7",
       "geocode_title": "岡山県岡山市南区藤田３４９番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2b6815780f45",
@@ -1607,13 +1729,15 @@
       "geocode_query": "岡山市南区西七区231",
       "geocode_title": "岡山県岡山市南区西七区２３１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b876b61da215",
@@ -1633,13 +1757,15 @@
       "geocode_query": "岡山市南区西紅陽台3-1-116",
       "geocode_title": "岡山県岡山市南区西紅陽台三丁目１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7d04fc32a1ef",
@@ -1659,13 +1785,15 @@
       "geocode_query": "岡山市南区洲崎三丁目3-23",
       "geocode_title": "岡山県岡山市南区洲崎三丁目３番２３号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c540d4d8d8a7",
@@ -1685,13 +1813,15 @@
       "geocode_query": "岡山市南区福富中2-4-1",
       "geocode_title": "岡山県岡山市南区福富中二丁目４番１号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-26e5719c6630",
@@ -1711,13 +1841,15 @@
       "geocode_query": "岡山市南区平福1-11-25",
       "geocode_title": "岡山県岡山市南区平福一丁目１１番２５号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-01d75457bed4",
@@ -1737,13 +1869,15 @@
       "geocode_query": "岡山市南区並木町二丁目22-8",
       "geocode_title": "岡山県岡山市南区並木町二丁目２２番８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-bd718a3906e7",
@@ -1763,13 +1897,15 @@
       "geocode_query": "岡山市南区築港緑町1-1-7 230",
       "geocode_title": "岡山県岡山市南区築港緑町一丁目１番７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-cfcfc9c59c3f",
@@ -1789,13 +1925,15 @@
       "geocode_query": "岡山市南区千鳥町7-7",
       "geocode_title": "岡山県岡山市南区千鳥町７番７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-8372800aaa77",
@@ -1815,13 +1953,15 @@
       "geocode_query": "岡山市南区芳泉3-4-5",
       "geocode_title": "岡山県岡山市南区芳泉三丁目４番５号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-283b642b9f61",
@@ -1841,13 +1981,15 @@
       "geocode_query": "岡山市南区福田715-3",
       "geocode_title": "岡山県岡山市南区福田",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-987ae07271b9",
@@ -1867,13 +2009,15 @@
       "geocode_query": "岡山市南区浦安本町171-1",
       "geocode_title": "岡山県岡山市南区浦安本町１７１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-8d18f0e4b934",
@@ -1893,13 +2037,15 @@
       "geocode_query": "岡山市南区浦安南町425-1",
       "geocode_title": "岡山県岡山市南区浦安南町",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c2f6eee6cf0c",
@@ -1919,13 +2065,15 @@
       "geocode_query": "岡山市南区豊成1-1-17",
       "geocode_title": "岡山県岡山市南区豊成一丁目１番１７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-73a2b33b3b99",
@@ -1945,13 +2093,15 @@
       "geocode_query": "岡山市南区新保417-1",
       "geocode_title": "岡山県岡山市南区新保４１７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-8faa268cfd4a",
@@ -1971,13 +2121,15 @@
       "geocode_query": "岡山市南区泉田402-3",
       "geocode_title": "岡山県岡山市南区泉田４０２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-38f90cadc8e2",
@@ -1997,13 +2149,15 @@
       "geocode_query": "岡山市南区当新田482-52",
       "geocode_title": "岡山県岡山市南区当新田４８２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7697d8907f54",
@@ -2023,13 +2177,15 @@
       "geocode_query": "岡山市南区新保1113-8",
       "geocode_title": "岡山県岡山市南区新保１１１３番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3e66a13c2e89",
@@ -2049,13 +2205,15 @@
       "geocode_query": "岡山市南区西市115-16",
       "geocode_title": "岡山県岡山市南区西市１１５番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-5a30f1a0f6df",
@@ -2075,13 +2233,15 @@
       "geocode_query": "岡山市南区小串3480",
       "geocode_title": "岡山県岡山市南区小串３４８０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f5d79c691732",
@@ -2101,13 +2261,15 @@
       "geocode_query": "岡山市北区南方一丁目3-30",
       "geocode_title": "岡山県岡山市北区南方一丁目３番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2250a4445aaa",
@@ -2127,13 +2289,15 @@
       "geocode_query": "岡山市北区弓之町9-2",
       "geocode_title": "岡山県岡山市北区弓之町９番２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7086b448378f",
@@ -2153,13 +2317,15 @@
       "geocode_query": "岡山市北区田町1-4-12",
       "geocode_title": "岡山県岡山市北区田町一丁目４番１２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b762d2b14de0",
@@ -2179,13 +2345,15 @@
       "geocode_query": "岡山市北区丸の内2-6-5 クラス～",
       "geocode_title": "岡山県岡山市北区丸の内二丁目６番５号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-5d696eff342a",
@@ -2205,13 +2373,15 @@
       "geocode_query": "岡山市北区天神町6-34 クラス～",
       "geocode_title": "岡山県岡山市北区天神町６番３４号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-029dfee13209",
@@ -2228,13 +2398,15 @@
       "lat": 34.6897933,
       "lon": 133.928675,
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-6b45f387a5ff",
@@ -2254,13 +2426,15 @@
       "geocode_query": "岡山市北区半田町8-2",
       "geocode_title": "岡山県岡山市北区半田町８番２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-1ec5f2fb469d",
@@ -2280,13 +2454,15 @@
       "geocode_query": "岡山市北区富町2-14-9",
       "geocode_title": "岡山県岡山市北区富町二丁目１４番９号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f429c8d7fe8c",
@@ -2306,13 +2482,15 @@
       "geocode_query": "岡山市北区大供本町715-5",
       "geocode_title": "岡山県岡山市北区大供本町７１５番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7ea4e2638b75",
@@ -2332,13 +2510,15 @@
       "geocode_query": "岡山市北区大供表町16-10",
       "geocode_title": "岡山県岡山市北区大供表町１６番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-605445b41344",
@@ -2358,13 +2538,15 @@
       "geocode_query": "岡山市北区大元上町9-22",
       "geocode_title": "岡山県岡山市北区大元上町９番２２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-df21b21e0b1a",
@@ -2384,13 +2566,15 @@
       "geocode_query": "岡山市北区七日市西町1-14",
       "geocode_title": "岡山県岡山市北区七日市西町１番１４号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-734e21a7d0bf",
@@ -2410,13 +2594,15 @@
       "geocode_query": "岡山市北区今保247-1",
       "geocode_title": "岡山県岡山市北区今保２４７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-1f720255b07c",
@@ -2436,13 +2622,15 @@
       "geocode_query": "岡山市北区平田122-102",
       "geocode_title": "岡山県岡山市北区平田１２２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-9adbd2aac562",
@@ -2462,13 +2650,15 @@
       "geocode_query": "岡山市北区田中165-103",
       "geocode_title": "岡山県岡山市北区田中１６５番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-1df19fd5256f",
@@ -2488,13 +2678,15 @@
       "geocode_query": "岡山市北区今7丁目16-43",
       "geocode_title": "岡山県岡山市北区今七丁目１６番４３号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-55ab64e24eb9",
@@ -2514,13 +2706,15 @@
       "geocode_query": "岡山市北区中仙道1-7-28",
       "geocode_title": "岡山県岡山市北区中仙道一丁目７番２８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-203c128e05be",
@@ -2540,13 +2734,15 @@
       "geocode_query": "岡山市北区平野1071-1",
       "geocode_title": "岡山県岡山市北区平野",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3d4c74d3d609",
@@ -2566,13 +2762,15 @@
       "geocode_query": "岡山市北区庭瀬1032-1",
       "geocode_title": "岡山県岡山市北区庭瀬１０３２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2bc13a27977c",
@@ -2592,13 +2790,15 @@
       "geocode_query": "岡山市北区東花尻121-1",
       "geocode_title": "岡山県岡山市北区東花尻",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f950767f5dfe",
@@ -2618,13 +2818,15 @@
       "geocode_query": "岡山市北区中撫川351",
       "geocode_title": "岡山県岡山市北区中撫川",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-55bbf58dea67",
@@ -2644,13 +2846,15 @@
       "geocode_query": "岡山市北区東花尻266-1",
       "geocode_title": "岡山県岡山市北区東花尻２６６番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-4b435e772bfd",
@@ -2670,13 +2874,15 @@
       "geocode_query": "岡山市北区川入873-1",
       "geocode_title": "岡山県岡山市北区川入",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": true,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-83bfd994d90e",
@@ -2696,13 +2902,15 @@
       "geocode_query": "岡山市北区いずみ町9-18",
       "geocode_title": "岡山県岡山市北区いずみ町９番１８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-87b331929732",
@@ -2722,13 +2930,15 @@
       "geocode_query": "岡山市北区津島南1-3-9 クラス～",
       "geocode_title": "岡山県岡山市北区津島南一丁目３番９号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-9b4d603a4f34",
@@ -2748,13 +2958,15 @@
       "geocode_query": "岡山市北区津島桑の木町1-33",
       "geocode_title": "岡山県岡山市北区津島桑の木町１番３３号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-e76722631c72",
@@ -2774,13 +2986,15 @@
       "geocode_query": "岡山市北区一宮638-3",
       "geocode_title": "岡山県岡山市北区一宮６３８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-fc209de84894",
@@ -2800,13 +3014,15 @@
       "geocode_query": "岡山市北区辛川市場321-1",
       "geocode_title": "岡山県岡山市北区辛川市場",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": true,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-143c43f91014",
@@ -2826,13 +3042,15 @@
       "geocode_query": "岡山市北区楢津385-1",
       "geocode_title": "岡山県岡山市北区楢津",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d9e5f770e7b7",
@@ -2852,13 +3070,15 @@
       "geocode_query": "岡山市北区大窪50-1",
       "geocode_title": "岡山県岡山市北区大窪",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-de41a38b5c74",
@@ -2878,13 +3098,15 @@
       "geocode_query": "岡山市北区芳賀5112-2",
       "geocode_title": "岡山県岡山市北区芳賀５１１２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f7d2740b7f23",
@@ -2904,13 +3126,15 @@
       "geocode_query": "岡山市北区富吉2945-7",
       "geocode_title": "岡山県岡山市北区富吉",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": true,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-9ef6a782a4e8",
@@ -2930,13 +3154,15 @@
       "geocode_query": "岡山市北区横井上1556-4",
       "geocode_title": "岡山県岡山市北区横井上１５５６番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-899d5c08198c",
@@ -2956,13 +3182,15 @@
       "geocode_query": "岡山市北区富原3700-1",
       "geocode_title": "岡山県岡山市北区富原",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-04d209445b51",
@@ -2982,13 +3210,15 @@
       "geocode_query": "岡山市北区栢谷1724-3",
       "geocode_title": "岡山県岡山市北区栢谷１７２４番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7b4d1657e717",
@@ -3008,13 +3238,15 @@
       "geocode_query": "岡山市北区三手15-1",
       "geocode_title": "岡山県岡山市北区三手１５番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c9203aa946fd",
@@ -3034,13 +3266,15 @@
       "geocode_query": "岡山市北区加茂1104-1",
       "geocode_title": "岡山県岡山市北区加茂１１０４番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-9f0c3e8fbeb1",
@@ -3060,13 +3294,15 @@
       "geocode_query": "岡山市北区新庄上1357",
       "geocode_title": "岡山県岡山市北区新庄上",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-14991979cd9f",
@@ -3086,13 +3322,15 @@
       "geocode_query": "岡山市北区大井407-1",
       "geocode_title": "岡山県岡山市北区大井４０７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f23e2af31dee",
@@ -3112,13 +3350,15 @@
       "geocode_query": "岡山市北区御津金川476",
       "geocode_title": "岡山県岡山市北区御津金川",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-434e9c62d3dd",
@@ -3138,13 +3378,15 @@
       "geocode_query": "岡山市北区建部町市場330",
       "geocode_title": "岡山県岡山市北区建部町市場",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-210bccc4e2e5",
@@ -3164,13 +3406,15 @@
       "geocode_query": "岡山市中区御幸町4-12",
       "geocode_title": "岡山県岡山市中区御幸町４番１２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-4f4b9bdc3666",
@@ -3190,13 +3434,15 @@
       "geocode_query": "岡山市中区西川原15-1",
       "geocode_title": "岡山県岡山市中区西川原",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-8c2b0217cd90",
@@ -3216,13 +3462,15 @@
       "geocode_query": "岡山市中区西川原351-12",
       "geocode_title": "岡山県岡山市中区西川原３５１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-af1ea3b22f80",
@@ -3242,13 +3490,15 @@
       "geocode_query": "岡山市中区原尾島1-7-5",
       "geocode_title": "岡山県岡山市中区原尾島一丁目７番５号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b4ce2044c16e",
@@ -3268,13 +3518,15 @@
       "geocode_query": "岡山市中区福泊138-2",
       "geocode_title": "岡山県岡山市中区福泊１３８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-59623c1b5771",
@@ -3294,13 +3546,15 @@
       "geocode_query": "岡山市中区倉田688-3",
       "geocode_title": "岡山県岡山市中区倉田",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-859e4c83d6dd",
@@ -3320,13 +3574,15 @@
       "geocode_query": "岡山市中区倉富171-2",
       "geocode_title": "岡山県岡山市中区倉富",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-9914cfb62440",
@@ -3346,13 +3602,15 @@
       "geocode_query": "岡山市中区長利194-1",
       "geocode_title": "岡山県岡山市中区長利１９４番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-15eb89a61377",
@@ -3372,13 +3630,15 @@
       "geocode_query": "岡山市中区赤田88",
       "geocode_title": "岡山県岡山市中区赤田８８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b4c449df8fbd",
@@ -3398,13 +3658,15 @@
       "geocode_query": "岡山市中区沢田473",
       "geocode_title": "岡山県岡山市中区沢田",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-70ec8af0e3f7",
@@ -3424,13 +3686,15 @@
       "geocode_query": "岡山市中区長利274-1",
       "geocode_title": "岡山県岡山市中区長利２７４番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-a9b154c54514",
@@ -3450,13 +3714,15 @@
       "geocode_query": "岡山市中区長岡4-108",
       "geocode_title": "岡山県岡山市中区長岡４番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-28f572db3c7a",
@@ -3476,13 +3742,15 @@
       "geocode_query": "岡山市中区高屋220-3",
       "geocode_title": "岡山県岡山市中区高屋２２０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-4f433005ef50",
@@ -3502,13 +3770,15 @@
       "geocode_query": "岡山市中区祇園364-1",
       "geocode_title": "岡山県岡山市中区祇園",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-60b1d51a9e2e",
@@ -3528,13 +3798,15 @@
       "geocode_query": "岡山市中区国府市場164-1",
       "geocode_title": "岡山県岡山市中区国府市場",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-03ccb0f4e581",
@@ -3554,13 +3826,15 @@
       "geocode_query": "岡山市中区高島一丁目5-7",
       "geocode_title": "岡山県岡山市中区高島一丁目５番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c8aebac17abf",
@@ -3580,13 +3854,15 @@
       "geocode_query": "岡山市中区国府市場721-2",
       "geocode_title": "岡山県岡山市中区国府市場７２１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d5b695888899",
@@ -3606,13 +3882,15 @@
       "geocode_query": "岡山市中区国府市場720-1",
       "geocode_title": "岡山県岡山市中区国府市場",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b5ce04971cbb",
@@ -3632,13 +3910,15 @@
       "geocode_query": "岡山市東区益野町40",
       "geocode_title": "岡山県岡山市東区益野町４０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-29ed120fa95c",
@@ -3658,13 +3938,15 @@
       "geocode_query": "岡山市東区古都宿453-5",
       "geocode_title": "岡山県岡山市東区古都宿４５３番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-e7e3525e3c94",
@@ -3684,13 +3966,15 @@
       "geocode_query": "岡山市東区金田1127-1",
       "geocode_title": "岡山県岡山市東区金田",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-70444b258ba5",
@@ -3710,13 +3994,15 @@
       "geocode_query": "岡山市東区政津961-19",
       "geocode_title": "岡山県岡山市東区政津９６１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-9816b5654e50",
@@ -3736,13 +4022,15 @@
       "geocode_query": "岡山市東区久保408-1",
       "geocode_title": "岡山県岡山市東区久保",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-0dbc39f42366",
@@ -3762,13 +4050,15 @@
       "geocode_query": "岡山市東区久保411-1",
       "geocode_title": "岡山県岡山市東区久保４１１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-64a060cbb158",
@@ -3788,13 +4078,15 @@
       "geocode_query": "岡山市東区西大寺川口279",
       "geocode_title": "岡山県岡山市東区西大寺川口",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d67e6b792b79",
@@ -3814,13 +4106,15 @@
       "geocode_query": "岡山市東区金岡西町578-5",
       "geocode_title": "岡山県岡山市東区金岡西町",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-526791715065",
@@ -3840,13 +4134,15 @@
       "geocode_query": "岡山市東区西大寺上一丁目19-23",
       "geocode_title": "岡山県岡山市東区西大寺上一丁目１９番２３号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-8f9cbd041fb6",
@@ -3866,13 +4162,15 @@
       "geocode_query": "岡山市東区神崎町22-1",
       "geocode_title": "岡山県岡山市東区神崎町２２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-92e89fe0f4fb",
@@ -3892,13 +4190,15 @@
       "geocode_query": "岡山市東区上道北方590",
       "geocode_title": "岡山県岡山市東区上道北方",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-6e897ebf054a",
@@ -3918,13 +4218,15 @@
       "geocode_query": "岡山市東区沼1188-1",
       "geocode_title": "岡山県岡山市東区沼",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-18bbb637e693",
@@ -3944,13 +4246,15 @@
       "geocode_query": "岡山市東区楢原431-5",
       "geocode_title": "岡山県岡山市東区楢原４３１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b2a40d6201d8",
@@ -3970,13 +4274,15 @@
       "geocode_query": "岡山市東区瀬戸町鍛冶屋178-1",
       "geocode_title": "岡山県岡山市東区瀬戸町鍛冶屋",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-878efb649d10",
@@ -3996,13 +4302,15 @@
       "geocode_query": "岡山市東区瀬戸町下286-1",
       "geocode_title": "岡山県岡山市東区瀬戸町下２８６番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-0a668b596704",
@@ -4022,13 +4330,15 @@
       "geocode_query": "岡山市南区箕島1024-2",
       "geocode_title": "岡山県岡山市南区箕島１０２４番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-e9afbe0080bd",
@@ -4048,13 +4358,15 @@
       "geocode_query": "岡山市南区妹尾1368-1",
       "geocode_title": "岡山県岡山市南区妹尾１３６８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b82c166c871a",
@@ -4074,13 +4386,15 @@
       "geocode_query": "岡山市南区大福760-2",
       "geocode_title": "岡山県岡山市南区大福７６０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d23296eabab6",
@@ -4100,13 +4414,15 @@
       "geocode_query": "岡山市南区妹尾3518",
       "geocode_title": "岡山県岡山市南区妹尾３５１８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-10271a0c5a3c",
@@ -4126,13 +4442,15 @@
       "geocode_query": "岡山市南区中畦645-11",
       "geocode_title": "岡山県岡山市南区中畦６４５番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-bec991b14dec",
@@ -4152,13 +4470,15 @@
       "geocode_query": "岡山市南区藤田610-11",
       "geocode_title": "岡山県岡山市南区藤田６１０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-663bc680c665",
@@ -4178,13 +4498,15 @@
       "geocode_query": "岡山市南区藤田1729-1",
       "geocode_title": "岡山県岡山市南区藤田１７２９番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3ccf4db5d2dd",
@@ -4204,13 +4526,15 @@
       "geocode_query": "岡山市南区片岡188",
       "geocode_title": "岡山県岡山市南区片岡１８８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7391f1164211",
@@ -4230,13 +4554,15 @@
       "geocode_query": "岡山市南区彦崎2570-1",
       "geocode_title": "岡山県岡山市南区彦崎２５７０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": true
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f02577b3bf67",
@@ -4256,13 +4582,15 @@
       "geocode_query": "岡山市南区築港新町2-17-10",
       "geocode_title": "岡山県岡山市南区築港新町二丁目１７番１０号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c80fc8f88d1c",
@@ -4282,13 +4610,15 @@
       "geocode_query": "岡山市南区浦安本町33",
       "geocode_title": "岡山県岡山市南区浦安本町３３番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-19b5f48cd63c",
@@ -4308,13 +4638,15 @@
       "geocode_query": "岡山市南区浦安本町51-3",
       "geocode_title": "岡山県岡山市南区浦安本町５１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b19e9baaae83",
@@ -4334,13 +4666,15 @@
       "geocode_query": "岡山市南区万倍30-20",
       "geocode_title": "岡山県岡山市南区万倍３０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": true,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-c81757e30b10",
@@ -4386,13 +4720,15 @@
       "geocode_query": "岡山市南区飽浦322-1",
       "geocode_title": "岡山県岡山市南区飽浦３２２番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-afa52b982904",
@@ -4409,13 +4745,15 @@
       "lat": 34.6897933,
       "lon": 133.928675,
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-a24d210a0029",
@@ -4435,13 +4773,15 @@
       "geocode_query": "岡山市北区大安寺東町1-30",
       "geocode_title": "岡山県岡山市北区大安寺東町１番３０号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": true,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-91d03a876f19",
@@ -4461,13 +4801,15 @@
       "geocode_query": "岡山市北区富町2-16-27",
       "geocode_title": "岡山県岡山市北区富町二丁目１６番２７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-4e2aa03d849f",
@@ -4487,13 +4829,15 @@
       "geocode_query": "岡山市北区今5-8-37",
       "geocode_title": "岡山県岡山市北区今五丁目８番３７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3f47b001d22b",
@@ -4513,13 +4857,15 @@
       "geocode_query": "岡山市北区今7-17-7",
       "geocode_title": "岡山県岡山市北区今七丁目１７番７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-df4975eddd07",
@@ -4539,13 +4885,15 @@
       "geocode_query": "岡山市北区今7-17-7",
       "geocode_title": "岡山県岡山市北区今七丁目１７番７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-4156f1a56818",
@@ -4565,13 +4913,15 @@
       "geocode_query": "岡山市北区今7-22-19",
       "geocode_title": "岡山県岡山市北区今七丁目２２番１９号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-29c4c0ee76c2",
@@ -4591,13 +4941,15 @@
       "geocode_query": "岡山市北区今7-23-22",
       "geocode_title": "岡山県岡山市北区今七丁目２３番２２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b5df3bc5edd4",
@@ -4617,13 +4969,15 @@
       "geocode_query": "岡山市北区花尻ききょう町7-110 岡嶋ビル1階",
       "geocode_title": "岡山県岡山市北区花尻ききょう町７番",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": true,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-2fe1d45b5534",
@@ -4643,13 +4997,15 @@
       "geocode_query": "岡山市北区平野420-3",
       "geocode_title": "岡山県岡山市北区平野",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f0b14f7ffb9f",
@@ -4669,13 +5025,15 @@
       "geocode_query": "岡山市北区伊福町2-30-1",
       "geocode_title": "岡山県岡山市北区伊福町二丁目３０番１号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f34e491ca797",
@@ -4692,13 +5050,15 @@
       "lat": 34.683234,
       "lon": 133.9126452,
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-7959cce8d39c",
@@ -4718,13 +5078,15 @@
       "geocode_query": "岡山市中区尾上1318-3",
       "geocode_title": "岡山県岡山市中区",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-a7dbd466a40d",
@@ -4744,13 +5106,15 @@
       "geocode_query": "岡山市中区津高408-1",
       "geocode_title": "岡山県岡山市中区",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-326f25d6c66d",
@@ -4770,13 +5134,15 @@
       "geocode_query": "岡山市中区国富1-10-18",
       "geocode_title": "岡山県岡山市中区国富一丁目１０番１８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-b077ad17d0a9",
@@ -4796,13 +5162,15 @@
       "geocode_query": "岡山市中区沢田490",
       "geocode_title": "岡山県岡山市中区沢田",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-0234f726488b",
@@ -4822,13 +5190,15 @@
       "geocode_query": "岡山市中区長岡67-79",
       "geocode_title": "岡山県岡山市中区長岡６７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-ec78a2401e17",
@@ -4848,13 +5218,15 @@
       "geocode_query": "岡山市中区乙多見502-4",
       "geocode_title": "岡山県岡山市中区乙多見",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-bcd316608527",
@@ -4874,13 +5246,15 @@
       "geocode_query": "岡山市中区八幡90-6",
       "geocode_title": "岡山県岡山市中区八幡９０番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-0e9de12c1314",
@@ -4900,13 +5274,15 @@
       "geocode_query": "岡山市中区湯迫19-1",
       "geocode_title": "岡山県岡山市中区湯迫",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f41ecfd3ccb2",
@@ -4926,13 +5302,15 @@
       "geocode_query": "岡山市東区光津840-6",
       "geocode_title": "岡山県岡山市東区光津",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3e2f6fa23fab",
@@ -4952,13 +5330,15 @@
       "geocode_query": "岡山市南区福富中2-5-7",
       "geocode_title": "岡山県岡山市南区福富中二丁目５番７号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-f7dbfcba53c2",
@@ -4978,13 +5358,15 @@
       "geocode_query": "岡山市南区築港新町1-2-32",
       "geocode_title": "岡山県岡山市南区築港新町一丁目２番３２号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-55a4d937c7b8",
@@ -5004,13 +5386,15 @@
       "geocode_query": "岡山市南区豊成3-14-36",
       "geocode_title": "岡山県岡山市南区豊成三丁目１４番３６号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-d49048665cc0",
@@ -5030,13 +5414,15 @@
       "geocode_query": "岡山市南区福田227-8",
       "geocode_title": "岡山県岡山市南区福田２２７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-905bccfc2d51",
@@ -5056,13 +5442,15 @@
       "geocode_query": "岡山市南区西市503-9",
       "geocode_title": "岡山県岡山市南区西市",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-a6b304e5b717",
@@ -5082,13 +5470,15 @@
       "geocode_query": "岡山市南区新保654-3",
       "geocode_title": "岡山県岡山市南区新保６５４番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-044202fc1f12",
@@ -5108,13 +5498,15 @@
       "geocode_query": "岡山市南区西市443-9",
       "geocode_title": "岡山県岡山市南区西市",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-63c6371a9718",
@@ -5134,13 +5526,15 @@
       "geocode_query": "岡山市北区大供本町708-6 (15)",
       "geocode_title": "岡山県岡山市北区大供本町７０８番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-72dc65f247df",
@@ -5160,13 +5554,15 @@
       "geocode_query": "岡山市北区下中野1226-20 (24)",
       "geocode_title": "岡山県岡山市北区下中野１２２６番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-3b5848e566d0",
@@ -5186,13 +5582,15 @@
       "geocode_query": "岡山市北区平野857-4 (10)",
       "geocode_title": "岡山県岡山市北区平野８５７番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-216eaec81e29",
@@ -5212,13 +5610,15 @@
       "geocode_query": "岡山市北区伊福町2-17-5 (20)",
       "geocode_title": "岡山県岡山市北区伊福町二丁目１７番５号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-694167f784c4",
@@ -5238,13 +5638,15 @@
       "geocode_query": "岡山市北区高松原古才594-1 (13)",
       "geocode_title": "岡山県岡山市北区高松原古才",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-260135a21617",
@@ -5264,13 +5666,15 @@
       "geocode_query": "岡山市東区中川町393-1 (10)",
       "geocode_title": "岡山県岡山市東区中川町３９３番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-deb6fc9b9832",
@@ -5290,13 +5694,15 @@
       "geocode_query": "岡山市東区中尾1036 (6)",
       "geocode_title": "岡山県岡山市東区中尾１０３６番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-de68cfb6b3b6",
@@ -5316,13 +5722,15 @@
       "geocode_query": "岡山市南区東畦651-19 (5)",
       "geocode_title": "岡山県岡山市南区東畦６５１番地",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     },
     {
       "id": "oky-00988b6a1b66",
@@ -5342,15 +5750,18 @@
       "geocode_query": "岡山市南区築港栄町2-28 (5)",
       "geocode_title": "岡山県岡山市南区築港栄町２番２８号",
       "services": {
-        "extended": null,
-        "temporary": null,
-        "holiday": null,
-        "support_center": null
+        "extended": true,
+        "temporary": false,
+        "holiday": false,
+        "support_center": false
       },
       "website_status": "unchecked",
-      "official_info_url": ""
+      "official_info_url": "",
+      "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
+      "services_source_as_of": "令和7年8月時点"
     }
   ],
   "geocoded_at": "2026-09-29 08:28",
-  "geocoded_count": 206
+  "geocoded_count": 206,
+  "services_generated_at": "2026-09-29 14:13"
 }
