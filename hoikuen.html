@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>岡山市の保育園・認定こども園 地図・一覧｜岡山子育てナビ</title>
-  <meta name="description" content="岡山市北区・中区・東区・南区の認可保育園・認定こども園・地域型保育を地図と一覧で検索。岡山市公表の年齢別受入見込みも確認できます。">
+  <meta name="description" content="岡山市北区・中区・東区・南区の認可保育園・認定こども園・地域型保育を地図と一覧で検索。年齢別受入見込みや延長保育・一時預かり等も確認できます。">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -43,26 +43,37 @@
 
       <div class="toolbar">
         <input id="q" class="control" placeholder="園名・住所で検索">
+
         <select id="ward" class="control">
           <option value="">すべての区</option>
-          <option>北区</option><option>中区</option><option>東区</option><option>南区</option>
+          <option>北区</option>
+          <option>中区</option>
+          <option>東区</option>
+          <option>南区</option>
         </select>
+
         <select id="type" class="control">
           <option value="">すべての施設</option>
           <option value="保育園">保育園</option>
           <option value="認定こども園">認定こども園</option>
           <option value="地域型保育">地域型保育</option>
         </select>
+
         <select id="service" class="control">
           <option value="">サービス指定なし</option>
           <option value="extended">延長保育あり</option>
           <option value="temporary">一時預かりあり</option>
+          <option value="holiday">休日保育あり</option>
+          <option value="support_center">支援センターあり</option>
         </select>
       </div>
 
       <div id="map" class="map-wrap"></div>
 
-      <p class="map-help">地図の園名をクリックすると、下の該当施設まで移動します。</p>
+      <p class="map-help">
+        初期表示では岡山市内206施設を表示しています。ピンの色は区ごとに分かれています。
+        ピンの施設名から下の施設カードへ移動できます。
+      </p>
 
       <div class="list-meta">
         <strong><span id="count">0</span>施設</strong>
@@ -76,6 +87,7 @@
         <ul>
           <li><a href="https://www.city.okayama.jp/kurashi/0000012977.html" target="_blank" rel="noopener">岡山市「保育・幼児教育施設の受入見込み情報」</a></li>
           <li><a href="https://www.city.okayama.jp/kurashi/0000013000.html" target="_blank" rel="noopener">岡山市「保育利用ガイド」</a></li>
+          <li><a href="https://www.city.okayama.jp/kurashi/0000005017.html" target="_blank" rel="noopener">岡山市「保育施設等一覧（延長保育・休日保育・一時預かり）」</a></li>
         </ul>
         <p class="small">当サイトは岡山市の公式サイトではありません。地図：© OpenStreetMap contributors。</p>
       </div>
