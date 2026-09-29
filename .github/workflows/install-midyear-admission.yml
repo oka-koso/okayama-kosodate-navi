@@ -21,9 +21,12 @@ jobs:
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html hoikuen.html moushikomi.html score.html support.html contact.html 2>/dev/null || true
-          git add tochuu.html css/midyear-admission.css js/midyear-admission.js scripts/update_midyear_admission.py scripts/update_availability_dual.py .github/workflows/update-availability-fixed.yml data/midyear_admission.json
+          # The installer/data generator may touch files beyond the fixed list above.
+          # Stage every generated change so the worktree is clean before rebase.
+          git add -A
           if git diff --cached --quiet; then echo "Already installed"; exit 0; fi
+          git status --short
           git commit -m "feat: add auto-updating midyear admission guide"
-          git pull --rebase origin main
-          git push origin main
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
