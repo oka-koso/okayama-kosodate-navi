@@ -420,6 +420,7 @@ function scrollToCard(id) {
 
 function focusMarker(id) {
   const marker = markerById.get(id);
+
   if (!marker) {
     console.warn('Marker not found for facility:', id);
     return;
@@ -524,7 +525,7 @@ function bindInteractions() {
   });
 
   document.addEventListener('click', (event) => {
-    // カード内の「地図で見る」を最優先で処理する。
+    // Card -> map
     const mapBtn = event.target.closest('[data-map-id]');
 
     if (mapBtn) {
@@ -539,17 +540,23 @@ function bindInteractions() {
       return;
     }
 
-    // MAP吹き出し内の「下の施設カードを見る」などを処理。
-    const detail = event.target.closest('[data-facility-id]');
+    // Popup -> card
+    const scrollLink =
+      event.target.closest('[data-scroll-card-id]');
 
-    if (detail) {
-      const id = detail.dataset.facilityId;
+    if (scrollLink) {
+      const id = scrollLink.dataset.scrollCardId;
 
       if (id) {
         event.preventDefault();
+        event.stopPropagation();
         scrollToCard(id);
       }
+
+      return;
     }
+
+    // External links and tel links are left to normal browser behavior.
   });
 }
 
