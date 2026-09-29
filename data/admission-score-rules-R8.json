@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "rule_year": "令和8年度",
+  "effective_for": "令和8年度の保育利用調整",
+  "verified_at": "2026-09-29",
+  "official_sources": [
+    "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_1-23hoiku.pdf",
+    "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12573/R060904kaisei_riyouchouseikizyun.pdf"
+  ],
+  "base": {
+    "employment": [
+      {
+        "id": "emp140",
+        "label": "月140時間以上",
+        "score": 10
+      },
+      {
+        "id": "emp120",
+        "label": "月120時間以上140時間未満",
+        "score": 9
+      },
+      {
+        "id": "emp100",
+        "label": "月100時間以上120時間未満",
+        "score": 6
+      },
+      {
+        "id": "emp80",
+        "label": "月80時間以上100時間未満",
+        "score": 5
+      },
+      {
+        "id": "emp48",
+        "label": "月48時間以上80時間未満",
+        "score": 4
+      }
+    ],
+    "homework": [
+      {
+        "id": "home120",
+        "label": "月120時間以上",
+        "score": 5
+      },
+      {
+        "id": "home60",
+        "label": "月60時間以上120時間未満",
+        "score": 3
+      },
+      {
+        "id": "home48",
+        "label": "月48時間以上60時間未満",
+        "score": 2
+      }
+    ],
+    "fixed": {
+      "pregnancy": {
+        "label": "妊娠・出産（対象期間）",
+        "score": 8
+      },
+      "illness_hospital": {
+        "label": "1か月以上の入院・入院見込み、常時臥床",
+        "score": 10
+      },
+      "illness_home": {
+        "label": "1か月以上の居宅内療養（安静等）",
+        "score": 8
+      },
+      "illness_visit": {
+        "label": "週3日程度の通院加療等",
+        "score": 4
+      },
+      "disability_high": {
+        "label": "障害等：基準表の重度区分",
+        "score": 10
+      },
+      "disability_mid": {
+        "label": "障害等：基準表の中度区分",
+        "score": 6
+      },
+      "disability_low": {
+        "label": "障害等：基準表の軽度区分",
+        "score": 3
+      },
+      "disaster": {
+        "label": "災害復旧",
+        "score": 10
+      },
+      "job_search": {
+        "label": "求職中",
+        "score": 1
+      },
+      "social_abuse": {
+        "label": "社会的養護：児童虐待又はそのおそれ",
+        "score": 10
+      },
+      "social_dv": {
+        "label": "社会的養護：DVにより保育困難",
+        "score": 5
+      },
+      "childcare_leave": {
+        "label": "育児休業中（継続利用要件に該当）",
+        "score": 10
+      },
+      "absence": {
+        "label": "不存在（死亡・離婚・行方不明・拘禁等）",
+        "score": 10
+      }
+    }
+  },
+  "adjustments": {
+    "A": {
+      "label": "ひとり親世帯",
+      "score": 3
+    },
+    "B": {
+      "label": "生活保護（経済的自立のため緊急に就労を要する）",
+      "score": 1
+    },
+    "C": {
+      "label": "失業（生計中心者が利用希望日前1年以内に離職等）",
+      "score": 2
+    },
+    "D": [
+      {
+        "id": "D20",
+        "label": "社会的養護：児童虐待又はそのおそれ",
+        "score": 20
+      },
+      {
+        "id": "D3",
+        "label": "社会的養護：DVにより保育困難",
+        "score": 3
+      },
+      {
+        "id": "D1",
+        "label": "その他社会的養護が必要と認められる",
+        "score": 1
+      }
+    ],
+    "E": [
+      {
+        "id": "E5",
+        "label": "障害児保育拠点園・保育観察で利用がより適切と判断",
+        "score": 5
+      },
+      {
+        "id": "E1",
+        "label": "利用希望児童が障害を有する",
+        "score": 1
+      }
+    ],
+    "F": [
+      {
+        "id": "F8",
+        "label": "育休明け：兄姉同園等の8点要件に該当",
+        "score": 8
+      },
+      {
+        "id": "F1",
+        "label": "育休明け：上記以外",
+        "score": 1
+      }
+    ],
+    "G": {
+      "label": "きょうだいが同一施設等を希望",
+      "score": 3
+    },
+    "H": [
+      {
+        "id": "H5",
+        "label": "地域型保育利用終了児：経過措置5点要件に該当",
+        "score": 5
+      },
+      {
+        "id": "H2",
+        "label": "地域型保育利用終了児：通常",
+        "score": 2
+      }
+    ],
+    "I": {
+      "label": "要件に該当する65歳未満の同居祖父母",
+      "score_each": -3
+    },
+    "J": [
+      {
+        "id": "J10",
+        "label": "保育士等：自身の勤務先を希望・月80時間以上",
+        "score": 10
+      },
+      {
+        "id": "J5a",
+        "label": "保育士等：自身の勤務先を希望・月48〜80時間未満",
+        "score": 5
+      },
+      {
+        "id": "J5b",
+        "label": "保育士等：上記以外・月80時間以上",
+        "score": 5
+      },
+      {
+        "id": "J3",
+        "label": "保育士等：上記以外・月48〜80時間未満",
+        "score": 3
+      }
+    ],
+    "K": {
+      "label": "育休延長可能・合計1点まで減点に不服なし",
+      "final_score": 1
+    }
+  },
+  "tie_breakers": [
+    "希望順位が高い世帯",
+    "希望施設で就労（予定）している保護者がいる世帯",
+    "調整点数表の区分J（保育士等）が適用された世帯",
+    "基礎点数が高い世帯",
+    "保育料等の滞納がない世帯",
+    "利用者負担額表の階層が低い世帯",
+    "所得が低い世帯"
+  ]
+}
