@@ -1,18 +1,26 @@
-子育て備忘録 v1
-タイトル: 子育て備忘録
-キャッチ: 知っておくとちょっと助かる、子育てのあれこれ。
+子育て備忘録 ヘッダー/フッター修正 v1.1
 
-ZIPの中身を okayama-kosodate-navi の直下へアップロードしてCommit。
-Actions → Install Kosodate Bibouroku → Run workflow。
+原因:
+備忘録v1で、新規ページに既存サイトの基本CSS・共通shell CSS・polish CSSの読み込みが不足していました。
+また共通ナビへ「子育て備忘録」を追加する処理にも正規表現のエスケープ不備がありました。
 
-追加内容:
-・bibouroku.html 記事一覧
-・トップページに新着記事欄
-・共通ナビへ「子育て備忘録」を追加（既存ナビを検出できた場合）
-・記事データ data/bibouroku.json
-・最初の記事「保育園探し、まず何から始める？」
-・sitemap.xmlへ一覧・記事を追加
-・既存の保育園検索、MAP、点数計算等には触れません。
+修正:
+- bibouroku.html
+- articles/hoikuen-sagashi-hajimekata.html
+に以下を既存階層に合わせて追加:
+  css/style.css
+  css/site-shell.css
+  css/site-shell-polish.css
+  js/common.js
+  js/site-shell.js
+  js/site-shell-polish.js
 
-今後の記事追加は articles/ にHTMLを追加し、data/bibouroku.json に1件追記すれば、
-一覧とトップ新着欄へ自動表示できます。
+さらに:
+- js/site-shell.js の共通ナビへ「子育て備忘録」を確実に追加
+- 新規ページは旧AdSense一括導入後に作られたため、AdSense接続コードも追加
+- articles/配下は ../ パスで読み込み
+- site-shell.js自体がarticles階層を判定するため、ヘッダー/フッター内リンクも正しい階層になる
+
+導入:
+ZIPの中身を okayama-kosodate-navi リポジトリ直下へアップロードしてCommit。
+Actions → Fix Bibouroku Header Footer → Run workflow。
