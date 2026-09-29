@@ -396,3 +396,69 @@ footer{border-top:1px solid var(--line);padding:34px 0 50px;background:#fbfaf5}.
     padding:7px 8px;
   }
 }
+
+
+/* 途中入園 / 4月入園 受入見込み切替 */
+.availability-switcher{
+  margin:18px 0 8px;
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 8px 24px rgba(44,74,63,.05);
+}
+.availability-switcher[hidden]{display:none!important}
+.availability-switch-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+.availability-switch-note{
+  color:var(--muted);
+  font-size:12px;
+}
+.availability-switch-buttons{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+.availability-switch-btn{
+  appearance:none;
+  border:1px solid #cbd9d3;
+  border-radius:14px;
+  background:#f8fbf9;
+  color:var(--ink);
+  padding:11px 14px;
+  text-align:left;
+  cursor:pointer;
+  font:inherit;
+  line-height:1.35;
+  transition:.15s ease;
+}
+.availability-switch-btn span{
+  display:block;
+  font-weight:900;
+}
+.availability-switch-btn small{
+  display:block;
+  margin-top:3px;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:600;
+}
+.availability-switch-btn:hover{
+  border-color:var(--brand);
+}
+.availability-switch-btn.is-active{
+  border-color:var(--brand);
+  background:#e9f6f0;
+  box-shadow:inset 0 0 0 1px var(--brand);
+}
+.availability-switch-btn.is-active span{color:var(--brand-dark)}
+@media(max-width:560px){
+  .availability-switch-head{display:block}
+  .availability-switch-note{display:block;margin-top:3px}
+  .availability-switch-buttons{grid-template-columns:1fr}
+}
