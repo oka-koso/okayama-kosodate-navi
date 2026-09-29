@@ -1,8 +1,16 @@
 let allFacilities = [];
 let map;
 let markers = [];
+let markerById = new Map();
 
 const $ = (selector) => document.querySelector(selector);
+
+const WARD_COLORS = {
+  '北区': '#2f80ed',
+  '中区': '#27ae60',
+  '東区': '#f2994a',
+  '南区': '#9b51e0'
+};
 
 function esc(value) {
   return String(value ?? '')
@@ -32,12 +40,69 @@ function availabilityHtml(facility, compact = false) {
   `;
 }
 
-function officialLink(f) {
-  if (!f.website) return '';
-  return `<a class="facility-site-link"
-            href="${esc(f.website)}"
-            target="_blank"
-            rel="noopener noreferrer">施設のホームページを見る ↗</a>`;
+function serviceState(value) {
+  if (value === true) return { label: '実施', cls: 'yes' };
+  if (value === false) return { label: 'なし', cls: 'no' };
+  return { label: '未確認', cls: 'unknown' };
+}
+
+function servicesHtml(f, compact = false) {
+  const s = f.services || {};
+  const defs = [
+    ['extended', '延長保育'],
+    ['temporary', '一時預かり'],
+    ['holiday', '休日保育'],
+    ['support_center', '支援センター']
+  ];
+
+  return `
+    <div class="service-list ${compact ? 'service-list-popup' : ''}">
+      ${defs.map(([key, label]) => {
+        const state = serviceState(s[key]);
+        return `<span class="service-chip ${state.cls}" title="${esc(label)}">${esc(label)}：${state.label}</span>`;
+      }).join('')}
+    </div>
+  `;
+}
+
+function externalLinksHtml(f, compact = false) {
+  const rows = [];
+
+  if (f.website) {
+    rows.push(
+      `<a class="facility-site-link" href="${esc(f.website)}" target="_blank" rel="noopener noreferrer">公式ホームページを見る ↗</a>`
+    );
+  } else if (f.website_status === 'none') {
+    rows.push('<span class="facility-site-none">公式ホームページ：なし</span>');
+  } else if (f.public_private !== '公立') {
+    rows.push('<span class="facility-site-pending">公式ホームページ：確認中</span>');
+  }
+
+  if (f.official_info_url) {
+    const label = f.public_private === '公立'
+      ? '岡山市の掲載ページを見る ↗'
+      : '岡山市の施設情報を見る ↗';
+
+    rows.push(
+      `<a class="facility-city-link" href="${esc(f.official_info_url)}" target="_blank" rel="noopener noreferrer">${label}</a>`
+    );
+  }
+
+  if (!rows.length) return '';
+
+  return `<div class="facility-links ${compact ? 'facility-links-popup' : ''}">${rows.join('')}</div>`;
+}
+
+function wardPinIcon(ward) {
+  const color = WARD_COLORS[ward] || '#66736e';
+
+  return L.divIcon({
+    className: 'ward-div-icon',
+    html: `<span class="ward-pin" style="--pin-color:${color}" aria-hidden="true"></span>`,
+    iconSize: [24, 32],
+    iconAnchor: [12, 30],
+    popupAnchor: [0, -28]
+  });
 }
 
 async function loadData() {
@@ -69,7 +134,7 @@ async function loadData() {
       availability = await aResp.json();
     }
   } catch (_) {
-    // 受入情報はなくても施設マスタだけでサイトを表示する。
+    // 受入情報がなくても施設マスタだけで表示する。
   }
 
   const byId = availability.by_facility_id || {};
@@ -78,7 +143,13 @@ async function loadData() {
     ...f,
     type: f.category || '',
     public: f.public_private === '公立',
-    availability: byId[f.id] || {}
+    availability: byId[f.id] || {},
+    services: {
+      extended: f.services?.extended ?? null,
+      temporary: f.services?.temporary ?? null,
+      holiday: f.services?.holiday ?? null,
+      support_center: f.services?.support_center ?? null
+    }
   }));
 
   const meta = [];
@@ -86,9 +157,11 @@ async function loadData() {
   if (availability.availability_for) {
     meta.push(`${availability.availability_for}入園`);
   }
+
   if (availability.availability_as_of) {
     meta.push(availability.availability_as_of);
   }
+
   if (availability.source_page_updated) {
     meta.push(`岡山市ページ更新 ${availability.source_page_updated}`);
   }
@@ -101,12 +174,30 @@ async function loadData() {
 }
 
 function initMap() {
-  map = L.map('map').setView([34.655, 133.92], 11);
+  map = L.map('map', {
+    zoomControl: true,
+    scrollWheelZoom: true
+  }).setView([34.655, 133.92], 11);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
+
+  const legend = L.control({ position: 'bottomright' });
+
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div', 'map-legend');
+    div.innerHTML = `
+      <strong>区別</strong>
+      ${Object.entries(WARD_COLORS).map(([ward, color]) => `
+        <span><i style="background:${color}"></i>${ward}</span>
+      `).join('')}
+    `;
+    return div;
+  };
+
+  legend.addTo(map);
 }
 
 function applyQueryParams() {
@@ -137,7 +228,7 @@ function filterData() {
       (!q || text.includes(q)) &&
       (!ward || f.ward === ward) &&
       typeMatches &&
-      (!service || Boolean(f.services?.[service]))
+      (!service || f.services?.[service] === true)
     );
   });
 }
@@ -145,31 +236,35 @@ function filterData() {
 function popupHtml(f) {
   return `
     <div class="facility-popup">
-      <strong>${esc(f.name)}</strong>
-      <div>${esc(f.category || '')}・${esc(f.public_private || '')}</div>
+      <a class="popup-facility-name" href="#facility-${esc(f.id)}" data-facility-id="${esc(f.id)}">${esc(f.name)}</a>
+      <div>${esc(f.category || '')}・${esc(f.public_private || '')}・${esc(f.ward || '')}</div>
       ${f.postal ? `<div>〒${esc(f.postal)}</div>` : ''}
       <div>${esc(f.address || '所在地情報なし')}</div>
       ${f.phone
-        ? `<div><a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">
-             ${esc(f.phone)}
-           </a></div>`
+        ? `<div><a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">${esc(f.phone)}</a></div>`
         : ''}
+      ${servicesHtml(f, true)}
       ${availabilityHtml(f, true)}
-      ${officialLink(f)}
+      ${externalLinksHtml(f, true)}
+      <a class="popup-detail-link" href="#facility-${esc(f.id)}" data-facility-id="${esc(f.id)}">下の施設カードを見る ↓</a>
     </div>
   `;
 }
 
 function card(f) {
   return `
-    <article class="facility-card">
-      <h3>${esc(f.name)}</h3>
+    <article class="facility-card" id="facility-${esc(f.id)}" data-facility-id="${esc(f.id)}">
+      <div class="facility-card-head">
+        <h3>${esc(f.name)}</h3>
+        <button type="button" class="map-focus-btn" data-map-id="${esc(f.id)}">地図で見る</button>
+      </div>
 
       <div class="badges">
         <span class="badge">${esc(f.category || '')}</span>
         <span class="badge ${f.public_private === '公立' ? 'public' : ''}">
           ${esc(f.public_private || '')}
         </span>
+        <span class="badge ward-badge">${esc(f.ward || '')}</span>
       </div>
 
       <dl class="facility-info">
@@ -182,17 +277,78 @@ function card(f) {
         <dt>電話</dt>
         <dd>
           ${f.phone
-            ? `<a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">
-                 ${esc(f.phone)}
-               </a>`
+            ? `<a href="tel:${esc(String(f.phone).replace(/-/g, ''))}">${esc(f.phone)}</a>`
             : '—'}
         </dd>
       </dl>
 
+      <div class="facility-section-title">保育サービス</div>
+      ${servicesHtml(f)}
+
+      <div class="facility-section-title">年齢別の受入見込み</div>
       ${availabilityHtml(f)}
-      ${officialLink(f)}
+
+      ${externalLinksHtml(f)}
     </article>
   `;
+}
+
+function scrollToCard(id) {
+  const cardEl = document.getElementById(`facility-${id}`);
+  if (!cardEl) return;
+
+  cardEl.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+
+  cardEl.classList.add('facility-card-highlight');
+  window.setTimeout(() => {
+    cardEl.classList.remove('facility-card-highlight');
+  }, 1800);
+}
+
+function focusMarker(id) {
+  const marker = markerById.get(id);
+  if (!marker) return;
+
+  const ll = marker.getLatLng();
+  map.setView(ll, Math.max(map.getZoom(), 16), {
+    animate: true
+  });
+
+  marker.openPopup();
+
+  document.getElementById('map')?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+function clearMarkers() {
+  markers.forEach((m) => m.remove());
+  markers = [];
+  markerById.clear();
+}
+
+function fitMarkersToView(fs) {
+  const withCoords = fs.filter((f) =>
+    Number.isFinite(Number(f.lat)) &&
+    Number.isFinite(Number(f.lon))
+  );
+
+  if (!withCoords.length) return;
+
+  const bounds = L.latLngBounds(
+    withCoords.map((f) => [Number(f.lat), Number(f.lon)])
+  );
+
+  // 初期状態では206施設すべてが一画面に入るようにする。
+  // 絞り込み後は、その結果だけが収まるようにする。
+  map.fitBounds(bounds.pad(0.04), {
+    maxZoom: fs.length === allFacilities.length ? 12 : 15,
+    animate: false
+  });
 }
 
 function render() {
@@ -206,31 +362,60 @@ function render() {
     $('#facility-list').innerHTML = fs.map(card).join('');
   }
 
-  markers.forEach((m) => m.remove());
-  markers = [];
+  clearMarkers();
 
   fs.filter((f) =>
     Number.isFinite(Number(f.lat)) &&
     Number.isFinite(Number(f.lon))
   ).forEach((f) => {
-    const marker = L.marker([
-      Number(f.lat),
-      Number(f.lon)
-    ]).addTo(map);
+    const marker = L.marker(
+      [Number(f.lat), Number(f.lon)],
+      { icon: wardPinIcon(f.ward) }
+    ).addTo(map);
 
     marker.bindPopup(popupHtml(f), {
-      maxWidth: 340
+      maxWidth: 360
     });
 
     markers.push(marker);
+    markerById.set(f.id, marker);
   });
 
-  if (markers.length) {
-    const group = L.featureGroup(markers);
-    map.fitBounds(group.getBounds().pad(0.08), { maxZoom: 14 });
-  }
+  fitMarkersToView(fs);
 
   setTimeout(() => map.invalidateSize(), 80);
+}
+
+function bindInteractions() {
+  ['q', 'ward', 'type', 'service'].forEach((id) => {
+    const el = $('#' + id);
+    if (!el) return;
+
+    el.addEventListener(
+      id === 'q' ? 'input' : 'change',
+      render
+    );
+  });
+
+  document.addEventListener('click', (event) => {
+    const detail = event.target.closest('[data-facility-id]');
+    if (detail) {
+      const id = detail.dataset.facilityId;
+      if (id) {
+        event.preventDefault();
+        scrollToCard(id);
+      }
+      return;
+    }
+
+    const mapBtn = event.target.closest('[data-map-id]');
+    if (mapBtn) {
+      const id = mapBtn.dataset.mapId;
+      if (id) {
+        focusMarker(id);
+      }
+    }
+  });
 }
 
 async function init() {
@@ -258,15 +443,7 @@ async function init() {
     }
   }
 
-  ['q', 'ward', 'type', 'service'].forEach((id) => {
-    const el = $('#' + id);
-    if (!el) return;
-
-    el.addEventListener(
-      id === 'q' ? 'input' : 'change',
-      render
-    );
-  });
+  bindInteractions();
 }
 
 window.addEventListener('DOMContentLoaded', () => {
