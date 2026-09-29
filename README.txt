@@ -1,13 +1,18 @@
-岡山子育てナビ SEO初期設定 v1
+子育て備忘録 v1
+タイトル: 子育て備忘録
+キャッチ: 知っておくとちょっと助かる、子育てのあれこれ。
 
-このZIPは「okayama-kosodate-navi」リポジトリ用です。
-sitemap.xml をリポジトリ直下へ追加してください。
+ZIPの中身を okayama-kosodate-navi の直下へアップロードしてCommit。
+Actions → Install Kosodate Bibouroku → Run workflow。
 
-登録: トップ / 保育園 / 途中入園 / 入園申込 / 点数計算 / 入園準備 / このサイトについて
-operator.html と privacy.html は検索流入の中心ではないため初期サイトマップから除外しています。
-ページ自体を検索禁止にはしていません。
+追加内容:
+・bibouroku.html 記事一覧
+・トップページに新着記事欄
+・共通ナビへ「子育て備忘録」を追加（既存ナビを検出できた場合）
+・記事データ data/bibouroku.json
+・最初の記事「保育園探し、まず何から始める？」
+・sitemap.xmlへ一覧・記事を追加
+・既存の保育園検索、MAP、点数計算等には触れません。
 
-確認:
-https://oka-koso.github.io/okayama-kosodate-navi/sitemap.xml
-
-Search Console → サイトマップ で「sitemap.xml」を送信します。
+今後の記事追加は articles/ にHTMLを追加し、data/bibouroku.json に1件追記すれば、
+一覧とトップ新着欄へ自動表示できます。
