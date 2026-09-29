@@ -1,22 +1,13 @@
-Google AdSense 接続パッチ v1
+岡山子育てナビ SEO初期設定 v1
 
-Publisher ID:
-ca-pub-2321879700607801
+このZIPは「okayama-kosodate-navi」リポジトリ用です。
+sitemap.xml をリポジトリ直下へ追加してください。
 
-処理:
-- サイト内HTMLの </head> 直前へAdSenseコードを追加
-- 同じPublisher IDが既にあるページには重複追加しない
-- 404.htmlは対象外
-- 本文・CSS・既存機能は変更しない
-- 主要ページでPublisher IDをSafety check
+登録: トップ / 保育園 / 途中入園 / 入園申込 / 点数計算 / 入園準備 / このサイトについて
+operator.html と privacy.html は検索流入の中心ではないため初期サイトマップから除外しています。
+ページ自体を検索禁止にはしていません。
 
-導入:
-1. ZIPの中身をリポジトリのルートへ上書きアップロード
-2. GitHub → Actions
-3. Install Google AdSense code
-4. Run workflow
-5. GitHub Pages反映後、AdSense側でサイト確認/審査へ進む
+確認:
+https://oka-koso.github.io/okayama-kosodate-navi/sitemap.xml
 
-注意:
-これはAdSense接続コードの導入です。
-ads.txtはGitHub Pagesのサブパス構成を確認して別途対応します。
+Search Console → サイトマップ で「sitemap.xml」を送信します。
