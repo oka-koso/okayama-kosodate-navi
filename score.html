@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>岡山市 保育園の利用調整点数かんたん計算｜岡山子育てナビ</title>
+  <meta name="description" content="岡山市の保育園・認定こども園等の利用調整点数を、令和8年度の公式基準に沿って試算できます。基礎点数・調整点数・合計点の内訳を表示します。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/score-calculator.css">
+  <script defer src="js/score-calculator.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">🌱</span>岡山子育てナビ</a>
+    <nav class="nav">
+      <a href="hoikuen.html">保育園を探す</a>
+      <a href="moushikomi.html">入園申込</a>
+      <a href="score.html" aria-current="page">点数計算</a>
+      <a href="articles/nyuen-junbi.html">入園準備</a>
+      <a href="about.html">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">令和8年度基準</span>
+      <h1>利用調整点数かんたん計算</h1>
+      <p>質問に答えると、岡山市の保育利用調整の基礎点数・調整点数を試算できます。</p>
+    </div>
+  </div>
+
+  <section class="score-section">
+    <div class="container score-layout">
+      <div class="score-main">
+        <div class="notice score-notice">
+          <strong>これは試算ツールです</strong><br>
+          岡山市の令和8年度保育利用ガイド・保育利用調整基準をもとに計算します。
+          実際の点数は提出書類等をもとに岡山市が審査・決定します。点数が高くても入園を保証するものではありません。
+        </div>
+
+        <div id="rules-error" class="score-error" hidden>
+          点数表を読み込めませんでした。ページを再読み込みしてください。
+        </div>
+
+        <form id="score-form" novalidate>
+          <section class="score-card">
+            <div class="score-card-title">
+              <span class="score-step">1</span>
+              <div><h2>世帯の状況</h2><p>まず保護者の人数を確認します。</p></div>
+            </div>
+            <label class="choice-line strong-choice">
+              <input type="checkbox" id="single-parent">
+              <span><strong>ひとり親世帯に該当する</strong><small>事実婚を除く。認定には岡山市が指定する書類が必要です。</small></span>
+            </label>
+          </section>
+
+          <section class="score-card guardian-card" data-guardian="1">
+            <div class="score-card-title">
+              <span class="score-step">2</span>
+              <div><h2>保護者1の基礎点数</h2><p>主な「保育の必要性」を1つ選んでください。</p></div>
+            </div>
+            <label class="field-label" for="g1-type">状況</label>
+            <select id="g1-type" class="score-control guardian-type">
+              <option value="">選択してください</option>
+              <option value="employment">就労（被雇用者・自営業・農業）</option>
+              <option value="homework">内職</option>
+              <option value="pregnancy">妊娠・出産</option>
+              <option value="illness">疾病・負傷</option>
+              <option value="disability">障害等</option>
+              <option value="care">同居親族等の介護・看護</option>
+              <option value="disaster">災害復旧</option>
+              <option value="job_search">求職中</option>
+              <option value="school">就学・職業訓練</option>
+              <option value="social">社会的養護</option>
+              <option value="childcare_leave">育児休業中（継続利用）</option>
+              <option value="return_planned">育児休業復帰予定</option>
+              <option value="employment_planned">採用・起業・就学予定</option>
+              <option value="care_separate">別居親族等の介護・看護</option>
+              <option value="return_schoolchild">就学前児童の継続利用に伴う年度中復帰</option>
+              <option value="other">その他・市長が特別に認める場合</option>
+            </select>
+            <div id="g1-detail" class="guardian-detail"></div>
+            <div id="g1-preview" class="base-preview">基礎点：—</div>
+          </section>
+
+          <section class="score-card guardian-card" data-guardian="2" id="guardian2-card">
+            <div class="score-card-title">
+              <span class="score-step">3</span>
+              <div><h2>保護者2の基礎点数</h2><p id="g2-help">もう一方の保護者について選んでください。</p></div>
+            </div>
+            <div id="g2-normal">
+              <label class="field-label" for="g2-type">状況</label>
+              <select id="g2-type" class="score-control guardian-type">
+                <option value="">選択してください</option>
+                <option value="employment">就労（被雇用者・自営業・農業）</option>
+                <option value="homework">内職</option>
+                <option value="pregnancy">妊娠・出産</option>
+                <option value="illness">疾病・負傷</option>
+                <option value="disability">障害等</option>
+                <option value="care">同居親族等の介護・看護</option>
+                <option value="disaster">災害復旧</option>
+                <option value="job_search">求職中</option>
+                <option value="school">就学・職業訓練</option>
+                <option value="social">社会的養護</option>
+                <option value="childcare_leave">育児休業中（継続利用）</option>
+                <option value="return_planned">育児休業復帰予定</option>
+                <option value="employment_planned">採用・起業・就学予定</option>
+                <option value="care_separate">別居親族等の介護・看護</option>
+                <option value="return_schoolchild">就学前児童の継続利用に伴う年度中復帰</option>
+                <option value="other">その他・市長が特別に認める場合</option>
+              </select>
+              <div id="g2-detail" class="guardian-detail"></div>
+            </div>
+            <div id="g2-absence" class="absence-box" hidden>
+              <strong>不存在：10点</strong>
+              <span>ひとり親として認定される場合、もう一方の保護者は「不存在」10点として扱われます。</span>
+            </div>
+            <div id="g2-preview" class="base-preview">基礎点：—</div>
+          </section>
+
+          <section class="score-card">
+            <div class="score-card-title">
+              <span class="score-step">4</span>
+              <div><h2>世帯・児童の調整点</h2><p>該当するものだけ選択してください。同一区分では最も高い点だけが適用されます。</p></div>
+            </div>
+
+            <div class="adjust-grid">
+              <label class="choice-line">
+                <input type="checkbox" id="adj-B">
+                <span><strong>生活保護 ＋1</strong><small>経済的自立のため緊急に就労を要する場合</small></span>
+              </label>
+              <label class="choice-line">
+                <input type="checkbox" id="adj-C">
+                <span><strong>失業 ＋2</strong><small>生計中心者が利用希望日前1年以内に離職し、就労の必要性が高い場合</small></span>
+              </label>
+              <label class="choice-line">
+                <input type="checkbox" id="adj-G">
+                <span><strong>きょうだい同一園希望 ＋3</strong><small>同時申込や、兄姉が利用中の同一施設への申込など</small></span>
+              </label>
+            </div>
+
+            <div class="adjust-group">
+              <label class="field-label" for="adj-D">社会的養護（区分D）</label>
+              <select id="adj-D" class="score-control">
+                <option value="">該当しない</option>
+                <option value="D20">児童虐待又はそのおそれ ＋20</option>
+                <option value="D3">DVにより保育困難 ＋3</option>
+                <option value="D1">その他社会的養護 ＋1</option>
+              </select>
+            </div>
+
+            <div class="adjust-group">
+              <label class="field-label" for="adj-E">申込児童の障害（区分E）</label>
+              <select id="adj-E" class="score-control">
+                <option value="">該当しない</option>
+                <option value="E5">障害児保育拠点園・保育観察で適切と判断 ＋5</option>
+                <option value="E1">申込児童が障害を有する ＋1</option>
+              </select>
+            </div>
+
+            <div class="adjust-group">
+              <label class="field-label" for="adj-F">育児休業明け（区分F）</label>
+              <select id="adj-F" class="score-control">
+                <option value="">該当しない</option>
+                <option value="F8">兄姉同園等の8点要件に該当 ＋8</option>
+                <option value="F1">上記以外の育休明け ＋1</option>
+              </select>
+            </div>
+
+            <div class="adjust-group">
+              <label class="field-label" for="adj-H">地域型保育事業の利用終了児（区分H）</label>
+              <select id="adj-H" class="score-control">
+                <option value="">該当しない</option>
+                <option value="H5">令和7年3月までの入園等、経過措置の5点要件 ＋5</option>
+                <option value="H2">年齢到達による他施設への申込 ＋2</option>
+              </select>
+            </div>
+
+            <div class="adjust-group">
+              <label class="field-label" for="grandparents">65歳未満の同居祖父母（区分I）</label>
+              <select id="grandparents" class="score-control">
+                <option value="0">減点対象なし</option>
+                <option value="1">要件に該当する祖父母 1人（−3）</option>
+                <option value="2">要件に該当する祖父母 2人（−6）</option>
+                <option value="3">要件に該当する祖父母 3人（−9）</option>
+                <option value="4">要件に該当する祖父母 4人（−12）</option>
+              </select>
+              <p class="field-note">65歳未満でも、基礎点数表の区分1〜5・7〜10に該当する祖父母は減点対象ではありません。</p>
+            </div>
+
+            <div class="adjust-group">
+              <label class="field-label" for="adj-J">保育士等（区分J）</label>
+              <select id="adj-J" class="score-control">
+                <option value="">該当しない</option>
+                <option value="J10">自身の勤務先を希望・月80時間以上 ＋10</option>
+                <option value="J5a">自身の勤務先を希望・月48〜80時間未満 ＋5</option>
+                <option value="J5b">上記以外・月80時間以上 ＋5</option>
+                <option value="J3">上記以外・月48〜80時間未満 ＋3</option>
+              </select>
+            </div>
+
+            <label class="choice-line warning-choice">
+              <input type="checkbox" id="adj-K">
+              <span><strong>育休延長可能・合計1点までの減点に不服なし（区分K）</strong><small>チェックした場合、通常の合計点にかかわらず最終点を1点として試算します。</small></span>
+            </label>
+          </section>
+
+          <div class="calc-actions">
+            <button type="button" id="calculate" class="score-calc-btn">点数を計算する</button>
+            <button type="button" id="reset-score" class="score-reset-btn">入力をリセット</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="score-result-wrap">
+        <div id="score-result" class="score-result" aria-live="polite">
+          <div class="result-kicker">試算結果</div>
+          <div class="result-total"><span id="total-score">—</span><small>点</small></div>
+          <div class="result-breakdown">
+            <div><span>基礎点数</span><strong id="base-score">—</strong></div>
+            <div><span>調整点数</span><strong id="adjust-score">—</strong></div>
+          </div>
+          <div id="result-message" class="result-message">入力後、「点数を計算する」を押してください。</div>
+          <div id="result-details" class="result-details"></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="score-info-section">
+    <div class="container score-info-grid">
+      <div class="score-info-card">
+        <h2>同点になった場合</h2>
+        <p>合計点が同じ場合は、次の順で利用調整されます。</p>
+        <ol id="tie-breakers">
+          <li>希望順位が高い世帯</li>
+          <li>希望施設で就労（予定）している保護者がいる世帯</li>
+          <li>区分J（保育士等）が適用された世帯</li>
+          <li>基礎点数が高い世帯</li>
+          <li>保育料等の滞納がない世帯</li>
+          <li>利用者負担額表の階層が低い世帯</li>
+          <li>所得が低い世帯</li>
+        </ol>
+      </div>
+      <div class="score-info-card">
+        <h2>計算前に知っておきたいこと</h2>
+        <p>調整点は、異なる区分に複数該当する場合は原則すべて加減算します。同一区分で複数に該当するときは最も高い点を使います。</p>
+        <p>基準を判断する書類が提出されていない場合、調整点が適用されないことがあります。</p>
+        <p><strong>このツールは入園可能性・合格率を判定しません。</strong>施設ごとの申込者数や他世帯の点数等で結果は変わります。</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="source-box">
+        <strong>公式情報</strong>
+        <ul>
+          <li><a href="https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_1-23hoiku.pdf" target="_blank" rel="noopener">岡山市「令和8年度 保育利用ガイド」P.11〜12</a></li>
+          <li><a href="https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12573/R060904kaisei_riyouchouseikizyun.pdf" target="_blank" rel="noopener">岡山市「保育所等保育利用調整基準」</a></li>
+        </ul>
+        <p class="small">令和9年度ガイドは2026年10月14日公開予定です。公開後、令和9年度基準との差分を確認して更新します。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container"><p class="small">© 岡山子育てナビ｜非公式サイト</p></div></footer>
+</body>
+</html>
