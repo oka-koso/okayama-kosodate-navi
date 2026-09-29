@@ -1,0 +1,293 @@
+{
+  "generated_at": "2026-09-29T06:51:38",
+  "batch": 9,
+  "target_count": 24,
+  "verified_count": 19,
+  "error_count": 5,
+  "verified": [
+    {
+      "id": "oky-18bbb637e693",
+      "name": "桃太郎こども園",
+      "ward": "東区",
+      "before": {
+        "name": "（仮称）桃太郎こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://momotarouhoikuen.ed.jp/",
+      "evidence": "https://momotarouhoikuen.ed.jp/"
+    },
+    {
+      "id": "oky-d5b695888899",
+      "name": "竜之口わかばこども園",
+      "ward": "中区",
+      "before": {
+        "name": "竜之口わかばこども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://tatsunokuchiwakaba.com/",
+      "evidence": "https://tatsunokuchiwakaba.com/"
+    },
+    {
+      "id": "oky-b762d2b14de0",
+      "name": "内山下幼稚園",
+      "ward": "北区",
+      "before": {
+        "name": "内山下幼稚園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.uchisange.com/",
+      "evidence": "https://www.uchisange.com/"
+    },
+    {
+      "id": "oky-029dfee13209",
+      "name": "岡北学園",
+      "ward": "北区",
+      "before": {
+        "name": "岡北学園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.kouhoku.com/",
+      "evidence": "https://www.kouhoku.com/"
+    },
+    {
+      "id": "oky-9ef6a782a4e8",
+      "name": "さくらこども園",
+      "ward": "北区",
+      "before": {
+        "name": "さくらこども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://sakurakids.jp/",
+      "evidence": "https://sakurakids.jp/access/"
+    },
+    {
+      "id": "oky-899d5c08198c",
+      "name": "第二さくらこども園",
+      "ward": "北区",
+      "before": {
+        "name": "第二さくらこども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.sakurakids2.jp/",
+      "evidence": "https://www.sakurakids2.jp/"
+    },
+    {
+      "id": "oky-9f0c3e8fbeb1",
+      "name": "もみの木こども園",
+      "ward": "北区",
+      "before": {
+        "name": "もみの木こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.mominokikko.jp/",
+      "evidence": "https://www.mominokikko.jp/message/company"
+    },
+    {
+      "id": "oky-59623c1b5771",
+      "name": "ゆりかごこども園",
+      "ward": "中区",
+      "before": {
+        "name": "ゆりかごこども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://yurikagokodomoen.com/",
+      "evidence": "https://yurikagokodomoen.com/index02"
+    },
+    {
+      "id": "oky-64a060cbb158",
+      "name": "豊こども園",
+      "ward": "東区",
+      "before": {
+        "name": "豊こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://kyokutouaijikai.ed.jp/toyo/",
+      "evidence": "https://kyokutouaijikai.ed.jp/toyo/"
+    },
+    {
+      "id": "oky-878efb649d10",
+      "name": "江西桜こども園",
+      "ward": "東区",
+      "before": {
+        "name": "江西桜こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://kousai.sakurakai.okayama.jp/",
+      "evidence": "https://kousai.sakurakai.okayama.jp/"
+    },
+    {
+      "id": "oky-d23296eabab6",
+      "name": "福田こども園",
+      "ward": "南区",
+      "before": {
+        "name": "福田こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://dousinkai.com/fukuda/index.html",
+      "evidence": "https://dousinkai.com/fukuda/index.html"
+    },
+    {
+      "id": "oky-55a4d937c7b8",
+      "name": "きらきら小規模保育園豊成",
+      "ward": "南区",
+      "before": {
+        "name": "きらきら小規模保育園豊成",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.kirakira-hoikuen.com/introduction/index_2.html",
+      "evidence": "https://www.kirakira-hoikuen.com/introduction/index_2.html"
+    },
+    {
+      "id": "oky-2fe1d45b5534",
+      "name": "アートチャイルドケア岡山庭瀬保育園",
+      "ward": "北区",
+      "before": {
+        "name": "アートチャイルドケア岡山庭瀬保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.the0123child.com/personal/7955/",
+      "evidence": "https://www.the0123child.com/personal/7955/"
+    },
+    {
+      "id": "oky-91d03a876f19",
+      "name": "星の子保育園",
+      "ward": "北区",
+      "before": {
+        "name": "星の子保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://hoshinoko.kawada.or.jp/",
+      "evidence": "https://hoshinoko.kawada.or.jp/recruit.html"
+    },
+    {
+      "id": "oky-5a3033510d15",
+      "name": "玉井桜保育園",
+      "ward": "東区",
+      "before": {
+        "name": "玉井桜保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://sakurakai.okayama.jp/",
+      "evidence": "https://sakurakai.okayama.jp/"
+    },
+    {
+      "id": "oky-29ed120fa95c",
+      "name": "古都こども園",
+      "ward": "東区",
+      "before": {
+        "name": "古都こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.chitosek.or.jp/preschools/kozu",
+      "evidence": "https://www.chitosek.or.jp/preschools/kozu"
+    },
+    {
+      "id": "oky-9816b5654e50",
+      "name": "めぐみ幼保連携型認定こども園",
+      "ward": "東区",
+      "before": {
+        "name": "めぐみ幼保連携型認定こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://megumihoikuenn-kubo.jp/",
+      "evidence": "https://megumihoikuenn-kubo.jp/outline/"
+    },
+    {
+      "id": "oky-0dbc39f42366",
+      "name": "めぐみ第二幼保連携型認定こども園",
+      "ward": "東区",
+      "before": {
+        "name": "めぐみ第二幼保連携型認定こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://megumihoikuenn-kubo.jp/",
+      "evidence": "https://megumihoikuenn-kubo.jp/outline/"
+    },
+    {
+      "id": "oky-4b435e772bfd",
+      "name": "幼保連携型認定こども園 あんじゅの里",
+      "ward": "北区",
+      "before": {
+        "name": "幼保連携型認定こども園 あんじゅの里",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.fukujukai-gp.com/",
+      "evidence": "https://www.fukujukai-gp.com/"
+    }
+  ],
+  "errors": [
+    {
+      "names": [
+        "つきのさとこども園"
+      ],
+      "ward": "東区",
+      "website": "https://www.chitosek.or.jp/preschools/tsukinosato",
+      "evidence": "https://www.chitosek.or.jp/preschools/tsukinosato",
+      "reason": "candidate-count=0",
+      "candidates": []
+    },
+    {
+      "names": [
+        "第二すこやか保育園"
+      ],
+      "ward": "北区",
+      "website": "https://sukoyakahoikuen.com/",
+      "evidence": "https://sukoyakahoikuen.com/about/",
+      "reason": "candidate-count=0",
+      "candidates": []
+    },
+    {
+      "names": [
+        "もりの香保育園 津高園",
+        "もりの香保育園津高園"
+      ],
+      "ward": "北区",
+      "website": "https://www.morinoka.jp/",
+      "evidence": "https://www.morinoka.jp/about/",
+      "reason": "candidate-count=0",
+      "candidates": []
+    },
+    {
+      "names": [
+        "小規模保育園あかとんぼはつみ園",
+        "小規模保育園 あかとんぼ はつみ園",
+        "小規模保育園あかとんぼ はつみ園"
+      ],
+      "ward": "中区",
+      "website": "https://akatonbo-hoikuen.com/",
+      "evidence": "https://akatonbo-hoikuen.com/more.html",
+      "reason": "candidate-count=0",
+      "candidates": []
+    },
+    {
+      "names": [
+        "認定こども園あけぼの幼稚園",
+        "あけぼの幼稚園"
+      ],
+      "ward": "南区",
+      "website": "https://akebonokid.org/",
+      "evidence": "https://akebonokid.org/",
+      "reason": "candidate-count=0",
+      "candidates": []
+    }
+  ]
+}
