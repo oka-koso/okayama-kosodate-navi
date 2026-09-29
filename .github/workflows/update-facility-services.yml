@@ -1,4 +1,4 @@
-name: Update facility services v1
+name: Update facility services v1.1
 
 on:
   workflow_dispatch:
@@ -43,7 +43,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "data: update facility links and service audit"
+            git commit -m "data: update licensed facility services v1.1"
             git pull --rebase origin main
             git push origin main
           fi
@@ -51,6 +51,6 @@ jobs:
       - name: Fail when service audit failed
         if: steps.services.outcome != 'success'
         run: |
-          echo "Service extraction did not pass the safety audit."
+          echo "Licensed facility service extraction did not pass the safety audit."
           echo "data/services_audit.json was saved for diagnosis."
           exit 1
