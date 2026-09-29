@@ -1,17 +1,14 @@
-トップページ「子育て備忘録」導線改善 v1
+Google Analytics 4 導入パッチ
+測定ID: G-961RLY7WVE
 
-実装内容
-1. ヒーロー直下に「NEW｜子育て備忘録｜最新記事 →」バーを追加
-2. data/bibouroku.json の最新記事を自動取得
-3. 記事追加時、最新記事バーも自動更新
-4. トップの備忘録カードを左から 最新 → 2番目 → 3番目 の順に統一
-5. 最新カードだけ右上に NEW バッジ
-6. 「子育て備忘録 最新3記事」を「保育園探し・申込みの流れ」の直後へ移動
-7. PC / スマホ対応
+・全HTMLページの head 内にGA4タグを追加
+・既に測定IDがあるページはスキップし、二重設置を防止
+・記事ページも対象
 
-既存の記事本文、検索、地図、点数計算、共通ヘッダー等は変更しません。
-
-適用
+適用:
 1. ZIPの中身を okayama-kosodate-navi リポジトリ直下へアップロードしてCommit
-2. Actions → Install Home Bibouroku Feature
+2. Actions → Install Google Analytics 4
 3. Run workflow
+4. Pages反映後、Google Analytics → レポート → リアルタイム を開き、自分でサイトへアクセスして確認
+
+今後、新しいHTML記事を追加した場合も、このActionを再実行すれば未設置ページだけに追加されます。
