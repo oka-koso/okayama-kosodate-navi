@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-09-29T06:17:49",
+  "batch": 4,
+  "target_count": 5,
+  "verified_count": 5,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-0ee7543fd5c9",
+      "name": "みのりの木保育園",
+      "phone": "086-230-6200",
+      "website": "https://minorinokihoikuen.jimdofree.com/",
+      "evidence": "https://minorinokihoikuen.jimdofree.com/当園について/"
+    },
+    {
+      "id": "oky-21cf63b90750",
+      "name": "学南保育園",
+      "phone": "086-254-9571",
+      "website": "https://ghoikuen.sakura.ne.jp/",
+      "evidence": "https://ghoikuen.sakura.ne.jp/entrance.html"
+    },
+    {
+      "id": "oky-25c3a54fceb6",
+      "name": "あゆみ保育園",
+      "phone": "086-254-2714",
+      "website": "https://ayumihoikuen-okayama.or.jp/",
+      "evidence": "https://ayumihoikuen-okayama.or.jp/"
+    },
+    {
+      "id": "oky-e6ca2a00d959",
+      "name": "第四ひかり保育園",
+      "phone": "086-259-5565",
+      "website": "https://www.s-hikari.or.jp/",
+      "evidence": "https://www.s-hikari.or.jp/otoiawase/jyuyoujikou_r6.pdf"
+    },
+    {
+      "id": "oky-4da344b27348",
+      "name": "橘今保育園",
+      "phone": "086-241-2722",
+      "website": "https://tatibanaima-hoikuen.com/",
+      "evidence": "https://tatibanaima-hoikuen.com/qanda/"
+    }
+  ],
+  "errors": []
+}
