@@ -1,25 +1,32 @@
-岡山子育てナビ 施設マスター復旧パッチ v1
+岡山子育てナビ - facility master repair safe patch v1
 
-原因:
-月次の受入見込みPDFから固定施設マスターを自動更新する旧処理が、
-PDF文字列を誤結合して非正規施設を追加し、郵便番号等も破損させていました。
-固定施設マスターと月次空き状況は分離するという本来の設計に戻します。
+目的
+----
+repair Action が .github/workflows や scripts を自動変更・commitしないようにします。
+GitHub App に workflows 権限を追加する必要はありません。
 
-使い方:
-1. ZIPの中身をリポジトリのルートへアップロード（同名は上書き）
-2. GitHub Actions で "Repair facility master and guard it" を Run workflow
-3. 成功後、"Update childcare availability (monthly + April + midyear guide)" を再実行
+アップロードするファイル
+------------------------
+.github/workflows/repair-facility-master.yml
 
-処理内容:
-- facility_name_master.json の正規206 IDだけを残す
-- PDF由来で誤追加された非正規レコードを削除
-- 園名/区/種別などの固定識別情報を正規名マスターへ戻す
-- address 内に明示された 〒xxx-xxxx からのみ郵便番号を復旧（推測しない）
-- 監査 data/facility_master_repair_audit.json を出力
-- auto_added_from_availability_pdf_v5_2 を生成する旧スクリプトを検出
-- その旧スクリプトを呼ぶ workflow の schedule だけを除去し、手動実行は残す
+使い方
+------
+1. ZIPを展開。
+2. 上記ファイルをリポジトリの同じ場所へ上書き。
+3. GitHub Actions から「Repair facility master safely」を手動実行。
+4. Commit repaired data only が成功することを確認。
 
-安全設計:
-- 正規206 IDの欠落が1件でもあれば復旧を中止
-- 復旧後が206件でなければ中止
-- 郵便番号形式が不正なら中止
+安全設計
+--------
+- commit対象は次の2ファイルだけです。
+  data/facility_master.json
+  data/facility_master_repair_audit.json
+- scripts/ は自動commitしません。
+- .github/workflows/ は自動commitしません。
+- 想定外ファイルがstageされた場合はpush前に停止します。
+- 206施設の検証は scripts/repair_facility_master.py 側に残したままです。
+
+注意
+----
+既存の scripts/repair_facility_master.py はリポジトリに存在する前提です。
+今回のパッチでは、そのスクリプト自体は変更しません。
