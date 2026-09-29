@@ -599,3 +599,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
   wait();
 });
+
+// External-link hotfix:
+// facility card/popup ancestors may still have delegated click handlers.
+// Capture these links before other delegated handlers and open the real URL.
+document.addEventListener('click', (event) => {
+  const link = event.target.closest(
+    'a.facility-site-link, a.facility-city-link'
+  );
+
+  if (!link) return;
+
+  const href = link.getAttribute('href');
+
+  if (!href) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+  event.stopImmediatePropagation();
+
+  const newWindow = window.open(
+    href,
+    '_blank',
+    'noopener,noreferrer'
+  );
+
+  // If popup opening is blocked, fall back to same-tab navigation.
+  if (!newWindow) {
+    window.location.href = href;
+  }
+}, true);
