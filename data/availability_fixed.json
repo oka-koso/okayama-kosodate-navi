@@ -1,7 +1,7 @@
 {
   "schema_version": 32,
   "matching_key": "official phone + postal + address; exact shared-contact duplicates resolved by PDF/master occurrence order",
-  "generated_at": "2026-09-29 16:29",
+  "generated_at": "2026-09-29 17:58",
   "availability_for": "令和8年11月",
   "availability_as_of": "令和８年９月１７日時点",
   "source_page_updated": "2026-09-24",

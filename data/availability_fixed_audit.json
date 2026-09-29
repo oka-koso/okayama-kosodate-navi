@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29 16:29",
+  "generated_at": "2026-09-29 17:58",
   "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
   "fixed_master_count": 206,
   "matched_facility_count": 206,
@@ -77,7 +77,7 @@
     },
     {
       "facility_id": "oky-5d696eff342a",
-      "name": "岡山聖園マリア幼稚園",
+      "name": "（仮称）岡山聖園マリア幼稚園",
       "method": "phone+postal+single",
       "pdf_phone": "0862236447",
       "pdf_postal": "7000814",
@@ -509,7 +509,7 @@
     },
     {
       "facility_id": "oky-f950767f5dfe",
-      "name": "撫川ちとせこども園",
+      "name": "（仮称）たねのくに ちとせこども園",
       "method": "phone+postal+single",
       "pdf_phone": "0862931161",
       "pdf_postal": "7010163",
@@ -698,7 +698,7 @@
     },
     {
       "facility_id": "oky-de41a38b5c74",
-      "name": "桃丘こども園",
+      "name": "（仮称）桃丘こども園",
       "method": "phone+postal+single",
       "pdf_phone": "0862368780",
       "pdf_postal": "7011221",
@@ -1022,7 +1022,7 @@
     },
     {
       "facility_id": "oky-859e4c83d6dd",
-      "name": "旭操こども園",
+      "name": "（仮称）旭操認定こども園",
       "method": "phone+postal+single",
       "pdf_phone": "0862371161",
       "pdf_postal": "7038264",
@@ -1346,7 +1346,7 @@
     },
     {
       "facility_id": "oky-18bbb637e693",
-      "name": "桃太郎こども園",
+      "name": "（仮称）桃太郎こども園",
       "method": "phone+postal+single",
       "pdf_phone": "0862972271",
       "pdf_postal": "7090611",
@@ -1382,7 +1382,7 @@
     },
     {
       "facility_id": "oky-deb6fc9b9832",
-      "name": "ぽかぽか保育園",
+      "name": "ほかほか保育園",
       "method": "phone+postal+single",
       "pdf_phone": "0862977676",
       "pdf_postal": "7090626",
@@ -1535,11 +1535,11 @@
     },
     {
       "facility_id": "oky-663bc680c665",
-      "name": "きらめき六区こども園",
-      "method": "rescued-address",
+      "name": "（仮称）きらめき六区こども園",
+      "method": "phone+postal+single",
       "pdf_phone": "0862396080",
       "pdf_postal": "7010221",
-      "master_phone": "0864725251",
+      "master_phone": "0862396080",
       "master_postal": "7010221"
     },
     {
@@ -1553,11 +1553,11 @@
     },
     {
       "facility_id": "oky-7391f1164211",
-      "name": "ひこさきこども園",
-      "method": "postal-only-unique",
+      "name": "（仮称）ひこさきこども園",
+      "method": "phone+postal+single",
       "pdf_phone": "0863621078",
       "pdf_postal": "7091213",
-      "master_phone": "0864800580",
+      "master_phone": "0863621078",
       "master_postal": "7091213"
     },
     {
@@ -1670,7 +1670,7 @@
     },
     {
       "facility_id": "oky-00988b6a1b66",
-      "name": "さとちゃん保育園",
+      "name": "さとちやん保育園",
       "method": "phone+postal+single",
       "pdf_phone": "0862636659",
       "pdf_postal": "7028053",
@@ -1814,7 +1814,7 @@
     },
     {
       "facility_id": "oky-c81757e30b10",
-      "name": "芳明こども園",
+      "name": "（仮称）芳明こども園",
       "method": "phone+postal+single",
       "pdf_phone": "0862591655",
       "pdf_postal": "7000955",
