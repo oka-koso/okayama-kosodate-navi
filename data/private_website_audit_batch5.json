@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-09-29T06:21:49",
+  "batch": 5,
+  "target_count": 5,
+  "verified_count": 4,
+  "error_count": 1,
+  "verified": [
+    {
+      "id": "oky-210bccc4e2e5",
+      "name": "岡山博愛会認定こども園",
+      "phone": "086-272-0160",
+      "website": "https://www.okayama-hakuaikai.or.jp/hakuaikai/nursery/",
+      "evidence": "https://www.okayama-hakuaikai.or.jp/hakuaikai/nursery/"
+    },
+    {
+      "id": "oky-1f720255b07c",
+      "name": "ふたばこども園",
+      "phone": "086-805-1313",
+      "website": "https://futaba-okayama.ed.jp/",
+      "evidence": "https://futaba-okayama.ed.jp/relays/download/12/335/27/1818/"
+    },
+    {
+      "id": "oky-f429c8d7fe8c",
+      "name": "こじかこども園",
+      "phone": "086-226-2071",
+      "website": "https://kojika-okayama.ed.jp/",
+      "evidence": "https://kojika-okayama.ed.jp/"
+    },
+    {
+      "id": "oky-b4ce2044c16e",
+      "name": "とみやまこども園",
+      "phone": "086-277-7662",
+      "website": "https://tomiyama.ed.jp/",
+      "evidence": "https://tomiyama.ed.jp/"
+    }
+  ],
+  "errors": [
+    {
+      "names": [
+        "旭操こども園",
+        "旭操認定こども園",
+        "（仮称）旭操認定こども園"
+      ],
+      "phone": "086-237-1161",
+      "website": "https://shiragiku.ed.jp/kyokusou/",
+      "evidence": "https://shiragiku.ed.jp/kyokusou/",
+      "reason": "candidate-count=0",
+      "phone_candidates": []
+    }
+  ]
+}
