@@ -19,19 +19,18 @@ jobs:
         run: |
           test -f js/site-shell.js
           test -f css/site-shell.css
-          grep -q 'data-site-header' index.html
-          grep -q 'data-site-footer' index.html
-          grep -q 'js/site-shell.js' index.html
+          for f in index.html hoikuen.html moushikomi.html score.html tochuu.html about.html operator.html privacy.html; do
+            grep -q 'data-site-header' "$f"
+            grep -q 'data-site-footer' "$f"
+            grep -q 'js/site-shell.js' "$f"
+          done
       - name: Commit
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
-          if git diff --cached --quiet; then
-            echo "No changes"
-            exit 0
-          fi
-          git commit -m "fix: install unified header and footer"
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "fix: unify header and footer including footerless pages"
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
