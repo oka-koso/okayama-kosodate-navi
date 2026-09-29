@@ -1,0 +1,55 @@
+name: Update public facility links v1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-public-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Match all public facilities and set links
+        id: publiclinks
+        continue-on-error: true
+        run: python scripts/enrich_facility_links.py
+
+      - name: Save audit and safe changes
+        if: always()
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          if [ -f data/public_links_audit.json ]; then
+            git add data/public_links_audit.json
+          fi
+
+          if [ "${{ steps.publiclinks.outcome }}" = "success" ]; then
+            git add data/facility_master.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "data: classify public facilities and add city links"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Fail when public facility audit failed
+        if: steps.publiclinks.outcome != 'success'
+        run: |
+          echo "Public facility matching did not pass the safety audit."
+          echo "data/public_links_audit.json was saved for diagnosis."
+          exit 1
