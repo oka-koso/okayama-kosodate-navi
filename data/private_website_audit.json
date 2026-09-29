@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-09-29T06:06:33",
+  "batch": 1,
+  "target_count": 17,
+  "verified_count": 17,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-2d7e71f51e1a",
+      "name": "弓之町保育園",
+      "phone": "086-222-7583",
+      "website": "https://yuminocho-hoikuen.jp/",
+      "evidence": "https://yuminocho-hoikuen.jp/"
+    },
+    {
+      "id": "oky-ab9820460900",
+      "name": "なかよし保育園",
+      "phone": "086-255-4134",
+      "website": "https://www.kids-nakayoshi.jp/nakayoshi/",
+      "evidence": "https://www.kids-nakayoshi.jp/nakayoshi/"
+    },
+    {
+      "id": "oky-f40be7d0e4b7",
+      "name": "宝島保育園",
+      "phone": "086-254-6888",
+      "website": "https://tkjm.or.jp/takarajima/",
+      "evidence": "https://tkjm.or.jp/takarajima/"
+    },
+    {
+      "id": "oky-1319336432fb",
+      "name": "第二宝島保育園",
+      "phone": "086-239-9100",
+      "website": "https://tkjm.or.jp/dainitakarajima/",
+      "evidence": "https://tkjm.or.jp/dainitakarajima/"
+    },
+    {
+      "id": "oky-d3086fb521b9",
+      "name": "みかど貴ッズ保育園",
+      "phone": "086-252-9936",
+      "website": "https://mikadokids.jimdofree.com/",
+      "evidence": "https://mikadokids.jimdofree.com/"
+    },
+    {
+      "id": "oky-71e6d1ac906b",
+      "name": "たちばな上中野保育園",
+      "phone": "086-241-0378",
+      "website": "https://tachibana-k.or.jp/",
+      "evidence": "https://tachibana-k.or.jp/"
+    },
+    {
+      "id": "oky-09830b3780ab",
+      "name": "大元ちどり保育園",
+      "phone": "086-206-2211",
+      "website": "https://www.okayama-chidori.or.jp/hoiku/omoto",
+      "evidence": "https://www.okayama-chidori.or.jp/hoiku/omoto"
+    },
+    {
+      "id": "oky-19354b8398e6",
+      "name": "北長瀬ちどり保育園",
+      "phone": "086-230-7115",
+      "website": "https://www.okayama-chidori.or.jp/hoiku/kitanagase",
+      "evidence": "https://www.okayama-chidori.or.jp/hoiku/kitanagase"
+    },
+    {
+      "id": "oky-d4011ba264ee",
+      "name": "からたち保育園",
+      "phone": "086-224-7369",
+      "website": "https://karatachihoikuen.com/",
+      "evidence": "https://karatachihoikuen.com/"
+    },
+    {
+      "id": "oky-2d15aacf4278",
+      "name": "土の子保育園",
+      "phone": "086-232-0825",
+      "website": "https://www.tsuchinoko-net.com/",
+      "evidence": "https://www.tsuchinoko-net.com/"
+    },
+    {
+      "id": "oky-cd0ad22f8b29",
+      "name": "ひらたえがお保育園",
+      "phone": "086-805-3818",
+      "website": "https://hirata-asahigawasou.jp/institutions/detail.php?id=5",
+      "evidence": "https://hirata-asahigawasou.jp/institutions/detail.php?id=5"
+    },
+    {
+      "id": "oky-b2a31a8e5259",
+      "name": "第二すみれ保育園",
+      "phone": "086-295-2000",
+      "website": "https://www.sojahukushikai.com/about/sumire-02/",
+      "evidence": "https://www.sojahukushikai.com/about/sumire-02/"
+    },
+    {
+      "id": "oky-ab27ce57a420",
+      "name": "岡山協立保育園",
+      "phone": "086-272-4111",
+      "website": "https://waiwai-kyoritsu.sakura.ne.jp/",
+      "evidence": "https://waiwai-kyoritsu.sakura.ne.jp/"
+    },
+    {
+      "id": "oky-01b5e1013481",
+      "name": "三友保育園",
+      "phone": "086-272-1786",
+      "website": "https://sanyu-hoikuen.ed.jp/",
+      "evidence": "https://sanyu-hoikuen.ed.jp/facility/about/"
+    },
+    {
+      "id": "oky-2caf7ebfcbf6",
+      "name": "白菊保育園",
+      "phone": "086-277-7609",
+      "website": "https://shiragiku.ed.jp/",
+      "evidence": "https://shiragiku.ed.jp/"
+    },
+    {
+      "id": "oky-916f442f3b6b",
+      "name": "第二白ゆり保育園",
+      "phone": "086-284-5224",
+      "website": "https://dai2-shirayuri.com/",
+      "evidence": "https://dai2-shirayuri.com/report/"
+    },
+    {
+      "id": "oky-b81a964289d1",
+      "name": "くまの子保育園",
+      "phone": "086-942-5958",
+      "website": "https://kumanokohoikuen.jp/",
+      "evidence": "https://kumanokohoikuen.jp/"
+    }
+  ],
+  "errors": []
+}
