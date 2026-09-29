@@ -420,22 +420,31 @@ function scrollToCard(id) {
 
 function focusMarker(id) {
   const marker = markerById.get(id);
-  if (!marker) return;
+  if (!marker) {
+    console.warn('Marker not found for facility:', id);
+    return;
+  }
 
-  const ll = marker.getLatLng();
+  const mapEl = document.getElementById('map');
 
-  map.setView(
-    ll,
-    Math.max(map.getZoom(), 16),
-    { animate: true }
-  );
+  if (mapEl) {
+    mapEl.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  }
 
-  marker.openPopup();
+  window.setTimeout(() => {
+    map.invalidateSize();
 
-  document.getElementById('map')?.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
+    const ll = marker.getLatLng();
+
+    map.setView(ll, 16, {
+      animate: true
+    });
+
+    marker.openPopup();
+  }, 350);
 }
 
 function clearMarkers() {
@@ -515,26 +524,23 @@ function bindInteractions() {
   });
 
   document.addEventListener('click', (event) => {
-    // 「地図で見る」を最優先で処理する。
-    // 施設カード自体にも data-facility-id が付いているため、
-    // 先に [data-facility-id] を拾うとボタンクリックが
-    // scrollToCard() に吸われてしまう。
-    const mapBtn =
-      event.target.closest('[data-map-id]');
+    // カード内の「地図で見る」を最優先で処理する。
+    const mapBtn = event.target.closest('[data-map-id]');
 
     if (mapBtn) {
       const id = mapBtn.dataset.mapId;
 
       if (id) {
         event.preventDefault();
+        event.stopPropagation();
         focusMarker(id);
       }
 
       return;
     }
 
-    const detail =
-      event.target.closest('[data-facility-id]');
+    // MAP吹き出し内の「下の施設カードを見る」などを処理。
+    const detail = event.target.closest('[data-facility-id]');
 
     if (detail) {
       const id = detail.dataset.facilityId;
