@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-09-29T06:34:52",
+  "target": "桃丘こども園",
+  "official": {
+    "name": "桃丘こども園",
+    "phone": "086-236-8780",
+    "postal": "701-1221",
+    "address": "岡山市北区芳賀5112-2",
+    "website": "https://cumre.or.jp/service/childcare/momogaoka/",
+    "source": "https://cumre.or.jp/service/childcare/momogaoka/"
+  },
+  "name_candidates": [
+    {
+      "id": "oky-de41a38b5c74",
+      "name": "（仮称）桃丘こども園",
+      "phone": "086-464-0007",
+      "postal": "701-1221",
+      "address": "岡山市北区芳賀5112-2",
+      "public_private": "私立"
+    }
+  ],
+  "location_match_count": 1,
+  "before": {
+    "name": "（仮称）桃丘こども園",
+    "phone": "086-464-0007",
+    "postal": "701-1221",
+    "address": "岡山市北区芳賀5112-2",
+    "website": ""
+  },
+  "result": "updated",
+  "facility_id": "oky-de41a38b5c74",
+  "after": {
+    "name": "桃丘こども園",
+    "phone": "086-236-8780",
+    "postal": "701-1221",
+    "address": "岡山市北区芳賀5112-2",
+    "website": "https://cumre.or.jp/service/childcare/momogaoka/"
+  }
+}

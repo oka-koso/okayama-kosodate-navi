@@ -3286,15 +3286,15 @@
     },
     {
       "id": "oky-de41a38b5c74",
-      "name": "（仮称）桃丘こども園",
+      "name": "桃丘こども園",
       "category": "認定こども園",
       "ward": "北区",
       "source_pdf_page": 6,
       "verification": "official_pdf_visual_checked",
       "postal": "701-1221",
       "address": "岡山市北区芳賀5112-2",
-      "phone": "086-464-0007",
-      "website": "",
+      "phone": "086-236-8780",
+      "website": "https://cumre.or.jp/service/childcare/momogaoka/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.707741,
       "lon": 133.877182,
@@ -3307,11 +3307,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://cumre.or.jp/service/childcare/momogaoka/"
     },
     {
       "id": "oky-f7d2740b7f23",
