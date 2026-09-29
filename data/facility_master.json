@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 5,
   "source_name_master": "facility_name_master.json",
   "source_contact_pdf": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
   "generated_at": "2026-09-29 07:02",
@@ -22,7 +22,15 @@
       "lon": 133.927124,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区弓之町8-2",
-      "geocode_title": "岡山県岡山市北区弓之町８番２号"
+      "geocode_title": "岡山県岡山市北区弓之町８番２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c0388f0bb7a0",
@@ -40,7 +48,15 @@
       "lon": 133.927002,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区中山下2-7-45",
-      "geocode_title": "岡山県岡山市北区中山下二丁目７番４５号"
+      "geocode_title": "岡山県岡山市北区中山下二丁目７番４５号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-a180daa6c959",
@@ -58,7 +74,15 @@
       "lon": 133.921738,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区幸町10-40",
-      "geocode_title": "岡山県岡山市北区幸町１０番４０号"
+      "geocode_title": "岡山県岡山市北区幸町１０番４０号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c907c71a375b",
@@ -76,7 +100,15 @@
       "lon": 133.927505,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区津島東一丁目4-3",
-      "geocode_title": "岡山県岡山市北区津島東一丁目４番"
+      "geocode_title": "岡山県岡山市北区津島東一丁目４番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2abfc828dd8e",
@@ -94,7 +126,15 @@
       "lon": 133.980377,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区牟佐822-2",
-      "geocode_title": "岡山県岡山市北区牟佐８２２番地"
+      "geocode_title": "岡山県岡山市北区牟佐８２２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-6af4f50817f8",
@@ -112,7 +152,15 @@
       "lon": 133.964279,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区玉柏2203-1",
-      "geocode_title": "岡山県岡山市北区玉柏"
+      "geocode_title": "岡山県岡山市北区玉柏",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-21cf63b90750",
@@ -130,7 +178,15 @@
       "lon": 133.922607,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区学南町2-5-40",
-      "geocode_title": "岡山県岡山市北区学南町二丁目５番４０号"
+      "geocode_title": "岡山県岡山市北区学南町二丁目５番４０号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-15ad8248cf5f",
@@ -148,7 +204,15 @@
       "lon": 133.901093,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区下伊福西町5-60",
-      "geocode_title": "岡山県岡山市北区下伊福西町５番６０号"
+      "geocode_title": "岡山県岡山市北区下伊福西町５番６０号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-234af96be60c",
@@ -166,7 +230,15 @@
       "lon": 133.898392,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区関西町11-8",
-      "geocode_title": "岡山県岡山市北区関西町１１番８号"
+      "geocode_title": "岡山県岡山市北区関西町１１番８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-ab9820460900",
@@ -184,7 +256,15 @@
       "lon": 133.908356,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区島田本町1-4-41",
-      "geocode_title": "岡山県岡山市北区島田本町一丁目４番４１号"
+      "geocode_title": "岡山県岡山市北区島田本町一丁目４番４１号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f40be7d0e4b7",
@@ -202,7 +282,15 @@
       "lon": 133.883057,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区北長瀬本町27-2",
-      "geocode_title": "岡山県岡山市北区北長瀬本町２７番２号"
+      "geocode_title": "岡山県岡山市北区北長瀬本町２７番２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d3086fb521b9",
@@ -220,7 +308,15 @@
       "lon": 133.89975,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区三門西町7-8",
-      "geocode_title": "岡山県岡山市北区三門西町７番８号"
+      "geocode_title": "岡山県岡山市北区三門西町７番８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-0ee7543fd5c9",
@@ -238,7 +334,15 @@
       "lon": 133.87973,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区野殿東町17-7",
-      "geocode_title": "岡山県岡山市北区野殿東町１７番７号"
+      "geocode_title": "岡山県岡山市北区野殿東町１７番７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-71e6d1ac906b",
@@ -256,7 +360,15 @@
       "lon": 133.901352,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区上中野2-3-10",
-      "geocode_title": "岡山県岡山市北区上中野二丁目３番１０号"
+      "geocode_title": "岡山県岡山市北区上中野二丁目３番１０号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-09830b3780ab",
@@ -274,7 +386,15 @@
       "lon": 133.911316,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大元駅前10-26",
-      "geocode_title": "岡山県岡山市北区大元駅前１０番２６号"
+      "geocode_title": "岡山県岡山市北区大元駅前１０番２６号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-19354b8398e6",
@@ -292,7 +412,15 @@
       "lon": 133.896866,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区野田4-1-30",
-      "geocode_title": "岡山県岡山市北区野田四丁目１番"
+      "geocode_title": "岡山県岡山市北区野田四丁目１番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-a02005421fd8",
@@ -310,7 +438,15 @@
       "lon": 133.926208,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区新道47-5",
-      "geocode_title": "岡山県岡山市北区新道４７番地"
+      "geocode_title": "岡山県岡山市北区新道４７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d4011ba264ee",
@@ -328,7 +464,15 @@
       "lon": 133.919968,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区奥田南町1-18",
-      "geocode_title": "岡山県岡山市北区奥田南町１番１８号"
+      "geocode_title": "岡山県岡山市北区奥田南町１番１８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-862ccd1c91a1",
@@ -346,7 +490,15 @@
       "lon": 133.915222,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区富田74",
-      "geocode_title": "岡山県岡山市北区富田"
+      "geocode_title": "岡山県岡山市北区富田",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2d15aacf4278",
@@ -364,7 +516,15 @@
       "lon": 133.92627,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区青江4-4-10",
-      "geocode_title": "岡山県岡山市北区青江四丁目４番１０号"
+      "geocode_title": "岡山県岡山市北区青江四丁目４番１０号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-4da344b27348",
@@ -382,7 +542,15 @@
       "lon": 133.895096,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今3-2-9",
-      "geocode_title": "岡山県岡山市北区今三丁目２番９号"
+      "geocode_title": "岡山県岡山市北区今三丁目２番９号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-1319336432fb",
@@ -400,7 +568,15 @@
       "lon": 133.896805,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区下中野1222-4",
-      "geocode_title": "岡山県岡山市北区下中野１２２２番地"
+      "geocode_title": "岡山県岡山市北区下中野１２２２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-cd0ad22f8b29",
@@ -418,7 +594,15 @@
       "lon": 133.882538,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区平田407",
-      "geocode_title": "岡山県岡山市北区平田４０７番地"
+      "geocode_title": "岡山県岡山市北区平田４０７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-db1e6214d3f2",
@@ -436,7 +620,15 @@
       "lon": 133.868652,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区白石西新町6-104",
-      "geocode_title": "岡山県岡山市北区白石西新町６番"
+      "geocode_title": "岡山県岡山市北区白石西新町６番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3b16d87d740d",
@@ -454,7 +646,15 @@
       "lon": 133.857758,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区平野80-4",
-      "geocode_title": "岡山県岡山市北区平野"
+      "geocode_title": "岡山県岡山市北区平野",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-25c3a54fceb6",
@@ -469,7 +669,15 @@
       "website": "",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.6835876,
-      "lon": 133.9066213
+      "lon": 133.9066213,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-de18ac51f5a2",
@@ -487,7 +695,15 @@
       "lon": 133.874695,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区一宮125",
-      "geocode_title": "岡山県岡山市北区一宮１２５番地"
+      "geocode_title": "岡山県岡山市北区一宮１２５番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-916f442f3b6b",
@@ -505,7 +721,15 @@
       "lon": 133.876389,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区楢津881-2",
-      "geocode_title": "岡山県岡山市北区楢津８８１番地"
+      "geocode_title": "岡山県岡山市北区楢津８８１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-e6ca2a00d959",
@@ -523,7 +747,15 @@
       "lon": 133.865524,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区尾上755-1",
-      "geocode_title": "岡山県岡山市北区尾上"
+      "geocode_title": "岡山県岡山市北区尾上",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-889b50efdd63",
@@ -541,7 +773,15 @@
       "lon": 133.88562,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区楢津505-1",
-      "geocode_title": "岡山県岡山市北区楢津"
+      "geocode_title": "岡山県岡山市北区楢津",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-39d4a72f5f19",
@@ -559,7 +799,15 @@
       "lon": 133.912018,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区横井上190-1",
-      "geocode_title": "岡山県岡山市北区横井上"
+      "geocode_title": "岡山県岡山市北区横井上",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-ceb58ffa2209",
@@ -577,7 +825,15 @@
       "lon": 133.894699,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区富原1148",
-      "geocode_title": "岡山県岡山市北区富原１１４８番地"
+      "geocode_title": "岡山県岡山市北区富原１１４８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7afad7fa1314",
@@ -595,7 +851,15 @@
       "lon": 133.838013,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区吉備津276-2",
-      "geocode_title": "岡山県岡山市北区吉備津２７６番地"
+      "geocode_title": "岡山県岡山市北区吉備津２７６番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b2a31a8e5259",
@@ -613,7 +877,15 @@
       "lon": 133.813873,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区下足守1545-1",
-      "geocode_title": "岡山県岡山市北区下足守"
+      "geocode_title": "岡山県岡山市北区下足守",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-54bb2b63cdc3",
@@ -631,7 +903,15 @@
       "lon": 133.944427,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区御津国ケ原1024",
-      "geocode_title": "岡山県岡山市北区御津国ケ原"
+      "geocode_title": "岡山県岡山市北区御津国ケ原",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-dd2244c6f4e1",
@@ -649,7 +929,15 @@
       "lon": 133.924362,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区御津宇垣1889",
-      "geocode_title": "岡山県岡山市北区御津宇垣"
+      "geocode_title": "岡山県岡山市北区御津宇垣",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-07d2d8eee041",
@@ -667,7 +955,15 @@
       "lon": 133.901688,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区建部町川口1526-1",
-      "geocode_title": "岡山県岡山市北区建部町川口"
+      "geocode_title": "岡山県岡山市北区建部町川口",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c044cb87eac3",
@@ -685,7 +981,15 @@
       "lon": 133.936554,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区網浜785",
-      "geocode_title": "岡山県岡山市中区網浜７８５番地"
+      "geocode_title": "岡山県岡山市中区網浜７８５番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-592ec34a1ce6",
@@ -703,7 +1007,15 @@
       "lon": 133.941513,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区平井五丁目2-25",
-      "geocode_title": "岡山県岡山市中区平井五丁目２番２５号"
+      "geocode_title": "岡山県岡山市中区平井五丁目２番２５号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-ab27ce57a420",
@@ -721,7 +1033,15 @@
       "lon": 133.934372,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区桜橋3-1-51",
-      "geocode_title": "岡山県岡山市中区桜橋三丁目１番５１号"
+      "geocode_title": "岡山県岡山市中区桜橋三丁目１番５１号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-a2757262202a",
@@ -739,7 +1059,15 @@
       "lon": 133.93573,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区浜一丁目14-4",
-      "geocode_title": "岡山県岡山市中区浜一丁目１４番４号"
+      "geocode_title": "岡山県岡山市中区浜一丁目１４番４号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-01b5e1013481",
@@ -757,7 +1085,15 @@
       "lon": 133.940186,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区門田屋敷1-9-31",
-      "geocode_title": "岡山県岡山市中区門田屋敷一丁目９番３１号"
+      "geocode_title": "岡山県岡山市中区門田屋敷一丁目９番３１号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2caf7ebfcbf6",
@@ -775,7 +1111,15 @@
       "lon": 133.962967,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区湊296-1",
-      "geocode_title": "岡山県岡山市中区湊２９６番地"
+      "geocode_title": "岡山県岡山市中区湊２９６番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-4c891c94ba26",
@@ -793,7 +1137,15 @@
       "lon": 133.959686,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区江崎577-1",
-      "geocode_title": "岡山県岡山市中区江崎"
+      "geocode_title": "岡山県岡山市中区江崎",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-8bf4f5cc8f77",
@@ -811,7 +1163,15 @@
       "lon": 133.959686,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区江崎380-1",
-      "geocode_title": "岡山県岡山市中区江崎"
+      "geocode_title": "岡山県岡山市中区江崎",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-26ce7b7ab03c",
@@ -829,7 +1189,15 @@
       "lon": 133.976578,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区兼基247",
-      "geocode_title": "岡山県岡山市中区兼基２４７番地"
+      "geocode_title": "岡山県岡山市中区兼基２４７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-62867ccc454b",
@@ -847,7 +1215,15 @@
       "lon": 133.966156,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区中井4-19-27",
-      "geocode_title": "岡山県岡山市中区中井四丁目１９番２７号"
+      "geocode_title": "岡山県岡山市中区中井四丁目１９番２７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d10ce8cb8e2f",
@@ -865,7 +1241,15 @@
       "lon": 134.004669,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区可知四丁目23-5",
-      "geocode_title": "岡山県岡山市東区可知四丁目２３番"
+      "geocode_title": "岡山県岡山市東区可知四丁目２３番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-97fb1f945ade",
@@ -883,7 +1267,15 @@
       "lon": 134.0047,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区可知3-7-21",
-      "geocode_title": "岡山県岡山市東区可知三丁目７番２１号"
+      "geocode_title": "岡山県岡山市東区可知三丁目７番２１号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b81a964289d1",
@@ -901,7 +1293,15 @@
       "lon": 134.012512,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区西大寺松崎302-1",
-      "geocode_title": "岡山県岡山市東区西大寺松崎"
+      "geocode_title": "岡山県岡山市東区西大寺松崎",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-41d34b28f2d1",
@@ -919,7 +1319,15 @@
       "lon": 133.991486,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区光津840-1",
-      "geocode_title": "岡山県岡山市東区光津"
+      "geocode_title": "岡山県岡山市東区光津",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2c8a2edb816e",
@@ -937,7 +1345,15 @@
       "lon": 134.089355,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区宿毛623-9",
-      "geocode_title": "岡山県岡山市東区宿毛６２３番地"
+      "geocode_title": "岡山県岡山市東区宿毛６２３番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-0b152fa9f440",
@@ -955,7 +1371,15 @@
       "lon": 134.023346,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区中尾192-1",
-      "geocode_title": "岡山県岡山市東区中尾１９２番地"
+      "geocode_title": "岡山県岡山市東区中尾１９２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-50b6fc6bd95d",
@@ -973,7 +1397,15 @@
       "lon": 134.038162,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区瀬戸町下133",
-      "geocode_title": "岡山県岡山市東区瀬戸町下１３３番地"
+      "geocode_title": "岡山県岡山市東区瀬戸町下１３３番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-5a3033510d15",
@@ -991,7 +1423,15 @@
       "lon": 134.010162,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区瀬戸町観音寺509",
-      "geocode_title": "岡山県岡山市東区瀬戸町観音寺５０９番地"
+      "geocode_title": "岡山県岡山市東区瀬戸町観音寺５０９番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c99c121892fc",
@@ -1009,7 +1449,15 @@
       "lon": 133.847305,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区箕島2413-1",
-      "geocode_title": "岡山県岡山市南区箕島２４１３番地"
+      "geocode_title": "岡山県岡山市南区箕島２４１３番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3a38c9af0215",
@@ -1027,7 +1475,15 @@
       "lon": 133.862518,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区妹尾3763-1",
-      "geocode_title": "岡山県岡山市南区妹尾"
+      "geocode_title": "岡山県岡山市南区妹尾",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-8f2cadf82439",
@@ -1045,7 +1501,15 @@
       "lon": 133.847748,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区曽根170-2",
-      "geocode_title": "岡山県岡山市南区曽根"
+      "geocode_title": "岡山県岡山市南区曽根",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-cd7a582b427f",
@@ -1063,7 +1527,15 @@
       "lon": 133.878128,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区東畦758-2",
-      "geocode_title": "岡山県岡山市南区東畦７５８番地"
+      "geocode_title": "岡山県岡山市南区東畦７５８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-fd9bfbb6cc6d",
@@ -1081,7 +1553,15 @@
       "lon": 133.860153,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区内尾440-2",
-      "geocode_title": "岡山県岡山市南区内尾４４０番地"
+      "geocode_title": "岡山県岡山市南区内尾４４０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-5481e9a4636b",
@@ -1099,7 +1579,15 @@
       "lon": 133.87587,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区藤田349-7",
-      "geocode_title": "岡山県岡山市南区藤田３４９番地"
+      "geocode_title": "岡山県岡山市南区藤田３４９番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2b6815780f45",
@@ -1117,7 +1605,15 @@
       "lon": 133.892868,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区西七区231",
-      "geocode_title": "岡山県岡山市南区西七区２３１番地"
+      "geocode_title": "岡山県岡山市南区西七区２３１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b876b61da215",
@@ -1135,7 +1631,15 @@
       "lon": 133.890182,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区西紅陽台3-1-116",
-      "geocode_title": "岡山県岡山市南区西紅陽台三丁目１番地"
+      "geocode_title": "岡山県岡山市南区西紅陽台三丁目１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7d04fc32a1ef",
@@ -1153,7 +1657,15 @@
       "lon": 133.946609,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区洲崎三丁目3-23",
-      "geocode_title": "岡山県岡山市南区洲崎三丁目３番２３号"
+      "geocode_title": "岡山県岡山市南区洲崎三丁目３番２３号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c540d4d8d8a7",
@@ -1171,7 +1683,15 @@
       "lon": 133.936447,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区福富中2-4-1",
-      "geocode_title": "岡山県岡山市南区福富中二丁目４番１号"
+      "geocode_title": "岡山県岡山市南区福富中二丁目４番１号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-26e5719c6630",
@@ -1189,7 +1709,15 @@
       "lon": 133.946747,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区平福1-11-25",
-      "geocode_title": "岡山県岡山市南区平福一丁目１１番２５号"
+      "geocode_title": "岡山県岡山市南区平福一丁目１１番２５号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-01d75457bed4",
@@ -1207,7 +1735,15 @@
       "lon": 133.94104,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区並木町二丁目22-8",
-      "geocode_title": "岡山県岡山市南区並木町二丁目２２番８号"
+      "geocode_title": "岡山県岡山市南区並木町二丁目２２番８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-bd718a3906e7",
@@ -1225,7 +1761,15 @@
       "lon": 133.931168,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区築港緑町1-1-7 230",
-      "geocode_title": "岡山県岡山市南区築港緑町一丁目１番７号"
+      "geocode_title": "岡山県岡山市南区築港緑町一丁目１番７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-cfcfc9c59c3f",
@@ -1243,7 +1787,15 @@
       "lon": 133.9478,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区千鳥町7-7",
-      "geocode_title": "岡山県岡山市南区千鳥町７番７号"
+      "geocode_title": "岡山県岡山市南区千鳥町７番７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-8372800aaa77",
@@ -1261,7 +1813,15 @@
       "lon": 133.919052,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区芳泉3-4-5",
-      "geocode_title": "岡山県岡山市南区芳泉三丁目４番５号"
+      "geocode_title": "岡山県岡山市南区芳泉三丁目４番５号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-283b642b9f61",
@@ -1279,7 +1839,15 @@
       "lon": 133.923477,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区福田715-3",
-      "geocode_title": "岡山県岡山市南区福田"
+      "geocode_title": "岡山県岡山市南区福田",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-987ae07271b9",
@@ -1297,7 +1865,15 @@
       "lon": 133.920746,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区浦安本町171-1",
-      "geocode_title": "岡山県岡山市南区浦安本町１７１番地"
+      "geocode_title": "岡山県岡山市南区浦安本町１７１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-8d18f0e4b934",
@@ -1315,7 +1891,15 @@
       "lon": 133.921677,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区浦安南町425-1",
-      "geocode_title": "岡山県岡山市南区浦安南町"
+      "geocode_title": "岡山県岡山市南区浦安南町",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c2f6eee6cf0c",
@@ -1333,7 +1917,15 @@
       "lon": 133.927933,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区豊成1-1-17",
-      "geocode_title": "岡山県岡山市南区豊成一丁目１番１７号"
+      "geocode_title": "岡山県岡山市南区豊成一丁目１番１７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-73a2b33b3b99",
@@ -1351,7 +1943,15 @@
       "lon": 133.912109,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区新保417-1",
-      "geocode_title": "岡山県岡山市南区新保４１７番地"
+      "geocode_title": "岡山県岡山市南区新保４１７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-8faa268cfd4a",
@@ -1369,7 +1969,15 @@
       "lon": 133.909378,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区泉田402-3",
-      "geocode_title": "岡山県岡山市南区泉田４０２番地"
+      "geocode_title": "岡山県岡山市南区泉田４０２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-38f90cadc8e2",
@@ -1387,7 +1995,15 @@
       "lon": 133.897186,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区当新田482-52",
-      "geocode_title": "岡山県岡山市南区当新田４８２番地"
+      "geocode_title": "岡山県岡山市南区当新田４８２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7697d8907f54",
@@ -1405,7 +2021,15 @@
       "lon": 133.91716,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区新保1113-8",
-      "geocode_title": "岡山県岡山市南区新保１１１３番地"
+      "geocode_title": "岡山県岡山市南区新保１１１３番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3e66a13c2e89",
@@ -1423,7 +2047,15 @@
       "lon": 133.902252,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区西市115-16",
-      "geocode_title": "岡山県岡山市南区西市１１５番地"
+      "geocode_title": "岡山県岡山市南区西市１１５番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-5a30f1a0f6df",
@@ -1441,7 +2073,15 @@
       "lon": 134.027664,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区小串3480",
-      "geocode_title": "岡山県岡山市南区小串３４８０番地"
+      "geocode_title": "岡山県岡山市南区小串３４８０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f5d79c691732",
@@ -1459,7 +2099,15 @@
       "lon": 133.923553,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区南方一丁目3-30",
-      "geocode_title": "岡山県岡山市北区南方一丁目３番"
+      "geocode_title": "岡山県岡山市北区南方一丁目３番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2250a4445aaa",
@@ -1477,7 +2125,15 @@
       "lon": 133.927841,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区弓之町9-2",
-      "geocode_title": "岡山県岡山市北区弓之町９番２号"
+      "geocode_title": "岡山県岡山市北区弓之町９番２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7086b448378f",
@@ -1495,7 +2151,15 @@
       "lon": 133.925491,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区田町1-4-12",
-      "geocode_title": "岡山県岡山市北区田町一丁目４番１２号"
+      "geocode_title": "岡山県岡山市北区田町一丁目４番１２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b762d2b14de0",
@@ -1513,7 +2177,15 @@
       "lon": 133.934479,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区丸の内2-6-5 クラス～",
-      "geocode_title": "岡山県岡山市北区丸の内二丁目６番５号"
+      "geocode_title": "岡山県岡山市北区丸の内二丁目６番５号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-5d696eff342a",
@@ -1531,7 +2203,15 @@
       "lon": 133.928726,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区天神町6-34 クラス～",
-      "geocode_title": "岡山県岡山市北区天神町６番３４号"
+      "geocode_title": "岡山県岡山市北区天神町６番３４号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-029dfee13209",
@@ -1546,7 +2226,15 @@
       "website": "",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.6897933,
-      "lon": 133.928675
+      "lon": 133.928675,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-6b45f387a5ff",
@@ -1564,7 +2252,15 @@
       "lon": 133.933517,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区半田町8-2",
-      "geocode_title": "岡山県岡山市北区半田町８番２号"
+      "geocode_title": "岡山県岡山市北区半田町８番２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-1ec5f2fb469d",
@@ -1582,7 +2278,15 @@
       "lon": 133.908966,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区富町2-14-9",
-      "geocode_title": "岡山県岡山市北区富町二丁目１４番９号"
+      "geocode_title": "岡山県岡山市北区富町二丁目１４番９号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f429c8d7fe8c",
@@ -1600,7 +2304,15 @@
       "lon": 133.911194,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大供本町715-5",
-      "geocode_title": "岡山県岡山市北区大供本町７１５番地"
+      "geocode_title": "岡山県岡山市北区大供本町７１５番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7ea4e2638b75",
@@ -1618,7 +2330,15 @@
       "lon": 133.914322,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大供表町16-10",
-      "geocode_title": "岡山県岡山市北区大供表町１６番"
+      "geocode_title": "岡山県岡山市北区大供表町１６番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-605445b41344",
@@ -1636,7 +2356,15 @@
       "lon": 133.900238,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大元上町9-22",
-      "geocode_title": "岡山県岡山市北区大元上町９番２２号"
+      "geocode_title": "岡山県岡山市北区大元上町９番２２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-df21b21e0b1a",
@@ -1654,7 +2382,15 @@
       "lon": 133.928345,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区七日市西町1-14",
-      "geocode_title": "岡山県岡山市北区七日市西町１番１４号"
+      "geocode_title": "岡山県岡山市北区七日市西町１番１４号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-734e21a7d0bf",
@@ -1672,7 +2408,15 @@
       "lon": 133.872452,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今保247-1",
-      "geocode_title": "岡山県岡山市北区今保２４７番地"
+      "geocode_title": "岡山県岡山市北区今保２４７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-1f720255b07c",
@@ -1690,7 +2434,15 @@
       "lon": 133.891449,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区平田122-102",
-      "geocode_title": "岡山県岡山市北区平田１２２番地"
+      "geocode_title": "岡山県岡山市北区平田１２２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-9adbd2aac562",
@@ -1708,7 +2460,15 @@
       "lon": 133.877701,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区田中165-103",
-      "geocode_title": "岡山県岡山市北区田中１６５番地"
+      "geocode_title": "岡山県岡山市北区田中１６５番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-1df19fd5256f",
@@ -1726,7 +2486,15 @@
       "lon": 133.892914,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今7丁目16-43",
-      "geocode_title": "岡山県岡山市北区今七丁目１６番４３号"
+      "geocode_title": "岡山県岡山市北区今七丁目１６番４３号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-55ab64e24eb9",
@@ -1744,7 +2512,15 @@
       "lon": 133.888763,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区中仙道1-7-28",
-      "geocode_title": "岡山県岡山市北区中仙道一丁目７番２８号"
+      "geocode_title": "岡山県岡山市北区中仙道一丁目７番２８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-203c128e05be",
@@ -1762,7 +2538,15 @@
       "lon": 133.857758,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区平野1071-1",
-      "geocode_title": "岡山県岡山市北区平野"
+      "geocode_title": "岡山県岡山市北区平野",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3d4c74d3d609",
@@ -1780,7 +2564,15 @@
       "lon": 133.85463,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区庭瀬1032-1",
-      "geocode_title": "岡山県岡山市北区庭瀬１０３２番地"
+      "geocode_title": "岡山県岡山市北区庭瀬１０３２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2bc13a27977c",
@@ -1798,7 +2590,15 @@
       "lon": 133.862961,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区東花尻121-1",
-      "geocode_title": "岡山県岡山市北区東花尻"
+      "geocode_title": "岡山県岡山市北区東花尻",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f950767f5dfe",
@@ -1816,7 +2616,15 @@
       "lon": 133.840591,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区中撫川351",
-      "geocode_title": "岡山県岡山市北区中撫川"
+      "geocode_title": "岡山県岡山市北区中撫川",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-55bbf58dea67",
@@ -1834,7 +2642,15 @@
       "lon": 133.86322,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区東花尻266-1",
-      "geocode_title": "岡山県岡山市北区東花尻２６６番地"
+      "geocode_title": "岡山県岡山市北区東花尻２６６番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-4b435e772bfd",
@@ -1852,7 +2668,15 @@
       "lon": 133.845337,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区川入873-1",
-      "geocode_title": "岡山県岡山市北区川入"
+      "geocode_title": "岡山県岡山市北区川入",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-83bfd994d90e",
@@ -1870,7 +2694,15 @@
       "lon": 133.913925,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区いずみ町9-18",
-      "geocode_title": "岡山県岡山市北区いずみ町９番１８号"
+      "geocode_title": "岡山県岡山市北区いずみ町９番１８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-87b331929732",
@@ -1888,7 +2720,15 @@
       "lon": 133.913376,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区津島南1-3-9 クラス～",
-      "geocode_title": "岡山県岡山市北区津島南一丁目３番９号"
+      "geocode_title": "岡山県岡山市北区津島南一丁目３番９号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-9b4d603a4f34",
@@ -1906,7 +2746,15 @@
       "lon": 133.911163,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区津島桑の木町1-33",
-      "geocode_title": "岡山県岡山市北区津島桑の木町１番３３号"
+      "geocode_title": "岡山県岡山市北区津島桑の木町１番３３号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-e76722631c72",
@@ -1924,7 +2772,15 @@
       "lon": 133.867538,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区一宮638-3",
-      "geocode_title": "岡山県岡山市北区一宮６３８番地"
+      "geocode_title": "岡山県岡山市北区一宮６３８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-fc209de84894",
@@ -1942,7 +2798,15 @@
       "lon": 133.865005,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区辛川市場321-1",
-      "geocode_title": "岡山県岡山市北区辛川市場"
+      "geocode_title": "岡山県岡山市北区辛川市場",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-143c43f91014",
@@ -1960,7 +2824,15 @@
       "lon": 133.88562,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区楢津385-1",
-      "geocode_title": "岡山県岡山市北区楢津"
+      "geocode_title": "岡山県岡山市北区楢津",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d9e5f770e7b7",
@@ -1978,7 +2850,15 @@
       "lon": 133.849854,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大窪50-1",
-      "geocode_title": "岡山県岡山市北区大窪"
+      "geocode_title": "岡山県岡山市北区大窪",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-de41a38b5c74",
@@ -1996,7 +2876,15 @@
       "lon": 133.877182,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区芳賀5112-2",
-      "geocode_title": "岡山県岡山市北区芳賀５１１２番地"
+      "geocode_title": "岡山県岡山市北区芳賀５１１２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f7d2740b7f23",
@@ -2014,7 +2902,15 @@
       "lon": 133.862778,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区富吉2945-7",
-      "geocode_title": "岡山県岡山市北区富吉"
+      "geocode_title": "岡山県岡山市北区富吉",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-9ef6a782a4e8",
@@ -2032,7 +2928,15 @@
       "lon": 133.905106,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区横井上1556-4",
-      "geocode_title": "岡山県岡山市北区横井上１５５６番地"
+      "geocode_title": "岡山県岡山市北区横井上１５５６番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-899d5c08198c",
@@ -2050,7 +2954,15 @@
       "lon": 133.890076,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区富原3700-1",
-      "geocode_title": "岡山県岡山市北区富原"
+      "geocode_title": "岡山県岡山市北区富原",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-04d209445b51",
@@ -2068,7 +2980,15 @@
       "lon": 133.90361,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区栢谷1724-3",
-      "geocode_title": "岡山県岡山市北区栢谷１７２４番地"
+      "geocode_title": "岡山県岡山市北区栢谷１７２４番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7b4d1657e717",
@@ -2086,7 +3006,15 @@
       "lon": 133.815323,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区三手15-1",
-      "geocode_title": "岡山県岡山市北区三手１５番地"
+      "geocode_title": "岡山県岡山市北区三手１５番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c9203aa946fd",
@@ -2104,7 +3032,15 @@
       "lon": 133.82312,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区加茂1104-1",
-      "geocode_title": "岡山県岡山市北区加茂１１０４番地"
+      "geocode_title": "岡山県岡山市北区加茂１１０４番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-9f0c3e8fbeb1",
@@ -2122,7 +3058,15 @@
       "lon": 133.80159,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区新庄上1357",
-      "geocode_title": "岡山県岡山市北区新庄上"
+      "geocode_title": "岡山県岡山市北区新庄上",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-14991979cd9f",
@@ -2140,7 +3084,15 @@
       "lon": 133.800522,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大井407-1",
-      "geocode_title": "岡山県岡山市北区大井４０７番地"
+      "geocode_title": "岡山県岡山市北区大井４０７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f23e2af31dee",
@@ -2158,7 +3110,15 @@
       "lon": 133.927658,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区御津金川476",
-      "geocode_title": "岡山県岡山市北区御津金川"
+      "geocode_title": "岡山県岡山市北区御津金川",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-434e9c62d3dd",
@@ -2176,7 +3136,15 @@
       "lon": 133.901199,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区建部町市場330",
-      "geocode_title": "岡山県岡山市北区建部町市場"
+      "geocode_title": "岡山県岡山市北区建部町市場",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-210bccc4e2e5",
@@ -2194,7 +3162,15 @@
       "lon": 133.934982,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区御幸町4-12",
-      "geocode_title": "岡山県岡山市中区御幸町４番１２号"
+      "geocode_title": "岡山県岡山市中区御幸町４番１２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-4f4b9bdc3666",
@@ -2212,7 +3188,15 @@
       "lon": 133.940964,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区西川原15-1",
-      "geocode_title": "岡山県岡山市中区西川原"
+      "geocode_title": "岡山県岡山市中区西川原",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-8c2b0217cd90",
@@ -2230,7 +3214,15 @@
       "lon": 133.941528,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区西川原351-12",
-      "geocode_title": "岡山県岡山市中区西川原３５１番地"
+      "geocode_title": "岡山県岡山市中区西川原３５１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-af1ea3b22f80",
@@ -2248,7 +3240,15 @@
       "lon": 133.947205,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区原尾島1-7-5",
-      "geocode_title": "岡山県岡山市中区原尾島一丁目７番５号"
+      "geocode_title": "岡山県岡山市中区原尾島一丁目７番５号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b4ce2044c16e",
@@ -2266,7 +3266,15 @@
       "lon": 133.9776,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区福泊138-2",
-      "geocode_title": "岡山県岡山市中区福泊１３８番地"
+      "geocode_title": "岡山県岡山市中区福泊１３８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-59623c1b5771",
@@ -2284,7 +3292,15 @@
       "lon": 133.960541,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区倉田688-3",
-      "geocode_title": "岡山県岡山市中区倉田"
+      "geocode_title": "岡山県岡山市中区倉田",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-859e4c83d6dd",
@@ -2302,7 +3318,15 @@
       "lon": 133.969284,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区倉富171-2",
-      "geocode_title": "岡山県岡山市中区倉富"
+      "geocode_title": "岡山県岡山市中区倉富",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-9914cfb62440",
@@ -2320,7 +3344,15 @@
       "lon": 133.999359,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区長利194-1",
-      "geocode_title": "岡山県岡山市中区長利１９４番地"
+      "geocode_title": "岡山県岡山市中区長利１９４番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-15eb89a61377",
@@ -2338,7 +3370,15 @@
       "lon": 133.959671,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区赤田88",
-      "geocode_title": "岡山県岡山市中区赤田８８番地"
+      "geocode_title": "岡山県岡山市中区赤田８８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b4c449df8fbd",
@@ -2356,7 +3396,15 @@
       "lon": 133.965225,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区沢田473",
-      "geocode_title": "岡山県岡山市中区沢田"
+      "geocode_title": "岡山県岡山市中区沢田",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-70ec8af0e3f7",
@@ -2374,7 +3422,15 @@
       "lon": 133.99646,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区長利274-1",
-      "geocode_title": "岡山県岡山市中区長利２７４番地"
+      "geocode_title": "岡山県岡山市中区長利２７４番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-a9b154c54514",
@@ -2392,7 +3448,15 @@
       "lon": 133.982559,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区長岡4-108",
-      "geocode_title": "岡山県岡山市中区長岡４番地"
+      "geocode_title": "岡山県岡山市中区長岡４番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-28f572db3c7a",
@@ -2410,7 +3474,15 @@
       "lon": 133.968033,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区高屋220-3",
-      "geocode_title": "岡山県岡山市中区高屋２２０番地"
+      "geocode_title": "岡山県岡山市中区高屋２２０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-4f433005ef50",
@@ -2428,7 +3500,15 @@
       "lon": 133.956558,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区祇園364-1",
-      "geocode_title": "岡山県岡山市中区祇園"
+      "geocode_title": "岡山県岡山市中区祇園",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-60b1d51a9e2e",
@@ -2446,7 +3526,15 @@
       "lon": 133.967117,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区国府市場164-1",
-      "geocode_title": "岡山県岡山市中区国府市場"
+      "geocode_title": "岡山県岡山市中区国府市場",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-03ccb0f4e581",
@@ -2464,7 +3552,15 @@
       "lon": 133.949738,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区高島一丁目5-7",
-      "geocode_title": "岡山県岡山市中区高島一丁目５番"
+      "geocode_title": "岡山県岡山市中区高島一丁目５番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c8aebac17abf",
@@ -2482,7 +3578,15 @@
       "lon": 133.976349,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区国府市場721-2",
-      "geocode_title": "岡山県岡山市中区国府市場７２１番地"
+      "geocode_title": "岡山県岡山市中区国府市場７２１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d5b695888899",
@@ -2500,7 +3604,15 @@
       "lon": 133.967117,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区国府市場720-1",
-      "geocode_title": "岡山県岡山市中区国府市場"
+      "geocode_title": "岡山県岡山市中区国府市場",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b5ce04971cbb",
@@ -2518,7 +3630,15 @@
       "lon": 133.998978,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区益野町40",
-      "geocode_title": "岡山県岡山市東区益野町４０番地"
+      "geocode_title": "岡山県岡山市東区益野町４０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-29ed120fa95c",
@@ -2536,7 +3656,15 @@
       "lon": 134.00116,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区古都宿453-5",
-      "geocode_title": "岡山県岡山市東区古都宿４５３番地"
+      "geocode_title": "岡山県岡山市東区古都宿４５３番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-e7e3525e3c94",
@@ -2554,7 +3682,15 @@
       "lon": 134.016403,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区金田1127-1",
-      "geocode_title": "岡山県岡山市東区金田"
+      "geocode_title": "岡山県岡山市東区金田",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-70444b258ba5",
@@ -2572,7 +3708,15 @@
       "lon": 134.003616,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区政津961-19",
-      "geocode_title": "岡山県岡山市東区政津９６１番地"
+      "geocode_title": "岡山県岡山市東区政津９６１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-9816b5654e50",
@@ -2590,7 +3734,15 @@
       "lon": 134.04776,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区久保408-1",
-      "geocode_title": "岡山県岡山市東区久保"
+      "geocode_title": "岡山県岡山市東区久保",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-0dbc39f42366",
@@ -2608,7 +3760,15 @@
       "lon": 134.043457,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区久保411-1",
-      "geocode_title": "岡山県岡山市東区久保４１１番地"
+      "geocode_title": "岡山県岡山市東区久保４１１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-64a060cbb158",
@@ -2626,7 +3786,15 @@
       "lon": 134.048721,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区西大寺川口279",
-      "geocode_title": "岡山県岡山市東区西大寺川口"
+      "geocode_title": "岡山県岡山市東区西大寺川口",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d67e6b792b79",
@@ -2644,7 +3812,15 @@
       "lon": 134.021896,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区金岡西町578-5",
-      "geocode_title": "岡山県岡山市東区金岡西町"
+      "geocode_title": "岡山県岡山市東区金岡西町",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-526791715065",
@@ -2662,7 +3838,15 @@
       "lon": 134.032211,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区西大寺上一丁目19-23",
-      "geocode_title": "岡山県岡山市東区西大寺上一丁目１９番２３号"
+      "geocode_title": "岡山県岡山市東区西大寺上一丁目１９番２３号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-8f9cbd041fb6",
@@ -2680,7 +3864,15 @@
       "lon": 134.058838,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区神崎町22-1",
-      "geocode_title": "岡山県岡山市東区神崎町２２番地"
+      "geocode_title": "岡山県岡山市東区神崎町２２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-92e89fe0f4fb",
@@ -2698,7 +3890,15 @@
       "lon": 134.016479,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区上道北方590",
-      "geocode_title": "岡山県岡山市東区上道北方"
+      "geocode_title": "岡山県岡山市東区上道北方",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-6e897ebf054a",
@@ -2716,7 +3916,15 @@
       "lon": 134.037689,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区沼1188-1",
-      "geocode_title": "岡山県岡山市東区沼"
+      "geocode_title": "岡山県岡山市東区沼",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-18bbb637e693",
@@ -2734,7 +3942,15 @@
       "lon": 134.055191,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区楢原431-5",
-      "geocode_title": "岡山県岡山市東区楢原４３１番地"
+      "geocode_title": "岡山県岡山市東区楢原４３１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b2a40d6201d8",
@@ -2752,7 +3968,15 @@
       "lon": 134.065247,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区瀬戸町鍛冶屋178-1",
-      "geocode_title": "岡山県岡山市東区瀬戸町鍛冶屋"
+      "geocode_title": "岡山県岡山市東区瀬戸町鍛冶屋",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-878efb649d10",
@@ -2770,7 +3994,15 @@
       "lon": 134.04393,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区瀬戸町下286-1",
-      "geocode_title": "岡山県岡山市東区瀬戸町下２８６番地"
+      "geocode_title": "岡山県岡山市東区瀬戸町下２８６番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-0a668b596704",
@@ -2788,7 +4020,15 @@
       "lon": 133.860199,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区箕島1024-2",
-      "geocode_title": "岡山県岡山市南区箕島１０２４番地"
+      "geocode_title": "岡山県岡山市南区箕島１０２４番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-e9afbe0080bd",
@@ -2806,7 +4046,15 @@
       "lon": 133.867569,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区妹尾1368-1",
-      "geocode_title": "岡山県岡山市南区妹尾１３６８番地"
+      "geocode_title": "岡山県岡山市南区妹尾１３６８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b82c166c871a",
@@ -2824,7 +4072,15 @@
       "lon": 133.888153,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区大福760-2",
-      "geocode_title": "岡山県岡山市南区大福７６０番地"
+      "geocode_title": "岡山県岡山市南区大福７６０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d23296eabab6",
@@ -2842,7 +4098,15 @@
       "lon": 133.86937,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区妹尾3518",
-      "geocode_title": "岡山県岡山市南区妹尾３５１８番地"
+      "geocode_title": "岡山県岡山市南区妹尾３５１８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-10271a0c5a3c",
@@ -2860,7 +4124,15 @@
       "lon": 133.85437,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区中畦645-11",
-      "geocode_title": "岡山県岡山市南区中畦６４５番地"
+      "geocode_title": "岡山県岡山市南区中畦６４５番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-bec991b14dec",
@@ -2878,7 +4150,15 @@
       "lon": 133.893402,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区藤田610-11",
-      "geocode_title": "岡山県岡山市南区藤田６１０番地"
+      "geocode_title": "岡山県岡山市南区藤田６１０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-663bc680c665",
@@ -2896,7 +4176,15 @@
       "lon": 133.894623,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区藤田1729-1",
-      "geocode_title": "岡山県岡山市南区藤田１７２９番地"
+      "geocode_title": "岡山県岡山市南区藤田１７２９番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3ccf4db5d2dd",
@@ -2914,7 +4202,15 @@
       "lon": 133.866516,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区片岡188",
-      "geocode_title": "岡山県岡山市南区片岡１８８番地"
+      "geocode_title": "岡山県岡山市南区片岡１８８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7391f1164211",
@@ -2932,7 +4228,15 @@
       "lon": 133.83577,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区彦崎2570-1",
-      "geocode_title": "岡山県岡山市南区彦崎２５７０番地"
+      "geocode_title": "岡山県岡山市南区彦崎２５７０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f02577b3bf67",
@@ -2950,7 +4254,15 @@
       "lon": 133.935638,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区築港新町2-17-10",
-      "geocode_title": "岡山県岡山市南区築港新町二丁目１７番１０号"
+      "geocode_title": "岡山県岡山市南区築港新町二丁目１７番１０号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c80fc8f88d1c",
@@ -2968,7 +4280,15 @@
       "lon": 133.928757,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区浦安本町33",
-      "geocode_title": "岡山県岡山市南区浦安本町３３番地"
+      "geocode_title": "岡山県岡山市南区浦安本町３３番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-19b5f48cd63c",
@@ -2986,7 +4306,15 @@
       "lon": 133.921921,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区浦安本町51-3",
-      "geocode_title": "岡山県岡山市南区浦安本町５１番地"
+      "geocode_title": "岡山県岡山市南区浦安本町５１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b19e9baaae83",
@@ -3004,7 +4332,15 @@
       "lon": 133.899277,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区万倍30-20",
-      "geocode_title": "岡山県岡山市南区万倍３０番地"
+      "geocode_title": "岡山県岡山市南区万倍３０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-c81757e30b10",
@@ -3022,7 +4358,15 @@
       "lon": 133.900406,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区万倍98",
-      "geocode_title": "岡山県岡山市南区万倍９８番地"
+      "geocode_title": "岡山県岡山市南区万倍９８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7b9d0f3cb9a3",
@@ -3040,7 +4384,15 @@
       "lon": 133.971832,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区飽浦322-1",
-      "geocode_title": "岡山県岡山市南区飽浦３２２番地"
+      "geocode_title": "岡山県岡山市南区飽浦３２２番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-afa52b982904",
@@ -3055,7 +4407,15 @@
       "website": "",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.6897933,
-      "lon": 133.928675
+      "lon": 133.928675,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-a24d210a0029",
@@ -3073,7 +4433,15 @@
       "lon": 133.893982,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大安寺東町1-30",
-      "geocode_title": "岡山県岡山市北区大安寺東町１番３０号"
+      "geocode_title": "岡山県岡山市北区大安寺東町１番３０号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-91d03a876f19",
@@ -3091,7 +4459,15 @@
       "lon": 133.90889,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区富町2-16-27",
-      "geocode_title": "岡山県岡山市北区富町二丁目１６番２７号"
+      "geocode_title": "岡山県岡山市北区富町二丁目１６番２７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-4e2aa03d849f",
@@ -3109,7 +4485,15 @@
       "lon": 133.896332,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今5-8-37",
-      "geocode_title": "岡山県岡山市北区今五丁目８番３７号"
+      "geocode_title": "岡山県岡山市北区今五丁目８番３７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3f47b001d22b",
@@ -3127,7 +4511,15 @@
       "lon": 133.892853,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今7-17-7",
-      "geocode_title": "岡山県岡山市北区今七丁目１７番７号"
+      "geocode_title": "岡山県岡山市北区今七丁目１７番７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-df4975eddd07",
@@ -3145,7 +4537,15 @@
       "lon": 133.892853,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今7-17-7",
-      "geocode_title": "岡山県岡山市北区今七丁目１７番７号"
+      "geocode_title": "岡山県岡山市北区今七丁目１７番７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-4156f1a56818",
@@ -3163,7 +4563,15 @@
       "lon": 133.891876,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今7-22-19",
-      "geocode_title": "岡山県岡山市北区今七丁目２２番１９号"
+      "geocode_title": "岡山県岡山市北区今七丁目２２番１９号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-29c4c0ee76c2",
@@ -3181,7 +4589,15 @@
       "lon": 133.891464,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区今7-23-22",
-      "geocode_title": "岡山県岡山市北区今七丁目２３番２２号"
+      "geocode_title": "岡山県岡山市北区今七丁目２３番２２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b5df3bc5edd4",
@@ -3199,7 +4615,15 @@
       "lon": 133.869888,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区花尻ききょう町7-110 岡嶋ビル1階",
-      "geocode_title": "岡山県岡山市北区花尻ききょう町７番"
+      "geocode_title": "岡山県岡山市北区花尻ききょう町７番",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-2fe1d45b5534",
@@ -3217,7 +4641,15 @@
       "lon": 133.857758,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区平野420-3",
-      "geocode_title": "岡山県岡山市北区平野"
+      "geocode_title": "岡山県岡山市北区平野",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f0b14f7ffb9f",
@@ -3235,7 +4667,15 @@
       "lon": 133.915222,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区伊福町2-30-1",
-      "geocode_title": "岡山県岡山市北区伊福町二丁目３０番１号"
+      "geocode_title": "岡山県岡山市北区伊福町二丁目３０番１号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f34e491ca797",
@@ -3250,7 +4690,15 @@
       "website": "",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.683234,
-      "lon": 133.9126452
+      "lon": 133.9126452,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-7959cce8d39c",
@@ -3268,7 +4716,15 @@
       "lon": 133.943024,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区尾上1318-3",
-      "geocode_title": "岡山県岡山市中区"
+      "geocode_title": "岡山県岡山市中区",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-a7dbd466a40d",
@@ -3286,7 +4742,15 @@
       "lon": 133.943024,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区津高408-1",
-      "geocode_title": "岡山県岡山市中区"
+      "geocode_title": "岡山県岡山市中区",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-326f25d6c66d",
@@ -3304,7 +4768,15 @@
       "lon": 133.945557,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区国富1-10-18",
-      "geocode_title": "岡山県岡山市中区国富一丁目１０番１８号"
+      "geocode_title": "岡山県岡山市中区国富一丁目１０番１８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-b077ad17d0a9",
@@ -3322,7 +4794,15 @@
       "lon": 133.965225,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区沢田490",
-      "geocode_title": "岡山県岡山市中区沢田"
+      "geocode_title": "岡山県岡山市中区沢田",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-0234f726488b",
@@ -3340,7 +4820,15 @@
       "lon": 133.987152,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区長岡67-79",
-      "geocode_title": "岡山県岡山市中区長岡６７番地"
+      "geocode_title": "岡山県岡山市中区長岡６７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-ec78a2401e17",
@@ -3358,7 +4846,15 @@
       "lon": 133.97821,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区乙多見502-4",
-      "geocode_title": "岡山県岡山市中区乙多見"
+      "geocode_title": "岡山県岡山市中区乙多見",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-bcd316608527",
@@ -3376,7 +4872,15 @@
       "lon": 133.945816,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区八幡90-6",
-      "geocode_title": "岡山県岡山市中区八幡９０番地"
+      "geocode_title": "岡山県岡山市中区八幡９０番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-0e9de12c1314",
@@ -3394,7 +4898,15 @@
       "lon": 133.968765,
       "geocode_source": "GSI",
       "geocode_query": "岡山市中区湯迫19-1",
-      "geocode_title": "岡山県岡山市中区湯迫"
+      "geocode_title": "岡山県岡山市中区湯迫",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f41ecfd3ccb2",
@@ -3412,7 +4924,15 @@
       "lon": 133.991486,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区光津840-6",
-      "geocode_title": "岡山県岡山市東区光津"
+      "geocode_title": "岡山県岡山市東区光津",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3e2f6fa23fab",
@@ -3430,7 +4950,15 @@
       "lon": 133.937439,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区福富中2-5-7",
-      "geocode_title": "岡山県岡山市南区福富中二丁目５番７号"
+      "geocode_title": "岡山県岡山市南区福富中二丁目５番７号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-f7dbfcba53c2",
@@ -3448,7 +4976,15 @@
       "lon": 133.938293,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区築港新町1-2-32",
-      "geocode_title": "岡山県岡山市南区築港新町一丁目２番３２号"
+      "geocode_title": "岡山県岡山市南区築港新町一丁目２番３２号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-55a4d937c7b8",
@@ -3466,7 +5002,15 @@
       "lon": 133.925186,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区豊成3-14-36",
-      "geocode_title": "岡山県岡山市南区豊成三丁目１４番３６号"
+      "geocode_title": "岡山県岡山市南区豊成三丁目１４番３６号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-d49048665cc0",
@@ -3484,7 +5028,15 @@
       "lon": 133.928207,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区福田227-8",
-      "geocode_title": "岡山県岡山市南区福田２２７番地"
+      "geocode_title": "岡山県岡山市南区福田２２７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-905bccfc2d51",
@@ -3502,7 +5054,15 @@
       "lon": 133.898972,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区西市503-9",
-      "geocode_title": "岡山県岡山市南区西市"
+      "geocode_title": "岡山県岡山市南区西市",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-a6b304e5b717",
@@ -3520,7 +5080,15 @@
       "lon": 133.910019,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区新保654-3",
-      "geocode_title": "岡山県岡山市南区新保６５４番地"
+      "geocode_title": "岡山県岡山市南区新保６５４番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-044202fc1f12",
@@ -3538,7 +5106,15 @@
       "lon": 133.898972,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区西市443-9",
-      "geocode_title": "岡山県岡山市南区西市"
+      "geocode_title": "岡山県岡山市南区西市",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-63c6371a9718",
@@ -3556,7 +5132,15 @@
       "lon": 133.91188,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区大供本町708-6 (15)",
-      "geocode_title": "岡山県岡山市北区大供本町７０８番地"
+      "geocode_title": "岡山県岡山市北区大供本町７０８番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-72dc65f247df",
@@ -3574,7 +5158,15 @@
       "lon": 133.896622,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区下中野1226-20 (24)",
-      "geocode_title": "岡山県岡山市北区下中野１２２６番地"
+      "geocode_title": "岡山県岡山市北区下中野１２２６番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-3b5848e566d0",
@@ -3592,7 +5184,15 @@
       "lon": 133.859085,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区平野857-4 (10)",
-      "geocode_title": "岡山県岡山市北区平野８５７番地"
+      "geocode_title": "岡山県岡山市北区平野８５７番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-216eaec81e29",
@@ -3610,7 +5210,15 @@
       "lon": 133.917023,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区伊福町2-17-5 (20)",
-      "geocode_title": "岡山県岡山市北区伊福町二丁目１７番５号"
+      "geocode_title": "岡山県岡山市北区伊福町二丁目１７番５号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-694167f784c4",
@@ -3628,7 +5236,15 @@
       "lon": 133.822311,
       "geocode_source": "GSI",
       "geocode_query": "岡山市北区高松原古才594-1 (13)",
-      "geocode_title": "岡山県岡山市北区高松原古才"
+      "geocode_title": "岡山県岡山市北区高松原古才",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-260135a21617",
@@ -3646,7 +5262,15 @@
       "lon": 133.998596,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区中川町393-1 (10)",
-      "geocode_title": "岡山県岡山市東区中川町３９３番地"
+      "geocode_title": "岡山県岡山市東区中川町３９３番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-deb6fc9b9832",
@@ -3664,7 +5288,15 @@
       "lon": 134.025497,
       "geocode_source": "GSI",
       "geocode_query": "岡山市東区中尾1036 (6)",
-      "geocode_title": "岡山県岡山市東区中尾１０３６番地"
+      "geocode_title": "岡山県岡山市東区中尾１０３６番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-de68cfb6b3b6",
@@ -3682,7 +5314,15 @@
       "lon": 133.879807,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区東畦651-19 (5)",
-      "geocode_title": "岡山県岡山市南区東畦６５１番地"
+      "geocode_title": "岡山県岡山市南区東畦６５１番地",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     },
     {
       "id": "oky-00988b6a1b66",
@@ -3700,7 +5340,15 @@
       "lon": 133.943924,
       "geocode_source": "GSI",
       "geocode_query": "岡山市南区築港栄町2-28 (5)",
-      "geocode_title": "岡山県岡山市南区築港栄町２番２８号"
+      "geocode_title": "岡山県岡山市南区築港栄町２番２８号",
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "website_status": "unchecked",
+      "official_info_url": ""
     }
   ],
   "geocoded_at": "2026-09-29 08:28",
