@@ -1,0 +1,33 @@
+name: Install home application flow
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install application flow section
+        run: python scripts/install_home_application_flow.py
+      - name: Commit changes
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -- index.html css/home-application-flow.css
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "feat: replace home features with application flow"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
