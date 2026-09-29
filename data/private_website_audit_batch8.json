@@ -1,0 +1,310 @@
+{
+  "generated_at": "2026-09-29T06:46:14",
+  "batch": 8,
+  "target_count": 25,
+  "verified_count": 25,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-2250a4445aaa",
+      "name": "弘西こども園",
+      "ward": "北区",
+      "before": {
+        "name": "弘西こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.kids-nakayoshi.jp/kosai/",
+      "evidence": "https://www.kids-nakayoshi.jp/kosai/annai/index.html"
+    },
+    {
+      "id": "oky-7086b448378f",
+      "name": "蓮昌寺こども園",
+      "ward": "北区",
+      "before": {
+        "name": "蓮昌寺こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.renjyojikodomoen.or.jp/",
+      "evidence": "https://www.renjyojikodomoen.or.jp/"
+    },
+    {
+      "id": "oky-1ec5f2fb469d",
+      "name": "若草幼児舎",
+      "ward": "北区",
+      "before": {
+        "name": "若草幼児舎",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://wakakusa.kawada.or.jp/",
+      "evidence": "https://wakakusa.kawada.or.jp/introduction.html"
+    },
+    {
+      "id": "oky-6b45f387a5ff",
+      "name": "じゅんせい認定こども園",
+      "ward": "北区",
+      "before": {
+        "name": "じゅんせい認定こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.junsei-hoikuen.jp/",
+      "evidence": "https://www.junsei-hoikuen.jp/"
+    },
+    {
+      "id": "oky-9b4d603a4f34",
+      "name": "京山こども園",
+      "ward": "北区",
+      "before": {
+        "name": "京山こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://kyo-yama.com/",
+      "evidence": "https://kyo-yama.com/"
+    },
+    {
+      "id": "oky-fc209de84894",
+      "name": "認定こども園 白ゆり",
+      "ward": "北区",
+      "before": {
+        "name": "認定こども園 白ゆり",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.shirayurikai.com/shirayurihoiku/",
+      "evidence": "https://www.shirayurikai.com/shirayurihoiku/pages/about/index.html"
+    },
+    {
+      "id": "oky-2bc13a27977c",
+      "name": "第三吉備こども園",
+      "ward": "北区",
+      "before": {
+        "name": "第三吉備こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://daisan.kibifukushikai.jp/",
+      "evidence": "https://daisan.kibifukushikai.jp/"
+    },
+    {
+      "id": "oky-143c43f91014",
+      "name": "ポエムこども園ひらつ",
+      "ward": "北区",
+      "before": {
+        "name": "ポエムこども園ひらつ",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.okayama-junshinkai.co.jp/facility/nursery/poem2",
+      "evidence": "https://www.okayama-junshinkai.co.jp/facility/nursery/poem2"
+    },
+    {
+      "id": "oky-d9e5f770e7b7",
+      "name": "馬屋下まんまるこども園",
+      "ward": "北区",
+      "before": {
+        "name": "馬屋下まんまるこども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://mayashimo-manmaru.com/",
+      "evidence": "https://mayashimo-manmaru.com/admission/"
+    },
+    {
+      "id": "oky-f7d2740b7f23",
+      "name": "認定こども園 白ゆりの丘",
+      "ward": "北区",
+      "before": {
+        "name": "認定こども園 白ゆりの丘",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.shirayurikai.com/shirayurinooka/",
+      "evidence": "https://www.shirayurikai.com/shirayurinooka/"
+    },
+    {
+      "id": "oky-87b331929732",
+      "name": "つしま幼稚園",
+      "ward": "北区",
+      "before": {
+        "name": "つしま幼稚園",
+        "website": "https://oomorigakuen.ed.jp/",
+        "website_status": "verified"
+      },
+      "website": "https://oomorigakuen.ed.jp/",
+      "evidence": "https://oomorigakuen.ed.jp/"
+    },
+    {
+      "id": "oky-a24d210a0029",
+      "name": "聖さくら学院保育園",
+      "ward": "北区",
+      "before": {
+        "name": "聖さくら学院保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.sento-sakura.com/gakuin/",
+      "evidence": "https://www.sento-sakura.com/gakuin/"
+    },
+    {
+      "id": "oky-b5df3bc5edd4",
+      "name": "聖さくら第二保育園",
+      "ward": "北区",
+      "before": {
+        "name": "聖さくら第二保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.sento-sakura.com/hoikuen-02/",
+      "evidence": "https://www.sento-sakura.com/hoikuen-02/"
+    },
+    {
+      "id": "oky-29c4c0ee76c2",
+      "name": "ニチイキッズいま保育園",
+      "ward": "北区",
+      "before": {
+        "name": "ニチイキッズいま保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.nichiikids.net/nursery/ima/",
+      "evidence": "https://www.nichiikids.net/nursery/ima/introduction/overview/"
+    },
+    {
+      "id": "oky-663bc680c665",
+      "name": "きらめき六区こども園",
+      "ward": "南区",
+      "before": {
+        "name": "（仮称）きらめき六区こども園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://tsukushi-fukushi.com/rokku/",
+      "evidence": "https://tsukushi-fukushi.com/rokku/overview.php"
+    },
+    {
+      "id": "oky-0234f726488b",
+      "name": "小規模保育園あかとんぼ",
+      "ward": "中区",
+      "before": {
+        "name": "小規模保育園あかとんぼ",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://akatonbo-hoikuen.com/",
+      "evidence": "https://akatonbo-hoikuen.com/more.html"
+    },
+    {
+      "id": "oky-bcd316608527",
+      "name": "小規模保育園あかとんぼ第二園",
+      "ward": "中区",
+      "before": {
+        "name": "小規模保育園あかとんぼ第二園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://akatonbo-hoikuen.com/",
+      "evidence": "https://akatonbo-hoikuen.com/more.html"
+    },
+    {
+      "id": "oky-4e2aa03d849f",
+      "name": "ソラ小規模保育園おかやま",
+      "ward": "北区",
+      "before": {
+        "name": "ソラ小規模保育園おかやま",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://sora-hoikuen.jp/kakuen.html",
+      "evidence": "https://sora-hoikuen.jp/kakuen.html"
+    },
+    {
+      "id": "oky-4156f1a56818",
+      "name": "ソラ小規模保育園いま",
+      "ward": "北区",
+      "before": {
+        "name": "ソラ小規模保育園いま",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://sora-hoikuen.jp/kakuen.html",
+      "evidence": "https://sora-hoikuen.jp/kakuen.html"
+    },
+    {
+      "id": "oky-d49048665cc0",
+      "name": "ソラ小規模保育園ふくだ",
+      "ward": "南区",
+      "before": {
+        "name": "ソラ小規模保育園ふくだ",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://sora-hoikuen.jp/kakuen.html",
+      "evidence": "https://sora-hoikuen.jp/kakuen.html"
+    },
+    {
+      "id": "oky-3e2f6fa23fab",
+      "name": "キッズガーデン白ゆり",
+      "ward": "南区",
+      "before": {
+        "name": "キッズガーデン白ゆり",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.shirayurikai.com/kidsgarden/",
+      "evidence": "https://www.shirayurikai.com/kidsgarden/"
+    },
+    {
+      "id": "oky-f34e491ca797",
+      "name": "つしまおひさま保育園",
+      "ward": "北区",
+      "before": {
+        "name": "つしまおひさま保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://oomorigakuen.ed.jp/hoikuen/",
+      "evidence": "https://oomorigakuen.ed.jp/hoikuen/"
+    },
+    {
+      "id": "oky-044202fc1f12",
+      "name": "きらきら小規模保育園西市",
+      "ward": "南区",
+      "before": {
+        "name": "きらきら小規模保育園西市",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.kirakira-hoikuen.com/introduction/index_3.html",
+      "evidence": "https://www.kirakira-hoikuen.com/introduction/index_3.html"
+    },
+    {
+      "id": "oky-f0b14f7ffb9f",
+      "name": "白ゆり小規模保育園",
+      "ward": "北区",
+      "before": {
+        "name": "白ゆり小規模保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.shirayurikai.com/syokibohoiku/",
+      "evidence": "https://www.shirayurikai.com/syokibohoiku/"
+    },
+    {
+      "id": "oky-f7dbfcba53c2",
+      "name": "すくすくランド・ポストメイト保育園",
+      "ward": "南区",
+      "before": {
+        "name": "すくすくランド・ポストメイト保育園",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://postmate.jp/nursery/307.html",
+      "evidence": "https://postmate.jp/nursery/307.html"
+    }
+  ],
+  "errors": []
+}

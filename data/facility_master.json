@@ -2474,7 +2474,7 @@
       "postal": "700-0817",
       "address": "岡山市北区弓之町9-2",
       "phone": "086-222-8490",
-      "website": "",
+      "website": "https://www.kids-nakayoshi.jp/kosai/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.669922,
       "lon": 133.927841,
@@ -2487,11 +2487,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.kids-nakayoshi.jp/kosai/annai/index.html"
     },
     {
       "id": "oky-7086b448378f",
@@ -2503,7 +2505,7 @@
       "postal": "700-0825",
       "address": "岡山市北区田町1-4-12",
       "phone": "086-222-4580",
-      "website": "",
+      "website": "https://www.renjyojikodomoen.or.jp/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.661633,
       "lon": 133.925491,
@@ -2516,11 +2518,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.renjyojikodomoen.or.jp/"
     },
     {
       "id": "oky-b762d2b14de0",
@@ -2616,7 +2620,7 @@
       "postal": "700-0003",
       "address": "岡山市北区半田町8-2",
       "phone": "086-228-1507",
-      "website": "",
+      "website": "https://www.junsei-hoikuen.jp/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.696163,
       "lon": 133.933517,
@@ -2629,11 +2633,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.junsei-hoikuen.jp/"
     },
     {
       "id": "oky-1ec5f2fb469d",
@@ -2645,7 +2651,7 @@
       "postal": "700-0031",
       "address": "岡山市北区富町2-14-9",
       "phone": "086-254-5111",
-      "website": "",
+      "website": "https://wakakusa.kawada.or.jp/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.664604,
       "lon": 133.908966,
@@ -2658,11 +2664,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://wakakusa.kawada.or.jp/introduction.html"
     },
     {
       "id": "oky-f429c8d7fe8c",
@@ -3008,7 +3016,7 @@
       "postal": "701-0135",
       "address": "岡山市北区東花尻121-1",
       "phone": "086-293-5757",
-      "website": "",
+      "website": "https://daisan.kibifukushikai.jp/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.654747,
       "lon": 133.862961,
@@ -3021,11 +3029,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://daisan.kibifukushikai.jp/"
     },
     {
       "id": "oky-f950767f5dfe",
@@ -3186,7 +3196,7 @@
       "postal": "700-0084",
       "address": "岡山市北区津島桑の木町1-33",
       "phone": "086-251-2121",
-      "website": "",
+      "website": "https://kyo-yama.com/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.685215,
       "lon": 133.911163,
@@ -3199,11 +3209,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://kyo-yama.com/"
     },
     {
       "id": "oky-e76722631c72",
@@ -3245,7 +3257,7 @@
       "postal": "701-1214",
       "address": "岡山市北区辛川市場321-1",
       "phone": "086-284-4272",
-      "website": "",
+      "website": "https://www.shirayurikai.com/shirayurihoiku/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.687,
       "lon": 133.865005,
@@ -3258,11 +3270,13 @@
         "holiday": true,
         "support_center": true
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.shirayurikai.com/shirayurihoiku/pages/about/index.html"
     },
     {
       "id": "oky-143c43f91014",
@@ -3274,7 +3288,7 @@
       "postal": "701-1202",
       "address": "岡山市北区楢津385-1",
       "phone": "086-236-8220",
-      "website": "",
+      "website": "https://www.okayama-junshinkai.co.jp/facility/nursery/poem2",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.684177,
       "lon": 133.88562,
@@ -3287,11 +3301,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.okayama-junshinkai.co.jp/facility/nursery/poem2"
     },
     {
       "id": "oky-d9e5f770e7b7",
@@ -3303,7 +3319,7 @@
       "postal": "701-1223",
       "address": "岡山市北区大窪50-1",
       "phone": "086-259-3666",
-      "website": "",
+      "website": "https://mayashimo-manmaru.com/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.69672,
       "lon": 133.849854,
@@ -3316,11 +3332,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://mayashimo-manmaru.com/admission/"
     },
     {
       "id": "oky-de41a38b5c74",
@@ -3363,7 +3381,7 @@
       "postal": "701-1133",
       "address": "岡山市北区富吉2945-7",
       "phone": "086-294-5511",
-      "website": "",
+      "website": "https://www.shirayurikai.com/shirayurinooka/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.734905,
       "lon": 133.862778,
@@ -3376,11 +3394,13 @@
         "holiday": true,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.shirayurikai.com/shirayurinooka/"
     },
     {
       "id": "oky-9ef6a782a4e8",
@@ -4803,7 +4823,7 @@
     },
     {
       "id": "oky-663bc680c665",
-      "name": "（仮称）きらめき六区こども園",
+      "name": "きらめき六区こども園",
       "category": "認定こども園",
       "ward": "南区",
       "source_pdf_page": 7,
@@ -4811,7 +4831,7 @@
       "postal": "701-0221",
       "address": "岡山市南区藤田1729-1",
       "phone": "086-472-5251",
-      "website": "",
+      "website": "https://tsukushi-fukushi.com/rokku/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.586647,
       "lon": 133.894623,
@@ -4824,11 +4844,13 @@
         "holiday": false,
         "support_center": true
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://tsukushi-fukushi.com/rokku/overview.php"
     },
     {
       "id": "oky-3ccf4db5d2dd",
@@ -5105,7 +5127,7 @@
       "postal": "700-0063",
       "address": "岡山市北区大安寺東町1-30",
       "phone": "086-728-0063",
-      "website": "",
+      "website": "https://www.sento-sakura.com/gakuin/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.662815,
       "lon": 133.893982,
@@ -5118,11 +5140,13 @@
         "holiday": true,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.sento-sakura.com/gakuin/"
     },
     {
       "id": "oky-91d03a876f19",
@@ -5163,7 +5187,7 @@
       "postal": "700-0975",
       "address": "岡山市北区今5-8-37",
       "phone": "086-250-5610",
-      "website": "",
+      "website": "https://sora-hoikuen.jp/kakuen.html",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.644833,
       "lon": 133.896332,
@@ -5176,11 +5200,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://sora-hoikuen.jp/kakuen.html"
     },
     {
       "id": "oky-3f47b001d22b",
@@ -5254,7 +5280,7 @@
       "postal": "700-0975",
       "address": "岡山市北区今7-22-19",
       "phone": "086-242-4811",
-      "website": "",
+      "website": "https://sora-hoikuen.jp/kakuen.html",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.640068,
       "lon": 133.891876,
@@ -5267,11 +5293,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://sora-hoikuen.jp/kakuen.html"
     },
     {
       "id": "oky-29c4c0ee76c2",
@@ -5283,7 +5311,7 @@
       "postal": "700-0975",
       "address": "岡山市北区今7-23-22",
       "phone": "086-242-2015",
-      "website": "",
+      "website": "https://www.nichiikids.net/nursery/ima/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.6422,
       "lon": 133.891464,
@@ -5296,11 +5324,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.nichiikids.net/nursery/ima/introduction/overview/"
     },
     {
       "id": "oky-b5df3bc5edd4",
@@ -5312,7 +5342,7 @@
       "postal": "701-0132",
       "address": "岡山市北区花尻ききょう町7-110 岡嶋ビル1階",
       "phone": "086-251-3000",
-      "website": "",
+      "website": "https://www.sento-sakura.com/hoikuen-02/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.658543,
       "lon": 133.869888,
@@ -5325,11 +5355,13 @@
         "holiday": true,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.sento-sakura.com/hoikuen-02/"
     },
     {
       "id": "oky-2fe1d45b5534",
@@ -5370,7 +5402,7 @@
       "postal": "700-0013",
       "address": "岡山市北区伊福町2-30-1",
       "phone": "086-238-0520",
-      "website": "",
+      "website": "https://www.shirayurikai.com/syokibohoiku/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.675083,
       "lon": 133.915222,
@@ -5383,11 +5415,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.shirayurikai.com/syokibohoiku/"
     },
     {
       "id": "oky-f34e491ca797",
@@ -5399,7 +5433,7 @@
       "postal": "700-0085",
       "address": "岡山市北区津島南1-1-9",
       "phone": "086-239-6564",
-      "website": "",
+      "website": "https://oomorigakuen.ed.jp/hoikuen/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.683234,
       "lon": 133.9126452,
@@ -5409,11 +5443,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://oomorigakuen.ed.jp/hoikuen/"
     },
     {
       "id": "oky-7959cce8d39c",
@@ -5541,7 +5577,7 @@
       "postal": "703-8221",
       "address": "岡山市中区長岡67-79",
       "phone": "086-206-2716",
-      "website": "",
+      "website": "https://akatonbo-hoikuen.com/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.684017,
       "lon": 133.987152,
@@ -5554,11 +5590,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://akatonbo-hoikuen.com/more.html"
     },
     {
       "id": "oky-ec78a2401e17",
@@ -5599,7 +5637,7 @@
       "postal": "703-8254",
       "address": "岡山市中区八幡90-6",
       "phone": "086-201-3246",
-      "website": "",
+      "website": "https://akatonbo-hoikuen.com/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.685017,
       "lon": 133.945816,
@@ -5612,11 +5650,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://akatonbo-hoikuen.com/more.html"
     },
     {
       "id": "oky-0e9de12c1314",
@@ -5686,7 +5726,7 @@
       "postal": "702-8032",
       "address": "岡山市南区福富中2-5-7",
       "phone": "086-230-7277",
-      "website": "",
+      "website": "https://www.shirayurikai.com/kidsgarden/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.6227,
       "lon": 133.937439,
@@ -5699,11 +5739,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.shirayurikai.com/kidsgarden/"
     },
     {
       "id": "oky-f7dbfcba53c2",
@@ -5715,7 +5757,7 @@
       "postal": "702-8056",
       "address": "岡山市南区築港新町1-2-32",
       "phone": "086-261-4115",
-      "website": "",
+      "website": "https://postmate.jp/nursery/307.html",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.609062,
       "lon": 133.938293,
@@ -5728,11 +5770,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://postmate.jp/nursery/307.html"
     },
     {
       "id": "oky-55a4d937c7b8",
@@ -5773,7 +5817,7 @@
       "postal": "702-8021",
       "address": "岡山市南区福田227-8",
       "phone": "086-230-6261",
-      "website": "",
+      "website": "https://sora-hoikuen.jp/kakuen.html",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.619991,
       "lon": 133.928207,
@@ -5786,11 +5830,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://sora-hoikuen.jp/kakuen.html"
     },
     {
       "id": "oky-905bccfc2d51",
@@ -5860,7 +5906,7 @@
       "postal": "700-0953",
       "address": "岡山市南区西市443-9",
       "phone": "086-230-7501",
-      "website": "",
+      "website": "https://www.kirakira-hoikuen.com/introduction/index_3.html",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.632553,
       "lon": 133.898972,
@@ -5873,11 +5919,13 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.kirakira-hoikuen.com/introduction/index_3.html"
     },
     {
       "id": "oky-63c6371a9718",
