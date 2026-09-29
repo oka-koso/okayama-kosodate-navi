@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-09-29T07:09:05",
+  "batch": 11,
+  "target_count": 16,
+  "verified_count": 16,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-8bf4f5cc8f77",
+      "name": "操南保育園(分園)",
+      "before": {
+        "name": "操南保育園(分園)",
+        "phone": "086-277-6660",
+        "address": "岡山市中区江崎380-1",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "http://sounan.jp/",
+      "evidence": "http://sounan.jp/"
+    },
+    {
+      "id": "oky-5d696eff342a",
+      "name": "岡山聖園マリア幼稚園",
+      "before": {
+        "name": "（仮称）岡山聖園マリア幼稚園",
+        "phone": "086-223-6447",
+        "address": "岡山市北区天神町6-34 クラス～",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://misonogakuen.ed.jp/maria/",
+      "evidence": "https://misonogakuen.ed.jp/maria/"
+    },
+    {
+      "id": "oky-f429c8d7fe8c",
+      "name": "こじかこども園",
+      "before": {
+        "name": "こじかこども園",
+        "phone": "086-226-2071",
+        "address": "岡山市北区大供本町715-5",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://kojika-okayama.ed.jp/",
+      "evidence": "https://kojika-okayama.ed.jp/"
+    },
+    {
+      "id": "oky-1f720255b07c",
+      "name": "ふたばこども園",
+      "before": {
+        "name": "ふたばこども園",
+        "phone": "086-805-1313",
+        "address": "岡山市北区平田122-102",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://futaba-okayama.ed.jp/",
+      "evidence": "https://futaba-okayama.ed.jp/"
+    },
+    {
+      "id": "oky-f950767f5dfe",
+      "name": "撫川ちとせこども園",
+      "before": {
+        "name": "（仮称）たねのくに ちとせこども園",
+        "phone": "086-293-1161",
+        "address": "岡山市北区中撫川351",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.chitosek.or.jp/preschools/natsukawa",
+      "evidence": "https://www.chitosek.or.jp/preschools/natsukawa"
+    },
+    {
+      "id": "oky-210bccc4e2e5",
+      "name": "岡山博愛会認定こども園",
+      "before": {
+        "name": "岡山博愛会認定こども園",
+        "phone": "086-272-0160",
+        "address": "岡山市中区御幸町4-12",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.okayama-hakuaikai.or.jp/hakuaikai/nursery/",
+      "evidence": "https://www.okayama-hakuaikai.or.jp/hakuaikai/nursery/"
+    },
+    {
+      "id": "oky-af1ea3b22f80",
+      "name": "原尾島こども園",
+      "before": {
+        "name": "原尾島こども園",
+        "phone": "086-273-2730",
+        "address": "岡山市中区原尾島1-7-5",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.chitosek.or.jp/preschools/haraoshima",
+      "evidence": "https://www.chitosek.or.jp/preschools/haraoshima"
+    },
+    {
+      "id": "oky-a9b154c54514",
+      "name": "東岡山IPUこども園",
+      "before": {
+        "name": "東岡山IPUこども園",
+        "phone": "086-206-4150",
+        "address": "岡山市中区長岡4-108",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://genkinoizumi.ed.jp/okayama/",
+      "evidence": "https://genkinoizumi.ed.jp/okayama/"
+    },
+    {
+      "id": "oky-b5ce04971cbb",
+      "name": "ちとせ認定こども園",
+      "before": {
+        "name": "ちとせ認定こども園",
+        "phone": "086-942-6145",
+        "address": "岡山市東区益野町40",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.chitosek.or.jp/preschools/chitose",
+      "evidence": "https://www.chitosek.or.jp/preschools/chitose"
+    },
+    {
+      "id": "oky-92e89fe0f4fb",
+      "name": "しいのみこども園",
+      "before": {
+        "name": "しいのみこども園",
+        "phone": "086-279-9850",
+        "address": "岡山市東区上道北方590",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://nozomi-kinder.ed.jp/",
+      "evidence": "https://nozomi-kinder.ed.jp/"
+    },
+    {
+      "id": "oky-6e897ebf054a",
+      "name": "浮田とちのみこども園",
+      "before": {
+        "name": "浮田とちのみこども園",
+        "phone": "086-206-1511",
+        "address": "岡山市東区沼1188-1",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://konominoki.ed.jp/tochinomi/",
+      "evidence": "https://konominoki.ed.jp/tochinomi/"
+    },
+    {
+      "id": "oky-c81757e30b10",
+      "name": "芳明こども園",
+      "before": {
+        "name": "（仮称）芳明こども園",
+        "phone": "0866-92-6989",
+        "address": "岡山市南区万倍98",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.keizankai.or.jp/hoiku/houmei-kodomoen/",
+      "evidence": "https://www.keizankai.or.jp/hoiku/houmei-kodomoen/"
+    },
+    {
+      "id": "oky-0e9de12c1314",
+      "name": "小規模保育園しらかば",
+      "before": {
+        "name": "小規模保育園しらかば",
+        "phone": "086-201-8797",
+        "address": "岡山市中区湯迫19-1",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "http://www.shirakaba-kai.com/shota.html",
+      "evidence": "http://www.shirakaba-kai.com/shota.html"
+    },
+    {
+      "id": "oky-694167f784c4",
+      "name": "たかまつすくすく保育園",
+      "before": {
+        "name": "たかまつすくすく保育園",
+        "phone": "086-287-2660",
+        "address": "岡山市北区高松原古才594-1 (13)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://gifukai.jp/facilities/sukusuku.html",
+      "evidence": "https://gifukai.jp/facilities/sukusuku.html"
+    },
+    {
+      "id": "oky-de68cfb6b3b6",
+      "name": "ほほえみ保育園",
+      "before": {
+        "name": "ほほえみ保育園",
+        "phone": "086-282-9309",
+        "address": "岡山市南区東畦651-19 (5)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://hoiku.medical-jiyukai.jp/",
+      "evidence": "https://hoiku.medical-jiyukai.jp/"
+    },
+    {
+      "id": "oky-00988b6a1b66",
+      "name": "さとちゃん保育園",
+      "before": {
+        "name": "さとちやん保育園",
+        "phone": "086-263-6659",
+        "address": "岡山市南区築港栄町2-28 (5)",
+        "website": "",
+        "website_status": "unchecked"
+      },
+      "website": "https://www.sato-hp.com/meihoukai/hoikuen",
+      "evidence": "https://www.sato-hp.com/meihoukai/hoikuen"
+    }
+  ],
+  "errors": []
+}

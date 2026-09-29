@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-09-29T07:09:05",
+  "private_total": 156,
+  "private_verified": 142,
+  "remaining_count": 14,
+  "remaining": [
+    {
+      "id": "oky-a180daa6c959",
+      "name": "共生保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "700-0903",
+      "address": "岡山市北区幸町10-40",
+      "phone": "086-803-3232",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-c9203aa946fd",
+      "name": "加茂こども園",
+      "category": "認定こども園",
+      "ward": "北区",
+      "postal": "701-1342",
+      "address": "岡山市北区加茂1104-1",
+      "phone": "086-287-5551",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-862ccd1c91a1",
+      "name": "富田保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "700-0936",
+      "address": "岡山市北区富田74",
+      "phone": "086-223-0872",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-c0388f0bb7a0",
+      "name": "深柢保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "700-0821",
+      "address": "岡山市北区中山下2-7-45",
+      "phone": "086-234-4150",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-6af4f50817f8",
+      "name": "牧石保育園",
+      "category": "認可保育園",
+      "ward": "北区",
+      "postal": "701-2142",
+      "address": "岡山市北区玉柏2203-1",
+      "phone": "086-228-0631",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-b4ce2044c16e",
+      "name": "とみやまこども園",
+      "category": "認定こども園",
+      "ward": "中区",
+      "postal": "703-8262",
+      "address": "岡山市中区福泊138-2",
+      "phone": "086-277-7662",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-26ce7b7ab03c",
+      "name": "朝日保育園",
+      "category": "認可保育園",
+      "ward": "中区",
+      "postal": "703-8227",
+      "address": "岡山市中区兼基247",
+      "phone": "086-278-1881",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-c8aebac17abf",
+      "name": "竜之口こども園",
+      "category": "認定こども園",
+      "ward": "中区",
+      "postal": "703-8203",
+      "address": "岡山市中区国府市場721-2",
+      "phone": "086-279-4318",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-deb6fc9b9832",
+      "name": "ほかほか保育園",
+      "category": "地域型保育事業（事業所内）",
+      "ward": "東区",
+      "postal": "709-0626",
+      "address": "岡山市東区中尾1036 (6)",
+      "phone": "086-297-7676",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-97fb1f945ade",
+      "name": "益野保育園",
+      "category": "認可保育園",
+      "ward": "東区",
+      "postal": "704-8173",
+      "address": "岡山市東区可知3-7-21",
+      "phone": "086-942-4382",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-8372800aaa77",
+      "name": "かわい保育園",
+      "category": "認可保育園",
+      "ward": "南区",
+      "postal": "702-8027",
+      "address": "岡山市南区芳泉3-4-5",
+      "phone": "086-264-8633",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-73a2b33b3b99",
+      "name": "しろばら保育園",
+      "category": "認可保育園",
+      "ward": "南区",
+      "postal": "700-0945",
+      "address": "岡山市南区新保417-1",
+      "phone": "086-223-7637",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-283b642b9f61",
+      "name": "ひばり保育園",
+      "category": "認可保育園",
+      "ward": "南区",
+      "postal": "702-8021",
+      "address": "岡山市南区福田715-3",
+      "phone": "086-259-1154",
+      "website": "",
+      "website_status": "unchecked"
+    },
+    {
+      "id": "oky-bd718a3906e7",
+      "name": "みどり町保育園",
+      "category": "認可保育園",
+      "ward": "南区",
+      "postal": "702-8055",
+      "address": "岡山市南区築港緑町1-1-7 230",
+      "phone": "086-262-3300",
+      "website": "",
+      "website_status": "unchecked"
+    }
+  ]
+}
