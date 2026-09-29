@@ -1,0 +1,40 @@
+.score-section{padding:28px 0 46px}
+.score-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:22px;align-items:start}
+.score-main{min-width:0}.score-notice{margin-bottom:18px}
+.score-error{padding:15px 18px;border-radius:14px;background:#fff0ee;border:1px solid #e8b9b3;color:#8a3d36;margin-bottom:16px}
+.score-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;margin:0 0 16px;box-shadow:0 7px 22px rgba(44,74,63,.045)}
+.score-card-title{display:flex;gap:13px;align-items:flex-start;margin-bottom:18px}
+.score-card-title h2{font-size:21px;line-height:1.4;margin:0}.score-card-title p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.score-step{flex:0 0 34px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--brand);color:#fff;font-weight:900}
+.field-label{display:block;font-weight:800;margin:13px 0 6px}
+.score-control{width:100%;min-height:48px;border:1px solid #cbd9d3;border-radius:12px;background:#fff;padding:8px 12px;font:inherit;color:var(--ink)}
+.guardian-detail{margin-top:12px}.base-preview{margin-top:13px;padding:10px 13px;border-radius:11px;background:var(--surface2);font-weight:900;color:var(--brand-dark)}
+.detail-note,.field-note{font-size:12px;color:var(--muted);margin:7px 2px 0}
+.choice-line{display:flex;gap:11px;align-items:flex-start;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fbfdfc;cursor:pointer}
+.choice-line input{width:19px;height:19px;margin-top:3px;accent-color:var(--brand);flex:0 0 auto}
+.choice-line span{display:grid;gap:2px}.choice-line small{color:var(--muted);line-height:1.55}
+.strong-choice{background:#f4fbf7}.warning-choice{margin-top:17px;background:#fff8e9;border-color:#f2d89d}
+.absence-box{display:grid;gap:4px;padding:15px;border-radius:14px;background:#f4fbf7;border:1px solid #cfe5da}.absence-box span{font-size:13px;color:var(--muted)}
+.adjust-grid{display:grid;gap:9px}.adjust-group{margin-top:14px}
+.calc-actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.score-calc-btn,.score-reset-btn{min-height:50px;border-radius:13px;padding:0 20px;font:inherit;font-weight:900;cursor:pointer}
+.score-calc-btn{border:1px solid var(--brand);background:var(--brand);color:#fff;flex:1;min-width:210px}
+.score-reset-btn{border:1px solid var(--line);background:#fff;color:var(--ink)}
+.score-result-wrap{position:sticky;top:92px}
+.score-result{background:#fff;border:1px solid var(--line);border-radius:24px;padding:23px;box-shadow:var(--shadow)}
+.result-kicker{font-size:12px;font-weight:900;color:var(--brand-dark);letter-spacing:.08em}
+.result-total{display:flex;align-items:baseline;gap:5px;margin:2px 0 12px;color:var(--brand-dark)}
+.result-total span{font-size:64px;line-height:1;font-weight:950;letter-spacing:-.05em}.result-total small{font-size:18px;font-weight:900}
+.result-breakdown{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.result-breakdown div{padding:10px;border-radius:12px;background:#f5f8f6;display:grid;gap:1px}
+.result-breakdown span{font-size:11px;color:var(--muted)}.result-breakdown strong{font-size:20px}
+.result-message{margin-top:13px;font-size:13px;color:var(--muted)}
+.result-details{margin-top:13px;border-top:1px solid var(--line);padding-top:10px}
+.result-details:empty{display:none}.result-line{display:flex;justify-content:space-between;gap:12px;padding:6px 0;font-size:13px;border-bottom:1px dashed #e7ece9}
+.result-line:last-child{border:0}.result-line strong{white-space:nowrap}
+.result-warning{padding:10px 12px;border-radius:11px;background:#fff8e9;color:#775319;font-size:12px;margin-top:9px}
+.score-info-section{padding:10px 0 58px}.score-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.score-info-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:21px}
+.score-info-card h2{font-size:20px;margin:0 0 8px}.score-info-card p,.score-info-card li{font-size:14px}.score-info-card ol{padding-left:24px;margin-bottom:0}
+@media(max-width:900px){.score-layout{grid-template-columns:1fr}.score-result-wrap{position:static}.score-result{border:2px solid #cfe5da}.score-info-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.score-card{padding:17px}.score-card-title h2{font-size:19px}.result-total span{font-size:56px}.calc-actions{display:grid}.score-reset-btn{width:100%}}
