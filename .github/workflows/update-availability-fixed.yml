@@ -1,4 +1,4 @@
-name: Update fixed childcare availability v3.2
+name: Update childcare availability (monthly + April)
 
 on:
   workflow_dispatch:
@@ -23,23 +23,38 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 pdfplumber
 
-      - name: Match availability to fixed master
-        run: python scripts/update_availability_fixed.py
+      - name: Update monthly and April availability
+        id: availability
+        continue-on-error: true
+        run: python scripts/update_availability_dual.py
 
       - name: Commit audited availability
+        if: always()
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
 
-          git add \
+          for f in \
             data/availability_fixed.json \
-            data/availability_fixed_audit.json
+            data/availability_fixed_audit.json \
+            data/availability_monthly.json \
+            data/availability_monthly_audit.json \
+            data/availability_april.json \
+            data/availability_april_audit.json \
+            data/availability_dual_discovery_audit.json
+          do
+            [ -f "$f" ] && git add "$f"
+          done
 
           if git diff --cached --quiet; then
             echo "No availability changes"
             exit 0
           fi
 
-          git commit -m "data: update audited childcare availability v3.2"
+          git commit -m "data: update monthly and April childcare availability"
           git pull --rebase origin main
           git push origin main
+
+      - name: Fail if availability parser failed
+        if: steps.availability.outcome != 'success'
+        run: exit 1
