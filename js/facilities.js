@@ -3,6 +3,9 @@ let map;
 let markers = [];
 let markerById = new Map();
 
+let availabilityDatasets = {};
+let activeAvailabilityKey = 'monthly';
+
 const $ = (selector) => document.querySelector(selector);
 
 const WARD_COLORS = {
@@ -172,6 +175,138 @@ function wardPinIcon(ward) {
   });
 }
 
+async function fetchJsonIfExists(url) {
+  try {
+    const resp = await fetch(url, { cache: 'no-store' });
+    if (!resp.ok) return null;
+    return await resp.json();
+  } catch (_) {
+    return null;
+  }
+}
+
+function reiwaToGregorian(reiwaYear) {
+  const n = Number(String(reiwaYear || '').replace(/[^0-9]/g, ''));
+  return Number.isFinite(n) && n > 0 ? 2018 + n : null;
+}
+
+function aprilDatasetIsRelevant(dataset) {
+  if (!dataset || !dataset.by_facility_id) return false;
+
+  const text = String(dataset.availability_for || '');
+  const m = text.match(/令和\s*([0-9０-９]+)年\s*4月/);
+  if (!m) return /4月/.test(text);
+
+  const normalized = m[1].replace(/[０-９]/g, (ch) =>
+    String.fromCharCode(ch.charCodeAt(0) - 0xFEE0)
+  );
+  const year = reiwaToGregorian(normalized);
+  if (!year) return true;
+
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth() + 1;
+
+  // 9月～12月は翌年4月、1月～4月は当年4月を表示対象にする。
+  // 5月～8月は前年度の4月データを自動的に隠す。
+  if (currentMonth >= 9) return year === currentYear + 1;
+  if (currentMonth <= 4) return year === currentYear;
+  return false;
+}
+
+function availabilityLabel(key, dataset) {
+  if (key === 'april') {
+    return dataset?.availability_for
+      ? `${dataset.availability_for}入園`
+      : '4月入園';
+  }
+
+  return dataset?.availability_for
+    ? `${dataset.availability_for}入園（途中入園）`
+    : '途中入園';
+}
+
+function applyAvailabilityDataset(key) {
+  const dataset = availabilityDatasets[key];
+  if (!dataset) return;
+
+  activeAvailabilityKey = key;
+  const byId = dataset.by_facility_id || {};
+
+  allFacilities.forEach((f) => {
+    f.availability = byId[f.id] || {};
+  });
+
+  updateAvailabilityMeta();
+  renderAvailabilitySwitcher();
+}
+
+function updateAvailabilityMeta() {
+  const availability = availabilityDatasets[activeAvailabilityKey] || {};
+  const meta = [];
+
+  if (availability.availability_for) {
+    meta.push(`${availability.availability_for}入園`);
+  }
+  if (availability.availability_as_of) {
+    meta.push(availability.availability_as_of);
+  }
+  if (availability.source_page_updated) {
+    meta.push(`岡山市ページ更新 ${availability.source_page_updated}`);
+  }
+
+  meta.push(`認可保育施設 ${allFacilities.length}施設`);
+
+  if ($('#updated')) {
+    $('#updated').textContent = meta.join('｜');
+  }
+
+  const note = $('#availability-current-note');
+  if (note) {
+    const kind = activeAvailabilityKey === 'april'
+      ? '4月入園（新年度）'
+      : '年度途中入園';
+    note.textContent = `${kind}の受入見込みを表示しています。`;
+  }
+}
+
+function renderAvailabilitySwitcher() {
+  const wrap = $('#availability-switcher');
+  if (!wrap) return;
+
+  const keys = ['monthly'];
+  if (availabilityDatasets.april) keys.push('april');
+
+  // 4月分がまだ公表されていない期間は切替UI自体を出さない。
+  wrap.hidden = keys.length < 2;
+  if (keys.length < 2) {
+    wrap.innerHTML = '';
+    return;
+  }
+
+  wrap.innerHTML = `
+    <div class="availability-switch-head">
+      <strong>受入見込みを切り替える</strong>
+      <span id="availability-current-note" class="availability-switch-note"></span>
+    </div>
+    <div class="availability-switch-buttons" role="group" aria-label="受入見込みの種類">
+      ${keys.map((key) => {
+        const dataset = availabilityDatasets[key];
+        const active = key === activeAvailabilityKey;
+        return `
+          <button type="button"
+                  class="availability-switch-btn ${active ? 'is-active' : ''}"
+                  data-availability-mode="${key}"
+                  aria-pressed="${active ? 'true' : 'false'}">
+            <span>${esc(availabilityLabel(key, dataset))}</span>
+            <small>${key === 'april' ? '新年度の申込用' : '直近の月の申込用'}</small>
+          </button>`;
+      }).join('')}
+    </div>`;
+
+  updateAvailabilityMeta();
+}
+
 async function loadData() {
   const ts = Date.now();
 
@@ -181,32 +316,40 @@ async function loadData() {
   );
 
   if (!masterResp.ok) {
-    throw new Error(
-      `facility_master.json: HTTP ${masterResp.status}`
-    );
+    throw new Error(`facility_master.json: HTTP ${masterResp.status}`);
   }
 
   const master = await masterResp.json();
 
-  let availability = {
-    by_facility_id: {},
-    availability_for: '',
-    availability_as_of: '',
-    source_page_updated: ''
-  };
-
-  try {
-    const aResp = await fetch(
-      `data/availability_fixed.json?v=${ts}`,
-      { cache: 'no-store' }
+  // 新構成を優先。移行直後でも表示が壊れないよう、旧ファイルへフォールバック。
+  let monthly = await fetchJsonIfExists(
+    `data/availability_monthly.json?v=${ts}`
+  );
+  if (!monthly) {
+    monthly = await fetchJsonIfExists(
+      `data/availability_fixed.json?v=${ts}`
     );
+  }
+  if (!monthly) {
+    monthly = {
+      by_facility_id: {},
+      availability_for: '',
+      availability_as_of: '',
+      source_page_updated: ''
+    };
+  }
 
-    if (aResp.ok) {
-      availability = await aResp.json();
-    }
-  } catch (_) {}
+  const aprilRaw = await fetchJsonIfExists(
+    `data/availability_april.json?v=${ts}`
+  );
 
-  const byId = availability.by_facility_id || {};
+  availabilityDatasets = { monthly };
+  if (aprilDatasetIsRelevant(aprilRaw)) {
+    availabilityDatasets.april = aprilRaw;
+  }
+
+  activeAvailabilityKey = 'monthly';
+  const byId = monthly.by_facility_id || {};
 
   allFacilities = (master.facilities || []).map((raw) => {
     const f = normalizeFacilityLinks(raw);
@@ -225,27 +368,8 @@ async function loadData() {
     };
   });
 
-  const meta = [];
-
-  if (availability.availability_for) {
-    meta.push(`${availability.availability_for}入園`);
-  }
-
-  if (availability.availability_as_of) {
-    meta.push(availability.availability_as_of);
-  }
-
-  if (availability.source_page_updated) {
-    meta.push(
-      `岡山市ページ更新 ${availability.source_page_updated}`
-    );
-  }
-
-  meta.push(`認可保育施設 ${allFacilities.length}施設`);
-
-  if ($('#updated')) {
-    $('#updated').textContent = meta.join('｜');
-  }
+  renderAvailabilitySwitcher();
+  updateAvailabilityMeta();
 }
 
 function initMap() {
@@ -667,6 +791,19 @@ function bindInteractions() {
   document.addEventListener(
     'click',
     (event) => {
+
+      const availabilityBtn =
+        event.target.closest('[data-availability-mode]');
+
+      if (availabilityBtn) {
+        const mode = availabilityBtn.dataset.availabilityMode;
+        if (mode && availabilityDatasets[mode]) {
+          event.preventDefault();
+          applyAvailabilityDataset(mode);
+          render();
+        }
+        return;
+      }
 
       const mapBtn =
         event.target.closest(
