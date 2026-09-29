@@ -1,0 +1,409 @@
+{
+  "generated_at": "2026-09-29 14:22",
+  "official_public_rows": 50,
+  "matched_public_facilities": 50,
+  "unmatched_count": 0,
+  "matches": [
+    {
+      "id": "oky-234af96be60c",
+      "master_name": "巌井保育園",
+      "city_name": "巌井",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-dd2244c6f4e1",
+      "master_name": "宇垣保育園",
+      "city_name": "宇垣",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-7afad7fa1314",
+      "master_name": "吉備津保育園",
+      "city_name": "吉備津",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-a02005421fd8",
+      "master_name": "清輝保育園",
+      "city_name": "清輝",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-c907c71a375b",
+      "master_name": "津島保育園",
+      "city_name": "津島",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-ceb58ffa2209",
+      "master_name": "富原保育園",
+      "city_name": "富原",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-07d2d8eee041",
+      "master_name": "福渡保育園",
+      "city_name": "福渡",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-15ad8248cf5f",
+      "master_name": "三門保育園",
+      "city_name": "三門",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-54bb2b63cdc3",
+      "master_name": "御津南保育園",
+      "city_name": "御津南",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-de18ac51f5a2",
+      "master_name": "緑保育園",
+      "city_name": "緑",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-2abfc828dd8e",
+      "master_name": "牟佐保育園",
+      "city_name": "牟佐",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-39d4a72f5f19",
+      "master_name": "横井保育園",
+      "city_name": "横井",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-c044cb87eac3",
+      "master_name": "旭東保育園",
+      "city_name": "旭東",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-a2757262202a",
+      "master_name": "浜保育園",
+      "city_name": "浜",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-592ec34a1ce6",
+      "master_name": "平井保育園",
+      "city_name": "平井",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-d10ce8cb8e2f",
+      "master_name": "可知保育園",
+      "city_name": "可知",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-2c8a2edb816e",
+      "master_name": "宿毛保育園",
+      "city_name": "宿毛",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-fd9bfbb6cc6d",
+      "master_name": "興除東保育園",
+      "city_name": "興除東",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-5a30f1a0f6df",
+      "master_name": "小串保育園",
+      "city_name": "小串",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-8f2cadf82439",
+      "master_name": "曽根保育園",
+      "city_name": "曽根",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-2b6815780f45",
+      "master_name": "七区保育園",
+      "city_name": "七区",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-01d75457bed4",
+      "master_name": "南輝保育園",
+      "city_name": "南輝",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-cd7a582b427f",
+      "master_name": "東畦保育園",
+      "city_name": "東畦",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-7d04fc32a1ef",
+      "master_name": "平福保育園",
+      "city_name": "平福",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-5481e9a4636b",
+      "master_name": "都保育園",
+      "city_name": "都",
+      "category": "認可保育園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030497.html"
+    },
+    {
+      "id": "oky-14991979cd9f",
+      "master_name": "あしもり認定こども園",
+      "city_name": "あしもり",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-83bfd994d90e",
+      "master_name": "伊島認定こども園",
+      "city_name": "伊島",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-1df19fd5256f",
+      "master_name": "今認定こども園",
+      "city_name": "今",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-df21b21e0b1a",
+      "master_name": "岡南認定こども園",
+      "city_name": "岡南",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-7ea4e2638b75",
+      "master_name": "鹿田認定こども園",
+      "city_name": "鹿田",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-7b4d1657e717",
+      "master_name": "庄内認定こども園",
+      "city_name": "庄内",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-434e9c62d3dd",
+      "master_name": "建部認定こども園",
+      "city_name": "建部",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-e76722631c72",
+      "master_name": "中山認定こども園",
+      "city_name": "中山",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-04d209445b51",
+      "master_name": "野谷認定こども園",
+      "city_name": "野谷",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-f23e2af31dee",
+      "master_name": "御津金川認定こども園",
+      "city_name": "御津金川",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-f5d79c691732",
+      "master_name": "南方岡山中央認定こども園",
+      "city_name": "南方岡山中央",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-55bbf58dea67",
+      "master_name": "陵南認定こども園",
+      "city_name": "陵南",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-8c2b0217cd90",
+      "master_name": "宇野認定こども園",
+      "city_name": "宇野",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-03ccb0f4e581",
+      "master_name": "旭竜認定こども園",
+      "city_name": "旭竜",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-28f572db3c7a",
+      "master_name": "（仮称）幡多認定こども園",
+      "city_name": "幡多",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-526791715065",
+      "master_name": "西大寺認定こども園",
+      "city_name": "西大寺",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-8f9cbd041fb6",
+      "master_name": "山南認定こども園",
+      "city_name": "太伯",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-b2a40d6201d8",
+      "master_name": "千種認定こども園",
+      "city_name": "千種",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-70444b258ba5",
+      "master_name": "政田開成認定こども園",
+      "city_name": "政田開成",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-7b9d0f3cb9a3",
+      "master_name": "甲浦認定こども園",
+      "city_name": "甲浦",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-10271a0c5a3c",
+      "master_name": "興除認定こども園",
+      "city_name": "興除",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-0a668b596704",
+      "master_name": "妹尾認定こども園",
+      "city_name": "妹尾",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-3ccf4db5d2dd",
+      "master_name": "灘崎認定こども園",
+      "city_name": "灘崎",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-bec991b14dec",
+      "master_name": "錦認定こども園",
+      "city_name": "錦",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    },
+    {
+      "id": "oky-19b5f48cd63c",
+      "master_name": "浦安芳泉認定こども園",
+      "city_name": "浦安芳泉",
+      "category": "認定こども園",
+      "method": "phone",
+      "source_url": "https://www.city.okayama.jp/kurashi/0000030473.html"
+    }
+  ],
+  "unmatched": []
+}
