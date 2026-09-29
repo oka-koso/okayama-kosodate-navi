@@ -1,51 +1,42 @@
-岡山子育てナビ：年度途中入園 / 4月入園 受入見込み切替 v1
+岡山子育てナビ「利用調整点数かんたん計算」v1
 
-目的
-- 10月以降に岡山市が同時公開する「年度途中入園」と「翌年4月入園」を混同しない。
-- 画面上でワンタッチ切替。
-- 4月分が未公表の時期は切替UIを表示しない。
-- 既存のv3.2厳格照合（電話+郵便番号+住所）をそのまま再利用する。
+追加ファイル
+- score.html
+- css/score-calculator.css
+- js/score-calculator.js
+- data/admission-score-rules-R8.json
+- scripts/install_score_calculator.py
+- .github/workflows/install-score-calculator.yml
 
-アップロードするファイル
-1. hoikuen.html
-2. js/facilities.js
-3. css/availability-switch.css  ← 新規
-4. scripts/update_availability_dual.py  ← 新規
-5. scripts/update_availability_fixed.py  ← 現行v3.2（依存元。既存と同内容なら上書きでOK）
-6. .github/workflows/update-availability-fixed.yml  ← 既存workflowを置換
+実装内容
+- 保護者2人分の基礎点数
+- ひとり親の場合「不存在10点」を自動適用 + 区分A +3
+- 就労/内職/妊娠出産/疾病/障害/介護看護/災害/求職/就学/
+  社会的養護/育休中/育休復帰予定/採用等予定に対応
+- 調整点 A〜K に対応
+- 同一区分はselect/radio相当のUIで最高1項目だけを適用
+- 区分Iは該当祖父母1人ごと -3
+- 区分Kは通常合計を表示した上で最終1点にする
+- 同点時基準7項目を表示
+- 入園可能性・合格率は推測しない
+- 入力内容はブラウザ内でのみ計算し、外部送信しない
+- ルールはJSON分離。令和9年度版への更新が容易
 
-データ
-- data/availability_monthly.json : 年度途中入園
-- data/availability_april.json   : 翌年度4月入園
-- data/availability_fixed.json   : 旧コード互換用。monthlyと同じ内容を維持
+公式根拠
+令和8年度保育利用ガイド P.11-12
+https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_1-23hoiku.pdf
 
-初回実行
-Actions → Update childcare availability (monthly + April) → Run workflow
+岡山市保育所等保育利用調整基準
+https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12573/R060904kaisei_riyouchouseikizyun.pdf
 
-2026-09-29現在、岡山市は令和9年4月分を10月14日公開予定のため、
-現時点では availability_april.json は生成されないのが正常です。
-初回実行では availability_monthly.json が生成されます。
+導入手順
+1. ZIP内のファイルを同じパスでGitHubへアップロード。
+2. Actions → Install admission score calculator → Run workflow。
+3. 緑になったら score.html を確認。
+4. index.html / hoikuen.html / moushikomi.html のナビに「点数計算」が追加される。
+5. moushikomi.html の点数欄にも計算ページへのボタンが追加される。
 
-10月14日以降
-公式ページに4月分PDFが追加されると、毎日のActionが自動検出します。
-既存v3.2パーサーで安全に206施設へ照合できた場合のみ
-availability_april.json を生成/更新します。
-ブラウザはこのファイルを検出すると自動で切替UIを表示します。
-
-表示期間
-- 9～12月: 翌年4月データだけを4月タブとして表示
-- 1～4月 : 当年4月データを表示
-- 5～8月 : 古い4月データは自動的に非表示
-このため前年の4月データが残っても、翌年度に誤表示しません。
-
-安全策
-- 4月PDF未公表: 正常終了（エラーにしない）
-- 4月PDF公表済みだが解析失敗: 誤データを書かずActionを失敗扱い
-- monthlyは availability_fixed.json にも同期するため旧表示との互換性あり
-- 施設カード自体には data-facility-id を付けない既存v4設計を維持
-- card→map は data-map-id、popup→card は data-scroll-card-id のまま
-- 公式HP/telリンクの標準ブラウザ動作も維持
-
-確認済み
-- Python 2ファイル py_compile OK
-- facilities.js node --check OK
+注意
+令和9年度保育利用ガイドは2026-10-14公開予定。
+公開後はR8→R9の基準差分を確認し、
+data/admission-score-rules-R9.json 等へ更新する想定。
