@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-09-29T07:17:08",
+  "batch": "final-8",
+  "target_count": 8,
+  "processed_count": 8,
+  "error_count": 0,
+  "records": [
+    {
+      "id": "oky-a180daa6c959",
+      "name": "共生保育園",
+      "result": "checked_no_official_url_found",
+      "website": "",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "https://www.hellowork.mhlw.go.jp/",
+      "note": "現行の所在地・電話は公的情報で確認。公式園/法人サイトは2026-09-29時点で特定できず。"
+    },
+    {
+      "id": "oky-862ccd1c91a1",
+      "name": "富田保育園",
+      "result": "verified",
+      "website": "http://tomitahoikuen.jp/",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "http://tomitahoikuen.jp/",
+      "note": "施設公開情報にも当園ホームページとして同URLが記載。"
+    },
+    {
+      "id": "oky-c0388f0bb7a0",
+      "name": "深柢保育園",
+      "result": "checked_no_official_url_found",
+      "website": "",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "https://www.city.okayama.jp/kosodate/0000045410.html",
+      "note": "岡山市の岡山中央子育て支援センター掲載で施設同一性を確認。法人の公的開示でもホームページ欄なし。"
+    },
+    {
+      "id": "oky-6af4f50817f8",
+      "name": "牧石保育園",
+      "result": "checked_no_official_url_found",
+      "website": "",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "https://www.pref.okayama.jp/",
+      "note": "岡山県の現行施設情報で施設同一性を確認。公式園/法人サイトは2026-09-29時点で特定できず。"
+    },
+    {
+      "id": "oky-26ce7b7ab03c",
+      "name": "朝日保育園",
+      "result": "checked_no_official_url_found",
+      "website": "",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "https://www.city.okayama.jp/",
+      "note": "岡山市・施設公開情報で所在地/電話/運営法人を確認。公式園/法人サイトは2026-09-29時点で特定できず。"
+    },
+    {
+      "id": "oky-73a2b33b3b99",
+      "name": "しろばら保育園",
+      "result": "checked_no_official_url_found",
+      "website": "",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "https://www.city.okayama.jp/kyoudou/0000068470.html",
+      "note": "岡山市の施設個別ページで所在地・電話を確認。公式園/法人サイトは2026-09-29時点で特定できず。"
+    },
+    {
+      "id": "oky-283b642b9f61",
+      "name": "ひばり保育園",
+      "result": "checked_no_official_url_found",
+      "website": "",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "https://www.wam.go.jp/",
+      "note": "社会福祉法人淳厚会の公的開示で施設を確認し、法人ホームページ欄は空欄。公式園サイトも特定できず。"
+    },
+    {
+      "id": "oky-bd718a3906e7",
+      "name": "みどり町保育園",
+      "result": "verified",
+      "website": "http://midorikai-net.or.jp/nursery/",
+      "before": {
+        "website": "",
+        "website_status": "unchecked",
+        "website_verified_at": null,
+        "website_verification_source": null
+      },
+      "evidence": "http://midorikai-net.or.jp/nursery/",
+      "note": "施設公開情報にWebサイトとして同URLが記載。"
+    }
+  ],
+  "errors": []
+}

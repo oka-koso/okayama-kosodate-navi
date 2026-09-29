@@ -60,11 +60,14 @@
         "holiday": true,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "checked_no_official_url_found",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.city.okayama.jp/kosodate/0000045410.html",
+      "website_verification_note": "岡山市の岡山中央子育て支援センター掲載で施設同一性を確認。法人の公的開示でもホームページ欄なし。"
     },
     {
       "id": "oky-a180daa6c959",
@@ -89,11 +92,14 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "checked_no_official_url_found",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.hellowork.mhlw.go.jp/",
+      "website_verification_note": "現行の所在地・電話は公的情報で確認。公式園/法人サイトは2026-09-29時点で特定できず。"
     },
     {
       "id": "oky-c907c71a375b",
@@ -178,11 +184,14 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "checked_no_official_url_found",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.pref.okayama.jp/",
+      "website_verification_note": "岡山県の現行施設情報で施設同一性を確認。公式園/法人サイトは2026-09-29時点で特定できず。"
     },
     {
       "id": "oky-21cf63b90750",
@@ -563,7 +572,7 @@
       "postal": "700-0936",
       "address": "岡山市北区富田74",
       "phone": "086-223-0872",
-      "website": "",
+      "website": "http://tomitahoikuen.jp/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.639454,
       "lon": 133.915222,
@@ -576,11 +585,14 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "http://tomitahoikuen.jp/",
+      "website_verification_note": "施設公開情報にも当園ホームページとして同URLが記載。"
     },
     {
       "id": "oky-2d15aacf4278",
@@ -1398,11 +1410,14 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "checked_no_official_url_found",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.city.okayama.jp/",
+      "website_verification_note": "岡山市・施設公開情報で所在地/電話/運営法人を確認。公式園/法人サイトは2026-09-29時点で特定できず。"
     },
     {
       "id": "oky-62867ccc454b",
@@ -2056,7 +2071,7 @@
       "postal": "702-8055",
       "address": "岡山市南区築港緑町1-1-7 230",
       "phone": "086-262-3300",
-      "website": "",
+      "website": "http://midorikai-net.or.jp/nursery/",
       "contact_source": "R8 official facility-list PDF",
       "lat": 34.605831,
       "lon": 133.931168,
@@ -2069,11 +2084,14 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "verified",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "http://midorikai-net.or.jp/nursery/",
+      "website_verification_note": "施設公開情報にWebサイトとして同URLが記載。"
     },
     {
       "id": "oky-cfcfc9c59c3f",
@@ -2160,11 +2178,14 @@
         "holiday": false,
         "support_center": false
       },
-      "website_status": "unchecked",
+      "website_status": "checked_no_official_url_found",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.wam.go.jp/",
+      "website_verification_note": "社会福祉法人淳厚会の公的開示で施設を確認し、法人ホームページ欄は空欄。公式園サイトも特定できず。"
     },
     {
       "id": "oky-987ae07271b9",
@@ -2282,11 +2303,14 @@
         "holiday": false,
         "support_center": true
       },
-      "website_status": "unchecked",
+      "website_status": "checked_no_official_url_found",
       "official_info_url": "",
       "services_source": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_32-ura_hoiku.pdf",
       "services_source_as_of": "令和7年8月時点",
-      "public_private": "私立"
+      "public_private": "私立",
+      "website_verified_at": "2026-09-29",
+      "website_verification_source": "https://www.city.okayama.jp/kyoudou/0000068470.html",
+      "website_verification_note": "岡山市の施設個別ページで所在地・電話を確認。公式園/法人サイトは2026-09-29時点で特定できず。"
     },
     {
       "id": "oky-8faa268cfd4a",
