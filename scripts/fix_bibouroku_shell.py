@@ -54,12 +54,15 @@ shell=ROOT/"js/site-shell.js"
 if shell.exists():
     s=shell.read_text(encoding="utf-8")
     old=s
-    if '["bibouroku.html","子育て備忘録"]' not in s:
-        needle='["about.html","このサイトについて"]'
-        if needle in s:
-            s=s.replace(needle,'["bibouroku.html","子育て備忘録"],'+needle,1)
-        else:
-            print("WARN: shared nav insertion point not found")
+    # Header: replace 点数計算 with 子育て備忘録.
+    # score.html itself remains available from page CTAs and other internal links.
+    # First remove a previously inserted duplicate Bibouroku nav item, if any.
+    s=s.replace('["bibouroku.html","子育て備忘録"],','')
+    s=s.replace(',["bibouroku.html","子育て備忘録"]','')
+    if '["score.html","点数計算"]' in s:
+        s=s.replace('["score.html","点数計算"]','["bibouroku.html","子育て備忘録"]',1)
+    elif '["bibouroku.html","子育て備忘録"]' not in s:
+        print("WARN: score nav insertion point not found")
     if s!=old:
         shell.write_text(s,encoding="utf-8")
         print("FIXED: js/site-shell.js nav")

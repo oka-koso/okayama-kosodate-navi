@@ -1,4 +1,4 @@
-子育て備忘録 ヘッダー/フッター修正 v1.1
+子育て備忘録 ヘッダー/フッター修正 v1.2
 
 原因:
 備忘録v1で、新規ページに既存サイトの基本CSS・共通shell CSS・polish CSSの読み込みが不足していました。
@@ -24,3 +24,9 @@
 導入:
 ZIPの中身を okayama-kosodate-navi リポジトリ直下へアップロードしてCommit。
 Actions → Fix Bibouroku Header Footer → Run workflow。
+
+追加変更 v1.2:
+- ヘッダーの「点数計算」を「子育て備忘録」に置換
+- 点数計算ページ score.html 自体は削除しない
+- score.html への導線はトップや途中入園ページ、記事内リンク等に残す
+- 既に「子育て備忘録」が別位置に追加されている場合は重複を除去
