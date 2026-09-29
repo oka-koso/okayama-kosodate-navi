@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-09-29T06:15:17",
+  "batch": 3,
+  "target_count": 6,
+  "verified_count": 6,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-db1e6214d3f2",
+      "name": "ポストメイト保育園・岡山陵南",
+      "phone": "086-250-7245",
+      "website": "https://postmate.jp/nursery/305.html",
+      "evidence": "https://postmate.jp/nursery/305.html"
+    },
+    {
+      "id": "oky-3b16d87d740d",
+      "name": "第四吉備保育園",
+      "phone": "086-293-1717",
+      "website": "https://daiyon.kibifukushikai.jp/",
+      "evidence": "https://daiyon.kibifukushikai.jp/"
+    },
+    {
+      "id": "oky-889b50efdd63",
+      "name": "ポエム保育園おかやま",
+      "phone": "086-284-1118",
+      "website": "https://www.okayama-junshinkai.co.jp/facility/nursery/poem",
+      "evidence": "https://www.okayama-junshinkai.co.jp/facility/nursery/poem"
+    },
+    {
+      "id": "oky-0b152fa9f440",
+      "name": "かしのみ保育園",
+      "phone": "086-279-5750",
+      "website": "https://konominoki.ed.jp/kashinomi/",
+      "evidence": "https://konominoki.ed.jp/kashinomi/"
+    },
+    {
+      "id": "oky-41d34b28f2d1",
+      "name": "たんぽぽ保育園",
+      "phone": "086-948-9377",
+      "website": "https://www.tannpopo-tubomi.com/tanpopo",
+      "evidence": "https://www.tannpopo-tubomi.com/tanpopo"
+    },
+    {
+      "id": "oky-4c891c94ba26",
+      "name": "操南保育園",
+      "phone": "086-277-3431",
+      "website": "http://sounan.jp/",
+      "evidence": "https://www.hik-okayama.jp/pr/detail.php?id=331"
+    }
+  ],
+  "errors": []
+}
