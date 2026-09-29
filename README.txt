@@ -1,12 +1,16 @@
-共通ヘッダー・フッター v1.2
+岡山子育てナビ UI改善 v1.3
 
-v1.2修正:
-- footerが存在するページ → 既存footerを共通footerホストへ置換
-- footerが存在しない about/operator/privacy → </body>直前へ共通footerホストを追加
-- headerは従来どおり安全に置換
-- 全主要ページをSafety check
-- エラー時はcommit前に停止
-- 再実行可能
+前提: 共通ヘッダー・フッター v1.2 導入済み。
 
-v1.1が失敗した状態から、そのまま上書き導入できます。
-Actions → Install unified header and footer → Run workflow
+変更:
+- スマホのハンバーガーボタンを42pxのコンパクトな角丸デザインへ
+- 細い3本線
+- 開いた時に滑らかに×へ変形
+- メニュー外タップ / Escで閉じる
+- 520px以上スクロールすると右下に「上へ戻る」丸ボタン表示
+- タップでスムーズにページ最上部へ
+- PCでは上へ戻るボタンを控えめ表示
+- reduced-motion対応
+- 本文・MAP・検索・点数計算には変更なし
+
+Actions → Install mobile menu and back to top → Run workflow
