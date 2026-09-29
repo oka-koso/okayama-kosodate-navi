@@ -515,6 +515,24 @@ function bindInteractions() {
   });
 
   document.addEventListener('click', (event) => {
+    // 「地図で見る」を最優先で処理する。
+    // 施設カード自体にも data-facility-id が付いているため、
+    // 先に [data-facility-id] を拾うとボタンクリックが
+    // scrollToCard() に吸われてしまう。
+    const mapBtn =
+      event.target.closest('[data-map-id]');
+
+    if (mapBtn) {
+      const id = mapBtn.dataset.mapId;
+
+      if (id) {
+        event.preventDefault();
+        focusMarker(id);
+      }
+
+      return;
+    }
+
     const detail =
       event.target.closest('[data-facility-id]');
 
@@ -524,19 +542,6 @@ function bindInteractions() {
       if (id) {
         event.preventDefault();
         scrollToCard(id);
-      }
-
-      return;
-    }
-
-    const mapBtn =
-      event.target.closest('[data-map-id]');
-
-    if (mapBtn) {
-      const id = mapBtn.dataset.mapId;
-
-      if (id) {
-        focusMarker(id);
       }
     }
   });
