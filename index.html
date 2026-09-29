@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="css/site-shell-polish.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2321879700607801"
      crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/bibouroku.css">
 </head><body>
 <div data-site-header></div>
 <main><section class="hero"><div class="container hero-grid"><div><span class="eyebrow">岡山市の子育て情報を、ひとつに。</span><h1>保育園探しを、<br>もっと見やすく。</h1><p>北区・中区・東区・南区の保育施設を地図と一覧で探せます。岡山市が公表する入園申込や受入見込み情報も、迷いにくい形に整理します。</p><div class="btns"><a class="btn" href="hoikuen.html">🗺️ 保育園MAPを見る</a><a class="btn secondary" href="moushikomi.html">📄 令和9年度の申込情報</a></div><p class="small">※ 当サイトは岡山市公式サイトではありません。申込前には必ず岡山市公式情報をご確認ください。</p></div>
@@ -49,7 +50,9 @@
 <section><div class="container"><div class="notice"><strong>情報の扱いについて</strong><br>受入見込みは「空き」を保証する情報ではありません。岡山市も、掲載後に受入状況が変化する場合があると案内しています。申込時は必ず岡山市または各施設へ確認してください。</div></div></section>
 <section><div class="container"><div class="section-head"><div><h2>保育園申込ガイド</h2><p>令和9年度（2027年度）4月入園に向けて。</p></div><a href="moushikomi.html">申込情報を全部見る →</a></div><div class="article-grid"><a class="article-card" href="moushikomi.html#schedule"><span class="tag">申込</span><h3>令和9年度の日程</h3><p>利用ガイド公開、一次募集、電子申請の開始日を整理。</p></a><a class="article-card" href="moushikomi.html#flow"><span class="tag">はじめて</span><h3>申込までの流れ</h3><p>園探しから必要書類、申請、利用調整まで。</p></a><a class="article-card" href="articles/nyuen-junbi.html"><span class="tag">入園準備</span><h3>準備品チェックリスト</h3><p>入園が決まったあとに揃えるものをカテゴリ別に。</p></a></div></div></section>
 <section><div class="container"><div class="notice"><strong>入園前に確認</strong><br>必要な持ち物やサイズ指定は園によって異なります。用品を購入する前に、入園説明会や各園の案内をご確認ください。 <a href="articles/nyuen-junbi.html">入園準備チェックリストを見る →</a></div></div></section>
+<section class="home-bibouroku" id="home-bibouroku"><div class="home-bibouroku__head"><div><h2>子育て備忘録</h2><p>知っておくとちょっと助かる、子育てのあれこれ。</p></div><a class="home-bibouroku__all" href="bibouroku.html">記事をもっと見る →</a></div><div class="bibouroku-list" data-bibouroku-list data-limit="3"></div></section>
 </main><div data-site-footer></div>
 <script>fetch('data/facilities.json').then(r=>r.json()).then(d=>{const counts={};d.facilities.forEach(x=>counts[x.ward]=(counts[x.ward]||0)+1);document.querySelectorAll('[data-count]').forEach(el=>el.textContent=(counts[el.dataset.count]||0)+'施設');const e=document.getElementById('latest-availability');if(e){const parts=[];if(d.availability_for)parts.push(d.availability_for+'入園');if(d.availability_as_of)parts.push(d.availability_as_of);e.textContent=parts.length?parts.join('・'):'岡山市の最新公表情報を掲載';}}).catch(()=>{});</script><script defer src="js/site-shell.js"></script>
 <script defer src="js/site-shell-polish.js"></script>
+<script src="js/bibouroku.js" defer></script>
 </body></html>

@@ -28,4 +28,12 @@
     <loc>https://oka-koso.github.io/okayama-kosodate-navi/about.html</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://oka-koso.github.io/okayama-kosodate-navi/bibouroku.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oka-koso.github.io/okayama-kosodate-navi/articles/hoikuen-sagashi-hajimekata.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
