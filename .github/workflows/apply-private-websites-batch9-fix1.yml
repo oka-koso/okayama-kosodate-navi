@@ -1,0 +1,44 @@
+name: Apply private website audit batch 9 fix1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply corrected Batch 9
+        id: audit
+        continue-on-error: true
+        run: python scripts/apply_private_websites_batch9_fix1.py
+
+      - name: Commit audit and verified URLs
+        if: always()
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -f data/private_website_audit_batch9_fix1.json ]; then
+            git add data/private_website_audit_batch9_fix1.json
+          fi
+          if [ "${{ steps.audit.outcome }}" = "success" ]; then
+            git add data/facility_master.json
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "fix: apply corrected private website batch 9"
+          git pull --rebase origin main
+          git push origin main
+
+      - name: Fail if corrected verification failed
+        if: steps.audit.outcome != 'success'
+        run: exit 1
