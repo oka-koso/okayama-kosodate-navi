@@ -1,0 +1,33 @@
+name: Install mobile menu and back to top
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install UI polish
+        run: python scripts/install_site_shell_polish.py
+      - name: Safety check
+        run: |
+          test -f css/site-shell-polish.css
+          test -f js/site-shell-polish.js
+          grep -q 'site-shell-polish.css' index.html
+          grep -q 'site-shell-polish.js' index.html
+      - name: Commit
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "style: polish mobile menu and add back to top"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
