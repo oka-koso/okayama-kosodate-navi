@@ -1,22 +1,20 @@
-岡山子育てナビ トップページ施設MAP v1
+岡山子育てナビ 途中入園ページ + 自動更新 v1
 
-トップのヒーロー直下、「区から保育園を探す」の前にMAPを追加します。
-
-機能
-・facility_master.json の既存施設をそのまま利用
-・availability_monthly.json を優先して最新の途中入園○△×を表示
-・monthlyが無い場合は availability_fixed.json にフォールバック
-・全域 / 北区 / 中区 / 東区 / 南区 のワンタッチ絞り込み
-・区別カラーのピン
-・ピンを押すと園名 / 種別 / 公私 / 所在地 / 0〜5歳受入見込み
-・詳しい検索は既存 hoikuen.html へ
-・スマホは高さ360px
-・マウスホイールズームOFF
-・施設データの二重管理なし
+追加内容
+・tochuu.html（途中入園専用ページ）
+・現在の対象入園月を自動表示
+・岡山市公式の「年度途中の入園申込」表から締切日を取得
+・17:15必着を表示し、締切までの日数を自動表示
+・最新の受入見込みページ / 保育利用ガイド / PDFへの導線
+・受入見込みPDF更新処理と同じ実行内で data/midyear_admission.json を更新
+・4月入園用 availability_april.json とは分離したまま
+・公式締切日を取得できない場合は誤情報を生成せずActionを失敗させる安全設計
 
 導入
-1. ZIP内のファイルを同じパスでGitHubへアップロード
-2. Actions → Install home facility map → Run workflow
-3. 緑になったらPages反映後にトップページを再読み込み
+1. ZIP内をリポジトリの同じパスへアップロード
+2. Actions → Install midyear admission page → Run workflow
+3. 緑になれば導入完了
 
-既存の hoikuen.html と js/facilities.js は変更しません。
+以後
+既存の Update childcare availability (monthly + April + midyear guide) が毎日実行され、
+年度途中の受入見込みPDFを取得した実行内で途中入園ページ用データも同期します。
