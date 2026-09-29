@@ -1,0 +1,22 @@
+name: Fix Erabikata Article Sources
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Replace article references with primary source
+        run: python scripts/fix_erabikata_sources.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add articles/hoikuen-erabikata-part1.html articles/hoikuen-erabikata-part2.html
+          git diff --cached --quiet || git commit -m "Use MHLW primary source for nursery selection articles"
+          git push
