@@ -1,9 +1,12 @@
-.midyear-hero{padding:46px 0 26px;background:linear-gradient(180deg,#f6fbf7 0%,#fff 100%)}
-.midyear-hero h1{margin:0 0 10px;font-size:clamp(28px,5vw,42px);line-height:1.25}.midyear-hero p{margin:0;color:var(--muted)}
-.midyear-section{padding:28px 0 56px}.midyear-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:22px;align-items:start}
+/* 途中入園ページ固有部分。ヘッダー/フッター/page-hero は css/style.css をそのまま利用 */
+.midyear-page-hero p{margin:0;color:var(--muted);max-width:760px}
+.midyear-section{padding:36px 0 64px}
+.midyear-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:22px;align-items:start}
+.midyear-grid>div,.midyear-grid>aside{display:grid;gap:18px}
 .midyear-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 10px 30px rgba(44,74,63,.06)}
 .midyear-card h2,.midyear-card h3{margin-top:0}.deadline-card{background:#fffdf8}.deadline-target{font-size:14px;font-weight:900;color:var(--brand-dark);margin-bottom:5px}.deadline-date{font-size:clamp(24px,4vw,34px);font-weight:900;letter-spacing:.01em;line-height:1.35}
 .deadline-badge{display:inline-flex;margin-top:12px;padding:7px 12px;border-radius:999px;background:#e7f4eb;color:#236342;font-weight:900;font-size:13px}.deadline-badge.is-soon{background:#fff0c9;color:#79570b}.deadline-badge.is-urgent,.deadline-badge.is-closed{background:#f8dfdc;color:#8a332d}
 .midyear-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.midyear-actions .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px}.midyear-facts{display:grid;gap:12px;margin:0}.midyear-fact{padding:14px 15px;border-radius:14px;background:var(--surface2)}.midyear-fact strong{display:block;margin-bottom:4px}.midyear-fact p{margin:0;color:var(--muted);font-size:14px}
 .midyear-source-list{display:grid;gap:8px}.midyear-source-list a{font-weight:800}.midyear-meta{margin-top:14px;color:var(--muted);font-size:12px}.midyear-error{margin-top:20px}
-@media(max-width:760px){.midyear-grid{grid-template-columns:1fr}.midyear-card{padding:18px;border-radius:18px}.midyear-actions{display:grid}.midyear-actions .btn{width:100%}}
+@media(max-width:860px){.midyear-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.midyear-card{padding:18px;border-radius:18px}.midyear-actions{display:grid}.midyear-actions .btn{width:100%}.midyear-section{padding-top:28px}}
