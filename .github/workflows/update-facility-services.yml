@@ -1,0 +1,56 @@
+name: Update facility services v1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-services:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests pdfplumber
+
+      - name: Normalize facility links
+        run: python scripts/enrich_facility_links.py
+
+      - name: Extract official service information
+        id: services
+        continue-on-error: true
+        run: python scripts/update_facility_services.py
+
+      - name: Save audit and safe changes
+        if: always()
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add data/facility_master.json
+
+          if [ -f data/services_audit.json ]; then
+            git add data/services_audit.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "data: update facility links and service audit"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Fail when service audit failed
+        if: steps.services.outcome != 'success'
+        run: |
+          echo "Service extraction did not pass the safety audit."
+          echo "data/services_audit.json was saved for diagnosis."
+          exit 1
