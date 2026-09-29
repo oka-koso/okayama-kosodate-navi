@@ -1,0 +1,47 @@
+name: Apply final private website audit
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply all remaining 8 facilities
+        id: audit
+        continue-on-error: true
+        run: python scripts/apply_private_websites_final.py
+
+      - name: Commit final audit
+        if: always()
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          [ -f data/private_website_audit_final.json ] && git add data/private_website_audit_final.json
+
+          if [ "${{ steps.audit.outcome }}" = "success" ]; then
+            git add data/facility_master.json
+            git add data/private_website_audit_summary.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "data: complete private facility website audit"
+          git pull --rebase origin main
+          git push origin main
+
+      - name: Fail if final audit did not complete
+        if: steps.audit.outcome != 'success'
+        run: exit 1
