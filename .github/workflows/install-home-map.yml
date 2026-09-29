@@ -1,0 +1,37 @@
+name: Install home facility map
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate home map files
+        run: |
+          test -f index.html
+          test -f css/home-map.css
+          test -f js/home-map.js
+          test -f scripts/install_home_map.py
+          test -f data/facility_master.json
+      - name: Install map on top page
+        run: python scripts/install_home_map.py
+      - name: Validate installed markup
+        run: |
+          grep -q 'id="home-map"' index.html
+          grep -q 'css/home-map.css' index.html
+          grep -q 'js/home-map.js' index.html
+          grep -q 'leaflet@1.9.4' index.html
+      - name: Commit
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html css/home-map.css js/home-map.js scripts/install_home_map.py
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "feat: add facility map to home page"
+          git pull --rebase origin main
+          git push origin main
