@@ -181,6 +181,14 @@ def main():
         encoding="utf-8",
     )
 
+    # 年度途中の受入見込みPDFを取得できた同じ実行内で、
+    # 対象月の正式な申込締切も岡山市公式ページから同期する。
+    import subprocess
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "update_midyear_admission.py")],
+        check=True,
+    )
+
     print(
         "[availability-dual] SUCCESS "
         f"monthly={discovery['results']['monthly']} "
