@@ -1,4 +1,4 @@
-name: Repair facility master and guard it
+name: Repair facility master safely
 
 on:
   workflow_dispatch:
@@ -11,23 +11,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Repair canonical 206-facility master
         run: python scripts/repair_facility_master.py
-      - name: Disable scheduled PDF-to-master mutator
-        run: python scripts/disable_availability_master_mutator.py
-      - name: Commit repair
+
+      - name: Commit repaired data only
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/facility_master.json data/facility_master_repair_audit.json .github/workflows scripts
+
+          # Safety rule:
+          # Never stage scripts or .github/workflows from this repair job.
+          git add -- data/facility_master.json data/facility_master_repair_audit.json
+
           if git diff --cached --quiet; then
             echo "No repair changes"
             exit 0
           fi
-          git commit -m "fix: restore canonical facility master and stop unsafe auto mutation"
+
+          # Abort if anything except the two approved data files is staged.
+          ALLOWED='^(data/facility_master\.json|data/facility_master_repair_audit\.json)$'
+          BAD="$(git diff --cached --name-only | grep -Ev "$ALLOWED" || true)"
+          if [ -n "$BAD" ]; then
+            echo "::error::Unexpected staged files:"
+            echo "$BAD"
+            exit 1
+          fi
+
+          git commit -m "fix: restore canonical facility master"
+
+          # Preserve remote changes without allowing unrelated working-tree edits
+          # to become part of this repair commit.
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
