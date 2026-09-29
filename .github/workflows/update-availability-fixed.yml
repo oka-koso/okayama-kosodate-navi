@@ -1,8 +1,7 @@
-name: Update childcare availability (monthly + April)
+name: Update childcare availability (monthly + April + midyear guide)
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "20 8 * * *"
 
@@ -12,28 +11,22 @@ permissions:
 jobs:
   update-availability:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: pip install requests beautifulsoup4 pdfplumber
-
-      - name: Update monthly and April availability
+      - name: Update monthly, April and midyear admission data
         id: availability
         continue-on-error: true
         run: python scripts/update_availability_dual.py
-
-      - name: Commit audited availability
+      - name: Commit audited availability and midyear guide data
         if: always()
         run: |
           git config user.name "okayama-kosodate-bot"
           git config user.email "actions@users.noreply.github.com"
-
           for f in \
             data/availability_fixed.json \
             data/availability_fixed_audit.json \
@@ -41,20 +34,18 @@ jobs:
             data/availability_monthly_audit.json \
             data/availability_april.json \
             data/availability_april_audit.json \
-            data/availability_dual_discovery_audit.json
+            data/availability_dual_discovery_audit.json \
+            data/midyear_admission.json
           do
             [ -f "$f" ] && git add "$f"
           done
-
           if git diff --cached --quiet; then
             echo "No availability changes"
             exit 0
           fi
-
-          git commit -m "data: update monthly and April childcare availability"
+          git commit -m "data: update childcare availability and midyear admission guide"
           git pull --rebase origin main
           git push origin main
-
       - name: Fail if availability parser failed
         if: steps.availability.outcome != 'success'
         run: exit 1
