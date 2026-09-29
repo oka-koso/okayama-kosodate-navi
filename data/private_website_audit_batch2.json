@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-09-29T06:11:29",
+  "batch": 2,
+  "target_count": 11,
+  "verified_count": 11,
+  "error_count": 0,
+  "verified": [
+    {
+      "id": "oky-b19e9baaae83",
+      "name": "（仮称）朝日塾こども園",
+      "phone": "086-243-4111",
+      "website": "https://www.asahijuku.ac.jp/kindergarten/",
+      "evidence": "https://www.asahijuku.ac.jp/kindergarten/"
+    },
+    {
+      "id": "oky-4f4b9bdc3666",
+      "name": "認定こども園 就実",
+      "phone": "086-206-2112",
+      "website": "https://kids.shujitsu.ac.jp/",
+      "evidence": "https://kids.shujitsu.ac.jp/"
+    },
+    {
+      "id": "oky-f02577b3bf67",
+      "name": "第一ひかりこども園",
+      "phone": "086-262-2602",
+      "website": "https://hikari-gakuen.ac.jp/",
+      "evidence": "https://hikari-gakuen.ac.jp/outline-2/"
+    },
+    {
+      "id": "oky-c80fc8f88d1c",
+      "name": "第二ひかりこども園",
+      "phone": "086-263-7492",
+      "website": "https://hikari-gakuen.ac.jp/",
+      "evidence": "https://hikari-gakuen.ac.jp/"
+    },
+    {
+      "id": "oky-60b1d51a9e2e",
+      "name": "高島おひさまこども園",
+      "phone": "086-275-1998",
+      "website": "https://oomorigakuen.ed.jp/takashima/",
+      "evidence": "https://oomorigakuen.ed.jp/takashima/"
+    },
+    {
+      "id": "oky-87b331929732",
+      "name": "つしま幼稚園",
+      "phone": "086-252-0171",
+      "website": "https://oomorigakuen.ed.jp/",
+      "evidence": "https://oomorigakuen.ed.jp/"
+    },
+    {
+      "id": "oky-b82c166c871a",
+      "name": "おおふくこども園",
+      "phone": "086-282-3700",
+      "website": "https://okayama-tokokai.jp/kakuen-shoukai/",
+      "evidence": "https://okayama-tokokai.jp/kakuen-shoukai/"
+    },
+    {
+      "id": "oky-605445b41344",
+      "name": "大元こども園",
+      "phone": "086-259-3700",
+      "website": "https://okayama-tokokai.jp/kakuen-shoukai/",
+      "evidence": "https://okayama-tokokai.jp/kakuen-shoukai/"
+    },
+    {
+      "id": "oky-55ab64e24eb9",
+      "name": "ならの木こども園",
+      "phone": "086-242-3400",
+      "website": "https://okayama-tokokai.jp/kakuen-shoukai/",
+      "evidence": "https://okayama-tokokai.jp/kakuen-shoukai/"
+    },
+    {
+      "id": "oky-3f47b001d22b",
+      "name": "どんぐり保育園",
+      "phone": "086-244-6600",
+      "website": "https://okayama-tokokai.jp/kakuen-shoukai/",
+      "evidence": "https://okayama-tokokai.jp/kakuen-shoukai/"
+    },
+    {
+      "id": "oky-df4975eddd07",
+      "name": "ノイエ保育園",
+      "phone": "086-244-6600",
+      "website": "https://okayama-tokokai.jp/kakuen-shoukai/",
+      "evidence": "https://okayama-tokokai.jp/kakuen-shoukai/"
+    }
+  ],
+  "errors": []
+}
