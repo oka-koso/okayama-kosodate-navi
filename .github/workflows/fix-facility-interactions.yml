@@ -1,0 +1,44 @@
+name: Fix facility card interactions v3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Patch facilities.js
+        run: python scripts/fix_facility_interactions.py
+
+      - name: JavaScript syntax check
+        run: node --check js/facilities.js
+
+      - name: Commit hotfix
+        run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add js/facilities.js
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "fix: separate card map and external link interactions"
+          git pull --rebase origin main
+          git push origin main
