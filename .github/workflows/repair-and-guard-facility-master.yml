@@ -1,0 +1,34 @@
+name: Repair and Guard Facility Master
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Restore verified 206 master and install guard
+        run: python scripts/repair_and_guard_facility_master.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import json
+          for p in ["data/facility_master.json","data/facility_master_206_canonical.json"]:
+              d=json.load(open(p,encoding="utf-8"))
+              n=len(d.get("facilities",[]))
+              print(p,n)
+              assert n==206
+          PY
+      - name: Commit repair
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/facility_master.json data/facility_master_206_canonical.json scripts/update_availability_dual.py
+          git diff --cached --quiet || git commit -m "Repair and guard 206-facility master"
+          git push
