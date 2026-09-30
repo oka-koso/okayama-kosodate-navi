@@ -19,6 +19,31 @@ DISCOVERY_AUDIT = ROOT / "data" / "availability_dual_discovery_audit.json"
 JST = timezone(timedelta(hours=9))
 UA = "OkayamaKosodateNavi/availability-dual-v1"
 
+# facility-master-206-runtime-guard-v2
+FACILITY_MASTER = ROOT / "data" / "facility_master.json"
+FACILITY_MASTER_CANONICAL = ROOT / "data" / "facility_master_206_canonical.json"
+
+def ensure_verified_facility_master():
+    def count(path):
+        try:
+            obj=json.loads(path.read_text(encoding="utf-8"))
+            return len(obj.get("facilities",[]))
+        except Exception:
+            return -1
+    n=count(FACILITY_MASTER)
+    if n==206:
+        return
+    cn=count(FACILITY_MASTER_CANONICAL)
+    if cn!=206:
+        raise RuntimeError(
+            f"固定施設マスタ異常: current={n}, canonical={cn}; 安全のため停止"
+        )
+    shutil.copyfile(FACILITY_MASTER_CANONICAL,FACILITY_MASTER)
+    print(
+        f"[availability-dual] WARN: facility master {n} -> restored verified 206 snapshot"
+    )
+
+
 
 def clean(value):
     return re.sub(r"\s+", " ", value or "").strip()
@@ -114,6 +139,7 @@ def run_legacy_for(legacy, candidate, page_updated, page_text, out_name, audit_n
 
 
 def main():
+    ensure_verified_facility_master()
     if not LEGACY_PATH.exists():
         raise RuntimeError("scripts/update_availability_fixed.py がありません。")
 
