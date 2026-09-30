@@ -1,15 +1,17 @@
-定例更新 206施設マスタ保護パッチ v1
+施設マスタ修復＋定例保護 v2
 
-今回の「固定施設マスタが206施設ではありません: 232」対策です。
+現在232件でも実行できます。
 
-・現在の正常な206施設マスタを復元用スナップショットとして固定
-・定例更新開始時に件数確認
-・206件ならそのまま更新
-・232件などへ変化していたら、検証済み206件版へ自動復元して更新続行
-・復元用データ自体が206件でなければ安全停止
-・既存の206件安全チェックは残します
+1. Git履歴から facilities 配列が実際に206件だった最新正常版を探す
+2. facility_master.json を正常版へ復元
+3. 正常206件版を復元用として固定
+4. 定例更新時に再び232件等になれば206件版へ自動復元
+5. 復元用データまで異常なら安全停止
 
 適用:
-1. ZIPの中身をリポジトリ直下へアップロードしてCommit
-2. Actions → Install Facility Master 206 Guard → Run workflow
-3. その後 Update childcare availability (monthly + April + midyear guide) を手動で1回実行
+ZIPをリポジトリ直下へアップロードしてCommit
+→ Actions → Repair and Guard Facility Master → Run workflow
+
+成功後:
+Update childcare availability (monthly + April + midyear guide)
+を手動で1回実行。
