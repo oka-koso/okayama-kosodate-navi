@@ -1,14 +1,15 @@
-Google Analytics 4 導入パッチ
-測定ID: G-961RLY7WVE
+定例更新 206施設マスタ保護パッチ v1
 
-・全HTMLページの head 内にGA4タグを追加
-・既に測定IDがあるページはスキップし、二重設置を防止
-・記事ページも対象
+今回の「固定施設マスタが206施設ではありません: 232」対策です。
+
+・現在の正常な206施設マスタを復元用スナップショットとして固定
+・定例更新開始時に件数確認
+・206件ならそのまま更新
+・232件などへ変化していたら、検証済み206件版へ自動復元して更新続行
+・復元用データ自体が206件でなければ安全停止
+・既存の206件安全チェックは残します
 
 適用:
-1. ZIPの中身を okayama-kosodate-navi リポジトリ直下へアップロードしてCommit
-2. Actions → Install Google Analytics 4
-3. Run workflow
-4. Pages反映後、Google Analytics → レポート → リアルタイム を開き、自分でサイトへアクセスして確認
-
-今後、新しいHTML記事を追加した場合も、このActionを再実行すれば未設置ページだけに追加されます。
+1. ZIPの中身をリポジトリ直下へアップロードしてCommit
+2. Actions → Install Facility Master 206 Guard → Run workflow
+3. その後 Update childcare availability (monthly + April + midyear guide) を手動で1回実行
