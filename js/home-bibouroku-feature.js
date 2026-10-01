@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "data/bibouroku.json";
+  const DATA_URL = "data/bibouroku.json?v=20261001-2218";
 
   const normalizeArticles = (data) => {
     const list = Array.isArray(data) ? data :
@@ -124,7 +124,7 @@
     try {
       const res = await fetch(DATA_URL, { cache: "no-store" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const now=new Date();const today=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;const articles = normalizeArticles(await res.json()).filter(a=>!a.date||a.date<=today);
+      const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const dm=Object.fromEntries(parts.map(p=>[p.type,p.value]));const today=`${dm.year}-${dm.month}-${dm.day}`;const articles = normalizeArticles(await res.json()).filter(a=>!a.date||a.date<=today);
       if (!articles.length) return;
 
       addLatestBar(articles[0]);
