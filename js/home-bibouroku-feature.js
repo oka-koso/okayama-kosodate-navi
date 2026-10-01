@@ -124,7 +124,7 @@
     try {
       const res = await fetch(DATA_URL, { cache: "no-store" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const articles = normalizeArticles(await res.json());
+      const now=new Date();const today=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;const articles = normalizeArticles(await res.json()).filter(a=>!a.date||a.date<=today);
       if (!articles.length) return;
 
       addLatestBar(articles[0]);
