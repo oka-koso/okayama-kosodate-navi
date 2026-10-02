@@ -348,8 +348,16 @@ async function loadData() {
     availabilityDatasets.april = aprilRaw;
   }
 
-  activeAvailabilityKey = 'monthly';
-  const byId = monthly.by_facility_id || {};
+  // 4月入園データが対象年度として有効な期間は、4月入園を初期表示にする。
+  // URLで ?availability=monthly / ?availability=april が指定された場合はそれを優先。
+  const requestedMode = new URLSearchParams(location.search).get('availability');
+  if (requestedMode && availabilityDatasets[requestedMode]) {
+    activeAvailabilityKey = requestedMode;
+  } else {
+    activeAvailabilityKey = availabilityDatasets.april ? 'april' : 'monthly';
+  }
+  const activeDataset = availabilityDatasets[activeAvailabilityKey] || monthly;
+  const byId = activeDataset.by_facility_id || {};
 
   allFacilities = (master.facilities || []).map((raw) => {
     const f = normalizeFacilityLinks(raw);
