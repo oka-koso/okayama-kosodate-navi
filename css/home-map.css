@@ -17,3 +17,16 @@
 .site-header{
   z-index:2000;
 }
+
+.home-map-availability-switcher{margin:0 0 14px;padding:12px 14px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.home-map-availability-switcher[hidden]{display:none}
+.home-map-availability-switch-head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.home-map-availability-switch-head strong{font-size:13px;color:var(--brand-dark)}
+.home-map-availability-switch-note{font-size:11px;color:var(--muted)}
+.home-map-availability-switch-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.home-map-availability-switch-btn{appearance:none;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:12px;padding:8px 12px;font:inherit;cursor:pointer;text-align:left}
+.home-map-availability-switch-btn span{display:block;font-size:13px;font-weight:900}
+.home-map-availability-switch-btn small{display:block;margin-top:2px;font-size:10px;color:var(--muted)}
+.home-map-availability-switch-btn.is-active{background:var(--brand);border-color:var(--brand);color:#fff}
+.home-map-availability-switch-btn.is-active small{color:rgba(255,255,255,.82)}
+@media(max-width:700px){.home-map-availability-switch-buttons{display:grid;grid-template-columns:1fr 1fr}.home-map-availability-switch-btn{width:100%}}
