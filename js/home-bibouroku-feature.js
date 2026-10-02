@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "data/bibouroku.json?v=20261001-2218";
+  const DATA_URL = "data/bibouroku.json?v=20261002-1900";
 
   const normalizeArticles = (data) => {
     const list = Array.isArray(data) ? data :
@@ -13,7 +13,7 @@
         ...a,
         url: a.url || a.href,
         title: a.title || a.name,
-        date: a.date || a.published_at || a.published || ""
+        date: a.publish_at || a.date || a.published_at || a.published || ""
       }))
       .sort((a,b) => String(b.date).localeCompare(String(a.date)));
   };
@@ -124,7 +124,7 @@
     try {
       const res = await fetch(DATA_URL, { cache: "no-store" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const dm=Object.fromEntries(parts.map(p=>[p.type,p.value]));const today=`${dm.year}-${dm.month}-${dm.day}`;const articles = normalizeArticles(await res.json()).filter(a=>!a.date||a.date<=today);
+      const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const dm=Object.fromEntries(parts.map(p=>[p.type,p.value]));const today=`${dm.year}-${dm.month}-${dm.day}`;const now=new Date();const articles = normalizeArticles(await res.json()).filter(a=>{if(a.publish_at)return new Date(a.publish_at)<=now;return !a.published||a.published<=today;});
       if (!articles.length) return;
 
       addLatestBar(articles[0]);
