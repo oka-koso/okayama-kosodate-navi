@@ -1,26 +1,11 @@
 {
-  "generated_at": "2026-10-01 17:38",
+  "generated_at": "2026-10-02 17:36",
   "source_page": "https://www.city.okayama.jp/kurashi/0000012977.html",
-  "source_page_updated": "2026-09-24",
-  "monthly_candidate": {
-    "stream": "monthly",
-    "score": 15,
-    "order": 63,
-    "title": "【認可保育園】令和8年11月受入見込み(PDF形式、381.56KB)",
-    "url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf"
-  },
+  "source_page_updated": "2026-10-02",
+  "monthly_candidate": null,
   "april_candidate": null,
-  "all_candidates": [
-    {
-      "stream": "monthly",
-      "score": 15,
-      "order": 63,
-      "title": "【認可保育園】令和8年11月受入見込み(PDF形式、381.56KB)",
-      "url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf"
-    }
-  ],
+  "all_candidates": [],
   "results": {
-    "monthly": "updated",
-    "april": "not-published-yet"
+    "monthly": "not-found"
   }
 }
