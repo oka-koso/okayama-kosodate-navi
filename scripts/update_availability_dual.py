@@ -159,12 +159,31 @@ def main():
     }
 
     if not monthly:
-        discovery["results"]["monthly"] = "not-found"
+        # 岡山市の受入見込みPDFは申込締切日前の約1週間だけ公開され、
+        # 締切後は一時的に非掲載になる。これは正常な公開サイクルなので、
+        # 既存データを保持したまま正常終了する。
+        discovery["results"]["monthly"] = "not-published-now"
+        discovery["results"]["april"] = (
+            "detected" if april else "not-published-yet"
+        )
         DISCOVERY_AUDIT.write_text(
             json.dumps(discovery, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
-        raise RuntimeError("年度途中入園の認可保育施設PDFを発見できません。")
+
+        # 受入PDFがない期間でも途中入園の申込締切情報は同期する。
+        import subprocess
+        subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "update_midyear_admission.py")],
+            check=True,
+        )
+
+        print(
+            "[availability-dual] SKIP: "
+            "monthly availability PDF is not currently published; "
+            "existing availability data preserved."
+        )
+        return
 
     # 1) 年度途中入園。既存 availability_fixed.json も互換用に同期する。
     run_legacy_for(
