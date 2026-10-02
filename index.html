@@ -62,5 +62,5 @@
 </main><div data-site-footer></div>
 <script>fetch('data/facilities.json').then(r=>r.json()).then(d=>{const counts={};d.facilities.forEach(x=>counts[x.ward]=(counts[x.ward]||0)+1);document.querySelectorAll('[data-count]').forEach(el=>el.textContent=(counts[el.dataset.count]||0)+'施設');const e=document.getElementById('latest-availability');if(e){const parts=[];if(d.availability_for)parts.push(d.availability_for+'入園');if(d.availability_as_of)parts.push(d.availability_as_of);e.textContent=parts.length?parts.join('・'):'岡山市の最新公表情報を掲載';}}).catch(()=>{});</script><script defer src="js/site-shell.js"></script>
 <script defer src="js/site-shell-polish.js"></script>
-<script src="js/bibouroku.js?v=20261001-2218" defer></script>
-  <script src="js/home-bibouroku-feature.js?v=20261001-2218" defer></script>\n</body></html>
+<script src="js/bibouroku.js?v=20261002-1900" defer></script>
+  <script src="js/home-bibouroku-feature.js?v=20261002-1900" defer></script>\n</body></html>
