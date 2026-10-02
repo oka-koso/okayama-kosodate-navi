@@ -101,7 +101,9 @@ def latest_pdf():
             candidates.append((score, text or filename, href))
 
     if not candidates:
-        raise RuntimeError("最新の認可保育施設受入見込みPDFを発見できません。")
+        # 岡山市の受入見込みPDFは申込締切日前の約1週間だけ公開され、
+        # 締切後は一時的に非掲載になるため、Noneを返して正常スキップする。
+        return None
 
     candidates.sort(key=lambda x: x[0], reverse=True)
     _, title, url = candidates[0]
@@ -535,7 +537,15 @@ def main():
             "facility_master.json がありません。v5の初期マスタ作成を先に実行してください。"
         )
 
-    title, pdf_url, page_updated, page_text = latest_pdf()
+    discovered = latest_pdf()
+    if discovered is None:
+        print(
+            "[update] SKIP: monthly availability PDF is not currently "
+            "published; existing data preserved."
+        )
+        return
+
+    title, pdf_url, page_updated, page_text = discovered
 
     r = requests.get(pdf_url, headers={"User-Agent": UA}, timeout=45)
     r.raise_for_status()
