@@ -59,5 +59,23 @@
     "publish_at": "2026-10-02T19:00:00+09:00",
     "updated": "2026-10-02",
     "image": "assets/bibouroku/okayama-name-label-maker-2026.png"
+  },
+  {
+    "title": "岡山市で途中入園するには？申込期限・空き状況・手続きの流れを解説",
+    "description": "岡山市で年度途中に保育園へ入園したい方向けに、申込期限、受入見込みの公開時期、必要書類、電子申請、転入予定の場合の注意点を整理します。",
+    "url": "articles/okayama-midyear-admission.html",
+    "category": "保育園・申込",
+    "published": "2026-10-04",
+    "updated": "2026-10-03",
+    "image": "assets/bibouroku/okayama-midyear-admission-2026.png"
+  },
+  {
+    "title": "岡山市で年度途中に転園できる？きょうだい別園・転居時の条件を解説",
+    "description": "岡山市で年度途中に保育園を転園したい場合のルールを解説。原則不可の考え方、転居・転職、きょうだい別園、4月転園、地域型保育事業の扱いを整理します。",
+    "url": "articles/okayama-midyear-transfer.html",
+    "category": "保育園・申込",
+    "published": "2026-10-05",
+    "updated": "2026-10-03",
+    "image": "assets/bibouroku/okayama-midyear-transfer-2026.png"
   }
 ]
