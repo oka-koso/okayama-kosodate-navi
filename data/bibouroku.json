@@ -77,5 +77,29 @@
     "published": "2026-10-05",
     "updated": "2026-10-03",
     "image": "assets/bibouroku/okayama-midyear-transfer-2026.png"
+  },
+  {
+    "title": "保育園とは？幼稚園・認定こども園との違い、対象年齢や利用条件をやさしく解説",
+    "description": "保育園の基本、対象年齢、保育の必要性、幼稚園・認定こども園との違いをやさしく整理。後半では岡山市の申込みも紹介します。",
+    "url": "articles/hoikuen-toha.html",
+    "category": "園選びガイド",
+    "published": "2026-10-06",
+    "updated": "2026-10-04"
+  },
+  {
+    "title": "幼稚園とは？保育園との違い、対象年齢・預かり保育をやさしく解説",
+    "description": "幼稚園の基本、対象年齢、教育時間、預かり保育、保育園・認定こども園との違いを整理。後半では岡山市の手続きも紹介します。",
+    "url": "articles/youchien-toha.html",
+    "category": "園選びガイド",
+    "published": "2026-10-07",
+    "updated": "2026-10-04"
+  },
+  {
+    "title": "認定こども園とは？保育園・幼稚園との違いと1号・2号・3号認定をやさしく解説",
+    "description": "認定こども園の仕組み、1号・2号・3号認定、4つのタイプ、保育園・幼稚園との違いを整理。後半では岡山市の申込方法も紹介します。",
+    "url": "articles/nintei-kodomoen-toha.html",
+    "category": "園選びガイド",
+    "published": "2026-10-08",
+    "updated": "2026-10-04"
   }
 ]
