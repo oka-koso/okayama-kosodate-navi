@@ -84,7 +84,8 @@
     "url": "articles/hoikuen-toha.html",
     "category": "園選びガイド",
     "published": "2026-10-06",
-    "updated": "2026-10-04"
+    "updated": "2026-10-04",
+    "image": "assets/bibouroku/hoikuen-toha-2026.png"
   },
   {
     "title": "幼稚園とは？保育園との違い、対象年齢・預かり保育をやさしく解説",
@@ -92,7 +93,8 @@
     "url": "articles/youchien-toha.html",
     "category": "園選びガイド",
     "published": "2026-10-07",
-    "updated": "2026-10-04"
+    "updated": "2026-10-04",
+    "image": "assets/bibouroku/youchien-toha-2026.png"
   },
   {
     "title": "認定こども園とは？保育園・幼稚園との違いと1号・2号・3号認定をやさしく解説",
@@ -100,6 +102,7 @@
     "url": "articles/nintei-kodomoen-toha.html",
     "category": "園選びガイド",
     "published": "2026-10-08",
-    "updated": "2026-10-04"
+    "updated": "2026-10-04",
+    "image": "assets/bibouroku/nintei-kodomoen-toha-2026.png"
   }
 ]
