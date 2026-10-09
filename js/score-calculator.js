@@ -170,7 +170,9 @@
       return;
     }
 
-    const base = g1.score + g2.score;
+    // 岡山市の基礎点数は父母の点数を合算せず、低い方を採用する。
+    // ひとり親は保護者2に「不存在」10点を適用した上で比較する。
+    const base = Math.min(g1.score, g2.score);
     const adj = adjustmentScore();
     const normalTotal = base + adj.score;
     const k = $('adj-K').checked;
@@ -186,9 +188,10 @@
     const lines = [
       ['保護者1：'+g1.label,g1.score],
       ['保護者2：'+g2.label,g2.score],
+      ['基礎点数（2人のうち低い方を採用）',base],
       ...adj.lines
     ];
-    let detail = lines.map(([label,s]) => `<div class="result-line"><span>${esc(label)}</span><strong>${s>0?'+':''}${s}点</strong></div>`).join('');
+    let detail = lines.map(([label,s]) => `<div class="result-line"><span>${esc(label)}</span><strong>${label.startsWith('基礎点数（') ? '' : (s>0?'+':'')}${s}点</strong></div>`).join('');
     if (k) detail += `<div class="result-line"><span>K 合計1点まで減点</span><strong>→ 1点</strong></div>`;
     warnings.forEach(w => detail += `<div class="result-warning">${esc(w)}</div>`);
     detail += `<div class="result-warning">この点数だけで入園可否は判断できません。同点時基準や施設ごとの申込状況も影響します。</div>`;
