@@ -36,19 +36,19 @@
   },
   {
     "title": "保育園を選ぶポイント Part1",
-    "description": "園見学でまず見たい5つのポイント。子どもの様子、先生の関わり方、保育室の環境など、パンフレットだけでは分からない部分をまとめました。",
+    "description": "子どもの安心と先生の関わり方、設備・安全面を見学で見極める視点と質問例。",
     "url": "articles/hoikuen-erabikata-part1.html",
     "category": "保育園",
     "published": "2026-09-29",
-    "updated": "2026-09-29"
+    "updated": "2026-10-10"
   },
   {
     "title": "保育園を選ぶポイント Part2",
-    "description": "保育方針、給食、安全面、園とのコミュニケーション、通いやすさ。入園後の毎日まで考えて確認したいポイントをまとめました。",
+    "description": "給食、保護者の負担、送迎、費用、延長保育まで、入園後の暮らしを考える実用ガイド。",
     "url": "articles/hoikuen-erabikata-part2.html",
     "category": "保育園",
     "published": "2026-09-29",
-    "updated": "2026-09-29"
+    "updated": "2026-10-10"
   },
   {
     "title": "保育園・幼稚園の名前付けがラクに！スマホ対応ラベルマシンを実際に使ってよかった話",
@@ -104,5 +104,13 @@
     "published": "2026-10-08",
     "updated": "2026-10-04",
     "image": "assets/bibouroku/nintei-kodomoen-toha-2026-transparent.svg?v=20261004-4"
+  },
+  {
+    "title": "保育園見学で聞きたい質問とチェックリスト【保存版】",
+    "description": "設備・先生・給食・保護者負担・時間と料金。6つの視点で、家庭に合う園を見つける質問を整理しました。",
+    "url": "articles/hoikuen-erabikata-part3.html",
+    "category": "保育園",
+    "published": "2026-10-10",
+    "updated": "2026-10-10"
   }
 ]
