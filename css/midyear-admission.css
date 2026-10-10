@@ -10,3 +10,5 @@
 .midyear-source-list{display:grid;gap:8px}.midyear-source-list a{font-weight:800}.midyear-meta{margin-top:14px;color:var(--muted);font-size:12px}.midyear-error{margin-top:20px}
 @media(max-width:860px){.midyear-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.midyear-card{padding:18px;border-radius:18px}.midyear-actions{display:grid}.midyear-actions .btn{width:100%}.midyear-section{padding-top:28px}}
+
+.midyear-section [hidden]{display:none!important}

@@ -13,7 +13,8 @@
   function availabilityHtml(f){
     const a=f.availability||{};
     if(!Object.keys(a).length)return '<div class="home-map-no-status">受入見込み：情報なし</div>';
-    return `<div class="home-map-availability">${[0,1,2,3,4,5].map(age=>{
+    const dataset=availabilityDatasets[activeAvailabilityKey]||{};
+    return `<div class="home-map-popup-meta">${esc(dataset.availability_for||'対象月未確認')}入園／基準日：${esc(dataset.availability_as_of||'未確認')}</div><div class="home-map-availability">${[0,1,2,3,4,5].map(age=>{
       const status=a[String(age)]??'—';
       const cls=status==='○'?'o':status==='△'?'d':status==='×'?'x':'';
       return `<span class="home-age-pill ${cls}">${age}歳<br><strong>${esc(status)}</strong></span>`;

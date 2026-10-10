@@ -70,7 +70,9 @@ function availabilityHtml(facility, compact = false) {
     return '<div class="availability-note">受入見込み：現在のデータとの照合作業中</div>';
   }
 
+  const dataset = availabilityDatasets[activeAvailabilityKey] || {};
   return `
+    <div class="availability-note">受入見込み：${esc(dataset.availability_for || '対象月未確認')}入園／基準日：${esc(dataset.availability_as_of || '未確認')}</div>
     <div class="availability ${compact ? 'availability-popup' : ''}">
       ${[0,1,2,3,4,5].map((age) => {
         const status = a[String(age)] ?? '—';
@@ -111,6 +113,10 @@ function servicesHtml(f, compact = false) {
           </span>
         `;
       }).join('')}
+    </div>
+    <div class="service-source-note">サービス情報の基準日：${esc(f.services_source_as_of || '未確認')}
+      ${f.services_source ? `<a href="${esc(f.services_source)}" target="_blank" rel="noopener noreferrer">岡山市の掲載資料 ↗</a>` : ''}
+      <span>現在の実施状況・利用条件は各園へご確認ください。</span>
     </div>
   `;
 }

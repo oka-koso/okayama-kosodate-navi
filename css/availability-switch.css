@@ -1,0 +1,11 @@
+.availability-switcher[hidden]{display:none!important}
+.availability-switcher{padding:16px;margin:0 0 20px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.availability-switch-head{display:flex;gap:8px 20px;flex-wrap:wrap;justify-content:space-between;margin-bottom:12px}
+.availability-switch-note{font-size:13px;color:var(--muted)}
+.availability-switch-buttons{display:flex;gap:10px;flex-wrap:wrap}
+.availability-switch-btn{display:grid;gap:4px;text-align:left;padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);color:var(--ink);font:inherit;cursor:pointer}
+.availability-switch-btn small{color:var(--muted)}
+.availability-switch-btn.is-active{border-color:var(--brand);background:#e7f4eb;font-weight:800}
+.service-source-note{font-size:12px;color:var(--muted);line-height:1.6;margin:8px 0 12px;overflow-wrap:anywhere}
+.service-source-note a{margin-left:6px}.service-source-note span{display:block}
+@media(max-width:560px){.availability-switch-buttons{display:grid;grid-template-columns:1fr 1fr}.availability-switch-btn{padding:10px;font-size:14px}}

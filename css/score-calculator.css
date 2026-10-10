@@ -38,3 +38,6 @@
 .score-info-card h2{font-size:20px;margin:0 0 8px}.score-info-card p,.score-info-card li{font-size:14px}.score-info-card ol{padding-left:24px;margin-bottom:0}
 @media(max-width:900px){.score-layout{grid-template-columns:1fr}.score-result-wrap{position:static}.score-result{border:2px solid #cfe5da}.score-info-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.score-card{padding:17px}.score-card-title h2{font-size:19px}.result-total span{font-size:56px}.calc-actions{display:grid}.score-reset-btn{width:100%}}
+
+/* Explicit display rules must not override the conditional hidden state. */
+.score-section [hidden]{display:none!important}

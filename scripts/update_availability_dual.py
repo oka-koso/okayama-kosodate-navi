@@ -5,6 +5,7 @@ import importlib.util
 import json
 import re
 import shutil
+import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -158,48 +159,18 @@ def main():
         "results": {},
     }
 
-    if not monthly:
-        # 岡山市の受入見込みPDFは申込締切日前の約1週間だけ公開され、
-        # 締切後は一時的に非掲載になる。これは正常な公開サイクルなので、
-        # 既存データを保持したまま正常終了する。
+    # Each stream is independent: April can be published while monthly PDFs are hidden.
+    if monthly:
+        run_legacy_for(
+            legacy, monthly, page_updated, page_text,
+            "availability_monthly.json", "availability_monthly_audit.json",
+        )
+        shutil.copyfile(ROOT / "data" / "availability_monthly.json", ROOT / "data" / "availability_fixed.json")
+        shutil.copyfile(ROOT / "data" / "availability_monthly_audit.json", ROOT / "data" / "availability_fixed_audit.json")
+        discovery["results"]["monthly"] = "updated"
+    else:
         discovery["results"]["monthly"] = "not-published-now"
-        discovery["results"]["april"] = (
-            "detected" if april else "not-published-yet"
-        )
-        DISCOVERY_AUDIT.write_text(
-            json.dumps(discovery, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
-
-        # 受入PDFがない期間でも途中入園の申込締切情報は同期する。
-        import subprocess
-        subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "update_midyear_admission.py")],
-            check=True,
-        )
-
-        print(
-            "[availability-dual] SKIP: "
-            "monthly availability PDF is not currently published; "
-            "existing availability data preserved."
-        )
-        return
-
-    # 1) 年度途中入園。既存 availability_fixed.json も互換用に同期する。
-    run_legacy_for(
-        legacy, monthly, page_updated, page_text,
-        "availability_monthly.json",
-        "availability_monthly_audit.json",
-    )
-    shutil.copyfile(
-        ROOT / "data" / "availability_monthly.json",
-        ROOT / "data" / "availability_fixed.json",
-    )
-    shutil.copyfile(
-        ROOT / "data" / "availability_monthly_audit.json",
-        ROOT / "data" / "availability_fixed_audit.json",
-    )
-    discovery["results"]["monthly"] = "updated"
+        print("[availability-dual] monthly PDF not published; existing data preserved")
 
     # 2) 翌年度4月入園。未公表なら正常終了し、既存ファイルは消さない。
     #    公表された瞬間から同じv3.2厳格パーサーで別JSONへ保存する。
@@ -226,14 +197,6 @@ def main():
         encoding="utf-8",
     )
 
-    # 年度途中の受入見込みPDFを取得できた同じ実行内で、
-    # 対象月の正式な申込締切も岡山市公式ページから同期する。
-    import subprocess
-    subprocess.run(
-        [sys.executable, str(ROOT / "scripts" / "update_midyear_admission.py")],
-        check=True,
-    )
-
     print(
         "[availability-dual] SUCCESS "
         f"monthly={discovery['results']['monthly']} "
@@ -241,9 +204,27 @@ def main():
     )
 
 
-if __name__ == "__main__":
+def run_updates():
+    # A failure in one stream must not block checking the other official page.
+    errors = []
     try:
         main()
+    except Exception as exc:
+        errors.append(f"availability: {exc}")
+    try:
+        subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "update_midyear_admission.py")],
+            check=True,
+        )
+    except Exception as exc:
+        errors.append(f"monthly deadlines: {exc}")
+    if errors:
+        raise RuntimeError("; ".join(errors))
+
+
+if __name__ == "__main__":
+    try:
+        run_updates()
     except Exception as exc:
         print(f"[availability-dual] ERROR: {exc}", file=sys.stderr)
         sys.exit(1)

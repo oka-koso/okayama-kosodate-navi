@@ -1,24 +1,133 @@
 {
-  "generated_at": "2026-10-10 17:36",
-  "target_year": 2026,
-  "target_month": 11,
-  "target_label": "令和8年11月",
-  "deadline_date": "2026-10-01",
-  "deadline_time": "17:15",
-  "deadline_label_official": "令和8年10月1日（木曜日）",
-  "deadline_iso_jst": "2026-10-01T17:15:00+09:00",
+  "schema_version": 2,
+  "generated_at": "2026-10-10 23:51",
+  "checked_at": "2026-10-10T23:51:50+09:00",
+  "check_attempted_at": "2026-10-10T23:51:50+09:00",
+  "check_status": "verified",
+  "deadlines": [
+    {
+      "target_year": 2026,
+      "target_month": 5,
+      "target_label": "令和8年5月",
+      "deadline_date": "2026-04-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年 4月1日（水曜日）",
+      "deadline_iso_jst": "2026-04-01T17:15:00+09:00"
+    },
+    {
+      "target_year": 2026,
+      "target_month": 6,
+      "target_label": "令和8年6月",
+      "deadline_date": "2026-05-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年 5月1日（金曜日）",
+      "deadline_iso_jst": "2026-05-01T17:15:00+09:00"
+    },
+    {
+      "target_year": 2026,
+      "target_month": 7,
+      "target_label": "令和8年7月",
+      "deadline_date": "2026-06-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年 6月1日（月曜日）",
+      "deadline_iso_jst": "2026-06-01T17:15:00+09:00"
+    },
+    {
+      "target_year": 2026,
+      "target_month": 8,
+      "target_label": "令和8年8月",
+      "deadline_date": "2026-07-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年 7月1日（水曜日）",
+      "deadline_iso_jst": "2026-07-01T17:15:00+09:00"
+    },
+    {
+      "target_year": 2026,
+      "target_month": 9,
+      "target_label": "令和8年9月",
+      "deadline_date": "2026-08-03",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年 8月3日（月曜日）",
+      "deadline_iso_jst": "2026-08-03T17:15:00+09:00"
+    },
+    {
+      "target_year": 2026,
+      "target_month": 10,
+      "target_label": "令和8年10月",
+      "deadline_date": "2026-09-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年 9月1日（火曜日）",
+      "deadline_iso_jst": "2026-09-01T17:15:00+09:00"
+    },
+    {
+      "target_year": 2026,
+      "target_month": 11,
+      "target_label": "令和8年11月",
+      "deadline_date": "2026-10-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年10月1日（木曜日）",
+      "deadline_iso_jst": "2026-10-01T17:15:00+09:00"
+    },
+    {
+      "target_year": 2026,
+      "target_month": 12,
+      "target_label": "令和8年12月",
+      "deadline_date": "2026-11-02",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年11月2日（月曜日）",
+      "deadline_iso_jst": "2026-11-02T17:15:00+09:00"
+    },
+    {
+      "target_year": 2027,
+      "target_month": 1,
+      "target_label": "令和9年1月",
+      "deadline_date": "2026-12-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和8年12月1日（火曜日）",
+      "deadline_iso_jst": "2026-12-01T17:15:00+09:00"
+    },
+    {
+      "target_year": 2027,
+      "target_month": 2,
+      "target_label": "令和9年2月",
+      "deadline_date": "2027-01-04",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和9年 1月4日（月曜日）",
+      "deadline_iso_jst": "2027-01-04T17:15:00+09:00"
+    },
+    {
+      "target_year": 2027,
+      "target_month": 3,
+      "target_label": "令和9年3月",
+      "deadline_date": "2027-02-01",
+      "deadline_time": "17:15",
+      "deadline_label_official": "令和9年 2月1日（月曜日）",
+      "deadline_iso_jst": "2027-02-01T17:15:00+09:00"
+    }
+  ],
   "application_rule": "必要書類は入園希望月の前月1日（閉庁日の場合は翌開庁日）の17:15必着です。",
   "application_start_note": "年度途中の申込みは、利用希望月のおおむね4カ月前から受け付けられます。",
   "availability_publish_note": "年度途中の受入見込みは、申込締切日の1週間程度前から締切日まで岡山市ホームページで公開されます。",
-  "availability_publish_estimate": "2026-09-24",
+  "availability_for": "令和8年11月",
   "availability_as_of": "令和８年９月１７日時点",
   "availability_source_pdf_title": "【認可保育園】令和8年11月受入見込み(PDF形式、381.56KB)",
   "availability_source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
   "availability_source_sha256": "0bccf8a224b1fe35f5f2a6a4486542da1f54e41caec5a4e447bae3f4798084dd",
   "source_page_updated": "2026-09-24",
+  "availability_publications": [],
+  "publications_checked_at": "2026-10-10T23:51:50+09:00",
+  "publication_check_status": "verified",
   "sources": {
     "application": "https://www.city.okayama.jp/kurashi/0000072787.html",
     "availability": "https://www.city.okayama.jp/kurashi/0000012977.html",
     "guide": "https://www.city.okayama.jp/kurashi/0000013000.html"
-  }
+  },
+  "target_year": 2026,
+  "target_month": 12,
+  "target_label": "令和8年12月",
+  "deadline_date": "2026-11-02",
+  "deadline_time": "17:15",
+  "deadline_label_official": "令和8年11月2日（月曜日）",
+  "deadline_iso_jst": "2026-11-02T17:15:00+09:00",
+  "availability_publish_estimate": "2026-10-26"
 }
