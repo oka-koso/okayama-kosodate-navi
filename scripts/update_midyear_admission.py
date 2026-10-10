@@ -103,6 +103,25 @@ def availability_publications(html):
     return result
 
 
+def availability_publication_plans(html):
+    """Read explicit monthly publication plans; do not infer from deadlines."""
+    text = z2h(clean(BeautifulSoup(html, 'html.parser').get_text(' ', strip=True)))
+    pattern = (r'(令和\s*\d+年\s*\d+月)\s*入園に関する受入見込み情報は[、,\s]*'
+               r'(令和\s*\d+年\s*\d+月\s*\d+日)[^。]{0,30}公表(?:する)?予定')
+    plans = []
+    for match in re.finditer(pattern, text):
+        ym, publish = parse_reiwa_ym(match[1]), parse_jp_date(match[2])
+        if not ym or not publish or ym[1] == 4:
+            continue
+        target = datetime(ym[0], ym[1], 1).date()
+        planned = datetime.fromisoformat(publish).date()
+        if not 0 < (target - planned).days <= 62:
+            raise ValueError('入園月と公表予定日の対応が不正です')
+        plans.append({'target_year': ym[0], 'target_month': ym[1],
+                      'publish_date': publish, 'source': AVAILABILITY_PAGE})
+    return plans
+
+
 def main():
     now = datetime.now(JST)
     checked = now.isoformat(timespec='seconds')
@@ -115,11 +134,14 @@ def main():
         publication_status = 'verified'
         publications_checked = checked
         try:
-            publications = availability_publications(fetch_html(AVAILABILITY_PAGE))
+            publication_html = fetch_html(AVAILABILITY_PAGE)
+            publications = availability_publications(publication_html)
+            plans = availability_publication_plans(publication_html)
         except Exception:
             publication_status = 'failed'
             publications_checked = previous.get('publications_checked_at', '')
             publications = previous.get('availability_publications', [])
+            plans = previous.get('availability_publication_plans', [])
         payload = {
             'schema_version': 2,
             'generated_at': now.strftime('%Y-%m-%d %H:%M'),
@@ -137,6 +159,7 @@ def main():
             'availability_source_sha256': availability.get('source_pdf_sha256', ''),
             'source_page_updated': availability.get('source_page_updated', ''),
             'availability_publications': publications,
+            'availability_publication_plans': plans,
             'publications_checked_at': publications_checked,
             'publication_check_status': publication_status,
             'sources': {'application': SOURCE_PAGE, 'availability': AVAILABILITY_PAGE, 'guide': GUIDE_PAGE},

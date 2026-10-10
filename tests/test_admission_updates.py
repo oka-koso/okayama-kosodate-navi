@@ -56,6 +56,15 @@ class DeadlineTests(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]['target_month'], 12)
 
+    def test_publication_plans_use_explicit_monthly_announcement(self):
+        html = '''<p>次回、令和８年１２月入園に関する受入見込み情報は、令和８年１０月２６日（月曜日）に公表する予定です。</p>
+<p>令和9年4月入園の受入見込み情報は、平成8年10月14日に公表予定です。</p>'''
+        plans = midyear.availability_publication_plans(html)
+        self.assertEqual(plans, [{'target_year': 2026, 'target_month': 12,
+                                 'publish_date': '2026-10-26', 'source': midyear.AVAILABILITY_PAGE}])
+        self.assertEqual(midyear.availability_publication_plans('<p>締切の約1週間前に公開します。</p>'), [])
+        self.assertEqual(midyear.availability_publication_plans('<p>令和9年4月入園に関する受入見込み情報は、令和8年10月14日に公表する予定です。</p>'), [])
+
 class AprilPipelineTests(unittest.TestCase):
     def test_deadline_sync_still_runs_after_availability_failure(self):
         with patch.object(dual, 'main', side_effect=RuntimeError('PDF parse failed')), patch.object(dual.subprocess, 'run') as run:

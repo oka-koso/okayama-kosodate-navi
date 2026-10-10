@@ -55,3 +55,14 @@
   }
 }
 
+
+/* Three existing categories, on-page reading order and filtering. */
+.bibouroku-reading-guide{margin-bottom:32px;padding:22px;border:1px solid #dde7de;border-radius:18px;background:#f4f8f3}
+.bibouroku-reading-guide h2{margin-top:0;font-size:1.4rem}.bibouroku-reading-guide h3{font-size:1.05rem;margin-top:0}
+.bibouroku-reading-guide__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.bibouroku-reading-guide p{line-height:1.9;margin-bottom:0;overflow-wrap:anywhere}
+.bibouroku-filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.bibouroku-filters[hidden]{display:none}
+.bibouroku-filters button{font:inherit;min-height:44px;padding:10px 14px;border:1px solid #b8cab9;border-radius:999px;background:#fff;color:#374c3a;cursor:pointer}
+.bibouroku-filters button[aria-pressed="true"]{background:#496653;color:#fff;border-color:#496653}.bibouroku-filters button:focus-visible{outline:3px solid #b8842d;outline-offset:3px}
+.bibouroku-filters span{margin-left:4px;font-size:.85em}
+@media(max-width:760px){.bibouroku-reading-guide__grid{grid-template-columns:1fr}.bibouroku-reading-guide{padding:18px}}

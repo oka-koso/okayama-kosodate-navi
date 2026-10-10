@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-10 23:51",
-  "checked_at": "2026-10-10T23:51:50+09:00",
-  "check_attempted_at": "2026-10-10T23:51:50+09:00",
+  "generated_at": "2026-10-11 07:31",
+  "checked_at": "2026-10-11T07:31:34+09:00",
+  "check_attempted_at": "2026-10-11T07:31:34+09:00",
   "check_status": "verified",
   "deadlines": [
     {
@@ -115,7 +115,15 @@
   "availability_source_sha256": "0bccf8a224b1fe35f5f2a6a4486542da1f54e41caec5a4e447bae3f4798084dd",
   "source_page_updated": "2026-09-24",
   "availability_publications": [],
-  "publications_checked_at": "2026-10-10T23:51:50+09:00",
+  "availability_publication_plans": [
+    {
+      "target_year": 2026,
+      "target_month": 12,
+      "publish_date": "2026-10-26",
+      "source": "https://www.city.okayama.jp/kurashi/0000012977.html"
+    }
+  ],
+  "publications_checked_at": "2026-10-11T07:31:34+09:00",
   "publication_check_status": "verified",
   "sources": {
     "application": "https://www.city.okayama.jp/kurashi/0000072787.html",

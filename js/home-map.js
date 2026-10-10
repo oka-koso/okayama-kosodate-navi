@@ -2,7 +2,7 @@
   'use strict';
   const WARD_COLORS={'北区':'#2f80ed','中区':'#27ae60','東区':'#f2994a','南区':'#9b51e0'};
   let map, all=[], markers=[], activeWard='';
-  let availabilityDatasets={}, activeAvailabilityKey='monthly';
+  let availabilityDatasets={}, activeAvailabilityKey='monthly', admissionGuide={};
   const esc=(v)=>String(v??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
 
   function wardIcon(ward){
@@ -14,7 +14,7 @@
     const a=f.availability||{};
     if(!Object.keys(a).length)return '<div class="home-map-no-status">受入見込み：情報なし</div>';
     const dataset=availabilityDatasets[activeAvailabilityKey]||{};
-    return `<div class="home-map-popup-meta">${esc(dataset.availability_for||'対象月未確認')}入園／基準日：${esc(dataset.availability_as_of||'未確認')}</div><div class="home-map-availability">${[0,1,2,3,4,5].map(age=>{
+    return `<div class="home-map-popup-meta">${esc(dataset.availability_for||'対象月未確認')}入園／基準日：${esc(dataset.availability_as_of||'未確認')}${window.OKNAvailability.describe(dataset,activeAvailabilityKey,admissionGuide).closed?'／この月の受付終了':''}</div><div class="home-map-availability">${[0,1,2,3,4,5].map(age=>{
       const status=a[String(age)]??'—';
       const cls=status==='○'?'o':status==='△'?'d':status==='×'?'x':'';
       return `<span class="home-age-pill ${cls}">${age}歳<br><strong>${esc(status)}</strong></span>`;
@@ -64,13 +64,12 @@
 
   function updateMeta(){
     const availability=availabilityDatasets[activeAvailabilityKey]||{};
+    const state=window.OKNAvailability.describe(availability,activeAvailabilityKey,admissionGuide);
     const meta=document.getElementById('home-map-meta');
-    if(meta){
-      const parts=[];
-      if(availability.availability_for)parts.push(`${availability.availability_for}入園`);
-      if(availability.availability_as_of)parts.push(availability.availability_as_of);
-      meta.textContent=parts.length?`受入見込み：${parts.join('・')}`:'受入見込み：岡山市の最新公表情報を掲載';
-    }
+    if(meta)meta.textContent=state.title;
+    window.OKNAvailability.render(document.getElementById('home-map-summary'),availability,activeAvailabilityKey,admissionGuide);
+    const latest=document.getElementById('latest-availability');
+    if(latest)latest.textContent=`${state.title}。${state.closed?'この月の受付終了。':''}${availability.availability_as_of||''}`;
   }
 
   function renderAvailabilitySwitcher(){
@@ -88,7 +87,7 @@
       <div class="home-map-availability-switch-buttons" role="group" aria-label="受入見込みの種類">
         ${keys.map(key=>{
           const active=key===activeAvailabilityKey;
-          return `<button type="button" class="home-map-availability-switch-btn ${active?'is-active':''}" data-home-availability-mode="${key}" aria-pressed="${active?'true':'false'}"><span>${esc(availabilityLabel(key,availabilityDatasets[key]))}</span><small>${key==='april'?'新年度の申込用':'直近の月の申込用'}</small></button>`;
+          return `<button type="button" class="home-map-availability-switch-btn ${active?'is-active':''}" data-home-availability-mode="${key}" aria-pressed="${active?'true':'false'}"><span>${esc(availabilityLabel(key,availabilityDatasets[key]))}</span><small>${key==='april'?'新年度の申込用':'途中入園の参考資料'}</small></button>`;
         }).join('')}
       </div>`;
   }
@@ -107,13 +106,16 @@
   async function loadData(){
     const master=await loadJson('data/facility_master.json');
 
-    let monthly=null;
+    admissionGuide=await loadJsonIfExists('data/midyear_admission.json')||{publication_check_status:'failed',check_status:'failed'};
+    let monthly=null,monthlyLoadFailed=false;
     for(const path of ['data/availability_monthly.json','data/availability_fixed.json']){
       monthly=await loadJsonIfExists(path);
       if(monthly?.by_facility_id)break;
+      if(path==='data/availability_monthly.json')monthlyLoadFailed=true;
     }
     if(!monthly)monthly={by_facility_id:{},availability_for:'',availability_as_of:''};
 
+    monthly.display_load_failed=monthlyLoadFailed;
     const aprilRaw=await loadJsonIfExists('data/availability_april.json');
 
     availabilityDatasets={monthly};
@@ -130,6 +132,7 @@
 
     updateMeta();
     renderAvailabilitySwitcher();
+    setInterval(updateMeta,30000);
   }
 
   function clearMarkers(){markers.forEach(m=>m.remove());markers=[];}

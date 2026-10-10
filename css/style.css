@@ -464,3 +464,5 @@ footer{border-top:1px solid var(--line);padding:34px 0 50px;background:#fbfaf5}.
 }
 
 
+
+.availability-summary{margin:14px 0;overflow-wrap:anywhere}.availability-summary p{margin:0 0 8px;line-height:1.75}.availability-summary p:last-child{margin-bottom:0}.availability-summary[hidden]{display:none}.availability-warning{color:#8b3a1f;font-weight:700}.facility-empty{grid-column:1/-1}

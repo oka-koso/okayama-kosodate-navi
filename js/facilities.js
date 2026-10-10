@@ -5,6 +5,7 @@ let markerById = new Map();
 
 let availabilityDatasets = {};
 let activeAvailabilityKey = 'monthly';
+let admissionGuide = {};
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -72,7 +73,7 @@ function availabilityHtml(facility, compact = false) {
 
   const dataset = availabilityDatasets[activeAvailabilityKey] || {};
   return `
-    <div class="availability-note">受入見込み：${esc(dataset.availability_for || '対象月未確認')}入園／基準日：${esc(dataset.availability_as_of || '未確認')}</div>
+    <div class="availability-note">受入見込み（参考資料）：${esc(dataset.availability_for || '対象月未確認')}入園／基準日：${esc(dataset.availability_as_of || '未確認')}${window.OKNAvailability.describe(dataset, activeAvailabilityKey, admissionGuide).closed ? '／この月の受付終了' : ''}</div>
     <div class="availability ${compact ? 'availability-popup' : ''}">
       ${[0,1,2,3,4,5].map((age) => {
         const status = a[String(age)] ?? '—';
@@ -258,7 +259,7 @@ function updateAvailabilityMeta() {
     meta.push(availability.availability_as_of);
   }
   if (availability.source_page_updated) {
-    meta.push(`岡山市ページ更新 ${availability.source_page_updated}`);
+    meta.push(`資料取得時の市ページ更新 ${availability.source_page_updated}`);
   }
 
   meta.push(`認可保育施設 ${allFacilities.length}施設`);
@@ -266,6 +267,8 @@ function updateAvailabilityMeta() {
   if ($('#updated')) {
     $('#updated').textContent = meta.join('｜');
   }
+
+  window.OKNAvailability.render($('#availability-summary'), availability, activeAvailabilityKey, admissionGuide);
 
   const note = $('#availability-current-note');
   if (note) {
@@ -305,7 +308,7 @@ function renderAvailabilitySwitcher() {
                   data-availability-mode="${key}"
                   aria-pressed="${active ? 'true' : 'false'}">
             <span>${esc(availabilityLabel(key, dataset))}</span>
-            <small>${key === 'april' ? '新年度の申込用' : '直近の月の申込用'}</small>
+            <small>${key === 'april' ? '新年度の申込用' : '途中入園の参考資料'}</small>
           </button>`;
       }).join('')}
     </div>`;
@@ -328,9 +331,12 @@ async function loadData() {
   const master = await masterResp.json();
 
   // 新構成を優先。移行直後でも表示が壊れないよう、旧ファイルへフォールバック。
+  admissionGuide = await fetchJsonIfExists(`data/midyear_admission.json?v=${ts}`) || {publication_check_status:'failed', check_status:'failed'};
+
   let monthly = await fetchJsonIfExists(
     `data/availability_monthly.json?v=${ts}`
   );
+  const monthlyLoadFailed = !monthly;
   if (!monthly) {
     monthly = await fetchJsonIfExists(
       `data/availability_fixed.json?v=${ts}`
@@ -344,6 +350,8 @@ async function loadData() {
       source_page_updated: ''
     };
   }
+
+  monthly.display_load_failed = monthlyLoadFailed;
 
   const aprilRaw = await fetchJsonIfExists(
     `data/availability_april.json?v=${ts}`
@@ -384,6 +392,7 @@ async function loadData() {
 
   renderAvailabilitySwitcher();
   updateAvailabilityMeta();
+  setInterval(updateAvailabilityMeta, 30000);
 }
 
 function initMap() {
@@ -681,6 +690,8 @@ function focusMarker(id) {
   window.setTimeout(() => {
     map.invalidateSize();
 
+    // Ignore a delayed focus if its card was removed by a new search.
+    if (markerById.get(id) !== marker) return;
     const ll =
       marker.getLatLng();
 
@@ -695,6 +706,8 @@ function focusMarker(id) {
 }
 
 function clearMarkers() {
+  // A Leaflet popup can outlive its removed marker when a search returns no rows.
+  if (map) map.closePopup();
   markers.forEach(
     (m) => m.remove()
   );
@@ -743,7 +756,7 @@ function render() {
   if ($('#facility-list')) {
     $('#facility-list')
       .innerHTML =
-        fs.map(card).join('');
+        fs.length ? fs.map(card).join('') : '<p class="notice facility-empty" role="status">条件に合う施設が見つかりませんでした。園名の一部で検索するか、区・施設の種類・サービスの指定を減らしてみてください。</p>';
   }
 
   clearMarkers();
