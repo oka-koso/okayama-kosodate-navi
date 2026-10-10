@@ -23,6 +23,7 @@ function environment(data,url=''){
   const av=vm.runInContext('availabilityHtml(allFacilities[0])',e.context);
   assert.match(av,availableApril&&!query?/令和9年4月/:/令和8年11月/);
   assert.equal(vm.runInContext("aprilDatasetIsRelevant({availability_for:'令和8年4月',by_facility_id:{}})",e.context),false);
+  assert.equal(vm.runInContext("aprilDatasetIsRelevant({availability_for:'令和9年4月',by_facility_id:{}})",e.context),false);
  }
  for(const availableApril of [false,true]){
   const e=environment({'data/facility_master.json':master,'data/availability_monthly.json':monthly,'data/availability_april.json':availableApril?april:null});
@@ -31,6 +32,17 @@ function environment(data,url=''){
   assert.equal(e.context.window.testing.mode(),availableApril?'april':'monthly');
   assert.equal(e.get('#home-map-availability-switcher').hidden,!availableApril);
  }
+ // A placeholder for the right year is not a valid published April dataset.
+ const placeholder={'data/facility_master.json':master,'data/availability_monthly.json':monthly,'data/availability_april.json':{availability_for:'令和9年4月',by_facility_id:{}}};
+ const emptyFull=environment(placeholder);
+ vm.runInContext(read('js/facilities.js'),emptyFull.context);await vm.runInContext('loadData()',emptyFull.context);
+ assert.equal(vm.runInContext('activeAvailabilityKey',emptyFull.context),'monthly');
+ assert.equal(emptyFull.get('#availability-switcher').hidden,true);
+ const emptyHome=environment(placeholder);
+ const emptyHomeCode=read('js/home-map.js').replace("window.addEventListener('DOMContentLoaded'", "window.testing={loadData,mode:()=>activeAvailabilityKey};window.addEventListener('DOMContentLoaded'");
+ vm.runInContext(emptyHomeCode,emptyHome.context);await emptyHome.context.window.testing.loadData();
+ assert.equal(emptyHome.context.window.testing.mode(),'monthly');
+ assert.equal(emptyHome.get('#home-map-availability-switcher').hidden,true);
  const data={
   deadlines:[
    {target_year:2026,target_month:11,target_label:'令和8年11月',deadline_date:'2026-10-01',deadline_iso_jst:'2026-10-01T17:15:00+09:00'},

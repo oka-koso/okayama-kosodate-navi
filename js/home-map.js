@@ -42,7 +42,7 @@
   }
 
   function aprilDatasetIsRelevant(dataset){
-    if(!dataset||!dataset.by_facility_id)return false;
+    if(!dataset||!dataset.by_facility_id||!Object.keys(dataset.by_facility_id).length)return false;
     const text=String(dataset.availability_for||'');
     const m=text.match(/令和\s*([0-9０-９]+)年\s*4月/);
     if(!m)return /4月/.test(text);
