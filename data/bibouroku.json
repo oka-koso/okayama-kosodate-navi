@@ -3,7 +3,7 @@
     "title": "【2027年4月入園】岡山市の保育園申込みはいつから？令和9年度の日程まとめ",
     "description": "令和9年度の4月入園に向けて、保育利用ガイド公開日、一次募集、電子申請、結果通知など最新の日程を整理しました。",
     "url": "articles/okayama-hoikuen-2027-schedule.html",
-    "category": "保育園・申込",
+    "category": "入園申込・手続き",
     "published": "2026-10-01",
     "updated": "2026-10-01",
     "image": "assets/bibouroku/okayama-hoikuen-2027-schedule-final.png"
@@ -12,7 +12,7 @@
     "title": "岡山市の保育園申込みに必要な書類は？電子申請・就労証明書を解説【2027年度】",
     "description": "家庭の状況別の書類確認、就労証明書の依頼、誓約書、電子申請・郵送の準備を詳しく整理。新年度資料の公開待ち項目も確認できます。",
     "url": "articles/okayama-hoikuen-2027-documents.html",
-    "category": "保育園・申込",
+    "category": "入園申込・手続き",
     "published": "2026-10-02",
     "updated": "2026-10-11",
     "image": "assets/bibouroku/okayama-hoikuen-2027-documents-final.png"
@@ -21,7 +21,7 @@
     "title": "岡山市は保育園に入りやすい？待機児童・空き状況・保活のポイント【2026年最新】",
     "description": "待機児童0人の意味、園ごとの受入見込み、途中入園、利用調整、保育コンシェルジュなど岡山市の保活ポイントを整理します。",
     "url": "articles/okayama-hoikuen-hokatsu-2026.html",
-    "category": "保活",
+    "category": "園選び・保活",
     "published": "2026-10-03",
     "updated": "2026-10-03",
     "image": "assets/bibouroku/okayama-hoikuen-hokatsu-2026-v2.webp"
@@ -30,7 +30,7 @@
     "title": "保育園探し、まず何から始める？",
     "description": "園探しから空き状況、申込み時期、利用調整点数まで。最初に確認しておきたいことを順番にまとめました。",
     "url": "articles/hoikuen-sagashi-hajimekata.html",
-    "category": "保育園",
+    "category": "園選び・保活",
     "published": "2026-09-29",
     "updated": "2026-09-29"
   },
@@ -38,7 +38,7 @@
     "title": "保育園を選ぶポイント Part1",
     "description": "子どもの安心と先生の関わり方、設備・安全面を見学で見極める視点と質問例。",
     "url": "articles/hoikuen-erabikata-part1.html",
-    "category": "保育園",
+    "category": "園選び・保活",
     "published": "2026-09-29",
     "updated": "2026-10-10"
   },
@@ -46,7 +46,7 @@
     "title": "保育園を選ぶポイント Part2",
     "description": "給食、保護者の負担、送迎、費用、延長保育まで、入園後の暮らしを考える実用ガイド。",
     "url": "articles/hoikuen-erabikata-part2.html",
-    "category": "保育園",
+    "category": "園選び・保活",
     "published": "2026-09-29",
     "updated": "2026-10-10"
   },
@@ -54,7 +54,7 @@
     "title": "保育園・幼稚園の名前付けがラクに！スマホ対応ラベルマシンを実際に使ってよかった話",
     "description": "入園準備で大変な名前付け。実際に使って便利だったスマホ対応ラベルマシンの良かった点と、手書きとの使い分けをまとめました。",
     "url": "articles/nyuen-name-label-maker.html",
-    "category": "入園準備",
+    "category": "入園準備・通園生活",
     "published": "2026-10-02",
     "publish_at": "2026-10-02T19:00:00+09:00",
     "updated": "2026-10-02",
@@ -64,7 +64,7 @@
     "title": "岡山市で途中入園するには？申込期限・空き状況・手続きの流れを解説",
     "description": "岡山市で年度途中に保育園へ入園したい方向けに、申込期限、受入見込みの公開時期、必要書類、電子申請、転入予定の場合の注意点を整理します。",
     "url": "articles/okayama-midyear-admission.html",
-    "category": "保育園・申込",
+    "category": "入園申込・手続き",
     "published": "2026-10-04",
     "updated": "2026-10-03",
     "image": "assets/bibouroku/okayama-midyear-admission-2026.png"
@@ -73,7 +73,7 @@
     "title": "岡山市で年度途中に転園できる？きょうだい別園・転居時の条件を解説",
     "description": "岡山市で年度途中に保育園を転園したい場合のルールを解説。原則不可の考え方、転居・転職、きょうだい別園、4月転園、地域型保育事業の扱いを整理します。",
     "url": "articles/okayama-midyear-transfer.html",
-    "category": "保育園・申込",
+    "category": "入園申込・手続き",
     "published": "2026-10-05",
     "updated": "2026-10-03",
     "image": "assets/bibouroku/okayama-midyear-transfer-2026.png"
@@ -82,7 +82,7 @@
     "title": "保育園とは？幼稚園・認定こども園との違い、対象年齢や利用条件をやさしく解説",
     "description": "保育園の基本、対象年齢、保育の必要性、幼稚園・認定こども園との違いをやさしく整理。後半では岡山市の申込みも紹介します。",
     "url": "articles/hoikuen-toha.html",
-    "category": "園選びガイド",
+    "category": "園選び・保活",
     "published": "2026-10-06",
     "updated": "2026-10-04",
     "image": "assets/bibouroku/hoikuen-toha-2026-transparent.svg?v=20261004-4"
@@ -91,7 +91,7 @@
     "title": "幼稚園とは？保育園との違い、対象年齢・預かり保育をやさしく解説",
     "description": "幼稚園の基本、対象年齢、教育時間、預かり保育、保育園・認定こども園との違いを整理。後半では岡山市の手続きも紹介します。",
     "url": "articles/youchien-toha.html",
-    "category": "園選びガイド",
+    "category": "園選び・保活",
     "published": "2026-10-07",
     "updated": "2026-10-04",
     "image": "assets/bibouroku/youchien-toha-2026-transparent.svg?v=20261004-4"
@@ -100,7 +100,7 @@
     "title": "認定こども園とは？保育園・幼稚園との違いと1号・2号・3号認定をやさしく解説",
     "description": "認定こども園の仕組み、1号・2号・3号認定、4つのタイプ、保育園・幼稚園との違いを整理。後半では岡山市の申込方法も紹介します。",
     "url": "articles/nintei-kodomoen-toha.html",
-    "category": "園選びガイド",
+    "category": "園選び・保活",
     "published": "2026-10-08",
     "updated": "2026-10-04",
     "image": "assets/bibouroku/nintei-kodomoen-toha-2026-transparent.svg?v=20261004-4"
@@ -109,7 +109,7 @@
     "title": "保育園見学で聞きたい質問とチェックリスト【保存版】",
     "description": "設備・先生・給食・保護者負担・時間と料金。6つの視点で、家庭に合う園を見つける質問を整理しました。",
     "url": "articles/hoikuen-erabikata-part3.html",
-    "category": "保育園",
+    "category": "園選び・保活",
     "published": "2026-10-10",
     "updated": "2026-10-10"
   }
