@@ -74,6 +74,6 @@
 </main><div data-site-footer></div>
 <script>fetch('data/facility_master.json').then(r=>r.json()).then(d=>{const counts={};d.facilities.forEach(x=>counts[x.ward]=(counts[x.ward]||0)+1);document.querySelectorAll('[data-count]').forEach(el=>el.textContent=(counts[el.dataset.count]||0)+'施設');}).catch(()=>{});</script><script defer src="js/site-shell.js"></script>
 <script defer src="js/site-shell-polish.js"></script>
-<script src="js/bibouroku.js?v=20261013-shupot" defer></script>
-  <script src="js/home-bibouroku-feature.js?v=20261013-shupot" defer></script>
+<script src="js/bibouroku.js?v=20261013-shupot-v2" defer></script>
+  <script src="js/home-bibouroku-feature.js?v=20261013-shupot-v2" defer></script>
 </body></html>
