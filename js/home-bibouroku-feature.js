@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "data/bibouroku.json?v=20261012-narashi";
+  const DATA_URL = "data/bibouroku.json?v=20261013-shupot";
 
   const normalizeArticles = (data) => {
     const list = Array.isArray(data) ? data :
