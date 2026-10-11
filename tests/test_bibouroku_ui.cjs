@@ -17,10 +17,10 @@ async function run({offline=false,limit=0}={}){
 }
 (async()=>{
  const e=await run();
- assert.equal(e.filters.hidden,false);assert.match(e.count.textContent,/13記事/);
+ assert.equal(e.filters.hidden,false);assert.match(e.count.textContent,/14記事/);
  assert.doesNotMatch(e.list.innerHTML,/FUTURE_DAY|FUTURE_HOUR/);
  assert.match(e.list.innerHTML,/hoikuen-erabikata-part3/); // JST already reaches its publication day.
- for(const [index,total] of [[1,8],[2,4],[3,1],[0,13]]){
+ for(const [index,total] of [[1,8],[2,4],[3,2],[0,14]]){
   const button=e.buttons[index];e.filters.click({target:{closest:()=>button}});
   assert.match(e.count.textContent,new RegExp(`${total}記事`));
   assert.equal((e.list.innerHTML.match(/class="bibouroku-card"/g)||[]).length,total);

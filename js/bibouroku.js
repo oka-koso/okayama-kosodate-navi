@@ -20,7 +20,7 @@
     const targets = [...document.querySelectorAll('[data-bibouroku-list]')];
     if (!targets.length) return;
     try {
-      const res = await fetch(base + 'data/bibouroku.json?v=20261011-audit', {cache:'no-store'});
+      const res = await fetch(base + 'data/bibouroku.json?v=20261011-renraku', {cache:'no-store'});
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Tokyo', year:'numeric', month:'2-digit', day:'2-digit'}).formatToParts(new Date());
       const dm = Object.fromEntries(parts.map(p => [p.type, p.value]));
