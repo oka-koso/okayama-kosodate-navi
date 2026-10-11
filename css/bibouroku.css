@@ -67,3 +67,7 @@
 .bibouroku-filters button[aria-pressed="true"]{background:#496653;color:#fff;border-color:#496653}.bibouroku-filters button:focus-visible{outline:3px solid #b8842d;outline-offset:3px}
 .bibouroku-filters span{margin-left:4px;font-size:.85em}
 @media(max-width:760px){.bibouroku-reading-guide__grid{grid-template-columns:1fr;gap:16px}.bibouroku-reading-guide{padding:18px}.bibouroku-reading-guide h2{margin-bottom:16px}.bibouroku-reading-guide h3{margin-bottom:6px}}
+
+/* Photographs that support first-hand notes and practical guides. */
+.article-photo{margin:28px 0}
+.article-photo img{display:block;width:100%;height:auto;border-radius:16px}

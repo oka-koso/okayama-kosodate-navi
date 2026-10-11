@@ -84,7 +84,7 @@
     "category": "入園準備・通園生活",
     "published": "2026-10-02",
     "publish_at": "2026-10-02T19:00:00+09:00",
-    "updated": "2026-10-11",
+    "updated": "2026-10-12",
     "image": "assets/bibouroku/okayama-name-label-maker-2026.png"
   },
   {
@@ -138,6 +138,7 @@
     "url": "articles/hoikuen-erabikata-part3.html",
     "category": "園選び・保活",
     "published": "2026-10-10",
-    "updated": "2026-10-10"
+    "updated": "2026-10-12",
+    "image": "assets/bibouroku/hoikuen-visit-gate-photo.jpg"
   }
 ]
