@@ -12,7 +12,7 @@
 
   function availabilityHtml(f){
     const a=f.availability||{};
-    if(!Object.keys(a).length)return '<div class="home-map-no-status">受入見込み：情報なし</div>';
+    if(!Object.keys(a).length)return activeAvailabilityKey==='april' ? `<div class="home-map-no-status">園別の受入見込みは照合中です。<a href="${esc(availabilityDatasets.april?.source_pdf_url||'')}" target="_blank" rel="noopener noreferrer">岡山市の公式PDFで確認 ↗</a></div>` : '<div class="home-map-no-status">受入見込み：情報なし</div>';
     const dataset=availabilityDatasets[activeAvailabilityKey]||{};
     return `<div class="home-map-popup-meta">${esc(dataset.availability_for||'対象月未確認')}入園／基準日：${esc(dataset.availability_as_of||'未確認')}${window.OKNAvailability.describe(dataset,activeAvailabilityKey,admissionGuide).closed?'／この月の受付終了':''}</div><div class="home-map-availability">${[0,1,2,3,4,5].map(age=>{
       const status=a[String(age)]??'—';
@@ -42,7 +42,7 @@
   }
 
   function aprilDatasetIsRelevant(dataset){
-    if(!dataset||!dataset.by_facility_id||!Object.keys(dataset.by_facility_id).length)return false;
+    if(!dataset||!dataset.by_facility_id||(!Object.keys(dataset.by_facility_id).length&&!dataset.publication_verified))return false;
     const text=String(dataset.availability_for||'');
     const m=text.match(/令和\s*([0-9０-９]+)年\s*4月/);
     if(!m)return /4月/.test(text);
