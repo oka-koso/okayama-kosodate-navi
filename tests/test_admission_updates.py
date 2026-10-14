@@ -77,12 +77,18 @@ class AprilPipelineTests(unittest.TestCase):
             root = Path(tmp)
             (root / 'data').mkdir()
             april = {'stream': 'april', 'score': 20, 'order': 1, 'title': '令和9年4月受入見込み', 'url': 'https://example.test/april.pdf'}
-            with patch.object(dual, 'ROOT', root), patch.object(dual, 'DISCOVERY_AUDIT', root / 'data' / 'audit.json'), patch.object(dual, 'ensure_verified_facility_master'), patch.object(dual, 'load_legacy'), patch.object(dual, 'fetch_source_page', return_value=('2026-10-14', '', [april])), patch.object(dual, 'run_legacy_for') as run:
+            def write_april(*args):
+                output_name = args[-2]
+                (root / 'data' / output_name).write_text(json.dumps({
+                    'availability_for': '令和9年4月',
+                    'by_facility_id': {str(i): {} for i in range(180)},
+                }))
+            with patch.object(dual, 'ROOT', root), patch.object(dual, 'DISCOVERY_AUDIT', root / 'data' / 'audit.json'), patch.object(dual, 'ensure_verified_facility_master'), patch.object(dual, 'load_legacy'), patch.object(dual, 'fetch_source_page', return_value=('2026-10-14', '', [april])), patch.object(dual, 'run_legacy_for', side_effect=write_april) as run:
                 dual.main()
             run.assert_called_once()
             self.assertEqual(run.call_args.args[-2], 'availability_april.json')
             audit = json.loads((root / 'data' / 'audit.json').read_text())
-            self.assertEqual(audit['results'], {'monthly': 'not-published-now', 'april': 'updated'})
+            self.assertEqual(audit['results'], {'monthly': 'not-published-now', 'april': 'updated: 180 facilities'})
 
 if __name__ == '__main__':
     unittest.main()
