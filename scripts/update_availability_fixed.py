@@ -23,6 +23,7 @@ UA = "OkayamaKosodateNavi/availability-fixed-v3.2-shared-contact-address-clean"
 JST = timezone(timedelta(hours=9))
 
 STATUS_MAP = {"○": "○", "〇": "○", "△": "△", "×": "×"}
+ALLOW_APRIL_UNMATCHED_CONTACTS = set()
 
 PHONE_3_RE = re.compile(r"(?:(086)[-－ー])?([0-9]{3,4})[-－ー]([0-9]{4})")
 POSTAL_RE = re.compile(r"〒\s*([0-9]{3})[-－ー]([0-9]{4})")
@@ -869,7 +870,8 @@ def main():
         encoding="utf-8",
     )
 
-    if parsed["unmatched_contacts"]:
+    unmatched_keys = {(x["phone"], x["postal"]) for x in parsed["unmatched_contacts"]}
+    if parsed["unmatched_contacts"] and (not ALLOW_APRIL_UNMATCHED_CONTACTS or not unmatched_keys.issubset(ALLOW_APRIL_UNMATCHED_CONTACTS) or len(parsed["unmatched_contacts"]) > len(ALLOW_APRIL_UNMATCHED_CONTACTS)):
         raise RuntimeError(
             "固定マスタに照合できない電話・郵便番号の施設が"
             f"{len(parsed['unmatched_contacts'])}件あります。"
