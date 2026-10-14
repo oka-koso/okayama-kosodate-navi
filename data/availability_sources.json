@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-14",
+  "note": "Official PDFs are not republished without permission. Source files are tracked by URL and SHA-256 when available; extracted admission data is stored locally and versioned in Git.",
+  "sources": [
+    {
+      "stream": "april",
+      "target": "令和9年4月",
+      "as_of": "令和８年１０月７日時点",
+      "official_page": "https://www.city.okayama.jp/kurashi/0000017002.html",
+      "original_pdf_reference": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000017/17002/R9.4ukeire2.pdf",
+      "original_sha256": "13982552acae3c1d3f7466a8b6e6fd9415724f16849bb29dadcd6e15a5754450",
+      "data_file": "data/availability_april.json",
+      "stored_format": "extracted JSON",
+      "original_pdf_republished": false,
+      "license_status": "permission not established"
+    },
+    {
+      "stream": "monthly",
+      "target": "令和8年11月",
+      "as_of": "令和８年９月１７日時点",
+      "official_page": "https://www.city.okayama.jp/kurashi/0000012977.html",
+      "original_pdf_reference": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
+      "original_sha256": "0bccf8a224b1fe35f5f2a6a4486542da1f54e41caec5a4e447bae3f4798084dd",
+      "data_file": "data/availability_monthly.json",
+      "stored_format": "extracted JSON",
+      "original_pdf_republished": false,
+      "license_status": "permission not established"
+    }
+  ]
+}
