@@ -6538,8 +6538,8 @@
       "website": "",
       "website_status": "unverified",
       "official_info_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
-      "lat": null,
-      "lon": null,
+      "lat": 34.684532,
+      "lon": 133.931656,
       "services": {
         "extended": null,
         "temporary": null,
@@ -6550,7 +6550,9 @@
       "verification": "R9 April official admission PDF",
       "contact_source": "R9 April official admission PDF",
       "type": "認定こども園",
-      "opening_note": "令和9年度4月入園資料掲載"
+      "opening_note": "令和9年度4月入園資料掲載",
+      "geocode_source": "GSI",
+      "geocode_title": "岡山県岡山市北区北方四丁目１番１号"
     },
     {
       "id": "oky-r9-sanyogakuen",
@@ -6564,8 +6566,8 @@
       "website": "https://sanyo-kodomo.com/",
       "website_status": "verified",
       "official_info_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
-      "lat": null,
-      "lon": null,
+      "lat": 34.644043,
+      "lon": 133.943649,
       "services": {
         "extended": null,
         "temporary": null,
@@ -6576,7 +6578,9 @@
       "verification": "R9 April official admission PDF + operator website",
       "contact_source": "R9 April official admission PDF",
       "type": "認定こども園",
-      "opening_note": "2027年4月 山陽学園短期大学附属幼稚園から移行"
+      "opening_note": "2027年4月 山陽学園短期大学附属幼稚園から移行",
+      "geocode_source": "GSI",
+      "geocode_title": "岡山県岡山市中区平井一丁目１３番６９号"
     }
   ],
   "geocoded_at": "2026-09-29 08:28",
