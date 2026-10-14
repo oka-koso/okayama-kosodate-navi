@@ -1,31 +1,14 @@
 {
-  "generated_at": "2026-10-14 10:05",
+  "generated_at": "2026-10-14 10:08",
   "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000017/17002/R9.4ukeire2.pdf",
-  "fixed_master_count": 206,
-  "matched_facility_count": 205,
-  "with_status_count": 204,
-  "unmatched_contact_count": 2,
+  "fixed_master_count": 208,
+  "matched_facility_count": 207,
+  "with_status_count": 206,
+  "unmatched_contact_count": 0,
   "ambiguous_contact_count": 0,
   "duplicate_count": 0,
-  "rescued_match_count": 205,
-  "unmatched_contacts": [
-    {
-      "page": 1,
-      "phone": "0862220075",
-      "postal": "7000803",
-      "raw": "℡ 222-0075/252-5782※ 〒 700-0803 北方4-1-1",
-      "locality": "北方4-1-1",
-      "context": "(仮称)御野牧石認定こども園 こ 公 岡山市 区 70 6か月～ △ ○ △ △ × △ ℡ 222-0075/252-5782※ 〒 700-0803 北方4-1-1 (仮称)牟佐こども園 こ 私 福)岡山こども協会"
-    },
-    {
-      "page": 4,
-      "phone": "0862737247",
-      "postal": "7038501",
-      "raw": "℡ 273-7247 〒 703-8501 平井1-13-69 ラス～",
-      "locality": "平井1-13-69 ラス～",
-      "context": "（仮称）山陽学園こども園 こ 私 学)山陽学園 ３歳児ク ○ ○ ○ 45 ℡ 273-7247 〒 703-8501 平井1-13-69 ラス～ 浜保育園 保 公 岡山市 ○ ○ ○ △ △ ×"
-    }
-  ],
+  "rescued_match_count": 207,
+  "unmatched_contacts": [],
   "ambiguous_contacts": [],
   "duplicate_matches": [],
   "rescued_matches": [
@@ -145,6 +128,15 @@
       "pdf_postal": "7000081",
       "master_phone": "0862521683",
       "master_postal": "7000081"
+    },
+    {
+      "facility_id": "oky-r9-minomaki",
+      "name": "（仮称）御野牧石認定こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862220075",
+      "pdf_postal": "7000803",
+      "master_phone": "0862220075",
+      "master_postal": "7000803"
     },
     {
       "facility_id": "oky-2abfc828dd8e",
@@ -928,6 +920,15 @@
       "pdf_postal": "7038295",
       "master_phone": "0862720160",
       "master_postal": "7038295"
+    },
+    {
+      "facility_id": "oky-r9-sanyogakuen",
+      "name": "（仮称）山陽学園こども園",
+      "method": "phone+postal+single",
+      "pdf_phone": "0862737247",
+      "pdf_postal": "7038501",
+      "master_phone": "0862737247",
+      "master_postal": "7038501"
     },
     {
       "facility_id": "oky-a2757262202a",

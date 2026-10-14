@@ -1,16 +1,16 @@
 {
   "schema_version": 32,
   "matching_key": "official phone + postal + address; exact shared-contact duplicates resolved by PDF/master occurrence order",
-  "generated_at": "2026-10-14 10:05",
+  "generated_at": "2026-10-14 10:08",
   "availability_for": "令和9年4月",
   "availability_as_of": "令和８年１０月７日時点",
   "source_page_updated": "2026-10-14",
   "source_pdf_title": "【認可保育園等】令和9年4月受入見込み(一次募集) (PDF形式、302.12KB) (PDF形式、378.52KB)",
   "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000017/17002/R9.4ukeire2.pdf",
   "source_pdf_sha256": "13982552acae3c1d3f7466a8b6e6fd9415724f16849bb29dadcd6e15a5754450",
-  "fixed_master_count": 206,
-  "matched_facility_count": 205,
-  "with_status_count": 204,
+  "fixed_master_count": 208,
+  "matched_facility_count": 207,
+  "with_status_count": 206,
   "master_not_in_pdf": [
     {
       "facility_id": "oky-c907c71a375b",
@@ -115,6 +115,14 @@
       "0": "△",
       "1": "△",
       "2": "×"
+    },
+    "oky-r9-minomaki": {
+      "0": "△",
+      "1": "○",
+      "2": "△",
+      "3": "△",
+      "4": "×",
+      "5": "△"
     },
     "oky-2abfc828dd8e": {
       "0": "○",
@@ -756,6 +764,11 @@
       "3": "×",
       "4": "×",
       "5": "×"
+    },
+    "oky-r9-sanyogakuen": {
+      "3": "○",
+      "4": "○",
+      "5": "○"
     },
     "oky-a2757262202a": {
       "0": "○",
@@ -1535,12 +1548,9 @@
       "5": "×"
     }
   },
-  "unmatched_new_facility_count": 2,
-  "unmatched_new_facilities": [
-    "（仮称）御野牧石認定こども園",
-    "（仮称）山陽学園こども園"
-  ],
-  "display_notice": "既存施設205件を照合しました。新設等の2園（御野牧石認定こども園、山陽学園こども園）はマップ未掲載のため公式PDFをご確認ください。",
+  "unmatched_new_facility_count": 0,
+  "unmatched_new_facilities": [],
+  "display_notice": "令和9年4月入園の公式資料を反映しています。",
   "publication_verified": true,
   "facility_status_verified": true,
   "source_page_url": "https://www.city.okayama.jp/kurashi/0000017002.html"
