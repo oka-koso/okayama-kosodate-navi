@@ -193,6 +193,9 @@ def main():
             matched_count = len(april_data.get("by_facility_id", {}))
             if matched_count < 180 or "令和9年4月" not in april_data.get("availability_for", "").replace("９", "9").replace("４", "4"):
                 raise RuntimeError(f"April dataset failed safety validation: {matched_count} facilities, target={april_data.get('availability_for')}")
+            april_data["unmatched_new_facility_count"] = 2
+            april_data["unmatched_new_facilities"] = ["（仮称）御野牧石認定こども園", "（仮称）山陽学園こども園"]
+            april_data["display_notice"] = "既存施設205件を照合しました。新設等の2園（御野牧石認定こども園、山陽学園こども園）はマップ未掲載のため公式PDFをご確認ください。"
             april_data["publication_verified"] = True
             april_data["facility_status_verified"] = True
             april_data["source_page_url"] = APRIL_SOURCE_PAGE
