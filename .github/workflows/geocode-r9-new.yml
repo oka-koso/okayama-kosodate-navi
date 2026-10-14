@@ -1,0 +1,28 @@
+name: Geocode new R9 childcare facilities
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/geocode_r9_new.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: python scripts/geocode_r9_new.py
+      - run: |
+          git config user.name "okayama-kosodate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/facility_master.json data/facility_master_206_canonical.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "data: locate two new R9 childcare facilities"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
