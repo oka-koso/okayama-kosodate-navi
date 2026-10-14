@@ -33,10 +33,10 @@ def ensure_verified_facility_master():
         except Exception:
             return -1
     n=count(FACILITY_MASTER)
-    if n==206:
+    if n==208:
         return
     cn=count(FACILITY_MASTER_CANONICAL)
-    if cn!=206:
+    if cn!=208:
         raise RuntimeError(
             f"固定施設マスタ異常: current={n}, canonical={cn}; 安全のため停止"
         )
@@ -182,7 +182,7 @@ def main():
     if april:
         try:
             # Exactly two independently audited new facility contacts; never guess their facility IDs.
-            legacy.ALLOW_APRIL_UNMATCHED_CONTACTS = {("0862220075", "7000803"), ("0862737247", "7038501")}
+            legacy.ALLOW_APRIL_UNMATCHED_CONTACTS = set()
             run_legacy_for(
                 legacy, april, april_page_updated, april_page_text,
                 "availability_april.json",
@@ -193,9 +193,9 @@ def main():
             matched_count = len(april_data.get("by_facility_id", {}))
             if matched_count < 180 or "令和9年4月" not in april_data.get("availability_for", "").replace("９", "9").replace("４", "4"):
                 raise RuntimeError(f"April dataset failed safety validation: {matched_count} facilities, target={april_data.get('availability_for')}")
-            april_data["unmatched_new_facility_count"] = 2
-            april_data["unmatched_new_facilities"] = ["（仮称）御野牧石認定こども園", "（仮称）山陽学園こども園"]
-            april_data["display_notice"] = "既存施設205件を照合しました。新設等の2園（御野牧石認定こども園、山陽学園こども園）はマップ未掲載のため公式PDFをご確認ください。"
+            april_data["unmatched_new_facility_count"] = 0
+            april_data["unmatched_new_facilities"] = []
+            april_data["display_notice"] = "令和9年4月入園の公式資料を反映しています。"
             april_data["publication_verified"] = True
             april_data["facility_status_verified"] = True
             april_data["source_page_url"] = APRIL_SOURCE_PAGE
