@@ -14,19 +14,21 @@
     return 'assets/bibouroku/bibouroku-reading.png';
   }
   function card(article) {
-    return `<a class="bibouroku-card" href="${base}${esc(article.url)}"><img class="bibouroku-card__thumb" src="${base}${esc(imageFor(article))}" alt="" loading="lazy" decoding="async"><div class="bibouroku-card__meta"><span class="bibouroku-card__tag">${esc(article.category || '子育て')}</span><span>${esc(dateJP(article.published))}</span></div><h2>${esc(article.title)}</h2><p>${esc(article.description)}</p><span class="bibouroku-card__more">続きを読む →</span></a>`;
+    return `<a class="bibouroku-card" href="${base}${esc(article.url)}"><img class="bibouroku-card__thumb" src="${base}${esc(imageFor(article))}" alt="" width="640" height="426" loading="lazy" decoding="async"><div class="bibouroku-card__meta"><span class="bibouroku-card__tag">${esc(article.category || '子育て')}</span><span>${esc(dateJP(article.published))}</span></div><h2>${esc(article.title)}</h2><p>${esc(article.description)}</p><span class="bibouroku-card__more">続きを読む →</span></a>`;
   }
   async function load() {
     const targets = [...document.querySelectorAll('[data-bibouroku-list]')];
     if (!targets.length) return;
     try {
-      const res = await fetch(base + 'data/bibouroku.json?v=20261012-photo-batch', {cache:'no-store'});
-      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const dataPromise = globalThis.OKNBibourokuDataPromise || (globalThis.OKNBibourokuDataPromise = fetch(base + 'data/bibouroku.json?v=20261014-seo', {cache:'no-store'}).then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      }));
       const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Tokyo', year:'numeric', month:'2-digit', day:'2-digit'}).formatToParts(new Date());
       const dm = Object.fromEntries(parts.map(p => [p.type, p.value]));
       const todayKey = `${dm.year}-${dm.month}-${dm.day}`;
       const now = new Date();
-      const items = (await res.json()).filter(article => article.publish_at ? new Date(article.publish_at) <= now : !article.published || article.published <= todayKey)
+      const items = (await dataPromise).filter(article => article.publish_at ? new Date(article.publish_at) <= now : !article.published || article.published <= todayKey)
         .sort((a, b) => String(b.publish_at || b.published || '').localeCompare(String(a.publish_at || a.published || '')));
       targets.forEach(el => {
         const limit = Number(el.dataset.limit || 0);

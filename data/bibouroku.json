@@ -6,7 +6,7 @@
     "category": "入園準備・通園生活",
     "published": "2026-10-13",
     "updated": "2026-10-13",
-    "image": "assets/bibouroku/shupot-review-2026.png"
+    "image": "assets/bibouroku/shupot-review-2026-web.webp"
   },
   {
     "title": "慣らし保育は何日かかる？進め方と仕事復帰前に確認したいこと",
@@ -15,7 +15,7 @@
     "category": "入園準備・通園生活",
     "published": "2026-10-12",
     "updated": "2026-10-12",
-    "image": "assets/bibouroku/narashi-hoiku-2026.png"
+    "image": "assets/bibouroku/narashi-hoiku-2026-web.webp"
   },
   {
     "title": "保育園の連絡帳、書くことがない日は？忙しい朝は肩肘張らず、短い一言で",
@@ -24,7 +24,7 @@
     "category": "入園準備・通園生活",
     "published": "2026-10-11",
     "updated": "2026-10-11",
-    "image": "assets/bibouroku/renrakucho-mother-child.png"
+    "image": "assets/bibouroku/renrakucho-mother-child-web.webp"
   },
   {
     "title": "【2027年4月入園】岡山市の保育園申込みはいつから？令和9年度の日程まとめ",
@@ -32,16 +32,16 @@
     "url": "articles/okayama-hoikuen-2027-schedule.html",
     "category": "入園申込・手続き",
     "published": "2026-10-01",
-    "updated": "2026-10-01",
+    "updated": "2026-10-14",
     "image": "assets/bibouroku/okayama-hoikuen-2027-schedule-final.png"
   },
   {
     "title": "岡山市の保育園申込みに必要な書類は？電子申請・就労証明書を解説【2027年度】",
-    "description": "家庭の状況別の書類確認、就労証明書の依頼、誓約書、電子申請・郵送の準備を詳しく整理。新年度資料の公開待ち項目も確認できます。",
+    "description": "家庭の状況別の書類確認、就労証明書の依頼、誓約書、電子申請・郵送の準備を、公開された令和9年度資料に沿って整理します。",
     "url": "articles/okayama-hoikuen-2027-documents.html",
     "category": "入園申込・手続き",
     "published": "2026-10-02",
-    "updated": "2026-10-11",
+    "updated": "2026-10-14",
     "image": "assets/bibouroku/okayama-hoikuen-2027-documents-final.png"
   },
   {
@@ -50,7 +50,7 @@
     "url": "articles/okayama-hoikuen-hokatsu-2026.html",
     "category": "園選び・保活",
     "published": "2026-10-03",
-    "updated": "2026-10-03",
+    "updated": "2026-10-14",
     "image": "assets/bibouroku/okayama-hoikuen-hokatsu-2026-v2.webp"
   },
   {
@@ -111,7 +111,7 @@
     "url": "articles/hoikuen-toha.html",
     "category": "園選び・保活",
     "published": "2026-10-06",
-    "updated": "2026-10-04",
+    "updated": "2026-10-14",
     "image": "assets/bibouroku/hoikuen-toha-2026-transparent.svg?v=20261004-4"
   },
   {
@@ -120,7 +120,7 @@
     "url": "articles/youchien-toha.html",
     "category": "園選び・保活",
     "published": "2026-10-07",
-    "updated": "2026-10-04",
+    "updated": "2026-10-14",
     "image": "assets/bibouroku/youchien-toha-2026-transparent.svg?v=20261004-4"
   },
   {
@@ -129,7 +129,7 @@
     "url": "articles/nintei-kodomoen-toha.html",
     "category": "園選び・保活",
     "published": "2026-10-08",
-    "updated": "2026-10-04",
+    "updated": "2026-10-14",
     "image": "assets/bibouroku/nintei-kodomoen-toha-2026-transparent.svg?v=20261004-4"
   },
   {
@@ -138,7 +138,7 @@
     "url": "articles/hoikuen-erabikata-part3.html",
     "category": "園選び・保活",
     "published": "2026-10-10",
-    "updated": "2026-10-12",
+    "updated": "2026-10-14",
     "image": "assets/bibouroku/hoikuen-visit-gate-photo.jpg"
   }
 ]

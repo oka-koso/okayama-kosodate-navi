@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "data/bibouroku.json?v=20261012-photo-batch";
+  const DATA_URL = "data/bibouroku.json?v=20261014-seo";
 
   const normalizeArticles = (data) => {
     const list = Array.isArray(data) ? data :
@@ -122,9 +122,11 @@
 
   async function run() {
     try {
-      const res = await fetch(DATA_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const dm=Object.fromEntries(parts.map(p=>[p.type,p.value]));const today=`${dm.year}-${dm.month}-${dm.day}`;const now=new Date();const articles = normalizeArticles(await res.json()).filter(a=>{if(a.publish_at)return new Date(a.publish_at)<=now;return !a.published||a.published<=today;});
+      const dataPromise = globalThis.OKNBibourokuDataPromise || (globalThis.OKNBibourokuDataPromise = fetch(DATA_URL, { cache: "no-store" }).then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      }));
+      const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const dm=Object.fromEntries(parts.map(p=>[p.type,p.value]));const today=`${dm.year}-${dm.month}-${dm.day}`;const now=new Date();const articles = normalizeArticles(await dataPromise).filter(a=>{if(a.publish_at)return new Date(a.publish_at)<=now;return !a.published||a.published<=today;});
       if (!articles.length) return;
 
       addLatestBar(articles[0]);

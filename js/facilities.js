@@ -319,10 +319,12 @@ function renderAvailabilitySwitcher() {
 async function loadData() {
   const ts = Date.now();
 
-  const masterResp = await fetch(
-    `data/facility_master.json?v=${ts}`,
-    { cache: 'no-store' }
-  );
+  const [masterResp, guideResult, monthlyResult, aprilRaw] = await Promise.all([
+    fetch(`data/facility_master.json?v=${ts}`, { cache: 'no-store' }),
+    fetchJsonIfExists(`data/midyear_admission.json?v=${ts}`),
+    fetchJsonIfExists(`data/availability_monthly.json?v=${ts}`),
+    fetchJsonIfExists(`data/availability_april.json?v=${ts}`)
+  ]);
 
   if (!masterResp.ok) {
     throw new Error(`facility_master.json: HTTP ${masterResp.status}`);
@@ -331,11 +333,9 @@ async function loadData() {
   const master = await masterResp.json();
 
   // 新構成を優先。移行直後でも表示が壊れないよう、旧ファイルへフォールバック。
-  admissionGuide = await fetchJsonIfExists(`data/midyear_admission.json?v=${ts}`) || {publication_check_status:'failed', check_status:'failed'};
+  admissionGuide = guideResult || {publication_check_status:'failed', check_status:'failed'};
 
-  let monthly = await fetchJsonIfExists(
-    `data/availability_monthly.json?v=${ts}`
-  );
+  let monthly = monthlyResult;
   const monthlyLoadFailed = !monthly;
   if (!monthly) {
     monthly = await fetchJsonIfExists(
@@ -352,10 +352,6 @@ async function loadData() {
   }
 
   monthly.display_load_failed = monthlyLoadFailed;
-
-  const aprilRaw = await fetchJsonIfExists(
-    `data/availability_april.json?v=${ts}`
-  );
 
   availabilityDatasets = { monthly };
   if (aprilDatasetIsRelevant(aprilRaw)) {
@@ -561,11 +557,11 @@ function card(f) {
 
         <h3>${esc(f.name)}</h3>
 
-        <button type="button"
+        ${map ? `<button type="button"
                 class="map-focus-btn"
                 data-map-id="${esc(f.id)}">
           地図で見る
-        </button>
+        </button>` : ''}
 
       </div>
 
@@ -717,6 +713,8 @@ function clearMarkers() {
 }
 
 function fitMarkersToView(fs) {
+  if (!map || !window.L) return;
+
   const withCoords =
     fs.filter((f) =>
       Number.isFinite(Number(f.lat)) &&
@@ -761,6 +759,8 @@ function render() {
 
   clearMarkers();
 
+  if (!map || !window.L) return;
+
   fs.filter((f) =>
     Number.isFinite(Number(f.lat)) &&
     Number.isFinite(Number(f.lon))
@@ -796,23 +796,27 @@ function render() {
 }
 
 function bindInteractions() {
-  [
-    'q',
-    'ward',
-    'type',
-    'service'
-  ].forEach((id) => {
+  let searchTimer;
+  let composing = false;
+  const search = $('#q');
+  if (search) {
+    const queueRender = () => {
+      if (composing) return;
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(render, 180);
+    };
+    search.addEventListener('compositionstart', () => { composing = true; });
+    search.addEventListener('compositionend', () => { composing = false; queueRender(); });
+    search.addEventListener('input', queueRender);
+  }
+
+  ['ward', 'type', 'service'].forEach((id) => {
     const el =
       $('#' + id);
 
     if (!el) return;
 
-    el.addEventListener(
-      id === 'q'
-        ? 'input'
-        : 'change',
-      render
-    );
+    el.addEventListener('change', render);
   });
 
   document.addEventListener(
@@ -877,7 +881,12 @@ function bindInteractions() {
 }
 
 async function init() {
-  initMap();
+  const mapEl = $('#map');
+  if (window.L && mapEl) {
+    initMap();
+  } else if (mapEl) {
+    mapEl.innerHTML = '<div class="map-load-error" role="status">地図を読み込めませんでした。施設一覧と検索はそのまま利用できます。</div>';
+  }
 
   try {
     await loadData();
@@ -910,17 +919,4 @@ async function init() {
   bindInteractions();
 }
 
-window.addEventListener(
-  'DOMContentLoaded',
-  () => {
-    const wait = () => {
-      if (window.L) {
-        init();
-      } else {
-        setTimeout(wait, 80);
-      }
-    };
-
-    wait();
-  }
-);
+window.addEventListener('DOMContentLoaded', init);

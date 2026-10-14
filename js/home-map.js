@@ -100,23 +100,24 @@
     all.forEach(f=>{f.availability=byId[f.id]||{};});
     updateMeta();
     renderAvailabilitySwitcher();
-    render();
+    if(map)render();
   }
 
   async function loadData(){
-    const master=await loadJson('data/facility_master.json');
+    const [master,guideResult,monthlyResult,aprilRaw]=await Promise.all([
+      loadJson('data/facility_master.json'),
+      loadJsonIfExists('data/midyear_admission.json'),
+      loadJsonIfExists('data/availability_monthly.json'),
+      loadJsonIfExists('data/availability_april.json')
+    ]);
 
-    admissionGuide=await loadJsonIfExists('data/midyear_admission.json')||{publication_check_status:'failed',check_status:'failed'};
-    let monthly=null,monthlyLoadFailed=false;
-    for(const path of ['data/availability_monthly.json','data/availability_fixed.json']){
-      monthly=await loadJsonIfExists(path);
-      if(monthly?.by_facility_id)break;
-      if(path==='data/availability_monthly.json')monthlyLoadFailed=true;
-    }
+    admissionGuide=guideResult||{publication_check_status:'failed',check_status:'failed'};
+    let monthly=monthlyResult;
+    const monthlyLoadFailed=!monthly;
+    if(!monthly)monthly=await loadJsonIfExists('data/availability_fixed.json');
     if(!monthly)monthly={by_facility_id:{},availability_for:'',availability_as_of:''};
 
     monthly.display_load_failed=monthlyLoadFailed;
-    const aprilRaw=await loadJsonIfExists('data/availability_april.json');
 
     availabilityDatasets={monthly};
     if(aprilDatasetIsRelevant(aprilRaw))availabilityDatasets.april=aprilRaw;
@@ -129,6 +130,12 @@
     all=(master.facilities||[])
       .filter(f=>Number.isFinite(Number(f.lat))&&Number.isFinite(Number(f.lon)))
       .map(f=>({...f,availability:byId[f.id]||{}}));
+
+    const wardCounts={};
+    (master.facilities||[]).forEach(f=>{wardCounts[f.ward]=(wardCounts[f.ward]||0)+1;});
+    if(document.querySelectorAll)document.querySelectorAll('[data-count]').forEach(el=>{
+      el.textContent=`${wardCounts[el.dataset.count]||0}施設`;
+    });
 
     updateMeta();
     renderAvailabilitySwitcher();
@@ -170,6 +177,11 @@
     map=L.map('home-map',{zoomControl:true,scrollWheelZoom:false}).setView([34.655,133.92],11);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
     document.querySelectorAll('[data-home-map-ward]').forEach(btn=>btn.addEventListener('click',()=>setWard(btn.dataset.homeMapWard||'')));
+  }
+
+  async function init(){
+    const mapEl=document.getElementById('home-map');
+    if(!mapEl)return;
     document.addEventListener('click',event=>{
       const btn=event.target.closest('[data-home-availability-mode]');
       if(!btn)return;
@@ -179,13 +191,9 @@
         applyAvailabilityDataset(mode);
       }
     });
-  }
-
-  async function init(){
-    const mapEl=document.getElementById('home-map');
-    if(!mapEl||!window.L)return;
-    initMap();
-    try{await loadData();render();}
+    if(window.L)initMap();
+    else mapEl.innerHTML='<div class="home-map-error" role="status">地図を読み込めませんでした。区別の施設数と詳しい施設一覧は利用できます。</div>';
+    try{await loadData();if(map)render();else{const count=document.getElementById('home-map-count');if(count)count.textContent=`全${all.length}施設`;}}
     catch(error){
       console.error(error);
       mapEl.innerHTML='<div class="home-map-error">地図情報を読み込めませんでした。時間をおいて再読み込みしてください。</div>';
@@ -193,5 +201,5 @@
     }
   }
 
-  window.addEventListener('DOMContentLoaded',()=>{const wait=()=>window.L?init():setTimeout(wait,80);wait();});
+  window.addEventListener('DOMContentLoaded',init);
 })();
