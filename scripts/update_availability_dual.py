@@ -170,7 +170,11 @@ def main():
             legacy, monthly, page_updated, page_text,
             "availability_monthly.json", "availability_monthly_audit.json",
         )
-        shutil.copyfile(ROOT / "data" / "availability_monthly.json", ROOT / "data" / "availability_fixed.json")
+        monthly_path = ROOT / "data" / "availability_monthly.json"
+        monthly_data = json.loads(monthly_path.read_text(encoding="utf-8"))
+        monthly_data["source_page_url"] = SOURCE_PAGE
+        monthly_path.write_text(json.dumps(monthly_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        shutil.copyfile(monthly_path, ROOT / "data" / "availability_fixed.json")
         shutil.copyfile(ROOT / "data" / "availability_monthly_audit.json", ROOT / "data" / "availability_fixed_audit.json")
         discovery["results"]["monthly"] = "updated"
     else:
