@@ -48,7 +48,7 @@
       closed, next, published, warning,
       title: publishedPending ? `${label}入園の公式資料公開（園別データ照合中）` : !hasData ? '園別の受入見込みを表示できません' : `${closed ? '直近に公表された参考資料' : '公表された受入見込み（参考情報）'}：${label}入園`,
       caption: publishedPending ? `資料基準日：${dataset.availability_as_of || '未確認'}／園別の○△×は公式PDFをご確認ください。` : hasData ? `資料基準日：${dataset.availability_as_of || '未確認'}${dataset.source_page_updated ? `／資料取得時の市ページ更新日：${dataset.source_page_updated}` : ''}` : '資料の読込み・公表状況は公式ページでご確認ください。',
-      notice: publishedPending ? '令和9年4月入園の一次募集資料は公表済みです。サイト内の園別数値は未反映です。' : closed ? 'この月の申込受付は終了しています。表示中の○△×は、次の月の受入見込みではありません。' : '公表時点の参考情報です。現在の空きや入園を保証するものではありません。',
+      notice: publishedPending ? '令和9年4月入園の一次募集資料は公表済みです。サイト内の園別数値は未反映です。' : mode === 'april' && dataset.unmatched_new_facility_count ? `${dataset.unmatched_new_facility_count}園（${(dataset.unmatched_new_facilities || []).join('・')}）はマップへの追加が未完了です。公式PDFもご確認ください。` : closed ? 'この月の申込受付は終了しています。表示中の○△×は、次の月の受入見込みではありません。' : '公表時点の参考情報です。現在の空きや入園を保証するものではありません。',
       nextText,
       checkedText: validTime(checked) ? `受入見込みの公式ページ・最終確認：${stamp(checked)}` : '受入見込みの公式ページ・確認日時：未確認'
     };
