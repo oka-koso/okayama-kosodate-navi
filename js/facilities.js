@@ -68,7 +68,7 @@ function availabilityHtml(facility, compact = false) {
   const values = Object.keys(a);
 
   if (!values.length) {
-    return '<div class="availability-note">受入見込み：現在のデータとの照合作業中</div>';
+    return activeAvailabilityKey === 'april' ? '<div class="availability-note">令和9年4月一次募集の園別受入見込みは照合中です。<a href="https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000017/17002/R9.4ukeire2.pdf" target="_blank" rel="noopener noreferrer">岡山市の公式PDFで確認 ↗</a></div>' : '<div class="availability-note">受入見込み：現在のデータとの照合作業中</div>';
   }
 
   const dataset = availabilityDatasets[activeAvailabilityKey] || {};
