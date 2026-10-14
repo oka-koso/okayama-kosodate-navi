@@ -6525,6 +6525,58 @@
       "website_verified_at": "2026-09-29",
       "website_verification_source": "https://www.sato-hp.com/meihoukai/hoikuen",
       "type": "地域型保育"
+    },
+    {
+      "id": "oky-r9-minomaki",
+      "name": "（仮称）御野牧石認定こども園",
+      "category": "認定こども園",
+      "ward": "北区",
+      "postal": "700-0803",
+      "address": "岡山市北区北方4-1-1",
+      "phone": "086-222-0075",
+      "public_private": "公立",
+      "website": "",
+      "website_status": "unverified",
+      "official_info_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
+      "lat": null,
+      "lon": null,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "source_pdf_page": 1,
+      "verification": "R9 April official admission PDF",
+      "contact_source": "R9 April official admission PDF",
+      "type": "認定こども園",
+      "opening_note": "令和9年度4月入園資料掲載"
+    },
+    {
+      "id": "oky-r9-sanyogakuen",
+      "name": "（仮称）山陽学園こども園",
+      "category": "認定こども園",
+      "ward": "中区",
+      "postal": "703-8501",
+      "address": "岡山市中区平井1-13-69",
+      "phone": "086-273-7247",
+      "public_private": "私立",
+      "website": "https://sanyo-kodomo.com/",
+      "website_status": "verified",
+      "official_info_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
+      "lat": null,
+      "lon": null,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "source_pdf_page": 4,
+      "verification": "R9 April official admission PDF + operator website",
+      "contact_source": "R9 April official admission PDF",
+      "type": "認定こども園",
+      "opening_note": "2027年4月 山陽学園短期大学附属幼稚園から移行"
     }
   ],
   "geocoded_at": "2026-09-29 08:28",
