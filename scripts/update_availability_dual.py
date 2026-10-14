@@ -19,7 +19,7 @@ SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000012977.html"
 APRIL_SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000017002.html"
 DISCOVERY_AUDIT = ROOT / "data" / "availability_dual_discovery_audit.json"
 JST = timezone(timedelta(hours=9))
-UA = "OkayamaKosodateNavi/availability-dual-v1"
+UA = "OkayamaKosodateNavi/availability-dual-v2-april"
 
 # facility-master-206-runtime-guard-v2
 FACILITY_MASTER = ROOT / "data" / "facility_master.json"
