@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14 10:03",
+  "generated_at": "2026-10-14 10:04",
   "source_page": "https://www.city.okayama.jp/kurashi/0000012977.html",
   "source_page_updated": "2026-10-14",
   "april_source_page": "https://www.city.okayama.jp/kurashi/0000017002.html",
@@ -31,6 +31,6 @@
   ],
   "results": {
     "monthly": "not-published-now",
-    "april": "parse-error: 固定マスタに照合できない電話・郵便番号の施設が2件あります。新設・移転・電話変更の可能性があります。"
+    "april": "updated: 205 facilities"
   }
 }
