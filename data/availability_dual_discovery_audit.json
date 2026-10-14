@@ -1,12 +1,36 @@
 {
-  "generated_at": "2026-10-13 17:43",
+  "generated_at": "2026-10-14 10:03",
   "source_page": "https://www.city.okayama.jp/kurashi/0000012977.html",
-  "source_page_updated": "2026-10-02",
+  "source_page_updated": "2026-10-14",
+  "april_source_page": "https://www.city.okayama.jp/kurashi/0000017002.html",
+  "april_source_page_updated": "2026-10-14",
   "monthly_candidate": null,
-  "april_candidate": null,
+  "april_candidate": {
+    "stream": "april",
+    "score": 15,
+    "order": 64,
+    "title": "【認可保育園等】令和9年4月受入見込み(一次募集) (PDF形式、302.12KB) (PDF形式、378.52KB)",
+    "url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000017/17002/R9.4ukeire2.pdf"
+  },
   "all_candidates": [],
+  "april_candidates": [
+    {
+      "stream": "april",
+      "score": 15,
+      "order": 64,
+      "title": "【認可保育園等】令和9年4月受入見込み(一次募集) (PDF形式、302.12KB) (PDF形式、378.52KB)",
+      "url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000017/17002/R9.4ukeire2.pdf"
+    },
+    {
+      "stream": "april",
+      "score": 10,
+      "order": 65,
+      "title": "【障害児保育拠点園等】令和9年4月受入見込み (PDF形式、57.91KB)",
+      "url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000017/17002/R9.4shougaijiwaku_1.pdf"
+    }
+  ],
   "results": {
     "monthly": "not-published-now",
-    "april": "not-published-yet"
+    "april": "parse-error: 固定マスタに照合できない電話・郵便番号の施設が2件あります。新設・移転・電話変更の可能性があります。"
   }
 }
