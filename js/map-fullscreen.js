@@ -26,12 +26,12 @@
         previousFocus = document.activeElement;
         savedScroll = window.scrollY;
         document.body.classList.add('okn-map-fullscreen-open');
-        panel.classList.add('okn-map-is-fullscreen');
+        mapEl.classList.add('okn-map-is-fullscreen');
         button.innerHTML = '<span aria-hidden="true">×</span>';
         button.title = '全画面を閉じる';
         button.setAttribute('aria-label', '地図の全画面表示を閉じる');
       } else {
-        panel.classList.remove('okn-map-is-fullscreen');
+        mapEl.classList.remove('okn-map-is-fullscreen');
         document.body.classList.remove('okn-map-fullscreen-open');
         button.innerHTML = '<span aria-hidden="true">⛶</span>';
         button.title = '地図を全画面表示';
@@ -49,7 +49,7 @@
     document.addEventListener('keydown', event => {
       if (active && event.key === 'Escape') { event.preventDefault(); setActive(false); }
     });
-    // Fullscreen uses a fixed overlay instead of requestFullscreen(), for iOS Safari support.
+    // Only the Leaflet map enters a fixed viewport overlay (iOS Safari compatible).
   }
   document.addEventListener('DOMContentLoaded', () => {
     setup(document.querySelector('.home-map-shell'), document.getElementById('home-map'));
