@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 LEGACY_PATH = ROOT / "scripts" / "update_availability_fixed.py"
 SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000012977.html"
+APRIL_SOURCE_PAGE = "https://www.city.okayama.jp/kurashi/0000017002.html"
 DISCOVERY_AUDIT = ROOT / "data" / "availability_dual_discovery_audit.json"
 JST = timezone(timedelta(hours=9))
 UA = "OkayamaKosodateNavi/availability-dual-v1"
@@ -59,8 +60,8 @@ def load_legacy():
     return module
 
 
-def fetch_source_page():
-    r = requests.get(SOURCE_PAGE, headers={"User-Agent": UA}, timeout=30)
+def fetch_source_page(source_page=SOURCE_PAGE):
+    r = requests.get(source_page, headers={"User-Agent": UA}, timeout=30)
     r.raise_for_status()
     if r.apparent_encoding:
         r.encoding = r.apparent_encoding
@@ -77,7 +78,7 @@ def fetch_source_page():
     candidates = []
     for order, a in enumerate(soup.find_all("a", href=True)):
         title = clean(" ".join(a.stripped_strings))
-        href = requests.compat.urljoin(SOURCE_PAGE, a["href"])
+        href = requests.compat.urljoin(source_page, a["href"])
         path = href.split("?", 1)[0].lower()
 
         if not path.endswith(".pdf"):
@@ -147,15 +148,19 @@ def main():
     legacy = load_legacy()
     page_updated, page_text, candidates = fetch_source_page()
     monthly = choose_candidate(candidates, "monthly")
-    april = choose_candidate(candidates, "april")
+    april_page_updated, april_page_text, april_candidates = fetch_source_page(APRIL_SOURCE_PAGE)
+    april = choose_candidate(april_candidates, "april")
 
     discovery = {
         "generated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"),
         "source_page": SOURCE_PAGE,
         "source_page_updated": page_updated,
+        "april_source_page": APRIL_SOURCE_PAGE,
+        "april_source_page_updated": april_page_updated,
         "monthly_candidate": monthly,
         "april_candidate": april,
         "all_candidates": candidates,
+        "april_candidates": april_candidates,
         "results": {},
     }
 
@@ -177,11 +182,20 @@ def main():
     if april:
         try:
             run_legacy_for(
-                legacy, april, page_updated, page_text,
+                legacy, april, april_page_updated, april_page_text,
                 "availability_april.json",
                 "availability_april_audit.json",
             )
-            discovery["results"]["april"] = "updated"
+            april_data_path = ROOT / "data" / "availability_april.json"
+            april_data = json.loads(april_data_path.read_text(encoding="utf-8"))
+            matched_count = len(april_data.get("by_facility_id", {}))
+            if matched_count < 180 or "令和9年4月" not in april_data.get("availability_for", "").replace("９", "9").replace("４", "4"):
+                raise RuntimeError(f"April dataset failed safety validation: {matched_count} facilities, target={april_data.get('availability_for')}")
+            april_data["publication_verified"] = True
+            april_data["facility_status_verified"] = True
+            april_data["source_page_url"] = APRIL_SOURCE_PAGE
+            april_data_path.write_text(json.dumps(april_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            discovery["results"]["april"] = f"updated: {matched_count} facilities"
         except Exception as exc:
             discovery["results"]["april"] = f"parse-error: {exc}"
             DISCOVERY_AUDIT.write_text(
