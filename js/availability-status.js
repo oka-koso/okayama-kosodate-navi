@@ -13,6 +13,7 @@
   function describe(dataset = {}, mode = 'monthly', guide = {}, now = Date.now()) {
     const label = dataset.availability_for || '';
     const hasData = Boolean(label && (!dataset.by_facility_id || Object.keys(dataset.by_facility_id).length));
+    const publishedPending = mode === 'april' && dataset.publication_verified && !dataset.facility_status_verified;
     const rows = guide.deadlines || [];
     const matched = mode === 'monthly' && rows.find(row => normalize(row.target_label) === normalize(label));
     const closed = Boolean(matched && now > new Date(matched.deadline_iso_jst).getTime());
@@ -45,9 +46,9 @@
       : guide.check_status === 'failed' ? '申込日程の更新確認に失敗したため、最後に確認できた締切を表示しています。公式情報をご確認ください。' : '';
     return {
       closed, next, published, warning,
-      title: !hasData ? '園別の受入見込みを表示できません' : `${closed ? '直近に公表された参考資料' : '公表された受入見込み（参考情報）'}：${label}入園`,
-      caption: hasData ? `資料基準日：${dataset.availability_as_of || '未確認'}${dataset.source_page_updated ? `／資料取得時の市ページ更新日：${dataset.source_page_updated}` : ''}` : '資料の読込み・公表状況は公式ページでご確認ください。',
-      notice: closed ? 'この月の申込受付は終了しています。表示中の○△×は、次の月の受入見込みではありません。' : '公表時点の参考情報です。現在の空きや入園を保証するものではありません。',
+      title: publishedPending ? `${label}入園の公式資料公開（園別データ照合中）` : !hasData ? '園別の受入見込みを表示できません' : `${closed ? '直近に公表された参考資料' : '公表された受入見込み（参考情報）'}：${label}入園`,
+      caption: publishedPending ? `資料基準日：${dataset.availability_as_of || '未確認'}／園別の○△×は公式PDFをご確認ください。` : hasData ? `資料基準日：${dataset.availability_as_of || '未確認'}${dataset.source_page_updated ? `／資料取得時の市ページ更新日：${dataset.source_page_updated}` : ''}` : '資料の読込み・公表状況は公式ページでご確認ください。',
+      notice: publishedPending ? '令和9年4月入園の一次募集資料は公表済みです。サイト内の園別数値は未反映です。' : closed ? 'この月の申込受付は終了しています。表示中の○△×は、次の月の受入見込みではありません。' : '公表時点の参考情報です。現在の空きや入園を保証するものではありません。',
       nextText,
       checkedText: validTime(checked) ? `受入見込みの公式ページ・最終確認：${stamp(checked)}` : '受入見込みの公式ページ・確認日時：未確認'
     };
@@ -55,7 +56,7 @@
   function render(element, dataset, mode, guide) {
     if (!element) return;
     const s = describe(dataset, mode, guide);
-    element.innerHTML = `<p><strong>${esc(s.title)}</strong></p><p class="small">${esc(s.caption)}</p><p>${esc(s.notice)}</p>${s.nextText ? `<p>${esc(s.nextText)}</p>` : ''}${s.warning ? `<p class="availability-warning">${esc(s.warning)}</p>` : ''}<p class="small">${esc(s.checkedText)}／<a href="https://www.city.okayama.jp/kurashi/0000012977.html" target="_blank" rel="noopener noreferrer">岡山市の公式情報 ↗</a></p>`;
+    element.innerHTML = `<p><strong>${esc(s.title)}</strong></p><p class="small">${esc(s.caption)}</p><p>${esc(s.notice)}</p>${s.nextText ? `<p>${esc(s.nextText)}</p>` : ''}${s.warning ? `<p class="availability-warning">${esc(s.warning)}</p>` : ''}<p class="small">${esc(s.checkedText)}／<a href="${esc(dataset.source_pdf_url || (mode === 'april' ? 'https://www.city.okayama.jp/kurashi/0000017002.html' : 'https://www.city.okayama.jp/kurashi/0000012977.html'))}" target="_blank" rel="noopener noreferrer">${mode === 'april' ? '岡山市の公式PDF ↗' : '岡山市の公式情報 ↗'}</a></p>`;
     element.hidden = false;
   }
   window.OKNAvailability = {describe, render, nextDeadline};
