@@ -1537,5 +1537,11 @@
   },
   "publication_verified": true,
   "facility_status_verified": true,
-  "source_page_url": "https://www.city.okayama.jp/kurashi/0000017002.html"
+  "source_page_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
+  "unmatched_new_facility_count": 2,
+  "unmatched_new_facilities": [
+    "（仮称）御野牧石認定こども園",
+    "（仮称）山陽学園こども園"
+  ],
+  "display_notice": "令和9年4月の既存施設205件を照合しました。新設等の2園（御野牧石認定こども園、山陽学園こども園）はマップ未掲載です。公式PDFをご確認ください。"
 }
