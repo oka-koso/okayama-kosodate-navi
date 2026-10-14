@@ -1,6 +1,10 @@
 name: Update childcare availability (monthly + April + midyear guide)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_availability_dual.py'
   workflow_dispatch:
   schedule:
     - cron: "20 8 * * *"
