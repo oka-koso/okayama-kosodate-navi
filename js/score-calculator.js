@@ -149,7 +149,7 @@
       if (x) { score += x.score; lines.push([`${group} ${x.label}`,x.score]); }
     }
 
-    if ($('adj-D').checked) lines.push(['D 社会的養護（岡山市による個別確認が必要）', '—']);
+    
 
     const gp = Number($('grandparents').value || 0);
     if (gp) {
@@ -162,8 +162,8 @@
   function calculate() {
     const g1 = guardianScore(1), g2 = guardianScore(2);
     const warnings = [g1.warning,g2.warning].filter(Boolean);
-    if ($('adj-D').checked) warnings.push('社会的養護（区分D）は令和9年度の公式表に固定点数が掲載されていません。この結果は区分Dを加算していないため、該当する場合は岡山市へご確認ください。');
-    if (g1.score === null || g2.score === null) {
+    if ($('adj-D').checked) warnings.push('区分D（社会的養護）は令和9年度の点数表に固定点数がなく、合計点数を自動判定できません。岡山市へご確認ください。');
+    if (g1.score === null || g2.score === null || $('adj-D').checked) {
       $('total-score').textContent = '—';
       $('base-score').textContent = '—';
       $('adjust-score').textContent = '—';
