@@ -142,12 +142,14 @@
     if ($('adj-C').checked) { score += 2; lines.push(['C 失業',2]); }
     if ($('adj-G').checked) { score += 3; lines.push(['G きょうだい',3]); }
 
-    for (const group of ['D','E','F','H','J']) {
+    for (const group of ['E','F','H','J']) {
       const id = $(`adj-${group}`).value;
       if (!id) continue;
       const x = selectedRule(group,id);
       if (x) { score += x.score; lines.push([`${group} ${x.label}`,x.score]); }
     }
+
+    if ($('adj-D').checked) lines.push(['D 社会的養護（岡山市による個別確認が必要）', '—']);
 
     const gp = Number($('grandparents').value || 0);
     if (gp) {
@@ -160,6 +162,7 @@
   function calculate() {
     const g1 = guardianScore(1), g2 = guardianScore(2);
     const warnings = [g1.warning,g2.warning].filter(Boolean);
+    if ($('adj-D').checked) warnings.push('社会的養護（区分D）は令和9年度の公式表に固定点数が掲載されていません。この結果は区分Dを加算していないため、該当する場合は岡山市へご確認ください。');
     if (g1.score === null || g2.score === null) {
       $('total-score').textContent = '—';
       $('base-score').textContent = '—';
@@ -183,7 +186,7 @@
     $('adjust-score').textContent = (adj.score >= 0 ? '+' : '') + adj.score;
     $('result-message').innerHTML = k
       ? `通常計算は <strong>${normalTotal}点</strong>ですが、区分Kにより最終点を<strong>1点</strong>として試算しています。`
-      : '令和8年度の公式基準に基づく試算です。';
+      : '令和9年度の公式ガイドに基づく参考試算です。';
 
     const lines = [
       ['保護者1：'+g1.label,g1.score],
@@ -214,7 +217,7 @@
 
   async function init() {
     try {
-      const res = await fetch('data/admission-score-rules-R8.json', {cache:'no-store'});
+      const res = await fetch('data/admission-score-rules-R9.json', {cache:'no-store'});
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       rules = await res.json();
 
