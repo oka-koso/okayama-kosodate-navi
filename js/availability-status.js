@@ -56,7 +56,7 @@
   function render(element, dataset, mode, guide) {
     if (!element) return;
     const s = describe(dataset, mode, guide);
-    element.innerHTML = `<p><strong>${esc(s.title)}</strong></p><p class="small">${esc(s.caption)}</p><p>${esc(s.notice)}</p>${s.nextText ? `<p>${esc(s.nextText)}</p>` : ''}${s.warning ? `<p class="availability-warning">${esc(s.warning)}</p>` : ''}<p class="small">${esc(s.checkedText)}／<a href="${esc(dataset.source_pdf_url || (mode === 'april' ? 'https://www.city.okayama.jp/kurashi/0000017002.html' : 'https://www.city.okayama.jp/kurashi/0000012977.html'))}" target="_blank" rel="noopener noreferrer">${mode === 'april' ? '岡山市の公式PDF ↗' : '岡山市の公式情報 ↗'}</a></p>`;
+    element.innerHTML = `<p><strong>${esc(s.title)}</strong></p><p class="small">${esc(s.caption)}</p><p>${esc(s.notice)}</p>${s.nextText ? `<p>${esc(s.nextText)}</p>` : ''}${s.warning ? `<p class="availability-warning">${esc(s.warning)}</p>` : ''}<p class="small">${esc(s.checkedText)}／<a href="${esc(dataset.source_page_url || (mode === 'april' ? 'https://www.city.okayama.jp/kurashi/0000017002.html' : 'https://www.city.okayama.jp/kurashi/0000012977.html'))}" target="_blank" rel="noopener noreferrer">岡山市の公式掲載ページ ↗</a></p>`;
     element.hidden = false;
   }
   window.OKNAvailability = {describe, render, nextDeadline};
