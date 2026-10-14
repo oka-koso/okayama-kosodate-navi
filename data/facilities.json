@@ -5,7 +5,7 @@
   "availability_as_of": "令和８年９月１７日時点",
   "source_page_updated": "2026-09-24",
   "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
-  "facility_count": 206,
+  "facility_count": 208,
   "pdf_facility_count": 206,
   "auto_added_facilities": [
     "岡山聖園マリア幼稚園",
@@ -3656,6 +3656,35 @@
       "availability": {}
     },
     {
+      "id": "oky-r9-minomaki",
+      "name": "（仮称）御野牧石認定こども園",
+      "category": "認定こども園",
+      "ward": "北区",
+      "postal": "700-0803",
+      "address": "岡山市北区北方4-1-1",
+      "phone": "086-222-0075",
+      "public_private": "公立",
+      "website": "",
+      "website_status": "unverified",
+      "official_info_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
+      "lat": 34.684532,
+      "lon": 133.931656,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "source_pdf_page": 1,
+      "verification": "R9 April official admission PDF",
+      "contact_source": "R9 April official admission PDF",
+      "type": "認定こども園",
+      "opening_note": "令和9年度4月入園資料掲載",
+      "geocode_source": "GSI",
+      "geocode_title": "岡山県岡山市北区北方四丁目１番１号",
+      "availability": {}
+    },
+    {
       "id": "oky-de41a38b5c74",
       "name": "（仮称）桃丘こども園",
       "category": "認定こども園",
@@ -4988,6 +5017,35 @@
         "4": "×",
         "5": "×"
       }
+    },
+    {
+      "id": "oky-r9-sanyogakuen",
+      "name": "（仮称）山陽学園こども園",
+      "category": "認定こども園",
+      "ward": "中区",
+      "postal": "703-8501",
+      "address": "岡山市中区平井1-13-69",
+      "phone": "086-273-7247",
+      "public_private": "私立",
+      "website": "https://sanyo-kodomo.com/",
+      "website_status": "verified",
+      "official_info_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
+      "lat": 34.644043,
+      "lon": 133.943649,
+      "services": {
+        "extended": null,
+        "temporary": null,
+        "holiday": null,
+        "support_center": null
+      },
+      "source_pdf_page": 4,
+      "verification": "R9 April official admission PDF + operator website",
+      "contact_source": "R9 April official admission PDF",
+      "type": "認定こども園",
+      "opening_note": "2027年4月 山陽学園短期大学附属幼稚園から移行",
+      "geocode_source": "GSI",
+      "geocode_title": "岡山県岡山市中区平井一丁目１３番６９号",
+      "availability": {}
     },
     {
       "id": "oky-28f572db3c7a",
