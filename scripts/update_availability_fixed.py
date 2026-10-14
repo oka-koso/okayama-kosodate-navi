@@ -795,9 +795,9 @@ def main():
 
     facilities = master.get("facilities", [])
 
-    if len(facilities) != 206:
+    if len(facilities) != 208:
         raise RuntimeError(
-            f"固定施設マスタが206施設ではありません: {len(facilities)}"
+            f"固定施設マスタが208施設ではありません: {len(facilities)}"
         )
 
     title, pdf_url, page_updated, page_text = latest_pdf()
