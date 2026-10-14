@@ -181,7 +181,7 @@ def main():
     #    公表された瞬間から同じv3.2厳格パーサーで別JSONへ保存する。
     if april:
         try:
-            # Exactly two independently audited new facility contacts; never guess their facility IDs.
+            # Both newly registered facilities now have exact phone and postal matches.
             legacy.ALLOW_APRIL_UNMATCHED_CONTACTS = set()
             run_legacy_for(
                 legacy, april, april_page_updated, april_page_text,
