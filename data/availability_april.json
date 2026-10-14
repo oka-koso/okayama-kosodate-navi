@@ -1553,5 +1553,6 @@
   "display_notice": "令和9年4月入園の公式資料を反映しています。",
   "publication_verified": true,
   "facility_status_verified": true,
-  "source_page_url": "https://www.city.okayama.jp/kurashi/0000017002.html"
+  "source_page_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
+  "source_publication_policy": "official-page-link; local JSON data, original PDF not republished without permission"
 }
