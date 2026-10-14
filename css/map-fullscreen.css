@@ -1,6 +1,6 @@
 /* iOS-compatible full-viewport Leaflet mode, including filtering controls. */
 .okn-map-panel{position:relative}
-.okn-map-fullscreen-toggle{position:absolute;z-index:550;right:14px;top:14px;appearance:none;background:#fff;border:1px solid #d5e2db;border-radius:10px;box-shadow:0 2px 10px #0002;color:#25312d;padding:9px 13px;font:700 13px/1.35 inherit;cursor:pointer;min-height:42px}
+.okn-map-fullscreen-toggle{position:absolute;z-index:550;right:14px;top:14px;appearance:none;background:#fff;border:1px solid #d5e2db;border-radius:10px;box-shadow:0 2px 10px #0002;color:#25312d;padding:9px 13px;font-size:13px;font-weight:700;line-height:1.35;font-family:inherit;cursor:pointer;min-height:42px}
 .okn-map-fullscreen-toggle:focus-visible{outline:3px solid #3f8f73;outline-offset:2px}
 .home-map-shell.okn-map-panel{padding-top:64px}
 #okn-facility-map-panel.okn-map-panel{padding-top:60px}
