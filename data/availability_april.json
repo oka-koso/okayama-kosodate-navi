@@ -1,7 +1,7 @@
 {
   "schema_version": 32,
   "matching_key": "official phone + postal + address; exact shared-contact duplicates resolved by PDF/master occurrence order",
-  "generated_at": "2026-10-14 10:38",
+  "generated_at": "2026-10-14 17:56",
   "availability_for": "令和9年4月",
   "availability_as_of": "令和８年１０月７日時点",
   "source_page_updated": "2026-10-14",
@@ -1553,6 +1553,5 @@
   "display_notice": "令和9年4月入園の公式資料を反映しています。",
   "publication_verified": true,
   "facility_status_verified": true,
-  "source_page_url": "https://www.city.okayama.jp/kurashi/0000017002.html",
-  "source_publication_policy": "official-page-link; local JSON data, original PDF not republished without permission"
+  "source_page_url": "https://www.city.okayama.jp/kurashi/0000017002.html"
 }
