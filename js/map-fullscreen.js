@@ -6,10 +6,11 @@
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'okn-map-fullscreen-toggle';
-    button.textContent = '⛶ 全画面表示';
+    button.innerHTML = '<span aria-hidden="true">⛶</span>';
+    button.title = '地図を全画面表示';
     button.setAttribute('aria-pressed', 'false');
     button.setAttribute('aria-label', '地図を全画面表示');
-    panel.appendChild(button);
+    mapEl.appendChild(button);
     let active = false;
     let previousFocus = null;
     let savedScroll = 0;
@@ -26,12 +27,14 @@
         savedScroll = window.scrollY;
         document.body.classList.add('okn-map-fullscreen-open');
         panel.classList.add('okn-map-is-fullscreen');
-        button.textContent = '× 全画面を閉じる';
+        button.innerHTML = '<span aria-hidden="true">×</span>';
+        button.title = '全画面を閉じる';
         button.setAttribute('aria-label', '地図の全画面表示を閉じる');
       } else {
         panel.classList.remove('okn-map-is-fullscreen');
         document.body.classList.remove('okn-map-fullscreen-open');
-        button.textContent = '⛶ 全画面表示';
+        button.innerHTML = '<span aria-hidden="true">⛶</span>';
+        button.title = '地図を全画面表示';
         button.setAttribute('aria-label', '地図を全画面表示');
         window.scrollTo(0, savedScroll);
       }
