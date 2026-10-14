@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>岡山市の保育園 点数計算ツール【令和8年度基準】｜利用調整の試算｜岡山子育てナビ</title>
+  <title>岡山市の保育園 点数計算ツール【令和9年度基準】｜利用調整の試算｜岡山子育てナビ</title>
   <link rel="canonical" href="https://oka-koso.github.io/okayama-kosodate-navi/score.html">
-  <meta name="description" content="岡山市の保育園・認定こども園の利用調整点数を令和8年度基準で試算。保護者の基礎点数と調整点数の考え方、結果の見方を解説します。令和9年度基準には未対応です。">
+  <meta name="description" content="岡山市の保育園・認定こども園の利用調整点数を令和9年度基準で試算。保護者の基礎点数と調整点数の考え方、結果の見方を解説します。令和9年度の公式ガイドをもとに基礎点数と調整点数を試算。">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/score-calculator.css">
-  <script defer src="js/score-calculator.js"></script>
+  <script defer src="js/score-calculator.js?v=20261014-r9"></script>
 <link rel="stylesheet" href="css/site-shell.css">
 <link rel="stylesheet" href="css/site-shell-polish.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2321879700607801"
@@ -28,7 +28,7 @@
 <main>
   <div class="page-hero">
     <div class="container">
-      <span class="eyebrow">令和8年度基準</span>
+      <span class="eyebrow">令和9年度基準</span>
       <h1>利用調整点数かんたん計算</h1>
       <p>質問に答えると、岡山市の保育利用調整の基礎点数・調整点数を試算できます。</p>
     </div>
@@ -39,7 +39,7 @@
       <div class="score-main">
         <div class="notice score-notice">
           <strong>これは試算ツールです</strong><br>
-          岡山市の令和8年度保育利用ガイド・保育利用調整基準をもとに計算します。
+          岡山市の令和9年度保育利用ガイド・保育利用調整基準をもとに計算します。
           実際の点数は提出書類等をもとに岡山市が審査・決定します。点数が高くても入園を保証するものではありません。
         </div>
 
@@ -144,15 +144,7 @@
               </label>
             </div>
 
-            <div class="adjust-group">
-              <label class="field-label" for="adj-D">社会的養護（区分D）</label>
-              <select id="adj-D" class="score-control">
-                <option value="">該当しない</option>
-                <option value="D20">児童虐待又はそのおそれ ＋20</option>
-                <option value="D3">DVにより保育困難 ＋3</option>
-                <option value="D1">その他社会的養護 ＋1</option>
-              </select>
-            </div>
+            <div class="adjust-group"><label class="choice-line"><input type="checkbox" id="adj-D"><span><strong>社会的養護（区分D）に該当する</strong><small>令和9年度の点数表は固定点数の記載がないため自動加点しません。岡山市に確認してください。</small></span></label></div>
 
             <div class="adjust-group">
               <label class="field-label" for="adj-E">申込児童の障害（区分E）</label>
@@ -258,13 +250,13 @@
       <div class="source-box">
         <strong>公式情報</strong>
         <ul>
-          <li><a href="https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R8_1-23hoiku.pdf" target="_blank" rel="noopener">岡山市「令和8年度 保育利用ガイド」P.11〜12</a></li>
+          <li><a href="https://www.city.okayama.jp/kurashi/0000013000.html" target="_blank" rel="noopener">岡山市「令和9年度 保育利用ガイド」P.11〜12</a></li>
           <li><a href="https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12573/R060904kaisei_riyouchouseikizyun.pdf" target="_blank" rel="noopener">岡山市「保育所等保育利用調整基準」</a></li>
         </ul>
-        <p class="small">この計算ツールは令和8年度基準の参考試算です。令和9年度の申込みでは最新の保育利用ガイドと利用調整基準を必ず確認してください。</p>
+        <p class="small">この計算ツールは令和9年度の保育利用ガイドに沿った参考試算です。区分Dなど個別審査を要する項目や正式な認定点は岡山市にご確認ください。</p>
       </div>
     </div>
-    <div class="container"><div class="notice"><h2>岡山市の保育園の点数を調べるときの注意</h2><p>利用調整点数は保育の必要性や家庭の状況をもとに審査されます。このツールは令和8年度基準の試算であり、令和9年度の正式な点数や入園可否を示すものではありません。</p><p>候補園を決めるときは、<a href="hoikuen.html">岡山市の保育園MAPと年齢別受入見込み</a>も確認しましょう。<a href="moushikomi.html">令和9年度の申込方法と必要書類</a>もまとめています。</p></div></div>
+    <div class="container"><div class="notice"><h2>岡山市の保育園の点数を調べるときの注意</h2><p>利用調整点数は保育の必要性や家庭の状況をもとに審査されます。このツールは令和9年度基準の参考試算であり、正式な認定点数や入園可否を示すものではありません。</p><p>候補園を決めるときは、<a href="hoikuen.html">岡山市の保育園MAPと年齢別受入見込み</a>も確認しましょう。<a href="moushikomi.html">令和9年度の申込方法と必要書類</a>もまとめています。</p></div></div>
   </section>
 </main>
 
