@@ -1,0 +1,13 @@
+name: Check sitemap HTTP headers
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/check-sitemap-headers.yml'
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect sitemap response
+        run: |
+          curl --silent --show-error --location --head --max-time 30 --write-out '\nHTTP final: %{http_code}\nContent-Type: %{content_type}\nURL: %{url_effective}\n' 'https://oka-koso.github.io/okayama-kosodate-navi/sitemap.xml'
