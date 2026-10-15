@@ -173,9 +173,9 @@
       return;
     }
 
-    // 岡山市の基礎点数は父母の点数を合算せず、低い方を採用する。
-    // ひとり親は保護者2に「不存在」10点を適用した上で比較する。
-    const base = Math.min(g1.score, g2.score);
+    // 保護者それぞれ10点満点の基礎点数を合算する（最大20点）。
+    // ひとり親は保護者2の「不存在」10点も合算する。
+    const base = g1.score + g2.score;
     const adj = adjustmentScore();
     const normalTotal = base + adj.score;
     const k = $('adj-K').checked;
@@ -191,7 +191,7 @@
     const lines = [
       ['保護者1：'+g1.label,g1.score],
       ['保護者2：'+g2.label,g2.score],
-      ['基礎点数（2人のうち低い方を採用）',base],
+      ['基礎点数（保護者2人の合算・最大20点）',base],
       ...adj.lines
     ];
     let detail = lines.map(([label,s]) => `<div class="result-line"><span>${esc(label)}</span><strong>${label.startsWith('基礎点数（') ? '' : (s>0?'+':'')}${s}点</strong></div>`).join('');

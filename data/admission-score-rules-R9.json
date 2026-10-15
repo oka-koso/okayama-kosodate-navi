@@ -2,7 +2,7 @@
   "schema_version": 1,
   "rule_year": "令和9年度",
   "effective_for": "令和9年度の保育利用調整",
-  "verified_at": "2026-10-14",
+  "verified_at": "2026-10-15",
   "official_sources": [
     "https://www.city.okayama.jp/kurashi/0000013000.html",
     "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/13000/R9_1_23hoiku.pdf"
@@ -203,6 +203,6 @@
   "notes": [
     "令和9年度保育利用ガイドP.11-12に照らした区分。",
     "調整点数表のD（社会的養護）は点数欄に固定点数が記載されていないため、自動加点の対象外。",
-    "基礎点数は保護者それぞれ10点満点、保護者2人のうち低い点数を採用。"
+    "基礎点数は保護者それぞれ10点満点、2人分を合算（最大20点）。ひとり親は不存在10点を含めて合算。"
   ]
 }
