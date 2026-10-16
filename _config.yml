@@ -1,0 +1,3 @@
+# Unreleased sources must not be served by GitHub Pages.
+exclude:
+  - _scheduled_articles

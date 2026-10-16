@@ -1,0 +1,32 @@
+[
+  {
+    "source": "_scheduled_articles/okayama-hoikuen-2027-complete.html",
+    "article": {
+      "title": "【完全版】2027年4月の岡山市保育園入所申込み｜必要書類・相談先・窓口・オンライン申請",
+      "description": "岡山市の令和9年度公開資料をもとに、2027年4月入園の申込日程、保育コンシェルジュと就園管理課への相談、必要書類、窓口・オンライン・郵送、提出後の確認をまとめます。",
+      "url": "articles/okayama-hoikuen-2027-complete.html",
+      "category": "入園申込・手続き",
+      "published": "2026-10-18",
+      "updated": "2026-10-18",
+      "image": "assets/bibouroku/okayama-2027-application-paperwork.jpg"
+    },
+    "backlinks": [
+      "articles/okayama-hoikuen-2027-schedule.html",
+      "articles/okayama-hoikuen-2027-documents.html",
+      "moushikomi.html"
+    ]
+  },
+  {
+    "source": "_scheduled_articles/kodomo-media-control.html",
+    "article": {
+      "title": "子どもと電子機器、どう付き合う？内容と時間を整えるメディアコントロール",
+      "description": "動画やゲームを一律に否定せず、内容の選び方、睡眠・遊びとの時間調整、終わりやすい声かけ、端末の設定、家庭で話し合うルール例を紹介します。",
+      "url": "articles/kodomo-media-control.html",
+      "category": "入園準備・通園生活",
+      "published": "2026-10-19",
+      "updated": "2026-10-19",
+      "image": "assets/bibouroku/family-media-control.jpg"
+    },
+    "backlinks": []
+  }
+]
