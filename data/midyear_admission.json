@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-17 17:48",
-  "checked_at": "2026-10-17T17:48:53+09:00",
-  "check_attempted_at": "2026-10-17T17:48:53+09:00",
+  "generated_at": "2026-10-18 17:49",
+  "checked_at": "2026-10-18T17:49:20+09:00",
+  "check_attempted_at": "2026-10-18T17:49:20+09:00",
   "check_status": "verified",
   "deadlines": [
     {
@@ -123,7 +123,7 @@
       "source": "https://www.city.okayama.jp/kurashi/0000012977.html"
     }
   ],
-  "publications_checked_at": "2026-10-17T17:48:53+09:00",
+  "publications_checked_at": "2026-10-18T17:49:20+09:00",
   "publication_check_status": "verified",
   "sources": {
     "application": "https://www.city.okayama.jp/kurashi/0000072787.html",
