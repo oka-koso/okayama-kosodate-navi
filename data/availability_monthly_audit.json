@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-01 17:38",
-  "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.11ninka.pdf",
-  "fixed_master_count": 206,
+  "generated_at": "2026-10-26 18:04",
+  "source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.12ninka.pdf",
+  "fixed_master_count": 208,
   "matched_facility_count": 206,
   "with_status_count": 205,
   "unmatched_contact_count": 0,
@@ -1867,5 +1867,16 @@
       "master_postal": "7028013"
     }
   ],
-  "master_not_in_pdf": []
+  "master_not_in_pdf": [
+    {
+      "facility_id": "oky-r9-minomaki",
+      "name": "（仮称）御野牧石認定こども園",
+      "ward": "北区"
+    },
+    {
+      "facility_id": "oky-r9-sanyogakuen",
+      "name": "（仮称）山陽学園こども園",
+      "ward": "中区"
+    }
+  ]
 }
