@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-02 00:17",
-  "checked_at": "2026-11-02T00:17:26+09:00",
-  "check_attempted_at": "2026-11-02T00:17:26+09:00",
+  "generated_at": "2026-11-03 03:31",
+  "checked_at": "2026-11-03T03:31:35+09:00",
+  "check_attempted_at": "2026-11-03T03:31:35+09:00",
   "check_status": "verified",
   "deadlines": [
     {
@@ -114,28 +114,28 @@
   "availability_source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.12ninka.pdf",
   "availability_source_sha256": "aeea0a78dc4dd7be8451723ed2883e00c4ad1bf5cf3f18fb34c60a9a1e635513",
   "source_page_updated": "2026-10-26",
-  "availability_publications": [
+  "availability_publications": [],
+  "availability_publication_plans": [
     {
-      "target_year": 2026,
-      "target_month": 12,
-      "title": "【認可保育園等】令和8年12月受入見込み (PDF形式、383.42KB)",
-      "url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.12ninka.pdf"
+      "target_year": 2027,
+      "target_month": 1,
+      "publish_date": "2026-11-24",
+      "source": "https://www.city.okayama.jp/kurashi/0000012977.html"
     }
   ],
-  "availability_publication_plans": [],
-  "publications_checked_at": "2026-11-02T00:17:26+09:00",
+  "publications_checked_at": "2026-11-03T03:31:35+09:00",
   "publication_check_status": "verified",
   "sources": {
     "application": "https://www.city.okayama.jp/kurashi/0000072787.html",
     "availability": "https://www.city.okayama.jp/kurashi/0000012977.html",
     "guide": "https://www.city.okayama.jp/kurashi/0000013000.html"
   },
-  "target_year": 2026,
-  "target_month": 12,
-  "target_label": "令和8年12月",
-  "deadline_date": "2026-11-02",
+  "target_year": 2027,
+  "target_month": 1,
+  "target_label": "令和9年1月",
+  "deadline_date": "2026-12-01",
   "deadline_time": "17:15",
-  "deadline_label_official": "令和8年11月2日（月曜日）",
-  "deadline_iso_jst": "2026-11-02T17:15:00+09:00",
-  "availability_publish_estimate": "2026-10-26"
+  "deadline_label_official": "令和8年12月1日（火曜日）",
+  "deadline_iso_jst": "2026-12-01T17:15:00+09:00",
+  "availability_publish_estimate": "2026-11-24"
 }
