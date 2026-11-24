@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24 05:20",
-  "checked_at": "2026-11-24T05:20:27+09:00",
-  "check_attempted_at": "2026-11-24T05:20:27+09:00",
+  "generated_at": "2026-11-25 04:33",
+  "checked_at": "2026-11-25T04:33:40+09:00",
+  "check_attempted_at": "2026-11-25T04:33:40+09:00",
   "check_status": "verified",
   "deadlines": [
     {
@@ -108,22 +108,22 @@
   "application_rule": "必要書類は入園希望月の前月1日（閉庁日の場合は翌開庁日）の17:15必着です。",
   "application_start_note": "年度途中の申込みは、利用希望月のおおむね4カ月前から受け付けられます。",
   "availability_publish_note": "年度途中の受入見込みは、申込締切日の1週間程度前から締切日まで岡山市ホームページで公開されます。",
-  "availability_for": "令和8年12月",
-  "availability_as_of": "令和８年１０月２２日時点",
-  "availability_source_pdf_title": "【認可保育園等】令和8年12月受入見込み (PDF形式、383.42KB)",
-  "availability_source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R8.12ninka.pdf",
-  "availability_source_sha256": "aeea0a78dc4dd7be8451723ed2883e00c4ad1bf5cf3f18fb34c60a9a1e635513",
-  "source_page_updated": "2026-10-26",
-  "availability_publications": [],
-  "availability_publication_plans": [
+  "availability_for": "令和9年1月",
+  "availability_as_of": "令和８年１１月１９日時点",
+  "availability_source_pdf_title": "【認可保育園等】令和9年1月 受入見込み (PDF形式、386.92KB)",
+  "availability_source_pdf_url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R9.1ninka3.pdf",
+  "availability_source_sha256": "c0ea98d3b8dc50e9c3ce7c57bbc4a0a136287ebf8389c563354230909ac93dae",
+  "source_page_updated": "2026-11-24",
+  "availability_publications": [
     {
       "target_year": 2027,
       "target_month": 1,
-      "publish_date": "2026-11-24",
-      "source": "https://www.city.okayama.jp/kurashi/0000012977.html"
+      "title": "【認可保育園等】令和9年1月 受入見込み (PDF形式、386.92KB)",
+      "url": "https://www.city.okayama.jp/kurashi/cmsfiles/contents/0000012/12977/R9.1ninka3.pdf"
     }
   ],
-  "publications_checked_at": "2026-11-24T05:20:27+09:00",
+  "availability_publication_plans": [],
+  "publications_checked_at": "2026-11-25T04:33:40+09:00",
   "publication_check_status": "verified",
   "sources": {
     "application": "https://www.city.okayama.jp/kurashi/0000072787.html",
